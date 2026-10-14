@@ -1,8 +1,8 @@
-# ModalAffect
+# Multimodal Sentiment Fusion
 
 [English](README.md) · [中文](README.zh-CN.md)
 
-ModalAffect is a multimodal sentiment research project for speech, video and
+Multimodal Sentiment Fusion is a research project for speech, video and
 text. It studies how modality evidence should influence a prediction when
 signals disagree, while keeping each dataset's native task and evaluation rules.
 

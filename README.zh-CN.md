@@ -1,8 +1,8 @@
-# ModalAffect
+# Multimodal Sentiment Fusion
 
 [English](README.md) · [中文](README.zh-CN.md)
 
-ModalAffect 是一个研究语音、视频和文本的多模态情感分析项目，关注模态信号
+Multimodal Sentiment Fusion 是一个研究语音、视频和文本的多模态情感分析项目，关注模态信号
 发生冲突时，各路证据应如何影响预测，并保留各数据集的原生任务和评估规则。
 
 **当前状态：研究进行中。** 这里是项目的新 GitHub 首页。代码、配置和经审计
