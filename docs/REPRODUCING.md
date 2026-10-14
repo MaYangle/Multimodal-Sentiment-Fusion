@@ -98,6 +98,10 @@ then all seven fusion cases for seeds 13/42/2026 serially. `--stage`, `--seed`,
 Checkpoints retain best/last states, optimizer and loader RNG states, identity,
 history and selected VALID predictions. The independent audit hashes inputs,
 checks splits/budgets/masks/metrics and replays the selected checkpoints on CPU.
+For this registered negative study, the audit exits with status 1 because four
+scientific gain gates fail, while all input/implementation/replay checks pass.
+Inspect the report's named failures; this expected research outcome is separate
+from the unit-test suite, which must pass.
 
 Run the older M-only Chinese controls separately:
 

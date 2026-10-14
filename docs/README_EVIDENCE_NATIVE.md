@@ -16,6 +16,7 @@ Historical READMEs preserve commands and attribution.
 | Current gate matrix fresh-environment repeat | Missing | Earlier baseline repeats exist; current matrix repeat pending |
 | Independent final audit | Reported separately | NATIVE_SEQUENCE_GATE_AUDIT_20261014.md supersedes partial snapshots |
 | Publication-copy tests | Verified | 341 tests passed in the final publication checkout, including the production audit regression fixture |
+| Linux CPU CI | Verified | Commit cfefa2c; 341 tests, one CUDA-only resume test skipped; synthetic demo passed |
 | Current document links | Verified | English/Chinese READMEs, architecture, experiments, reproduction, contributing, notices |
 | Frozen study bytes | Verified | Ten identity-bound files unchanged; Git attributes preserve line endings |
 | Data/weight redistribution | Excluded | Explicit source allowlist and redacted report copies with original SHA |
@@ -24,7 +25,9 @@ Historical READMEs preserve commands and attribution.
 
 Stale live-session and pending-GitHub statements were replaced in current
 navigation; historical records keep their time-specific context. Added CI is a
-CPU contract workflow; no green badge or remote success is claimed until it
-runs. A whitespace check finds existing upstream/historical whitespace; frozen
+CPU contract workflow. The [verified Linux run](https://github.com/MaYangle/Multimodal-Sentiment-Fusion/actions/runs/38558604043)
+passes with fixed measured numerical dependencies. The initial broad-version
+run failed a historical shape fixture and is retained in Actions. A whitespace
+check finds existing upstream/historical whitespace; frozen
 training bytes and upstream code were preserved rather than reformatted.
 Code licensing does not grant dataset/encoder-weight redistribution rights.

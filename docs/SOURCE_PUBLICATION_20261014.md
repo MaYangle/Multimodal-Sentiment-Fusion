@@ -31,6 +31,13 @@ source publication, not confirmation of an original-method gain, final TEST
 performance or fresh complete gate-matrix reproduction. The CPU GitHub workflow
 is newly configured; its remote outcome is a separate verification.
 
+The [Linux CPU run for cfefa2c](https://github.com/MaYangle/Multimodal-Sentiment-Fusion/actions/runs/38558604043)
+passed all 341 collected tests (one CUDA-only resume test skipped) and the
+synthetic architecture demo. The first Linux attempt used unconstrained NumPy
+2.5.4 and failed a historical shape fixture. CI and the documented CPU install
+now pin the measured NumPy 2.3.5/SciPy 1.18.0/einops 0.8.1 versions. No frozen
+model/trainer/config/plan bytes were changed by this compatibility correction.
+
 Current result: registered candidate VALID MAE 0.378497 ± 0.007455, versus
 matched distilled-static 0.378253 ± 0.008851. See [experiments](EXPERIMENTS.md)
 and [reproduction limits](REPRODUCING.md). The prior old-repository deletion
