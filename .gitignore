@@ -1,0 +1,12 @@
+data/
+runs/
+work/
+backups/
+.venv/
+__pycache__/
+*.py[cod]
+*.pt
+*.pth
+*.pkl
+*.npz
+.env
