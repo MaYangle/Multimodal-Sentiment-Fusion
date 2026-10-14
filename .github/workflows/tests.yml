@@ -19,7 +19,7 @@ jobs:
       - name: Install CPU dependencies
         run: |
           python -m pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cpu
-          python -m pip install -e ".[train,data,encoders,verify,uncertainty]"
+          python -m pip install -c configs/ci_cpu_constraints.txt -e ".[train,data,encoders,verify,uncertainty]"
       - name: Run contract tests and synthetic architecture demo
         run: |
           python -m unittest discover -s tests

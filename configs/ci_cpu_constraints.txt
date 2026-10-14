@@ -1,0 +1,8 @@
+# CPU contract checks use the measured numerical versions; CUDA is separate.
+torch==2.11.0
+numpy==2.3.5
+scipy==1.18.0
+einops==0.8.1
+transformers==4.51.3
+imageio-ffmpeg==0.6.0
+pillow==11.3.0

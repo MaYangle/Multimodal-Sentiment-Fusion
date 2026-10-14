@@ -39,7 +39,8 @@ controls before claiming a new construction or calibrated confidence.
 Start with the [README](README.md) and [native evaluation protocol](docs/NATIVE_EVALUATION_PROTOCOL.md). A code-only check needs no dataset download:
 
 ```bash
-python -m pip install -e ".[train,data,encoders,verify,uncertainty]"
+python -m pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cpu
+python -m pip install -c configs/ci_cpu_constraints.txt -e ".[train,data,encoders,verify,uncertainty]"
 python -m unittest discover -s tests
 ```
 

@@ -1,6 +1,7 @@
 import copy
 import json
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 import numpy as np
 import torch
@@ -27,7 +28,19 @@ class NestedShapeTrainingTests(unittest.TestCase):
 
     def test_all_case_real_backward_and_checkpoint_reload(self):
         for case in st.shapes.CASES:
-            result = st.train(self.config, self.tables, self.binding, case=case, seed=13, fold=0)
+            original_diagnostics = st.diagnostics
+            def diagnose(anchor, target, output):
+                try:
+                    return original_diagnostics(anchor, target, output)
+                except ValueError as error:
+                    bins = np.asarray(output['bins'], np.float64)
+                    detail = dict(case=case, shape=bins.shape,
+                                  minimum_probability=float(bins.min()),
+                                  maximum_row_mass_error=float(np.abs(bins.sum(1)-1).max()),
+                                  finite=bool(np.isfinite(bins).all()))
+                    raise ValueError(f"{error}; numerical fixture detail: {detail}") from error
+            with patch.object(st, 'diagnostics', side_effect=diagnose):
+                result = st.train(self.config, self.tables, self.binding, case=case, seed=13, fold=0)
             self.assertTrue(result['complete'])
             self.assertEqual(result['epochs'], 3)
             self.assertGreater(result['updates'], 0)

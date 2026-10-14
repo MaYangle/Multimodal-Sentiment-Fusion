@@ -65,7 +65,8 @@ cd Multimodal-Sentiment-Fusion
 python -m venv .venv
 # Windows: .venv/Scripts/Activate.ps1
 # Linux/macOS: source .venv/bin/activate
-python -m pip install -e ".[train,data,encoders,verify,uncertainty]"
+python -m pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cpu
+python -m pip install -c configs/ci_cpu_constraints.txt -e ".[train,data,encoders,verify,uncertainty]"
 python scripts/demo_sequence_architecture.py
 python -m unittest discover -s tests
 ```

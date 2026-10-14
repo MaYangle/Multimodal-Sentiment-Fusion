@@ -26,8 +26,9 @@ python -m unittest discover -s tests
 python scripts/demo_sequence_architecture.py
 ```
 
-For CPU-only code inspection, install `.[train,data,encoders,verify,uncertainty]`
-without the CUDA constraint file and explicit CUDA wheel. It is not the exact
+For CPU-only code inspection, install the CPU PyTorch 2.11.0 wheel and use
+`configs/ci_cpu_constraints.txt` with `.[train,data,encoders,verify,uncertainty]`
+instead of the CUDA constraint file. It is not the exact
 formal numerical environment. The synthetic demo uses random weights and
 reports shapes/routes, not trained sentiment accuracy. Linux uses
 `source .venv/bin/activate` instead of the Windows activation command.
