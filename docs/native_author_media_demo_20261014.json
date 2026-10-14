@@ -1,0 +1,32 @@
+{
+  "media_audit_sha256": "c8f9b4fefde8912bd26121f9a3eb6cb2fafe8136988c5029b293293f8b4a871b",
+  "checkpoint_sha256": "e14f47e482e76d3b7faabcfc8728813e5d9c46ff3833bc4950012426296ea28e",
+  "metadata_sha256": "50c067883c3e52d6130eb8ed80f2df9d8a29bbc0c0a1dd9ac6a9e7d2847d1e7d",
+  "records": {
+    "publication_omitted": true,
+    "original_count": 2
+  },
+  "labels_read": false,
+  "test_evaluated": false,
+  "scope": "Verified author-original TRAIN MP4 and supplied-transcript CPU encoder/inference rehearsal; not held-out performance, full-corpus equivalence or final-method reproduction",
+  "author_transfer_report_sha256": "b265ba4f1984b91916f01f3b441bd31e507f6402b4390f11ad63603e1607ccec",
+  "author_csv_sha256": "be7e482640e7ee24d2070033e1e2aef61ce183199286a8a18b0d6247556bf150",
+  "rehearsal_implementation_sha256": "d36aa7b007f472f741c86239ee48dd946e6afe3d692073a5f2c4948047c154ea",
+  "author_identity_verified_for": [
+    "video_0003/0002",
+    "video_0006/0006"
+  ],
+  "sentiment_scores_supplied_to_inference": false,
+  "TEST_scores_parsed": false,
+  "input_audit_path": "D:\\MYL\\JevAffect\\work\\author_native_media_demo_20261014\\audit.json",
+  "input_audit_sha256": "a9ca9c81289cb17607a611d9b61d981d8b3e6b47b4ba403f526da614878d2264",
+  "publication_redaction": {
+    "full_local_report_sha256": "bb607b598adc9e0167e03089296c2212093e0fa2e8047b1d88b46a7d9468b4bf",
+    "removed_path_count": 1,
+    "removed_paths": [
+      "/records"
+    ],
+    "remaining_removed_paths_list_truncated": false,
+    "reason": "Exclude per-sample dataset records, long raw arrays and response/download capabilities; retain aggregate research evidence."
+  }
+}

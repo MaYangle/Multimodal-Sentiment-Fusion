@@ -1,0 +1,9 @@
+{
+  "port_version": "simsv2-native-regression-override-v1",
+  "base_config": "bcmlf_simsv2_5class_v1.json",
+  "model_config_overrides": {
+    "task_out": 1,
+    "train_mode": "regression"
+  },
+  "evaluation_note": "Retain the upstream raw scalar regression objective and score its predictions with the externally agreed JevAffect mapping. This is not a five-class probability model."
+}

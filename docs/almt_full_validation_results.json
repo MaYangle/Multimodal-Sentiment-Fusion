@@ -1,0 +1,319 @@
+{
+  "dataset": "CH-SIMS v2.0",
+  "cohort": "official author train/valid from independently extracted raw video",
+  "train_count": 2722,
+  "valid_count": 647,
+  "test_scored": false,
+  "condition": "mBERT/WavLM/DINOv2 frozen common backbone; ALMT five-class adaptation",
+  "validation_selection": "accuracy with NLL tie-break; scores are on the selection set",
+  "cache_source_sha256": "79a36d8c5bce140081a90dca828f81f6196a40c373fe6a3be8a80455c1573914",
+  "mixed_extraction_hardware": true,
+  "sequence_truncation": {
+    "audio": {
+      "observed_max_raw_steps": 2132,
+      "policy": "keep the first target_steps in original order; no resampling/interpolation",
+      "target_steps": 400,
+      "total_dropped_frames_or_tokens": 6723,
+      "truncated_records": 69
+    },
+    "text": {
+      "observed_max_raw_steps": 49,
+      "policy": "keep the first target_steps in original order; no resampling/interpolation",
+      "target_steps": 64,
+      "total_dropped_frames_or_tokens": 0,
+      "truncated_records": 0
+    },
+    "vision": {
+      "observed_max_raw_steps": 85,
+      "policy": "keep the first target_steps in original order; no resampling/interpolation",
+      "target_steps": 55,
+      "total_dropped_frames_or_tokens": 30,
+      "truncated_records": 1
+    }
+  },
+  "runs": [
+    {
+      "seed": 13,
+      "best_epoch": 9,
+      "epochs": 21,
+      "accuracy": 0.44513137557959814,
+      "macro_f1": 0.40433906141019954,
+      "confusion_matrix": [
+        [
+          129,
+          20,
+          5,
+          15,
+          13
+        ],
+        [
+          55,
+          35,
+          9,
+          25,
+          19
+        ],
+        [
+          25,
+          19,
+          17,
+          23,
+          8
+        ],
+        [
+          25,
+          15,
+          9,
+          60,
+          22
+        ],
+        [
+          17,
+          2,
+          2,
+          31,
+          47
+        ]
+      ],
+      "per_class": [
+        {
+          "class_index": 0,
+          "class_name": "SNEG",
+          "precision": 0.5139442231075697,
+          "recall": 0.7087912087912088,
+          "f1": 0.5958429561200923,
+          "support": 182
+        },
+        {
+          "class_index": 1,
+          "class_name": "WNEG",
+          "precision": 0.38461538461538464,
+          "recall": 0.24475524475524477,
+          "f1": 0.29914529914529914,
+          "support": 143
+        },
+        {
+          "class_index": 2,
+          "class_name": "NEUT",
+          "precision": 0.40476190476190477,
+          "recall": 0.18478260869565216,
+          "f1": 0.25373134328358204,
+          "support": 92
+        },
+        {
+          "class_index": 3,
+          "class_name": "WPOS",
+          "precision": 0.38961038961038963,
+          "recall": 0.4580152671755725,
+          "f1": 0.42105263157894735,
+          "support": 131
+        },
+        {
+          "class_index": 4,
+          "class_name": "SPOS",
+          "precision": 0.43119266055045874,
+          "recall": 0.47474747474747475,
+          "f1": 0.4519230769230769,
+          "support": 99
+        }
+      ],
+      "n_samples": 647,
+      "nll": 1.4922466143424196,
+      "brier": 0.7191930823489099,
+      "ece15": 0.1376528354800979,
+      "train_valid_seconds": 101.02061040000262,
+      "peak_cuda_allocated_bytes": 994254848,
+      "predictions_sha256": "819f1d3702783b7f9ea8a9d8c9a6a864208d817bcb2b540e95ab928aa9c9631d"
+    },
+    {
+      "seed": 42,
+      "best_epoch": 6,
+      "epochs": 18,
+      "accuracy": 0.45440494590417313,
+      "macro_f1": 0.4206760462744807,
+      "confusion_matrix": [
+        [
+          110,
+          57,
+          4,
+          1,
+          10
+        ],
+        [
+          36,
+          84,
+          6,
+          8,
+          9
+        ],
+        [
+          16,
+          43,
+          14,
+          14,
+          5
+        ],
+        [
+          20,
+          47,
+          7,
+          47,
+          10
+        ],
+        [
+          19,
+          17,
+          4,
+          20,
+          39
+        ]
+      ],
+      "per_class": [
+        {
+          "class_index": 0,
+          "class_name": "SNEG",
+          "precision": 0.5472636815920398,
+          "recall": 0.6043956043956044,
+          "f1": 0.5744125326370756,
+          "support": 182
+        },
+        {
+          "class_index": 1,
+          "class_name": "WNEG",
+          "precision": 0.3387096774193548,
+          "recall": 0.5874125874125874,
+          "f1": 0.42966751918158563,
+          "support": 143
+        },
+        {
+          "class_index": 2,
+          "class_name": "NEUT",
+          "precision": 0.4,
+          "recall": 0.15217391304347827,
+          "f1": 0.22047244094488191,
+          "support": 92
+        },
+        {
+          "class_index": 3,
+          "class_name": "WPOS",
+          "precision": 0.5222222222222223,
+          "recall": 0.35877862595419846,
+          "f1": 0.42533936651583715,
+          "support": 131
+        },
+        {
+          "class_index": 4,
+          "class_name": "SPOS",
+          "precision": 0.5342465753424658,
+          "recall": 0.3939393939393939,
+          "f1": 0.4534883720930233,
+          "support": 99
+        }
+      ],
+      "n_samples": 647,
+      "nll": 1.3962918558352035,
+      "brier": 0.6975723080505773,
+      "ece15": 0.04968937756634124,
+      "train_valid_seconds": 86.05840579998767,
+      "peak_cuda_allocated_bytes": 994254848,
+      "predictions_sha256": "2048da297a1daefd5b1fa20d139f9baa4d5614bf43c4cbc53e70e6632df256cd"
+    },
+    {
+      "seed": 2026,
+      "best_epoch": 10,
+      "epochs": 22,
+      "accuracy": 0.446676970633694,
+      "macro_f1": 0.4113964023670566,
+      "confusion_matrix": [
+        [
+          136,
+          27,
+          7,
+          5,
+          7
+        ],
+        [
+          64,
+          43,
+          13,
+          11,
+          12
+        ],
+        [
+          33,
+          14,
+          22,
+          17,
+          6
+        ],
+        [
+          39,
+          14,
+          12,
+          47,
+          19
+        ],
+        [
+          25,
+          6,
+          3,
+          24,
+          41
+        ]
+      ],
+      "per_class": [
+        {
+          "class_index": 0,
+          "class_name": "SNEG",
+          "precision": 0.45791245791245794,
+          "recall": 0.7472527472527473,
+          "f1": 0.5678496868475991,
+          "support": 182
+        },
+        {
+          "class_index": 1,
+          "class_name": "WNEG",
+          "precision": 0.41346153846153844,
+          "recall": 0.3006993006993007,
+          "f1": 0.3481781376518218,
+          "support": 143
+        },
+        {
+          "class_index": 2,
+          "class_name": "NEUT",
+          "precision": 0.38596491228070173,
+          "recall": 0.2391304347826087,
+          "f1": 0.29530201342281875,
+          "support": 92
+        },
+        {
+          "class_index": 3,
+          "class_name": "WPOS",
+          "precision": 0.4519230769230769,
+          "recall": 0.35877862595419846,
+          "f1": 0.39999999999999997,
+          "support": 131
+        },
+        {
+          "class_index": 4,
+          "class_name": "SPOS",
+          "precision": 0.4823529411764706,
+          "recall": 0.41414141414141414,
+          "f1": 0.44565217391304346,
+          "support": 99
+        }
+      ],
+      "n_samples": 647,
+      "nll": 1.5138983949729703,
+      "brier": 0.7306633133226584,
+      "ece15": 0.15821299434630248,
+      "train_valid_seconds": 104.81937400000606,
+      "peak_cuda_allocated_bytes": 994254848,
+      "predictions_sha256": "00614f09a0ccb1afe5db85fd65df98e12098dc7b60329ff0459197c7a51fdd4c"
+    }
+  ],
+  "accuracy_mean": 0.44873776403915505,
+  "accuracy_sample_std": 0.0049683929732060655,
+  "macro_f1_mean": 0.4121371700172456,
+  "macro_f1_sample_std": 0.008193645168520097
+}

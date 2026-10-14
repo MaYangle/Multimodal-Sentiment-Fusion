@@ -1,0 +1,289 @@
+{
+  "scope": "CH-SIMS v2 official validation only; supplemental lexical baseline; no test scored",
+  "implementation": "scripts/train_lexical_pilot.py",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "runs": [
+    {
+      "seed": 13,
+      "metrics": {
+        "accuracy": 0.36476043276661513,
+        "macro_f1": 0.3127279010874756,
+        "confusion_matrix": [
+          [
+            104,
+            38,
+            6,
+            28,
+            6
+          ],
+          [
+            40,
+            44,
+            6,
+            51,
+            2
+          ],
+          [
+            23,
+            17,
+            11,
+            31,
+            10
+          ],
+          [
+            29,
+            21,
+            2,
+            64,
+            15
+          ],
+          [
+            26,
+            21,
+            1,
+            38,
+            13
+          ]
+        ],
+        "per_class": [
+          {
+            "class_index": 0,
+            "class_name": "SNEG",
+            "precision": 0.46846846846846846,
+            "recall": 0.5714285714285714,
+            "f1": 0.514851485148515,
+            "support": 182
+          },
+          {
+            "class_index": 1,
+            "class_name": "WNEG",
+            "precision": 0.3120567375886525,
+            "recall": 0.3076923076923077,
+            "f1": 0.3098591549295775,
+            "support": 143
+          },
+          {
+            "class_index": 2,
+            "class_name": "NEUT",
+            "precision": 0.4230769230769231,
+            "recall": 0.11956521739130435,
+            "f1": 0.1864406779661017,
+            "support": 92
+          },
+          {
+            "class_index": 3,
+            "class_name": "WPOS",
+            "precision": 0.3018867924528302,
+            "recall": 0.48854961832061067,
+            "f1": 0.37317784256559766,
+            "support": 131
+          },
+          {
+            "class_index": 4,
+            "class_name": "SPOS",
+            "precision": 0.2826086956521739,
+            "recall": 0.13131313131313133,
+            "f1": 0.17931034482758623,
+            "support": 99
+          }
+        ],
+        "n_samples": 647,
+        "nll": 1.5191504842655574,
+        "brier": 0.7563825558080145,
+        "ece15": 0.051267916315727476
+      },
+      "train_samples": 2722,
+      "validation_samples": 647
+    },
+    {
+      "seed": 42,
+      "metrics": {
+        "accuracy": 0.36321483771251933,
+        "macro_f1": 0.29396156727297706,
+        "confusion_matrix": [
+          [
+            111,
+            36,
+            3,
+            27,
+            5
+          ],
+          [
+            46,
+            44,
+            2,
+            46,
+            5
+          ],
+          [
+            23,
+            21,
+            3,
+            33,
+            12
+          ],
+          [
+            31,
+            21,
+            1,
+            61,
+            17
+          ],
+          [
+            27,
+            19,
+            0,
+            37,
+            16
+          ]
+        ],
+        "per_class": [
+          {
+            "class_index": 0,
+            "class_name": "SNEG",
+            "precision": 0.46638655462184875,
+            "recall": 0.6098901098901099,
+            "f1": 0.5285714285714286,
+            "support": 182
+          },
+          {
+            "class_index": 1,
+            "class_name": "WNEG",
+            "precision": 0.3120567375886525,
+            "recall": 0.3076923076923077,
+            "f1": 0.3098591549295775,
+            "support": 143
+          },
+          {
+            "class_index": 2,
+            "class_name": "NEUT",
+            "precision": 0.3333333333333333,
+            "recall": 0.03260869565217391,
+            "f1": 0.05940594059405941,
+            "support": 92
+          },
+          {
+            "class_index": 3,
+            "class_name": "WPOS",
+            "precision": 0.29901960784313725,
+            "recall": 0.46564885496183206,
+            "f1": 0.36417910447761187,
+            "support": 131
+          },
+          {
+            "class_index": 4,
+            "class_name": "SPOS",
+            "precision": 0.2909090909090909,
+            "recall": 0.16161616161616163,
+            "f1": 0.2077922077922078,
+            "support": 99
+          }
+        ],
+        "n_samples": 647,
+        "nll": 1.5038567665686728,
+        "brier": 0.7503408369967189,
+        "ece15": 0.03209502477682097
+      },
+      "train_samples": 2722,
+      "validation_samples": 647
+    },
+    {
+      "seed": 2026,
+      "metrics": {
+        "accuracy": 0.36476043276661513,
+        "macro_f1": 0.30429135229584725,
+        "confusion_matrix": [
+          [
+            106,
+            45,
+            2,
+            25,
+            4
+          ],
+          [
+            41,
+            46,
+            3,
+            51,
+            2
+          ],
+          [
+            21,
+            28,
+            5,
+            32,
+            6
+          ],
+          [
+            32,
+            25,
+            1,
+            63,
+            10
+          ],
+          [
+            27,
+            20,
+            0,
+            36,
+            16
+          ]
+        ],
+        "per_class": [
+          {
+            "class_index": 0,
+            "class_name": "SNEG",
+            "precision": 0.4669603524229075,
+            "recall": 0.5824175824175825,
+            "f1": 0.5183374083129585,
+            "support": 182
+          },
+          {
+            "class_index": 1,
+            "class_name": "WNEG",
+            "precision": 0.2804878048780488,
+            "recall": 0.32167832167832167,
+            "f1": 0.2996742671009772,
+            "support": 143
+          },
+          {
+            "class_index": 2,
+            "class_name": "NEUT",
+            "precision": 0.45454545454545453,
+            "recall": 0.05434782608695652,
+            "f1": 0.09708737864077671,
+            "support": 92
+          },
+          {
+            "class_index": 3,
+            "class_name": "WPOS",
+            "precision": 0.30434782608695654,
+            "recall": 0.48091603053435117,
+            "f1": 0.3727810650887574,
+            "support": 131
+          },
+          {
+            "class_index": 4,
+            "class_name": "SPOS",
+            "precision": 0.42105263157894735,
+            "recall": 0.16161616161616163,
+            "f1": 0.23357664233576644,
+            "support": 99
+          }
+        ],
+        "n_samples": 647,
+        "nll": 1.5077742584534322,
+        "brier": 0.753586476518596,
+        "ece15": 0.022496209335332154
+      },
+      "train_samples": 2722,
+      "validation_samples": 647
+    }
+  ],
+  "accuracy_mean": 0.36424523441524986,
+  "accuracy_sample_std": 0.000892349720540361,
+  "macro_f1_mean": 0.30366027355209996,
+  "macro_f1_sample_std": 0.009399069980317474,
+  "timing_note": "Existing seconds_this_invocation fields cover optimization, validation, and checkpoint I/O only; exclude input encoding and process startup."
+}

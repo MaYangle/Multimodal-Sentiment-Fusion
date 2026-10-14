@@ -1,0 +1,180 @@
+{
+  "scope": "TRAIN-only source-video-disjoint 2,182/540 selection; no official valid/test",
+  "manifest_labels_sha256": "347761df2dd8fed47f1f074c5922ce66f49a37ff2e438f7597243226433e7f55",
+  "runs": {
+    "frozen_13": {
+      "accuracy": 0.4685185185185185,
+      "macro_f1": 0.4040284897723973,
+      "confusion_matrix": [
+        [
+          102,
+          26,
+          0,
+          3,
+          6
+        ],
+        [
+          51,
+          52,
+          1,
+          11,
+          4
+        ],
+        [
+          17,
+          17,
+          5,
+          21,
+          3
+        ],
+        [
+          22,
+          27,
+          2,
+          67,
+          16
+        ],
+        [
+          7,
+          7,
+          0,
+          46,
+          27
+        ]
+      ],
+      "prediction_sha256": "41b8ff02990dc89b14352b0fb599ba73a68a34b70be67afacda2c2ac18124f54"
+    },
+    "frozen_42": {
+      "accuracy": 0.46111111111111114,
+      "macro_f1": 0.41041741198811577,
+      "confusion_matrix": [
+        [
+          98,
+          24,
+          6,
+          4,
+          5
+        ],
+        [
+          48,
+          47,
+          8,
+          12,
+          4
+        ],
+        [
+          16,
+          14,
+          10,
+          20,
+          3
+        ],
+        [
+          16,
+          19,
+          13,
+          69,
+          17
+        ],
+        [
+          8,
+          5,
+          3,
+          46,
+          25
+        ]
+      ],
+      "prediction_sha256": "523ccc2414cf987f7dc77a8913485fec5aa28e329e0a160bfd0b7b87d6d270f2"
+    },
+    "frozen_2026": {
+      "accuracy": 0.4722222222222222,
+      "macro_f1": 0.42607338065822487,
+      "confusion_matrix": [
+        [
+          87,
+          30,
+          6,
+          7,
+          7
+        ],
+        [
+          41,
+          49,
+          6,
+          14,
+          9
+        ],
+        [
+          12,
+          10,
+          11,
+          23,
+          7
+        ],
+        [
+          9,
+          9,
+          15,
+          80,
+          21
+        ],
+        [
+          4,
+          3,
+          3,
+          49,
+          28
+        ]
+      ],
+      "prediction_sha256": "3fcc5f3f69e6593605e38f96b53be22ccce912a49e2f0cb7bc9c7c33ac26fe8f"
+    },
+    "top4_finetuned_13": {
+      "accuracy": 0.4777777777777778,
+      "macro_f1": 0.4424212160942567,
+      "confusion_matrix": [
+        [
+          85,
+          31,
+          7,
+          5,
+          9
+        ],
+        [
+          41,
+          56,
+          3,
+          15,
+          4
+        ],
+        [
+          8,
+          15,
+          12,
+          22,
+          6
+        ],
+        [
+          10,
+          13,
+          11,
+          68,
+          32
+        ],
+        [
+          5,
+          3,
+          4,
+          38,
+          37
+        ]
+      ],
+      "prediction_sha256": "3584cc2815289a24f60ff950eb1d8e2310f52aa165a45dfad837fb0b7c81daa4"
+    }
+  },
+  "frozen_three_seed": {
+    "accuracy_mean": 0.46728395061728395,
+    "accuracy_sample_sd": 0.005657500857970151,
+    "macro_f1_mean": 0.41350642747291266
+  },
+  "limitation": "Top-four-layer fine-tune was one exploratory seed; later fusion models still use frozen MacBERT features."
+}

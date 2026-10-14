@@ -1,0 +1,347 @@
+{
+  "suite_sha256": "b5d79ca31c690cdedcb3511b431d7c06f9d46276a664edcb7ddd976cc8ac2318",
+  "config_sha256": "cf70a93cd223217451832073ab02d6d3695b260dcd0cc702ba08c7644907139b",
+  "evidence": [
+    {
+      "view": "fusion",
+      "seed": 13,
+      "fold": 0,
+      "cpu_gpu_prediction_max_absolute_difference": 3.2782554626464844e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "fusion",
+      "seed": 13,
+      "fold": 1,
+      "cpu_gpu_prediction_max_absolute_difference": 4.172325134277344e-07,
+      "inner_selection_MAE_difference": 5.960464477539063e-08
+    },
+    {
+      "view": "fusion",
+      "seed": 13,
+      "fold": 2,
+      "cpu_gpu_prediction_max_absolute_difference": 4.76837158203125e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "fusion",
+      "seed": 13,
+      "fold": "full",
+      "cpu_gpu_prediction_max_absolute_difference": 4.76837158203125e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "text",
+      "seed": 13,
+      "fold": 0,
+      "cpu_gpu_prediction_max_absolute_difference": 3.5762786865234375e-07,
+      "inner_selection_MAE_difference": 2.9802322387695312e-08
+    },
+    {
+      "view": "text",
+      "seed": 13,
+      "fold": 1,
+      "cpu_gpu_prediction_max_absolute_difference": 2.980232238769531e-07,
+      "inner_selection_MAE_difference": 2.9802322387695312e-08
+    },
+    {
+      "view": "text",
+      "seed": 13,
+      "fold": 2,
+      "cpu_gpu_prediction_max_absolute_difference": 2.980232238769531e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "text",
+      "seed": 13,
+      "fold": "full",
+      "cpu_gpu_prediction_max_absolute_difference": 3.5762786865234375e-07,
+      "inner_selection_MAE_difference": 2.9802322387695312e-08
+    },
+    {
+      "view": "audio",
+      "seed": 13,
+      "fold": 0,
+      "cpu_gpu_prediction_max_absolute_difference": 1.1920928955078125e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "audio",
+      "seed": 13,
+      "fold": 1,
+      "cpu_gpu_prediction_max_absolute_difference": 2.384185791015625e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "audio",
+      "seed": 13,
+      "fold": 2,
+      "cpu_gpu_prediction_max_absolute_difference": 1.1920928955078125e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "audio",
+      "seed": 13,
+      "fold": "full",
+      "cpu_gpu_prediction_max_absolute_difference": 2.384185791015625e-07,
+      "inner_selection_MAE_difference": 5.960464477539063e-08
+    },
+    {
+      "view": "vision",
+      "seed": 13,
+      "fold": 0,
+      "cpu_gpu_prediction_max_absolute_difference": 5.364418029785156e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "vision",
+      "seed": 13,
+      "fold": 1,
+      "cpu_gpu_prediction_max_absolute_difference": 5.066394805908203e-07,
+      "inner_selection_MAE_difference": 5.960464477539063e-08
+    },
+    {
+      "view": "vision",
+      "seed": 13,
+      "fold": 2,
+      "cpu_gpu_prediction_max_absolute_difference": 5.066394805908203e-07,
+      "inner_selection_MAE_difference": 5.960464477539063e-08
+    },
+    {
+      "view": "vision",
+      "seed": 13,
+      "fold": "full",
+      "cpu_gpu_prediction_max_absolute_difference": 5.364418029785156e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "fusion",
+      "seed": 42,
+      "fold": 0,
+      "cpu_gpu_prediction_max_absolute_difference": 3.8743019104003906e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "fusion",
+      "seed": 42,
+      "fold": 1,
+      "cpu_gpu_prediction_max_absolute_difference": 2.980232238769531e-07,
+      "inner_selection_MAE_difference": 2.9802322387695312e-08
+    },
+    {
+      "view": "fusion",
+      "seed": 42,
+      "fold": 2,
+      "cpu_gpu_prediction_max_absolute_difference": 4.76837158203125e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "fusion",
+      "seed": 42,
+      "fold": "full",
+      "cpu_gpu_prediction_max_absolute_difference": 4.3213367462158203e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "text",
+      "seed": 42,
+      "fold": 0,
+      "cpu_gpu_prediction_max_absolute_difference": 2.682209014892578e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "text",
+      "seed": 42,
+      "fold": 1,
+      "cpu_gpu_prediction_max_absolute_difference": 2.384185791015625e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "text",
+      "seed": 42,
+      "fold": 2,
+      "cpu_gpu_prediction_max_absolute_difference": 2.980232238769531e-07,
+      "inner_selection_MAE_difference": 5.960464477539063e-08
+    },
+    {
+      "view": "text",
+      "seed": 42,
+      "fold": "full",
+      "cpu_gpu_prediction_max_absolute_difference": 2.682209014892578e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "audio",
+      "seed": 42,
+      "fold": 0,
+      "cpu_gpu_prediction_max_absolute_difference": 1.1920928955078125e-07,
+      "inner_selection_MAE_difference": 5.960464477539063e-08
+    },
+    {
+      "view": "audio",
+      "seed": 42,
+      "fold": 1,
+      "cpu_gpu_prediction_max_absolute_difference": 1.1920928955078125e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "audio",
+      "seed": 42,
+      "fold": 2,
+      "cpu_gpu_prediction_max_absolute_difference": 2.384185791015625e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "audio",
+      "seed": 42,
+      "fold": "full",
+      "cpu_gpu_prediction_max_absolute_difference": 2.384185791015625e-07,
+      "inner_selection_MAE_difference": 5.960464477539063e-08
+    },
+    {
+      "view": "vision",
+      "seed": 42,
+      "fold": 0,
+      "cpu_gpu_prediction_max_absolute_difference": 4.917383193969727e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "vision",
+      "seed": 42,
+      "fold": 1,
+      "cpu_gpu_prediction_max_absolute_difference": 5.364418029785156e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "vision",
+      "seed": 42,
+      "fold": 2,
+      "cpu_gpu_prediction_max_absolute_difference": 5.662441253662109e-07,
+      "inner_selection_MAE_difference": 1.1920928955078125e-07
+    },
+    {
+      "view": "vision",
+      "seed": 42,
+      "fold": "full",
+      "cpu_gpu_prediction_max_absolute_difference": 5.066394805908203e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "fusion",
+      "seed": 2026,
+      "fold": 0,
+      "cpu_gpu_prediction_max_absolute_difference": 3.8743019104003906e-07,
+      "inner_selection_MAE_difference": 2.9802322387695312e-08
+    },
+    {
+      "view": "fusion",
+      "seed": 2026,
+      "fold": 1,
+      "cpu_gpu_prediction_max_absolute_difference": 4.172325134277344e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "fusion",
+      "seed": 2026,
+      "fold": 2,
+      "cpu_gpu_prediction_max_absolute_difference": 4.172325134277344e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "fusion",
+      "seed": 2026,
+      "fold": "full",
+      "cpu_gpu_prediction_max_absolute_difference": 4.76837158203125e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "text",
+      "seed": 2026,
+      "fold": 0,
+      "cpu_gpu_prediction_max_absolute_difference": 3.5762786865234375e-07,
+      "inner_selection_MAE_difference": 5.960464477539063e-08
+    },
+    {
+      "view": "text",
+      "seed": 2026,
+      "fold": 1,
+      "cpu_gpu_prediction_max_absolute_difference": 2.980232238769531e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "text",
+      "seed": 2026,
+      "fold": 2,
+      "cpu_gpu_prediction_max_absolute_difference": 2.384185791015625e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "text",
+      "seed": 2026,
+      "fold": "full",
+      "cpu_gpu_prediction_max_absolute_difference": 2.980232238769531e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "audio",
+      "seed": 2026,
+      "fold": 0,
+      "cpu_gpu_prediction_max_absolute_difference": 1.1920928955078125e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "audio",
+      "seed": 2026,
+      "fold": 1,
+      "cpu_gpu_prediction_max_absolute_difference": 1.1920928955078125e-07,
+      "inner_selection_MAE_difference": 5.960464477539063e-08
+    },
+    {
+      "view": "audio",
+      "seed": 2026,
+      "fold": 2,
+      "cpu_gpu_prediction_max_absolute_difference": 2.384185791015625e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "audio",
+      "seed": 2026,
+      "fold": "full",
+      "cpu_gpu_prediction_max_absolute_difference": 2.384185791015625e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "vision",
+      "seed": 2026,
+      "fold": 0,
+      "cpu_gpu_prediction_max_absolute_difference": 4.76837158203125e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "vision",
+      "seed": 2026,
+      "fold": 1,
+      "cpu_gpu_prediction_max_absolute_difference": 5.364418029785156e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "vision",
+      "seed": 2026,
+      "fold": 2,
+      "cpu_gpu_prediction_max_absolute_difference": 4.76837158203125e-07,
+      "inner_selection_MAE_difference": 0.0
+    },
+    {
+      "view": "vision",
+      "seed": 2026,
+      "fold": "full",
+      "cpu_gpu_prediction_max_absolute_difference": 5.066394805908203e-07,
+      "inner_selection_MAE_difference": 0.0
+    }
+  ],
+  "passed": true,
+  "cpu_gpu_tolerance": 1e-06,
+  "official_VALID_labels_parsed": false,
+  "test_evaluated": false,
+  "scope": "CPU checkpoint reload and point predictions; source/config/history/hash audit is separately bound in calibration table metadata"
+}

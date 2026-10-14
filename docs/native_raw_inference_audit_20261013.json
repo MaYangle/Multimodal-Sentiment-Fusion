@@ -1,0 +1,24 @@
+{
+  "time_utc": "2026-10-12T17:46:00.616152+00:00",
+  "scope": "two genuine competition-acquired TRAIN MP4s plus author transcripts, CPU raw native scalar inference; software/data-flow demonstration, not held-out accuracy",
+  "media_audit_sha256": "424c37ee8074eb53cf4527e817724259f501c351035e41e390b0f6a76cacb4c6",
+  "predictions_sha256": "04bfde1835494e0f5a7b5d4bf62dba23e27c583dc87cba78607844b0e07968f4",
+  "labels_supplied_to_inference": false,
+  "test_evaluated": false,
+  "records": {
+    "publication_omitted": true,
+    "original_count": 2
+  },
+  "maximum_prediction_difference_vs_cached_inputs": 1.6689300537109375e-06,
+  "author_original_media_equivalence_claimed": false,
+  "exact_feature_reproduction_claimed": false,
+  "publication_redaction": {
+    "full_local_report_sha256": "f43a52f4c208418e20267ad4ba6c326ec15a25b271757148539561a4393b00e5",
+    "removed_path_count": 1,
+    "removed_paths": [
+      "/records"
+    ],
+    "remaining_removed_paths_list_truncated": false,
+    "reason": "Exclude per-sample dataset records, long raw arrays and response/download capabilities; retain aggregate research evidence."
+  }
+}

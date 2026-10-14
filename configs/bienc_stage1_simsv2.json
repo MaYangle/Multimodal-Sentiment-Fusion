@@ -1,0 +1,22 @@
+{
+  "repo_root": ".",
+  "cache_dir": "data/feature_cache/simsv2",
+  "run_root": "runs/bcmlf/simsv2",
+  "bienc_config": "vendor/bcmlf/config/bienc_simsv2_pretrain_v1.json",
+  "seeds": [
+    13,
+    42,
+    2026
+  ],
+  "training": {
+    "max_epochs": 100,
+    "batch_size": 32,
+    "accumulation_steps": 4,
+    "early_stop": 8,
+    "scheduler_patience": 10,
+    "learning_rate": 0.0005,
+    "grad_clip_value": 1.0,
+    "weight_decay": 0.01,
+    "device": "auto"
+  }
+}

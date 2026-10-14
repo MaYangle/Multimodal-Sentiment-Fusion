@@ -1,0 +1,395 @@
+{
+  "suite_sha256": "657cca69c1422470afd5d01caffab05da4bc8dde4d83b746f9f84c79d11fc750",
+  "config_sha256": "51ce7c19f29d18063659f7129ca5e77d2995ea077b2ad91a3e96412cd213a079",
+  "complete": true,
+  "evidence": [
+    {
+      "seed": 13,
+      "fold": 0,
+      "fit_only_scaler_and_checkpoint_audit_passed": true,
+      "cpu_gpu_prediction_max_delta": 3.5762786865234375e-07
+    },
+    {
+      "seed": 13,
+      "fold": 1,
+      "fit_only_scaler_and_checkpoint_audit_passed": true,
+      "cpu_gpu_prediction_max_delta": 3.8743019104003906e-07
+    },
+    {
+      "seed": 13,
+      "fold": 2,
+      "fit_only_scaler_and_checkpoint_audit_passed": true,
+      "cpu_gpu_prediction_max_delta": 3.5762786865234375e-07
+    },
+    {
+      "seed": 42,
+      "fold": 0,
+      "fit_only_scaler_and_checkpoint_audit_passed": true,
+      "cpu_gpu_prediction_max_delta": 3.8743019104003906e-07
+    },
+    {
+      "seed": 42,
+      "fold": 1,
+      "fit_only_scaler_and_checkpoint_audit_passed": true,
+      "cpu_gpu_prediction_max_delta": 3.5762786865234375e-07
+    },
+    {
+      "seed": 42,
+      "fold": 2,
+      "fit_only_scaler_and_checkpoint_audit_passed": true,
+      "cpu_gpu_prediction_max_delta": 3.5762786865234375e-07
+    },
+    {
+      "seed": 2026,
+      "fold": 0,
+      "fit_only_scaler_and_checkpoint_audit_passed": true,
+      "cpu_gpu_prediction_max_delta": 4.76837158203125e-07
+    },
+    {
+      "seed": 2026,
+      "fold": 1,
+      "fit_only_scaler_and_checkpoint_audit_passed": true,
+      "cpu_gpu_prediction_max_delta": 3.8743019104003906e-07
+    },
+    {
+      "seed": 2026,
+      "fold": 2,
+      "fit_only_scaler_and_checkpoint_audit_passed": true,
+      "cpu_gpu_prediction_max_delta": 2.980232238769531e-07
+    }
+  ],
+  "native_OOF": {
+    "13": {
+      "count": 2722,
+      "MAE": 0.3926515281200409,
+      "Corr": 0.6724364120633249,
+      "Mult_acc_2": 0.7858192505510654,
+      "F1_score": 0.7867978255275085,
+      "weak_count": 883,
+      "Mult_acc_2_weak": 0.6443941109852774,
+      "Mult_acc_3": 0.692138133725202,
+      "Mult_acc_5": 0.4033798677443057,
+      "R_squre": 0.4414853707539884
+    },
+    "42": {
+      "count": 2722,
+      "MAE": 0.398457407951355,
+      "Corr": 0.6644055138030589,
+      "Mult_acc_2": 0.7832476120499633,
+      "F1_score": 0.784490027705307,
+      "weak_count": 883,
+      "Mult_acc_2_weak": 0.636466591166478,
+      "Mult_acc_3": 0.6888317413666422,
+      "Mult_acc_5": 0.3956649522409993,
+      "R_squre": 0.4335046581384303
+    },
+    "2026": {
+      "count": 2722,
+      "MAE": 0.38961488008499146,
+      "Corr": 0.67821255870765,
+      "Mult_acc_2": 0.7931667891256429,
+      "F1_score": 0.7939257222862267,
+      "weak_count": 883,
+      "Mult_acc_2_weak": 0.6602491506228766,
+      "Mult_acc_3": 0.7013225569434239,
+      "Mult_acc_5": 0.41219691403379866,
+      "R_squre": 0.45275647528386875
+    }
+  },
+  "paired_contrasts": {
+    "fusion": {
+      "delta_by_seed": [
+        -0.02675965370871756,
+        -0.016432062631047316,
+        -0.015789919608791992
+      ],
+      "seed_percentile95": [
+        [
+          -0.036796754567911545,
+          -0.016179520586624665
+        ],
+        [
+          -0.026035000888884986,
+          -0.006884296775383751
+        ],
+        [
+          -0.02425716515007807,
+          -0.007188703375093585
+        ]
+      ],
+      "three_seed_delta": -0.01966054531618562,
+      "three_seed_percentile95": [
+        -0.027669155292195928,
+        -0.011350741978866263
+      ],
+      "replicates": 5000,
+      "seed": 20261013,
+      "source_count": 129,
+      "scope": "Conditional paired clip-weighted bootstrap; source folds were used for this development question, no final-test claim"
+    },
+    "text": {
+      "delta_by_seed": [
+        -0.002117704097824794,
+        0.004148334908674825,
+        -0.002094658116298857
+      ],
+      "seed_percentile95": [
+        [
+          -0.011050921740779993,
+          0.0071031733720816675
+        ],
+        [
+          -0.006137074708556233,
+          0.014284823662684932
+        ],
+        [
+          -0.011313064517979636,
+          0.006997050300517355
+        ]
+      ],
+      "three_seed_delta": -2.1342435149608685e-05,
+      "three_seed_percentile95": [
+        -0.008742131203713338,
+        0.008267929438474469
+      ],
+      "replicates": 5000,
+      "seed": 20261013,
+      "source_count": 129,
+      "scope": "Conditional paired clip-weighted bootstrap; source folds were used for this development question, no final-test claim"
+    },
+    "wide_text": {
+      "delta_by_seed": [
+        -0.0037340784847769205,
+        0.002383073102094337,
+        -0.00750139469799533
+      ],
+      "seed_percentile95": [
+        [
+          -0.012474647632879386,
+          0.004989864893576003
+        ],
+        [
+          -0.00814935323288287,
+          0.012583039595774571
+        ],
+        [
+          -0.0167509804414516,
+          0.001798718977230934
+        ]
+      ],
+      "three_seed_delta": -0.002950800026892638,
+      "three_seed_percentile95": [
+        -0.011416122114508606,
+        0.0052866258417955695
+      ],
+      "replicates": 5000,
+      "seed": 20261013,
+      "source_count": 129,
+      "scope": "Conditional paired clip-weighted bootstrap; source folds were used for this development question, no final-test claim"
+    }
+  },
+  "teacher_budgets": [
+    {
+      "root": "D:\\MYL\\JevAffect\\runs\\native_source_standardized_v1\\formal\\fusion\\seed_13\\fold_0",
+      "view": "fusion",
+      "seed": 13,
+      "fold": 0,
+      "best_epoch": 4,
+      "epochs_executed": 16,
+      "optimizer_updates": 832,
+      "loop_seconds": 1.6144506999989972,
+      "trainable_parameters": 492033,
+      "inner_select_best_mae": 0.3517230451107025,
+      "last_checkpoint_sha256": "a800b95bb4f4c0d74e719fbca21a5c72b53b643e565b740b11b33db4e44eac4b",
+      "runtime": {
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "platform": "Windows-11-10.0.28000-SP0",
+        "torch": "2.11.0+cu128",
+        "numpy": "2.3.5",
+        "device": "cuda",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti"
+      }
+    },
+    {
+      "root": "D:\\MYL\\JevAffect\\runs\\native_source_standardized_v1\\formal\\fusion\\seed_13\\fold_1",
+      "view": "fusion",
+      "seed": 13,
+      "fold": 1,
+      "best_epoch": 16,
+      "epochs_executed": 28,
+      "optimizer_updates": 1400,
+      "loop_seconds": 2.3507077999965986,
+      "trainable_parameters": 492033,
+      "inner_select_best_mae": 0.4005540907382965,
+      "last_checkpoint_sha256": "3b53fe8e126ebbcc149218592c49661f6bd453620c2d720642506f63ff36756d",
+      "runtime": {
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "platform": "Windows-11-10.0.28000-SP0",
+        "torch": "2.11.0+cu128",
+        "numpy": "2.3.5",
+        "device": "cuda",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti"
+      }
+    },
+    {
+      "root": "D:\\MYL\\JevAffect\\runs\\native_source_standardized_v1\\formal\\fusion\\seed_13\\fold_2",
+      "view": "fusion",
+      "seed": 13,
+      "fold": 2,
+      "best_epoch": 11,
+      "epochs_executed": 23,
+      "optimizer_updates": 1219,
+      "loop_seconds": 2.070120400021551,
+      "trainable_parameters": 492033,
+      "inner_select_best_mae": 0.41741254925727844,
+      "last_checkpoint_sha256": "6c86822a8ecd5bb248e09b27cf4a9b3e8220d9621303e2fc1b5e98a33bdb235f",
+      "runtime": {
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "platform": "Windows-11-10.0.28000-SP0",
+        "torch": "2.11.0+cu128",
+        "numpy": "2.3.5",
+        "device": "cuda",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti"
+      }
+    },
+    {
+      "root": "D:\\MYL\\JevAffect\\runs\\native_source_standardized_v1\\formal\\fusion\\seed_42\\fold_0",
+      "view": "fusion",
+      "seed": 42,
+      "fold": 0,
+      "best_epoch": 13,
+      "epochs_executed": 25,
+      "optimizer_updates": 1300,
+      "loop_seconds": 2.156569800004945,
+      "trainable_parameters": 492033,
+      "inner_select_best_mae": 0.3611477315425873,
+      "last_checkpoint_sha256": "85d00f7dbac9b460cfb83887fe171e1c0535a47f87ff58afb8fe87c04c0bda07",
+      "runtime": {
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "platform": "Windows-11-10.0.28000-SP0",
+        "torch": "2.11.0+cu128",
+        "numpy": "2.3.5",
+        "device": "cuda",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti"
+      }
+    },
+    {
+      "root": "D:\\MYL\\JevAffect\\runs\\native_source_standardized_v1\\formal\\fusion\\seed_42\\fold_1",
+      "view": "fusion",
+      "seed": 42,
+      "fold": 1,
+      "best_epoch": 21,
+      "epochs_executed": 33,
+      "optimizer_updates": 1650,
+      "loop_seconds": 2.7263559000130044,
+      "trainable_parameters": 492033,
+      "inner_select_best_mae": 0.3794330358505249,
+      "last_checkpoint_sha256": "be5af67c28873636a70e5966e9bf0bdffaf6a882785709c2ebdd6f6feca4bac4",
+      "runtime": {
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "platform": "Windows-11-10.0.28000-SP0",
+        "torch": "2.11.0+cu128",
+        "numpy": "2.3.5",
+        "device": "cuda",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti"
+      }
+    },
+    {
+      "root": "D:\\MYL\\JevAffect\\runs\\native_source_standardized_v1\\formal\\fusion\\seed_42\\fold_2",
+      "view": "fusion",
+      "seed": 42,
+      "fold": 2,
+      "best_epoch": 10,
+      "epochs_executed": 22,
+      "optimizer_updates": 1166,
+      "loop_seconds": 1.9090196000324795,
+      "trainable_parameters": 492033,
+      "inner_select_best_mae": 0.41092202067375183,
+      "last_checkpoint_sha256": "07a3e6b0c6e3862f1243273cea50a24c36c2cf499917e53b431916356b228f6a",
+      "runtime": {
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "platform": "Windows-11-10.0.28000-SP0",
+        "torch": "2.11.0+cu128",
+        "numpy": "2.3.5",
+        "device": "cuda",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti"
+      }
+    },
+    {
+      "root": "D:\\MYL\\JevAffect\\runs\\native_source_standardized_v1\\formal\\fusion\\seed_2026\\fold_0",
+      "view": "fusion",
+      "seed": 2026,
+      "fold": 0,
+      "best_epoch": 7,
+      "epochs_executed": 19,
+      "optimizer_updates": 988,
+      "loop_seconds": 1.6243491000059294,
+      "trainable_parameters": 492033,
+      "inner_select_best_mae": 0.3515017032623291,
+      "last_checkpoint_sha256": "41d12f670764206a89325b21e529d6beb4631e8e5285d7e3d71b46ed78ffe322",
+      "runtime": {
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "platform": "Windows-11-10.0.28000-SP0",
+        "torch": "2.11.0+cu128",
+        "numpy": "2.3.5",
+        "device": "cuda",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti"
+      }
+    },
+    {
+      "root": "D:\\MYL\\JevAffect\\runs\\native_source_standardized_v1\\formal\\fusion\\seed_2026\\fold_1",
+      "view": "fusion",
+      "seed": 2026,
+      "fold": 1,
+      "best_epoch": 9,
+      "epochs_executed": 21,
+      "optimizer_updates": 1050,
+      "loop_seconds": 1.7538569000025745,
+      "trainable_parameters": 492033,
+      "inner_select_best_mae": 0.37985455989837646,
+      "last_checkpoint_sha256": "cc467ec1df6436f9f6afff095f65141c853120a44810faef55e3513c80829c33",
+      "runtime": {
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "platform": "Windows-11-10.0.28000-SP0",
+        "torch": "2.11.0+cu128",
+        "numpy": "2.3.5",
+        "device": "cuda",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti"
+      }
+    },
+    {
+      "root": "D:\\MYL\\JevAffect\\runs\\native_source_standardized_v1\\formal\\fusion\\seed_2026\\fold_2",
+      "view": "fusion",
+      "seed": 2026,
+      "fold": 2,
+      "best_epoch": 3,
+      "epochs_executed": 15,
+      "optimizer_updates": 795,
+      "loop_seconds": 1.3037901000061538,
+      "trainable_parameters": 492033,
+      "inner_select_best_mae": 0.42476052045822144,
+      "last_checkpoint_sha256": "ff52de6cfa834b91bd2a7410b339c55032d1af119485fdc4a0306e94634592cb",
+      "runtime": {
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "platform": "Windows-11-10.0.28000-SP0",
+        "torch": "2.11.0+cu128",
+        "numpy": "2.3.5",
+        "device": "cuda",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti"
+      }
+    }
+  ],
+  "raw_feature_sha256": {
+    "data\\feature_cache\\simsv2_full_macbert_raw_av\\metadata.json": "c80806f155b246139b6cffba023d9c9b2359f42d38c1c7141db0af9cef8749c6",
+    "D:\\MYL\\JevAffect\\data\\feature_cache\\simsv2_full_macbert_raw_av\\splits\\train\\ids.json": "f971fce772d47758814fdba1f3eb08598d29e50fdca6ecea8dbfa0ef28ba4e83",
+    "splits/train/text.npy": "f219d9ae36c10dbf585696b21516ed82d1b18e5318232692658553e760ce8792",
+    "splits/train/text_lengths.npy": "db7f12ef707e7bbebd1daca39091af2f297edeab16134176ecccc74970bd2c92",
+    "splits/train/audio.npy": "0b5fea655d84264cba5f906908ccb823cc9f34e019053ca8c1c25eedf5dd3205",
+    "splits/train/audio_lengths.npy": "d0375c0044f4010a9f6137a0eeb47df93ec82a0a2ae0c02b2c6e76043743ccf7",
+    "splits/train/vision.npy": "1beb4c21693778cbbfa12e55ef4e36963a246e1f5560ab73cdea5116f3e90a4c",
+    "splits/train/vision_lengths.npy": "b29b4109712a7154dcc351b3fddc7c32eab12b2ad5e75c5e8da5f26fa434212a"
+  },
+  "scope": "Known fit-source normalization control; TRAIN OOF development results, no original-method or final-test claim",
+  "official_VALID_used": false,
+  "test_evaluated": false
+}

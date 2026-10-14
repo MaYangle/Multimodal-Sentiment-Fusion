@@ -1,0 +1,347 @@
+{
+  "table_metadata_sha256": "fa0187924653cbb209534b4043000240288ad329d8e801509a1c126131575e6b",
+  "capacity_audit_sha256": "9d7a55a0adb0f450366733d2c555800699cdc8a0d7969e535b9a448c4a687d88",
+  "models": {
+    "13": {
+      "text256": {
+        "native_MAE": 0.3947692295703366,
+        "MSE": 0.25456410081700137,
+        "source_bias_MSE": 0.016786878152616924,
+        "within_source_MSE": 0.2377772226643844,
+        "source_mean_absolute_error": 0.39091131613735386,
+        "within_source_pair_MAE_equal_source": 0.5493422687319183,
+        "within_source_pair_MAE_pair_weighted": 0.5647787072822532,
+        "source_rows": {
+          "publication_omitted": true,
+          "original_count": 129
+        }
+      },
+      "fusion256": {
+        "native_MAE": 0.4194111789875745,
+        "MSE": 0.2735923714559668,
+        "source_bias_MSE": 0.02395026554306956,
+        "within_source_MSE": 0.24964210591289732,
+        "source_mean_absolute_error": 0.41787377942588955,
+        "within_source_pair_MAE_equal_source": 0.5690520006210757,
+        "within_source_pair_MAE_pair_weighted": 0.5800983655777402,
+        "source_rows": {
+          "publication_omitted": true,
+          "original_count": 129
+        }
+      },
+      "text640": {
+        "native_MAE": 0.39638560407036816,
+        "MSE": 0.25602869107726883,
+        "source_bias_MSE": 0.019242256162001842,
+        "within_source_MSE": 0.236786434915267,
+        "source_mean_absolute_error": 0.393933109408345,
+        "within_source_pair_MAE_equal_source": 0.5503701624358172,
+        "within_source_pair_MAE_pair_weighted": 0.5625325889478522,
+        "source_rows": {
+          "publication_omitted": true,
+          "original_count": 129
+        }
+      }
+    },
+    "42": {
+      "text256": {
+        "native_MAE": 0.3943090948353547,
+        "MSE": 0.2536003768847953,
+        "source_bias_MSE": 0.017427555696530764,
+        "within_source_MSE": 0.2361728211882646,
+        "source_mean_absolute_error": 0.39086676859562774,
+        "within_source_pair_MAE_equal_source": 0.5467060222591771,
+        "within_source_pair_MAE_pair_weighted": 0.5612882372290754,
+        "source_rows": {
+          "publication_omitted": true,
+          "original_count": 129
+        }
+      },
+      "fusion256": {
+        "native_MAE": 0.41488949275999154,
+        "MSE": 0.2731971855451342,
+        "source_bias_MSE": 0.021168613008610046,
+        "within_source_MSE": 0.2520285725365242,
+        "source_mean_absolute_error": 0.41208215448150637,
+        "within_source_pair_MAE_equal_source": 0.5702395870362612,
+        "within_source_pair_MAE_pair_weighted": 0.5819141521560857,
+        "source_rows": {
+          "publication_omitted": true,
+          "original_count": 129
+        }
+      },
+      "text640": {
+        "native_MAE": 0.39607435712367733,
+        "MSE": 0.2569742018385661,
+        "source_bias_MSE": 0.01888187130451808,
+        "within_source_MSE": 0.238092330534048,
+        "source_mean_absolute_error": 0.3940753064998238,
+        "within_source_pair_MAE_equal_source": 0.550518778501501,
+        "within_source_pair_MAE_pair_weighted": 0.5635101165349664,
+        "source_rows": {
+          "publication_omitted": true,
+          "original_count": 129
+        }
+      }
+    },
+    "2026": {
+      "text256": {
+        "native_MAE": 0.39170954239840056,
+        "MSE": 0.25217998079180887,
+        "source_bias_MSE": 0.015704626061913016,
+        "within_source_MSE": 0.23647535472989586,
+        "source_mean_absolute_error": 0.3892788316647602,
+        "within_source_pair_MAE_equal_source": 0.5485105972888283,
+        "within_source_pair_MAE_pair_weighted": 0.5606158897246305,
+        "source_rows": {
+          "publication_omitted": true,
+          "original_count": 129
+        }
+      },
+      "fusion256": {
+        "native_MAE": 0.4054048036900537,
+        "MSE": 0.25949721312070234,
+        "source_bias_MSE": 0.020436690359029102,
+        "within_source_MSE": 0.23906052276167325,
+        "source_mean_absolute_error": 0.40309245087887324,
+        "within_source_pair_MAE_equal_source": 0.5575721370879271,
+        "within_source_pair_MAE_pair_weighted": 0.5677793735811009,
+        "source_rows": {
+          "publication_omitted": true,
+          "original_count": 129
+        }
+      },
+      "text640": {
+        "native_MAE": 0.39711627867319166,
+        "MSE": 0.25816219224128284,
+        "source_bias_MSE": 0.018095816261580015,
+        "within_source_MSE": 0.2400663759797028,
+        "source_mean_absolute_error": 0.3935941154434867,
+        "within_source_pair_MAE_equal_source": 0.5558464530168237,
+        "within_source_pair_MAE_pair_weighted": 0.5654054442232032,
+        "source_rows": {
+          "publication_omitted": true,
+          "original_count": 129
+        }
+      }
+    }
+  },
+  "contrasts": {
+    "text256": {
+      "fusion_minus_control_source_bias_MSE": {
+        "delta_by_seed": [
+          0.007163387390452634,
+          0.003741057312079282,
+          0.004732064297116084
+        ],
+        "seed_percentile95": [
+          [
+            0.0012975034070551756,
+            0.013395858873531782
+          ],
+          [
+            -0.0004699871200202498,
+            0.007933340498074907
+          ],
+          [
+            0.0010226348967934437,
+            0.008564807474936768
+          ]
+        ],
+        "three_seed_delta": 0.005212169666549333,
+        "three_seed_percentile95": [
+          0.0012022115039780632,
+          0.009342148599656508
+        ],
+        "replicates": 5000,
+        "seed": 20261013,
+        "source_count": 129,
+        "scope": "Conditional paired clip-weighted bootstrap; source folds were used for this development question, no final-test claim"
+      },
+      "fusion_minus_control_within_source_MSE": {
+        "delta_by_seed": [
+          0.011864883248512878,
+          0.015855751348259624,
+          0.0025851680317773864
+        ],
+        "seed_percentile95": [
+          [
+            0.0019188914593992416,
+            0.021846175139018386
+          ],
+          [
+            0.005769450514123086,
+            0.025718355018115594
+          ],
+          [
+            -0.005482278179785401,
+            0.01086673143978017
+          ]
+        ],
+        "three_seed_delta": 0.01010193420951663,
+        "three_seed_percentile95": [
+          0.0014505456219635995,
+          0.018571700778469293
+        ],
+        "replicates": 5000,
+        "seed": 20261013,
+        "source_count": 129,
+        "scope": "Conditional paired clip-weighted bootstrap; source folds were used for this development question, no final-test claim"
+      },
+      "fusion_minus_control_total_MSE": {
+        "delta_by_seed": [
+          0.019028270638965512,
+          0.01959680866033891,
+          0.0073172323288934705
+        ],
+        "seed_percentile95": [
+          [
+            0.006414792091505822,
+            0.031092607413239153
+          ],
+          [
+            0.008529735620891477,
+            0.030571556938867532
+          ],
+          [
+            -0.001645576401136139,
+            0.016702640914228156
+          ]
+        ],
+        "three_seed_delta": 0.015314103876065965,
+        "three_seed_percentile95": [
+          0.005366001741896557,
+          0.025077779390555187
+        ],
+        "replicates": 5000,
+        "seed": 20261013,
+        "source_count": 129,
+        "scope": "Conditional paired clip-weighted bootstrap; source folds were used for this development question, no final-test claim"
+      },
+      "fraction_of_extra_MSE_from_source_mean_by_seed": [
+        0.3764602430965885,
+        0.19090135424196072,
+        0.6467013871393199
+      ]
+    },
+    "text640": {
+      "fusion_minus_control_source_bias_MSE": {
+        "delta_by_seed": [
+          0.004708009381067711,
+          0.0022867417040919645,
+          0.0023408740974490898
+        ],
+        "seed_percentile95": [
+          [
+            -0.002075925487344538,
+            0.011844997680887176
+          ],
+          [
+            -0.0022644663966770147,
+            0.006742093498162834
+          ],
+          [
+            -0.002664365285439856,
+            0.007500433756148517
+          ]
+        ],
+        "three_seed_delta": 0.0031118750608695885,
+        "three_seed_percentile95": [
+          -0.0016851696828554454,
+          0.007902559260684104
+        ],
+        "replicates": 5000,
+        "seed": 20261013,
+        "source_count": 129,
+        "scope": "Conditional paired clip-weighted bootstrap; source folds were used for this development question, no final-test claim"
+      },
+      "fusion_minus_control_within_source_MSE": {
+        "delta_by_seed": [
+          0.012855670997630268,
+          0.013936242002476193,
+          -0.00100585321802954
+        ],
+        "seed_percentile95": [
+          [
+            0.0029046021172983785,
+            0.022695107943042667
+          ],
+          [
+            0.003733251024401731,
+            0.02403451729519777
+          ],
+          [
+            -0.00955037493124622,
+            0.007627611606217
+          ]
+        ],
+        "three_seed_delta": 0.008595353260692308,
+        "three_seed_percentile95": [
+          -0.00045829304126257585,
+          0.017272906702470593
+        ],
+        "replicates": 5000,
+        "seed": 20261013,
+        "source_count": 129,
+        "scope": "Conditional paired clip-weighted bootstrap; source folds were used for this development question, no final-test claim"
+      },
+      "fusion_minus_control_total_MSE": {
+        "delta_by_seed": [
+          0.01756368037869798,
+          0.016222983706568158,
+          0.0013350208794195508
+        ],
+        "seed_percentile95": [
+          [
+            0.00473781484663559,
+            0.03039234683973896
+          ],
+          [
+            0.005098365347170162,
+            0.027342115944609665
+          ],
+          [
+            -0.00862751340337327,
+            0.011802452080816636
+          ]
+        ],
+        "three_seed_delta": 0.011707228321561897,
+        "three_seed_percentile95": [
+          0.001081444423259545,
+          0.022227017458642633
+        ],
+        "replicates": 5000,
+        "seed": 20261013,
+        "source_count": 129,
+        "scope": "Conditional paired clip-weighted bootstrap; source folds were used for this development question, no final-test claim"
+      },
+      "fraction_of_extra_MSE_from_source_mean_by_seed": [
+        0.2680536925949641,
+        0.14095691307180055,
+        1.75343631963784
+      ]
+    }
+  },
+  "train_count": 2722,
+  "source_count": 129,
+  "scope": "TRAIN OOF development diagnostic; source-video IDs are not verified speaker IDs. MSE decomposes exactly, MAE does not; no causal-nuisance inference.",
+  "test_evaluated": false,
+  "official_VALID_used": false,
+  "publication_redaction": {
+    "full_local_report_sha256": "e24a94cd7a054e09970ba9c274e03f5d20be7ee935d30b69b6453dae843e9be5",
+    "removed_path_count": 9,
+    "removed_paths": [
+      "/models/13/text256/source_rows",
+      "/models/13/fusion256/source_rows",
+      "/models/13/text640/source_rows",
+      "/models/42/text256/source_rows",
+      "/models/42/fusion256/source_rows",
+      "/models/42/text640/source_rows",
+      "/models/2026/text256/source_rows",
+      "/models/2026/fusion256/source_rows",
+      "/models/2026/text640/source_rows"
+    ],
+    "remaining_removed_paths_list_truncated": false,
+    "reason": "Exclude per-sample dataset records, long raw arrays and response/download capabilities; retain aggregate research evidence."
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "repository": "https://github.com/sunyulin0421/BC-MLF",
+  "commit": "428b973be580fd3cf09dd51bb61c448f2a26b2c9",
+  "source_tree_was_clean_at_copy": true,
+  "files": [
+    {
+      "upstream": "MMSA/models/singleTask/MSALM.py",
+      "upstream_sha256": "3b28ef9c82e8f7b3f7f3e3667cf88de1906379d6daaa377f3bf4a4a7124623fa"
+    },
+    {
+      "upstream": "MMSA/models/singleTask/MMGPT.py",
+      "upstream_sha256": "a8e7e45007843e8f5ee4a904eb3313dbdc08565f7bcb93fd613b4efcbba1de9d"
+    },
+    {
+      "upstream": "MMSA/models/singleTask/BI_ENC.py",
+      "upstream_sha256": "a227f98b1a78b5a4a404620fbd9565599b94f77f8abdf841ae78b4b1a7ed55fb"
+    },
+    {
+      "upstream": "MMSA/models/subNets/transformers_encoder/transformer.py",
+      "upstream_sha256": "74f95b6603188a45f7cc5fd7b8582729e39266a03f3566d2dd1cf4ce0d6d1e62"
+    },
+    {
+      "upstream": "MMSA/models/subNets/transformers_encoder/multihead_attention.py",
+      "upstream_sha256": "091de2d07af7fc4e780f380483741c5c2f21032c2585ad2ec1534059341f54b8"
+    },
+    {
+      "upstream": "MMSA/models/subNets/transformers_encoder/position_embedding.py",
+      "upstream_sha256": "eab898c565eb9164241a303b78e30f2fd46a5a6e4bba418c7901cde10bae16c4"
+    },
+    {
+      "upstream": "MMSA/transformations/pool/mmaug.py",
+      "upstream_sha256": "77ca310049b906508fb2ff5118c9320bf60b2d667f36abe1a28c4192b2b86c3c"
+    },
+    {
+      "upstream": "LICENSE",
+      "upstream_sha256": "24b2a04d9fd74554ee2488241fb32bcad9bf13dd4965af1e99aa8e508c5c1858"
+    }
+  ],
+  "adaptations": [
+    "Rewrote MMSA absolute imports in MSALM, MMGPT, and BI_ENC to vendor.bcmlf package-relative imports.",
+    "Replaced the upstream singleTask package initializer, which eagerly imported models and trainers outside the copied closure, with an inert initializer.",
+    "Made MSALM task and branch output dimensions configurable via task_out while preserving default task_out=1.",
+    "Added identical [B,C] branch-shape validation for scalar or five-class output.",
+    "Required local-only GPT model/tokenizer loading; removed automatic online fallback.",
+    "Added the upstream BI_ENC model class and rewrote its MMSA imports to the vendored package.",
+    "Made AV_Enc checkpoint loading strict, CPU-mapped, and weights_only; missing keys and shape mismatches fail.",
+    "Added a five-class CE adapter that preserves BC soft-contrastive loss and restores the configured shifted/masked CLM auxiliary loss with gamma.",
+    "Added a recursive repository-relative root resolver for data, local GPT, and BI_ENC checkpoint paths."
+  ]
+}

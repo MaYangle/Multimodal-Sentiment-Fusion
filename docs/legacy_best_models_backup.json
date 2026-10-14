@@ -1,0 +1,22 @@
+{
+  "time_utc": "2026-10-12T14:39:11.791420+00:00",
+  "bytes": 126090787,
+  "sha256": "4faf129c1cc15f80c2faa0a32647d2f8bea4f97242e038143ce86fa5f551a5c2",
+  "CRC_all_passed": true,
+  "files": [
+    {
+      "path": "en.pt",
+      "uncompressed_bytes": 72998565,
+      "compressed_bytes": 64355219,
+      "crc32": "df3ae080"
+    },
+    {
+      "path": "zh.pt",
+      "uncompressed_bytes": 72998565,
+      "compressed_bytes": 61735302,
+      "crc32": "f73dacce"
+    }
+  ],
+  "weights_loaded": false,
+  "redistribution_authorized": false
+}

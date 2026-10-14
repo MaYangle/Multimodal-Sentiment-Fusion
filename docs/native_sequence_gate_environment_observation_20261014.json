@@ -1,0 +1,22 @@
+{
+  "observed_utc": "2026-10-14T03:38:41.853773+00:00",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "executable": "D:\\MYL\\JevAffect\\work\\fresh-env-20261013\\Scripts\\python.exe",
+  "prefix": "D:\\MYL\\JevAffect\\work\\fresh-env-20261013",
+  "base_prefix": "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Python312",
+  "torch": "2.11.0+cu128",
+  "numpy": "2.3.5",
+  "torch_path": "D:\\MYL\\JevAffect\\work\\fresh-env-20261013\\Lib\\site-packages\\torch\\__init__.py",
+  "numpy_path": "D:\\MYL\\JevAffect\\work\\fresh-env-20261013\\Lib\\site-packages\\numpy\\__init__.py",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "numpy": "2.3.5",
+    "scipy": "1.18.0",
+    "transformers": "4.51.3",
+    "einops": "0.8.1",
+    "pillow": "11.3.0",
+    "requests": "2.34.2"
+  },
+  "scope": "Observed from a newly started process in the same configured isolated environment while formal session8199 is live; training CP identities omit Python/Torch versions. This is supplemental observation, not launch-time import-path binding or fresh reproduction. Runtime flags are bound separately by each training identity.",
+  "training_runtime_version_identity_missing": true
+}

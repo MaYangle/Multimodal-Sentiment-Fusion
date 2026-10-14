@@ -1,0 +1,115 @@
+{
+  "complete": true,
+  "evidence": [
+    {
+      "seed": 13,
+      "rows": 647,
+      "epochs": 23,
+      "best_epoch": 11,
+      "cpu_gpu_max_prediction_delta": 7.152557373046875e-07,
+      "CPU_metrics": {
+        "count": 647,
+        "MAE": 0.41619014739990234,
+        "Corr": 0.6058424266987952,
+        "Mult_acc_2": 0.749613601236476,
+        "F1_score": 0.7517539845592396,
+        "weak_count": 236,
+        "Mult_acc_2_weak": 0.6228813559322034,
+        "Mult_acc_3": 0.6646058732612056,
+        "Mult_acc_5": 0.40649149922720246,
+        "R_squre": 0.31277597830333537
+      },
+      "cache_artifacts": 21,
+      "sequence_shapes": {
+        "text": [
+          64,
+          768
+        ],
+        "audio": [
+          400,
+          768
+        ],
+        "vision": [
+          55,
+          384
+        ]
+      },
+      "checkpoint_sha256": "894e41996f360ede2fcfd5b630cbc4b021c3ef4673aaff6bf292aae17651863f"
+    },
+    {
+      "seed": 42,
+      "rows": 647,
+      "epochs": 33,
+      "best_epoch": 21,
+      "cpu_gpu_max_prediction_delta": 6.854534149169922e-07,
+      "CPU_metrics": {
+        "count": 647,
+        "MAE": 0.40335655212402344,
+        "Corr": 0.6288626877333686,
+        "Mult_acc_2": 0.732612055641422,
+        "F1_score": 0.7370215117536386,
+        "weak_count": 236,
+        "Mult_acc_2_weak": 0.559322033898305,
+        "Mult_acc_3": 0.6707882534775889,
+        "Mult_acc_5": 0.4188562596599691,
+        "R_squre": 0.3563339343665157
+      },
+      "cache_artifacts": 21,
+      "sequence_shapes": {
+        "text": [
+          64,
+          768
+        ],
+        "audio": [
+          400,
+          768
+        ],
+        "vision": [
+          55,
+          384
+        ]
+      },
+      "checkpoint_sha256": "a550b308ceaae32792ff5e517f112b8b1034f29d28142e7a78d8a9dd75a5649a"
+    },
+    {
+      "seed": 2026,
+      "rows": 647,
+      "epochs": 33,
+      "best_epoch": 21,
+      "cpu_gpu_max_prediction_delta": 9.238719940185547e-07,
+      "CPU_metrics": {
+        "count": 647,
+        "MAE": 0.4064946174621582,
+        "Corr": 0.6124860807783103,
+        "Mult_acc_2": 0.7264296754250387,
+        "F1_score": 0.7310594166055121,
+        "weak_count": 236,
+        "Mult_acc_2_weak": 0.5550847457627118,
+        "Mult_acc_3": 0.6707882534775889,
+        "Mult_acc_5": 0.4327666151468315,
+        "R_squre": 0.29269605300435375
+      },
+      "cache_artifacts": 21,
+      "sequence_shapes": {
+        "text": [
+          64,
+          768
+        ],
+        "audio": [
+          400,
+          768
+        ],
+        "vision": [
+          55,
+          384
+        ]
+      },
+      "checkpoint_sha256": "d0eb2210e04dd84f8d479b74667abe37ca659f93ea2ecba3822247a85fc99e16"
+    }
+  ],
+  "suite_sha256": "0061d677dcf00d2d1478b73fbe4dd16747ab69c941039778deba5e2c0a5a1830",
+  "code_sha256": "2de935e808cfeac19761dd7f058749563e3b2562a1a0570472a5c8f498dac4b1",
+  "inference_code_sha256": "6f69a0e195a43fd6ff3d86e81fdf97faee8e169e8cd04a7dd2293239e60f180a",
+  "official_TEST_used": false,
+  "scope": "selected native ALMT CPU model replay and input/budget checks; official VALID is selection set"
+}

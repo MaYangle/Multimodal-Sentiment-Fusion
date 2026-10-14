@@ -1,0 +1,2 @@
+# Preserve exact source/config bytes used by checkpoint SHA-256 identities.
+* -text

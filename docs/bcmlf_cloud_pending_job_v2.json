@@ -1,0 +1,13 @@
+{
+  "requested_ref": "yanglema/jevaffect-bcmlf-native-pilot",
+  "state": "response_received",
+  "at": "2026-10-11T18:13:25.511496+00:00",
+  "max_seconds": 5400,
+  "private": true,
+  "response": {
+    "ref": "/code/yanglema/jevaffect-bcmlf-native-pilot",
+    "url": "https://www.kaggle.com/code/yanglema/jevaffect-bcmlf-native-pilot",
+    "versionNumber": 2,
+    "kernelId": 138207807
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "scope": "official TRAIN only; inner selection is not official validation",
+  "seed": 20261012,
+  "inner_fraction": 0.1,
+  "source_count": 129,
+  "folds": [
+    {
+      "fold": 0,
+      "fit_ids": {
+        "publication_omitted": true,
+        "original_count": 1641
+      },
+      "select_ids": {
+        "publication_omitted": true,
+        "original_count": 192
+      },
+      "oof_ids": {
+        "publication_omitted": true,
+        "original_count": 889
+      }
+    },
+    {
+      "fold": 1,
+      "fit_ids": {
+        "publication_omitted": true,
+        "original_count": 1589
+      },
+      "select_ids": {
+        "publication_omitted": true,
+        "original_count": 195
+      },
+      "oof_ids": {
+        "publication_omitted": true,
+        "original_count": 938
+      }
+    },
+    {
+      "fold": 2,
+      "fit_ids": {
+        "publication_omitted": true,
+        "original_count": 1676
+      },
+      "select_ids": {
+        "publication_omitted": true,
+        "original_count": 151
+      },
+      "oof_ids": {
+        "publication_omitted": true,
+        "original_count": 895
+      }
+    }
+  ],
+  "publication_redaction": {
+    "full_local_report_sha256": "88b8d4cfd30ccbc8c6801f4a277ce07df24f299cac6ba8c2461e625b534bf5f7",
+    "removed_path_count": 9,
+    "removed_paths": [
+      "/folds/0/fit_ids",
+      "/folds/0/select_ids",
+      "/folds/0/oof_ids",
+      "/folds/1/fit_ids",
+      "/folds/1/select_ids",
+      "/folds/1/oof_ids",
+      "/folds/2/fit_ids",
+      "/folds/2/select_ids",
+      "/folds/2/oof_ids"
+    ],
+    "remaining_removed_paths_list_truncated": false,
+    "reason": "Exclude per-sample dataset records, long raw arrays and response/download capabilities; retain aggregate research evidence."
+  }
+}

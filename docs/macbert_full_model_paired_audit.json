@@ -1,0 +1,721 @@
+{
+  "scope": "selection-set audit on frozen official author validation; no test scores",
+  "valid_count": 647,
+  "classes": [
+    "SNEG",
+    "WNEG",
+    "NEUT",
+    "WPOS",
+    "SPOS"
+  ],
+  "manifest_sha256": "0e89a0688cbd72f9f3735b64755aeb34da84608a6131cb6d7182101052c3f28d",
+  "train_source_groups_overlapping_valid": 119,
+  "valid_records_with_source_group_in_train": 646,
+  "runs": {
+    "almt_13": {
+      "accuracy": 0.4652241112828439,
+      "macro_f1": 0.433571186936058,
+      "confusion_matrix": [
+        [
+          121,
+          36,
+          6,
+          5,
+          14
+        ],
+        [
+          48,
+          58,
+          10,
+          14,
+          13
+        ],
+        [
+          21,
+          25,
+          20,
+          21,
+          5
+        ],
+        [
+          17,
+          24,
+          10,
+          61,
+          19
+        ],
+        [
+          4,
+          14,
+          8,
+          32,
+          41
+        ]
+      ],
+      "per_class": [
+        {
+          "class": "SNEG",
+          "support": 182,
+          "precision": 0.5734597156398105,
+          "recall": 0.6648351648351648,
+          "f1": 0.6157760814249363
+        },
+        {
+          "class": "WNEG",
+          "support": 143,
+          "precision": 0.36942675159235666,
+          "recall": 0.40559440559440557,
+          "f1": 0.38666666666666666
+        },
+        {
+          "class": "NEUT",
+          "support": 92,
+          "precision": 0.37037037037037035,
+          "recall": 0.21739130434782608,
+          "f1": 0.27397260273972607
+        },
+        {
+          "class": "WPOS",
+          "support": 131,
+          "precision": 0.45864661654135336,
+          "recall": 0.46564885496183206,
+          "f1": 0.46212121212121204
+        },
+        {
+          "class": "SPOS",
+          "support": 99,
+          "precision": 0.44565217391304346,
+          "recall": 0.41414141414141414,
+          "f1": 0.4293193717277487
+        }
+      ],
+      "prediction_sha256": "741caaec1f0ed74dbd043ed7f30940afe08f16f6489ba69868ba6cb2001717ba",
+      "nll": 1.5568873912464836,
+      "accuracy_source_group_overlap": 0.46594427244582043,
+      "accuracy_source_group_disjoint": 0.0
+    },
+    "almt_42": {
+      "accuracy": 0.4775888717156105,
+      "macro_f1": 0.4566270672051087,
+      "confusion_matrix": [
+        [
+          106,
+          47,
+          9,
+          11,
+          9
+        ],
+        [
+          27,
+          74,
+          14,
+          20,
+          8
+        ],
+        [
+          9,
+          31,
+          25,
+          21,
+          6
+        ],
+        [
+          11,
+          32,
+          12,
+          66,
+          10
+        ],
+        [
+          2,
+          9,
+          7,
+          43,
+          38
+        ]
+      ],
+      "per_class": [
+        {
+          "class": "SNEG",
+          "support": 182,
+          "precision": 0.6838709677419355,
+          "recall": 0.5824175824175825,
+          "f1": 0.6290801186943621
+        },
+        {
+          "class": "WNEG",
+          "support": 143,
+          "precision": 0.38341968911917096,
+          "recall": 0.5174825174825175,
+          "f1": 0.4404761904761904
+        },
+        {
+          "class": "NEUT",
+          "support": 92,
+          "precision": 0.373134328358209,
+          "recall": 0.2717391304347826,
+          "f1": 0.3144654088050314
+        },
+        {
+          "class": "WPOS",
+          "support": 131,
+          "precision": 0.40993788819875776,
+          "recall": 0.5038167938931297,
+          "f1": 0.4520547945205479
+        },
+        {
+          "class": "SPOS",
+          "support": 99,
+          "precision": 0.5352112676056338,
+          "recall": 0.3838383838383838,
+          "f1": 0.44705882352941173
+        }
+      ],
+      "prediction_sha256": "e18f79dfa2185b4b994f99e8260c0cc7a658846d38feae311c1086bb32679b1c",
+      "nll": 1.9569427887036182,
+      "accuracy_source_group_overlap": 0.47832817337461303,
+      "accuracy_source_group_disjoint": 0.0
+    },
+    "almt_2026": {
+      "accuracy": 0.46831530139103555,
+      "macro_f1": 0.45042119943750364,
+      "confusion_matrix": [
+        [
+          93,
+          62,
+          6,
+          13,
+          8
+        ],
+        [
+          21,
+          77,
+          15,
+          21,
+          9
+        ],
+        [
+          6,
+          38,
+          21,
+          21,
+          6
+        ],
+        [
+          9,
+          26,
+          13,
+          69,
+          14
+        ],
+        [
+          3,
+          9,
+          6,
+          38,
+          43
+        ]
+      ],
+      "per_class": [
+        {
+          "class": "SNEG",
+          "support": 182,
+          "precision": 0.7045454545454546,
+          "recall": 0.510989010989011,
+          "f1": 0.5923566878980892
+        },
+        {
+          "class": "WNEG",
+          "support": 143,
+          "precision": 0.3632075471698113,
+          "recall": 0.5384615384615384,
+          "f1": 0.43380281690140843
+        },
+        {
+          "class": "NEUT",
+          "support": 92,
+          "precision": 0.3442622950819672,
+          "recall": 0.22826086956521738,
+          "f1": 0.27450980392156865
+        },
+        {
+          "class": "WPOS",
+          "support": 131,
+          "precision": 0.42592592592592593,
+          "recall": 0.5267175572519084,
+          "f1": 0.4709897610921502
+        },
+        {
+          "class": "SPOS",
+          "support": 99,
+          "precision": 0.5375,
+          "recall": 0.43434343434343436,
+          "f1": 0.48044692737430167
+        }
+      ],
+      "prediction_sha256": "2d8be617c7ba79584896eaaac08581983903b56ce38a75d7490c84c9d90702ca",
+      "nll": 1.438462407172707,
+      "accuracy_source_group_overlap": 0.46904024767801855,
+      "accuracy_source_group_disjoint": 0.0
+    },
+    "jev_time_13": {
+      "accuracy": 0.4992272024729521,
+      "macro_f1": 0.4751260684305126,
+      "confusion_matrix": [
+        [
+          119,
+          36,
+          3,
+          16,
+          8
+        ],
+        [
+          29,
+          64,
+          14,
+          27,
+          9
+        ],
+        [
+          14,
+          16,
+          26,
+          29,
+          7
+        ],
+        [
+          14,
+          16,
+          9,
+          71,
+          21
+        ],
+        [
+          7,
+          1,
+          2,
+          46,
+          43
+        ]
+      ],
+      "per_class": [
+        {
+          "class": "SNEG",
+          "support": 182,
+          "precision": 0.6502732240437158,
+          "recall": 0.6538461538461539,
+          "f1": 0.6520547945205479
+        },
+        {
+          "class": "WNEG",
+          "support": 143,
+          "precision": 0.48120300751879697,
+          "recall": 0.44755244755244755,
+          "f1": 0.463768115942029
+        },
+        {
+          "class": "NEUT",
+          "support": 92,
+          "precision": 0.48148148148148145,
+          "recall": 0.2826086956521739,
+          "f1": 0.3561643835616438
+        },
+        {
+          "class": "WPOS",
+          "support": 131,
+          "precision": 0.37566137566137564,
+          "recall": 0.5419847328244275,
+          "f1": 0.4437499999999999
+        },
+        {
+          "class": "SPOS",
+          "support": 99,
+          "precision": 0.48863636363636365,
+          "recall": 0.43434343434343436,
+          "f1": 0.45989304812834225
+        }
+      ],
+      "prediction_sha256": "7f2ccf3fea902af30101713aaed761ea877f1da0692ba2deaaf8f472290dd679",
+      "nll": 1.3807738952466013,
+      "accuracy_source_group_overlap": 0.5,
+      "accuracy_source_group_disjoint": 0.0
+    },
+    "jev_time_42": {
+      "accuracy": 0.49768160741885625,
+      "macro_f1": 0.45985446439427086,
+      "confusion_matrix": [
+        [
+          119,
+          48,
+          0,
+          10,
+          5
+        ],
+        [
+          28,
+          84,
+          7,
+          21,
+          3
+        ],
+        [
+          11,
+          33,
+          17,
+          28,
+          3
+        ],
+        [
+          13,
+          37,
+          5,
+          70,
+          6
+        ],
+        [
+          7,
+          9,
+          0,
+          51,
+          32
+        ]
+      ],
+      "per_class": [
+        {
+          "class": "SNEG",
+          "support": 182,
+          "precision": 0.6685393258426966,
+          "recall": 0.6538461538461539,
+          "f1": 0.661111111111111
+        },
+        {
+          "class": "WNEG",
+          "support": 143,
+          "precision": 0.3981042654028436,
+          "recall": 0.5874125874125874,
+          "f1": 0.4745762711864407
+        },
+        {
+          "class": "NEUT",
+          "support": 92,
+          "precision": 0.5862068965517241,
+          "recall": 0.18478260869565216,
+          "f1": 0.28099173553719003
+        },
+        {
+          "class": "WPOS",
+          "support": 131,
+          "precision": 0.3888888888888889,
+          "recall": 0.5343511450381679,
+          "f1": 0.45016077170418006
+        },
+        {
+          "class": "SPOS",
+          "support": 99,
+          "precision": 0.6530612244897959,
+          "recall": 0.32323232323232326,
+          "f1": 0.43243243243243246
+        }
+      ],
+      "prediction_sha256": "6cada0dd43cd0f80b9a3380860b9787896ef1c8ec64b9d418068dc4cc8e0b6b4",
+      "nll": 1.306204426691353,
+      "accuracy_source_group_overlap": 0.4984520123839009,
+      "accuracy_source_group_disjoint": 0.0
+    },
+    "jev_time_2026": {
+      "accuracy": 0.4945904173106646,
+      "macro_f1": 0.47878130372953775,
+      "confusion_matrix": [
+        [
+          110,
+          45,
+          6,
+          8,
+          13
+        ],
+        [
+          27,
+          74,
+          20,
+          15,
+          7
+        ],
+        [
+          11,
+          19,
+          33,
+          21,
+          8
+        ],
+        [
+          11,
+          27,
+          16,
+          53,
+          24
+        ],
+        [
+          7,
+          4,
+          5,
+          33,
+          50
+        ]
+      ],
+      "per_class": [
+        {
+          "class": "SNEG",
+          "support": 182,
+          "precision": 0.6626506024096386,
+          "recall": 0.6043956043956044,
+          "f1": 0.632183908045977
+        },
+        {
+          "class": "WNEG",
+          "support": 143,
+          "precision": 0.4378698224852071,
+          "recall": 0.5174825174825175,
+          "f1": 0.4743589743589744
+        },
+        {
+          "class": "NEUT",
+          "support": 92,
+          "precision": 0.4125,
+          "recall": 0.358695652173913,
+          "f1": 0.3837209302325581
+        },
+        {
+          "class": "WPOS",
+          "support": 131,
+          "precision": 0.4076923076923077,
+          "recall": 0.40458015267175573,
+          "f1": 0.4061302681992337
+        },
+        {
+          "class": "SPOS",
+          "support": 99,
+          "precision": 0.49019607843137253,
+          "recall": 0.5050505050505051,
+          "f1": 0.4975124378109453
+        }
+      ],
+      "prediction_sha256": "62e2cc59e50911dc6a164e2085dfd130b951b0e456894cfd42cd62b2d3a3a951",
+      "nll": 1.2916141174263063,
+      "accuracy_source_group_overlap": 0.4953560371517028,
+      "accuracy_source_group_disjoint": 0.0
+    },
+    "jev_no_time_13": {
+      "accuracy": 0.49613601236476046,
+      "macro_f1": 0.4699257463160647,
+      "confusion_matrix": [
+        [
+          123,
+          30,
+          4,
+          17,
+          8
+        ],
+        [
+          40,
+          55,
+          12,
+          30,
+          6
+        ],
+        [
+          14,
+          17,
+          24,
+          31,
+          6
+        ],
+        [
+          18,
+          14,
+          8,
+          75,
+          16
+        ],
+        [
+          5,
+          2,
+          2,
+          46,
+          44
+        ]
+      ],
+      "per_class": [
+        {
+          "class": "SNEG",
+          "support": 182,
+          "precision": 0.615,
+          "recall": 0.6758241758241759,
+          "f1": 0.643979057591623
+        },
+        {
+          "class": "WNEG",
+          "support": 143,
+          "precision": 0.4661016949152542,
+          "recall": 0.38461538461538464,
+          "f1": 0.42145593869731796
+        },
+        {
+          "class": "NEUT",
+          "support": 92,
+          "precision": 0.48,
+          "recall": 0.2608695652173913,
+          "f1": 0.33802816901408445
+        },
+        {
+          "class": "WPOS",
+          "support": 131,
+          "precision": 0.3768844221105528,
+          "recall": 0.5725190839694656,
+          "f1": 0.4545454545454546
+        },
+        {
+          "class": "SPOS",
+          "support": 99,
+          "precision": 0.55,
+          "recall": 0.4444444444444444,
+          "f1": 0.4916201117318436
+        }
+      ],
+      "prediction_sha256": "b71391453b753a54f297022686339c95d673c2fe3c6b58a92e3bf3a9f7968153",
+      "nll": 1.3730972193072544,
+      "accuracy_source_group_overlap": 0.4969040247678019,
+      "accuracy_source_group_disjoint": 0.0
+    },
+    "jev_uniform_13": {
+      "accuracy": 0.49304482225656876,
+      "macro_f1": 0.472345717421772,
+      "confusion_matrix": [
+        [
+          116,
+          40,
+          4,
+          15,
+          7
+        ],
+        [
+          30,
+          68,
+          16,
+          25,
+          4
+        ],
+        [
+          13,
+          20,
+          28,
+          27,
+          4
+        ],
+        [
+          13,
+          26,
+          10,
+          69,
+          13
+        ],
+        [
+          7,
+          3,
+          2,
+          49,
+          38
+        ]
+      ],
+      "per_class": [
+        {
+          "class": "SNEG",
+          "support": 182,
+          "precision": 0.6480446927374302,
+          "recall": 0.6373626373626373,
+          "f1": 0.6426592797783933
+        },
+        {
+          "class": "WNEG",
+          "support": 143,
+          "precision": 0.43312101910828027,
+          "recall": 0.4755244755244755,
+          "f1": 0.45333333333333337
+        },
+        {
+          "class": "NEUT",
+          "support": 92,
+          "precision": 0.4666666666666667,
+          "recall": 0.30434782608695654,
+          "f1": 0.3684210526315789
+        },
+        {
+          "class": "WPOS",
+          "support": 131,
+          "precision": 0.372972972972973,
+          "recall": 0.5267175572519084,
+          "f1": 0.43670886075949367
+        },
+        {
+          "class": "SPOS",
+          "support": 99,
+          "precision": 0.5757575757575758,
+          "recall": 0.3838383838383838,
+          "f1": 0.46060606060606063
+        }
+      ],
+      "prediction_sha256": "dce76f0d1c36e4665d7deffa8ad77578c3c88bea4436f8f686f96622c7721a74",
+      "nll": 1.4004605874955935,
+      "accuracy_source_group_overlap": 0.4938080495356037,
+      "accuracy_source_group_disjoint": 0.0
+    }
+  },
+  "three_seed": {
+    "almt": {
+      "accuracy_mean": 0.47037609479649667,
+      "accuracy_sample_sd": 0.006434825346108581,
+      "macro_f1_mean": 0.4468731511928901,
+      "macro_f1_sample_sd": 0.011930418622361043
+    },
+    "jev_time": {
+      "accuracy_mean": 0.497166409067491,
+      "accuracy_sample_sd": 0.0023609354430478356,
+      "macro_f1_mean": 0.47125394551810706,
+      "macro_f1_sample_sd": 0.010039985741639947
+    }
+  },
+  "three_seed_accuracy_mean_difference_jev_minus_almt": 0.02679031427099432,
+  "paired_vs_almt_13": {
+    "jev_time_13": {
+      "both_correct": 233,
+      "almt_only_correct": 68,
+      "candidate_only_correct": 90,
+      "both_wrong": 256
+    },
+    "jev_no_time_13": {
+      "both_correct": 241,
+      "almt_only_correct": 60,
+      "candidate_only_correct": 80,
+      "both_wrong": 266
+    },
+    "jev_uniform_13": {
+      "both_correct": 236,
+      "almt_only_correct": 65,
+      "candidate_only_correct": 83,
+      "both_wrong": 263
+    }
+  },
+  "paired_same_seed_main_vs_almt": {
+    "13": {
+      "almt_only_correct": 68,
+      "jev_only_correct": 90
+    },
+    "42": {
+      "almt_only_correct": 56,
+      "jev_only_correct": 69
+    },
+    "2026": {
+      "almt_only_correct": 56,
+      "jev_only_correct": 73
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "dinov2-small": {
+    "repo": "facebook/dinov2-small",
+    "revision": "ed25f3a31f01632728cabb09d1542f84ab7b0056",
+    "files": [
+      "README.md",
+      "config.json",
+      "preprocessor_config.json",
+      "model.safetensors"
+    ],
+    "weight": "model.safetensors",
+    "sha256": "ae1e99fcefd534ed978cdeb8326f08030c96e28b7a81ffcbc98a857c84d14be1",
+    "model_card_license": "apache-2.0"
+  },
+  "whisper-base": {
+    "repo": "openai/whisper-base",
+    "revision": "e37978b90ca9030d5170a5c07aadb050351a65bb",
+    "files": [
+      "README.md",
+      "added_tokens.json",
+      "config.json",
+      "generation_config.json",
+      "merges.txt",
+      "normalizer.json",
+      "preprocessor_config.json",
+      "special_tokens_map.json",
+      "tokenizer.json",
+      "tokenizer_config.json",
+      "vocab.json",
+      "model.safetensors"
+    ],
+    "weight": "model.safetensors",
+    "sha256": "07cadb9f25677c8d50df603e66a98fbd842cce45047139baeb16e6219a1e807b",
+    "model_card_license": "apache-2.0"
+  }
+}

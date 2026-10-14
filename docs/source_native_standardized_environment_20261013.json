@@ -1,0 +1,46 @@
+{
+  "time_utc": "2026-10-12T23:55:25.155762+00:00",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "executable": "D:\\MYL\\JevAffect\\work\\fresh-env-20261013\\Scripts\\python.exe",
+  "prefix": "D:\\MYL\\JevAffect\\work\\fresh-env-20261013",
+  "base_prefix": "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Python312",
+  "platform": "Windows-11-10.0.28000-SP0",
+  "include_system_site_packages": false,
+  "project_import": "D:\\MYL\\JevAffect\\work\\source-native-standardized-20261013\\jevaffect\\__init__.py",
+  "dependencies": {
+    "numpy": {
+      "version": "2.3.5",
+      "path": "D:\\MYL\\JevAffect\\work\\fresh-env-20261013\\Lib\\site-packages\\numpy\\__init__.py"
+    },
+    "torch": {
+      "version": "2.11.0+cu128",
+      "path": "D:\\MYL\\JevAffect\\work\\fresh-env-20261013\\Lib\\site-packages\\torch\\__init__.py"
+    },
+    "einops": {
+      "version": "0.8.1",
+      "path": "D:\\MYL\\JevAffect\\work\\fresh-env-20261013\\Lib\\site-packages\\einops\\__init__.py"
+    },
+    "scipy": {
+      "version": "1.18.0",
+      "path": "D:\\MYL\\JevAffect\\work\\fresh-env-20261013\\Lib\\site-packages\\scipy\\__init__.py"
+    },
+    "transformers": {
+      "version": "4.51.3",
+      "path": "D:\\MYL\\JevAffect\\work\\fresh-env-20261013\\Lib\\site-packages\\transformers\\__init__.py"
+    },
+    "imageio_ffmpeg": {
+      "version": "0.6.0",
+      "path": "D:\\MYL\\JevAffect\\work\\fresh-env-20261013\\Lib\\site-packages\\imageio_ffmpeg\\__init__.py"
+    },
+    "PIL": {
+      "version": "11.3.0",
+      "path": "D:\\MYL\\JevAffect\\work\\fresh-env-20261013\\Lib\\site-packages\\PIL\\__init__.py"
+    }
+  },
+  "source_snapshot_sha256": "06c07ab60d5310090b2b922a57cee1c84b8665337c48fa8dd03e43d964d22b98",
+  "source_files_verified": 569,
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "audit_script_sha256": "be80c4cdded4a66804d6a5dba9794fcac43c0800a7cfed56dbeabd0d41aa26be",
+  "passed": true
+}

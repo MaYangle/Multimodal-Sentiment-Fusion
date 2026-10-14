@@ -1,0 +1,92 @@
+{
+  "scope": "nine full native MOSEI feature baseline reproductions; not original-method/raw-media/final-test reproduction",
+  "reference_suite_sha256": "6f075f362f6aee47b486df704945b6f31e39f89cf6d066a5756138843fafadb2",
+  "reproduced_suite_sha256": "48dc3321d59bc0aefd8ab76b3ef69a351db4220b6fd69b0e6c8d2e8e1ab3e51d",
+  "prediction_tolerance": 1e-05,
+  "MAE_tolerance": 1e-06,
+  "results": [
+    {
+      "model": "almt",
+      "seed": 13,
+      "max_prediction_difference": 0.0,
+      "MAE_difference": 0.0,
+      "versions_equal": true,
+      "selection_budget_equal": true,
+      "passed": true
+    },
+    {
+      "model": "almt",
+      "seed": 42,
+      "max_prediction_difference": 0.0,
+      "MAE_difference": 0.0,
+      "versions_equal": true,
+      "selection_budget_equal": true,
+      "passed": true
+    },
+    {
+      "model": "almt",
+      "seed": 2026,
+      "max_prediction_difference": 0.0,
+      "MAE_difference": 0.0,
+      "versions_equal": true,
+      "selection_budget_equal": true,
+      "passed": true
+    },
+    {
+      "model": "early_fusion",
+      "seed": 13,
+      "max_prediction_difference": 0.0,
+      "MAE_difference": 0.0,
+      "versions_equal": true,
+      "selection_budget_equal": true,
+      "passed": true
+    },
+    {
+      "model": "early_fusion",
+      "seed": 42,
+      "max_prediction_difference": 0.0,
+      "MAE_difference": 0.0,
+      "versions_equal": true,
+      "selection_budget_equal": true,
+      "passed": true
+    },
+    {
+      "model": "early_fusion",
+      "seed": 2026,
+      "max_prediction_difference": 0.0,
+      "MAE_difference": 0.0,
+      "versions_equal": true,
+      "selection_budget_equal": true,
+      "passed": true
+    },
+    {
+      "model": "text",
+      "seed": 13,
+      "max_prediction_difference": 0.0,
+      "MAE_difference": 0.0,
+      "versions_equal": true,
+      "selection_budget_equal": true,
+      "passed": true
+    },
+    {
+      "model": "text",
+      "seed": 42,
+      "max_prediction_difference": 0.0,
+      "MAE_difference": 0.0,
+      "versions_equal": true,
+      "selection_budget_equal": true,
+      "passed": true
+    },
+    {
+      "model": "text",
+      "seed": 2026,
+      "max_prediction_difference": 0.0,
+      "MAE_difference": 0.0,
+      "versions_equal": true,
+      "selection_budget_equal": true,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "test_evaluated": false
+}

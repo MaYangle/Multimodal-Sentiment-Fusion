@@ -1,0 +1,22 @@
+{
+  "time_utc": "2026-10-12T15:13:15.936905+00:00",
+  "scope": "fresh first-missing finite range after prior stopped handle",
+  "source": {
+    "publisher": "https://github.com/thuiar/ch-sims-v2",
+    "file_id": "13JdO6GbPHOGZ8yLBFUrNR8c2FvHN-E_O",
+    "url": "https://drive.usercontent.google.com/download?id=13JdO6GbPHOGZ8yLBFUrNR8c2FvHN-E_O&export=download&confirm=t",
+    "size": 3620390413,
+    "Last-Modified": "Tue, 19 Sep 2023 09:07:03 GMT",
+    "prefix_size": 371720192,
+    "prefix_sha256": "ae49cad0743fd4477efb8275591b3de8c5094c64ee713b83d22b991312b8442c",
+    "chunk_bytes": 8388608
+  },
+  "available": true,
+  "requested": "bytes=1579679744-1579745279",
+  "status": 206,
+  "content_range": "bytes 1579679744-1579745279/3620390413",
+  "last_modified": "Tue, 19 Sep 2023 09:07:03 GMT",
+  "content_type": "application/octet-stream",
+  "bytes_read": 65536,
+  "quota_text_detected": false
+}

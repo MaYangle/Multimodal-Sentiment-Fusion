@@ -1,0 +1,22 @@
+{
+  "repo_root": "..",
+  "cache_dir": "data/feature_cache/simsv2",
+  "run_root": "runs/bcmlf/simsv2",
+  "msalm_config": "vendor/bcmlf/config/bcmlf_simsv2_5class_v1.json",
+  "stage1_run_template": "runs/bcmlf/simsv2/bienc_stage1/seed_{seed}",
+  "seeds": [
+    13,
+    42,
+    2026
+  ],
+  "training": {
+    "max_epochs": 100,
+    "batch_size": 32,
+    "update_epochs": 8,
+    "early_stop": 10,
+    "warmup_epochs": 1,
+    "grad_clip_value": 5.0,
+    "num_workers": 0,
+    "device": "auto"
+  }
+}

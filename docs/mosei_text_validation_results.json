@@ -1,0 +1,301 @@
+{
+  "dataset": "CMU-MOSEI",
+  "cohort": "MMSA author",
+  "split": "official validation",
+  "condition": "author provided transcripts; frozen mBERT CLS + MLP",
+  "train_samples": 16326,
+  "valid_samples": 1871,
+  "test_scored": false,
+  "test_encoded": false,
+  "selection": "best validation accuracy with early stopping; selection-set scores",
+  "runs": [
+    {
+      "seed": 13,
+      "accuracy": 0.5392838054516301,
+      "macro_f1": 0.39686149425789746,
+      "confusion_matrix": [
+        [
+          25,
+          35,
+          13,
+          4,
+          0
+        ],
+        [
+          29,
+          118,
+          130,
+          23,
+          1
+        ],
+        [
+          7,
+          64,
+          600,
+          160,
+          1
+        ],
+        [
+          6,
+          24,
+          251,
+          261,
+          8
+        ],
+        [
+          5,
+          3,
+          31,
+          67,
+          5
+        ]
+      ],
+      "per_class": [
+        {
+          "class_index": 0,
+          "class_name": "SNEG",
+          "precision": 0.3472222222222222,
+          "recall": 0.3246753246753247,
+          "f1": 0.33557046979865773,
+          "support": 77
+        },
+        {
+          "class_index": 1,
+          "class_name": "WNEG",
+          "precision": 0.48360655737704916,
+          "recall": 0.3920265780730897,
+          "f1": 0.43302752293577984,
+          "support": 301
+        },
+        {
+          "class_index": 2,
+          "class_name": "NEUT",
+          "precision": 0.5853658536585366,
+          "recall": 0.7211538461538461,
+          "f1": 0.6462035541195477,
+          "support": 832
+        },
+        {
+          "class_index": 3,
+          "class_name": "WPOS",
+          "precision": 0.5067961165048543,
+          "recall": 0.47454545454545455,
+          "f1": 0.49014084507042255,
+          "support": 550
+        },
+        {
+          "class_index": 4,
+          "class_name": "SPOS",
+          "precision": 0.3333333333333333,
+          "recall": 0.04504504504504504,
+          "f1": 0.07936507936507936,
+          "support": 111
+        }
+      ],
+      "n_samples": 1871,
+      "nll": 1.0832935001009993,
+      "brier": 0.5912949048450954,
+      "ece15": 0.04452746116901689,
+      "best_epoch": 6,
+      "epochs": 16,
+      "train_valid_seconds": 25.997512700003426,
+      "peak_cuda_allocated_bytes": 83916288,
+      "predictions_sha256": "a033cb6c5510b4df4c1bc5372f28564b507b8e6291cc9d8d36bfcf494c2f7b15"
+    },
+    {
+      "seed": 42,
+      "accuracy": 0.5339390700160342,
+      "macro_f1": 0.3899919515625968,
+      "confusion_matrix": [
+        [
+          24,
+          31,
+          17,
+          4,
+          1
+        ],
+        [
+          24,
+          101,
+          150,
+          23,
+          3
+        ],
+        [
+          8,
+          40,
+          579,
+          199,
+          6
+        ],
+        [
+          5,
+          17,
+          227,
+          291,
+          10
+        ],
+        [
+          4,
+          3,
+          30,
+          70,
+          4
+        ]
+      ],
+      "per_class": [
+        {
+          "class_index": 0,
+          "class_name": "SNEG",
+          "precision": 0.36923076923076925,
+          "recall": 0.3116883116883117,
+          "f1": 0.3380281690140845,
+          "support": 77
+        },
+        {
+          "class_index": 1,
+          "class_name": "WNEG",
+          "precision": 0.5260416666666666,
+          "recall": 0.33554817275747506,
+          "f1": 0.40973630831643,
+          "support": 301
+        },
+        {
+          "class_index": 2,
+          "class_name": "NEUT",
+          "precision": 0.5772681954137587,
+          "recall": 0.6959134615384616,
+          "f1": 0.6310626702997275,
+          "support": 832
+        },
+        {
+          "class_index": 3,
+          "class_name": "WPOS",
+          "precision": 0.4957410562180579,
+          "recall": 0.5290909090909091,
+          "f1": 0.5118733509234829,
+          "support": 550
+        },
+        {
+          "class_index": 4,
+          "class_name": "SPOS",
+          "precision": 0.16666666666666666,
+          "recall": 0.036036036036036036,
+          "f1": 0.05925925925925926,
+          "support": 111
+        }
+      ],
+      "n_samples": 1871,
+      "nll": 1.0933657449253835,
+      "brier": 0.5994729875723235,
+      "ece15": 0.053735837255022754,
+      "best_epoch": 7,
+      "epochs": 17,
+      "train_valid_seconds": 27.145919300004607,
+      "peak_cuda_allocated_bytes": 83916288,
+      "predictions_sha256": "1397899cd92fa5aed917e547bf375c11e095b7f5dd0eb2605491f6429bf912b1"
+    },
+    {
+      "seed": 2026,
+      "accuracy": 0.5307322287546766,
+      "macro_f1": 0.37405672227547443,
+      "confusion_matrix": [
+        [
+          12,
+          46,
+          10,
+          6,
+          3
+        ],
+        [
+          15,
+          150,
+          105,
+          31,
+          0
+        ],
+        [
+          3,
+          95,
+          524,
+          209,
+          1
+        ],
+        [
+          4,
+          35,
+          205,
+          304,
+          2
+        ],
+        [
+          2,
+          6,
+          30,
+          70,
+          3
+        ]
+      ],
+      "per_class": [
+        {
+          "class_index": 0,
+          "class_name": "SNEG",
+          "precision": 0.3333333333333333,
+          "recall": 0.15584415584415584,
+          "f1": 0.21238938053097345,
+          "support": 77
+        },
+        {
+          "class_index": 1,
+          "class_name": "WNEG",
+          "precision": 0.45180722891566266,
+          "recall": 0.4983388704318937,
+          "f1": 0.47393364928909953,
+          "support": 301
+        },
+        {
+          "class_index": 2,
+          "class_name": "NEUT",
+          "precision": 0.5995423340961098,
+          "recall": 0.6298076923076923,
+          "f1": 0.6143024618991795,
+          "support": 832
+        },
+        {
+          "class_index": 3,
+          "class_name": "WPOS",
+          "precision": 0.49032258064516127,
+          "recall": 0.5527272727272727,
+          "f1": 0.5196581196581197,
+          "support": 550
+        },
+        {
+          "class_index": 4,
+          "class_name": "SPOS",
+          "precision": 0.3333333333333333,
+          "recall": 0.02702702702702703,
+          "f1": 0.05,
+          "support": 111
+        }
+      ],
+      "n_samples": 1871,
+      "nll": 1.0910246890016646,
+      "brier": 0.5963759319852637,
+      "ece15": 0.029479974098191447,
+      "best_epoch": 4,
+      "epochs": 14,
+      "train_valid_seconds": 22.499450499995874,
+      "peak_cuda_allocated_bytes": 83916288,
+      "predictions_sha256": "f34f6446a52fccec8ef0ef54d1c8bd395e58d48a251d893bcebe041210534566"
+    }
+  ],
+  "encode_seconds": 15.87400030000208,
+  "truncated_rows": {
+    "train": 653,
+    "valid": 74
+  },
+  "accuracy_mean": 0.534651701407447,
+  "accuracy_sample_std": 0.004320098219484101,
+  "macro_f1_mean": 0.3869700560319896,
+  "macro_f1_sample_std": 0.011698858736689004
+}

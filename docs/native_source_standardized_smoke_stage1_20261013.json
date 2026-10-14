@@ -1,0 +1,43 @@
+{
+  "results": [
+    {
+      "root": "runs\\native_source_standardized_v1\\smoke\\fusion\\seed_13\\fold_0",
+      "view": "fusion",
+      "seed": 13,
+      "fold": 0,
+      "complete": false,
+      "smoke_only": true,
+      "test_evaluated": false,
+      "official_validation_labels_parsed": false,
+      "manifest_sha256": "4ddd818ae53d027d6cc2366753f6ea7eef40a648a0b80505d0d2fc5d6b835e1e",
+      "fit_count": 46,
+      "select_count": 7,
+      "oof_count": 30,
+      "oof_native": {
+        "count": 30,
+        "MAE": 0.8428546190261841,
+        "Corr": 0.019337070044611968,
+        "Mult_acc_2": 0.43333333333333335,
+        "F1_score": 0.456,
+        "weak_count": 4,
+        "Mult_acc_2_weak": 0.25,
+        "Mult_acc_3": 0.36666666666666664,
+        "Mult_acc_5": 0.06666666666666667,
+        "R_squre": -0.16933006531035888
+      },
+      "best_epoch": 1,
+      "epochs_executed": 1,
+      "optimizer_updates": 2,
+      "loop_seconds": 0.23076220000803005,
+      "trainable_parameters": 492033,
+      "checkpoint_sha256": "f4bb23671a78f7770d77768c7342fd6352024fc120757c4671a44c7737922c3d",
+      "predictions_file": "runs\\native_source_standardized_v1\\smoke\\fusion\\seed_13\\fold_0\\oof_predictions.csv",
+      "predictions_sha256": "77fba544e962cc547cd2116fe48e4e9eed65334e51b181ad8b7d68a8f80457f2"
+    }
+  ],
+  "oof": {},
+  "suite_complete": false,
+  "smoke_only": true,
+  "test_evaluated": false,
+  "official_VALID_used": false
+}

@@ -1,0 +1,102 @@
+{
+  "scope": "small biased 339/43 prefix pilot, two-stage five-class CMC pseudo adaptation; not a formal full benchmark",
+  "seed": 13,
+  "train_count": 339,
+  "valid_count": 43,
+  "best_epoch": 12,
+  "stage1_epochs": 5,
+  "stage2_epochs": 15,
+  "selected_metrics": {
+    "accuracy": 0.4186046511627907,
+    "macro_f1": 0.2904761904761905,
+    "confusion_matrix": [
+      [
+        1,
+        1,
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        7,
+        1,
+        4,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        5,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        10,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        8,
+        0
+      ]
+    ],
+    "per_class": [
+      {
+        "class_index": 0,
+        "class_name": "SNEG",
+        "precision": 0.5,
+        "recall": 0.2,
+        "f1": 0.28571428571428575,
+        "support": 5
+      },
+      {
+        "class_index": 1,
+        "class_name": "WNEG",
+        "precision": 0.7777777777777778,
+        "recall": 0.5833333333333334,
+        "f1": 0.6666666666666666,
+        "support": 12
+      },
+      {
+        "class_index": 2,
+        "class_name": "NEUT",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 7
+      },
+      {
+        "class_index": 3,
+        "class_name": "WPOS",
+        "precision": 0.3448275862068966,
+        "recall": 0.9090909090909091,
+        "f1": 0.5000000000000001,
+        "support": 11
+      },
+      {
+        "class_index": 4,
+        "class_name": "SPOS",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8
+      }
+    ],
+    "n_samples": 43,
+    "nll": 1.4899510114911925
+  },
+  "train_valid_wall_seconds": 23.977905000021565,
+  "peak_gpu_allocated_bytes": 224377856,
+  "cache_source_sha256": "33f2ac9f7d30bb0a0a504056592ea11f3f3f0d2bebde867644b249fa9dbaaf3a",
+  "predictions_sha256": "08a48af6b14601af393800aab9bfd18d56fc9d00696151c81247f608ef519e54",
+  "test_scored": false,
+  "truth_unimodal_labels_used": false,
+  "text_encoder_condition": "frozen contextual mBERT features",
+  "protocol_comparison_note": "ALMT raw pilot uses the same339/43 and cached encoders but different architecture and training schedule; neither pilot estimates full-cohort performance"
+}

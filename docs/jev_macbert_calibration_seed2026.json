@@ -1,0 +1,57 @@
+{
+  "scope": "official validation selection set; no test scoring",
+  "limitation": "The model checkpoint was selected on this validation set before calibration cross-fitting",
+  "prediction_sha256": "62e2cc59e50911dc6a164e2085dfd130b951b0e456894cfd42cd62b2d3a3a951",
+  "manifest_labels_sha256": "0e89a0688cbd72f9f3735b64755aeb34da84608a6131cb6d7182101052c3f28d",
+  "source_group_disjoint_calibration_folds": true,
+  "folds": [
+    {
+      "fold": 0,
+      "fit_count": 517,
+      "held_count": 130,
+      "fit_groups": 96,
+      "held_groups": 24,
+      "temperature": 1.3322481182473598
+    },
+    {
+      "fold": 1,
+      "fit_count": 517,
+      "held_count": 130,
+      "fit_groups": 96,
+      "held_groups": 24,
+      "temperature": 1.3881813232921842
+    },
+    {
+      "fold": 2,
+      "fit_count": 518,
+      "held_count": 129,
+      "fit_groups": 96,
+      "held_groups": 24,
+      "temperature": 1.4011473893315485
+    },
+    {
+      "fold": 3,
+      "fit_count": 518,
+      "held_count": 129,
+      "fit_groups": 96,
+      "held_groups": 24,
+      "temperature": 1.3785821897817663
+    },
+    {
+      "fold": 4,
+      "fit_count": 518,
+      "held_count": 129,
+      "fit_groups": 96,
+      "held_groups": 24,
+      "temperature": 1.336935775267635
+    }
+  ],
+  "original_accuracy": 0.4945904173106646,
+  "original_nll": 1.2916141138762907,
+  "original_ece15": 0.06675225537748204,
+  "crossfit_accuracy": 0.4945904173106646,
+  "crossfit_nll": 1.265777369435628,
+  "crossfit_ece15": 0.06877168019554043,
+  "final_inference_temperature_fit_on_all_validation": 1.3670668705218878,
+  "test_labels_used": false
+}

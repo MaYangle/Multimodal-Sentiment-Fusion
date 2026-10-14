@@ -1,0 +1,53 @@
+{
+  "root": "runs\\native_source_text_capacity_v1",
+  "results": [
+    {
+      "root": "runs\\native_source_text_capacity_v1\\smoke\\text\\seed_13\\fold_0",
+      "view": "text",
+      "seed": 13,
+      "fold": 0,
+      "complete": false,
+      "smoke_only": true,
+      "test_evaluated": false,
+      "official_validation_labels_parsed": false,
+      "manifest_sha256": "4ddd818ae53d027d6cc2366753f6ea7eef40a648a0b80505d0d2fc5d6b835e1e",
+      "fit_count": 46,
+      "select_count": 7,
+      "oof_count": 30,
+      "oof_native": {
+        "count": 30,
+        "MAE": 0.7474344372749329,
+        "Corr": -0.30778160725756865,
+        "Mult_acc_2": 0.7,
+        "F1_score": 0.5764705882352941,
+        "weak_count": 4,
+        "Mult_acc_2_weak": 0.75,
+        "Mult_acc_3": 0.6666666666666666,
+        "Mult_acc_5": 0.13333333333333333,
+        "R_squre": -0.058425338710322405
+      },
+      "best_epoch": 1,
+      "epochs_executed": 1,
+      "optimizer_updates": 2,
+      "loop_seconds": 0.23301270000229124,
+      "trainable_parameters": 492801,
+      "checkpoint_sha256": "883f9b6bb353f1e82fe932c569d4dc48a03cd2205763e6c6ffdab1ed5dc535ed",
+      "predictions_file": "runs\\native_source_text_capacity_v1\\smoke\\text\\seed_13\\fold_0\\oof_predictions.csv",
+      "predictions_sha256": "b6d93206a6fc1683b21d63ef9c71923e6fdfa94e7e65380007fa0a016cbd2ead"
+    }
+  ],
+  "oof": {},
+  "has_full": false,
+  "complete": false,
+  "suite_complete": false,
+  "smoke_only": true,
+  "test_evaluated": false,
+  "official_validation_labels_parsed": false,
+  "selected": {
+    "seed": 13,
+    "view": "text",
+    "fold": 0,
+    "smoke_groups": 8
+  },
+  "source_transfer_limit": "The calibration inner holdout reuses this TRAIN OOF table, but point teachers in other folds may have trained on those heldout sources. This does not establish honest full-pipeline source transfer; nested outer source evaluation must rebuild point/view OOF and calibration before promotion."
+}

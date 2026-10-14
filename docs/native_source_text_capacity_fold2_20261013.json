@@ -1,0 +1,143 @@
+{
+  "root": "runs\\native_source_text_capacity_v1",
+  "results": [
+    {
+      "root": "runs\\native_source_text_capacity_v1\\formal\\text\\seed_13\\fold_2",
+      "view": "text",
+      "seed": 13,
+      "fold": 2,
+      "complete": true,
+      "smoke_only": false,
+      "test_evaluated": false,
+      "official_validation_labels_parsed": false,
+      "manifest_sha256": "ba6e40c3ec2d721191be068ab23253a3ec8bb39139823f81929a762221f1296b",
+      "fit_count": 1676,
+      "select_count": 151,
+      "oof_count": 895,
+      "oof_native": {
+        "count": 895,
+        "MAE": 0.3822404742240906,
+        "Corr": 0.695109979281024,
+        "Mult_acc_2": 0.7932960893854749,
+        "F1_score": 0.7955569105405055,
+        "weak_count": 307,
+        "Mult_acc_2_weak": 0.6351791530944625,
+        "Mult_acc_3": 0.7061452513966481,
+        "Mult_acc_5": 0.394413407821229,
+        "R_squre": 0.44953586164390624
+      },
+      "best_epoch": 9,
+      "epochs_executed": 21,
+      "optimizer_updates": 1113,
+      "loop_seconds": 1.8669309000251815,
+      "trainable_parameters": 492801,
+      "checkpoint_sha256": "18571276b41f155806fa22decb0f20a0a1a31590fa0a465ef6c41752b32f52db",
+      "predictions_file": "runs\\native_source_text_capacity_v1\\formal\\text\\seed_13\\fold_2\\oof_predictions.csv",
+      "predictions_sha256": "4dcac03b73115f1deea95f3f8f3575494c00eec68d9268c99ca9c807a7e22ae9"
+    },
+    {
+      "root": "runs\\native_source_text_capacity_v1\\formal\\text\\seed_42\\fold_2",
+      "view": "text",
+      "seed": 42,
+      "fold": 2,
+      "complete": true,
+      "smoke_only": false,
+      "test_evaluated": false,
+      "official_validation_labels_parsed": false,
+      "manifest_sha256": "ba6e40c3ec2d721191be068ab23253a3ec8bb39139823f81929a762221f1296b",
+      "fit_count": 1676,
+      "select_count": 151,
+      "oof_count": 895,
+      "oof_native": {
+        "count": 895,
+        "MAE": 0.37915465235710144,
+        "Corr": 0.6924550829232377,
+        "Mult_acc_2": 0.8178770949720671,
+        "F1_score": 0.8189668848025853,
+        "weak_count": 307,
+        "Mult_acc_2_weak": 0.7035830618892508,
+        "Mult_acc_3": 0.7128491620111732,
+        "Mult_acc_5": 0.4011173184357542,
+        "R_squre": 0.4582691722631489
+      },
+      "best_epoch": 16,
+      "epochs_executed": 28,
+      "optimizer_updates": 1484,
+      "loop_seconds": 2.1965237999975216,
+      "trainable_parameters": 492801,
+      "checkpoint_sha256": "5275bab5679e0771dfd8c473d6fa4cf535295bcdf41489a27e843deba2c9a41f",
+      "predictions_file": "runs\\native_source_text_capacity_v1\\formal\\text\\seed_42\\fold_2\\oof_predictions.csv",
+      "predictions_sha256": "20c9b4c45004b6cd1901a96735ddd7245464103dff9aa05a741868a1282e0f60"
+    },
+    {
+      "root": "runs\\native_source_text_capacity_v1\\formal\\text\\seed_2026\\fold_2",
+      "view": "text",
+      "seed": 2026,
+      "fold": 2,
+      "complete": true,
+      "smoke_only": false,
+      "test_evaluated": false,
+      "official_validation_labels_parsed": false,
+      "manifest_sha256": "ba6e40c3ec2d721191be068ab23253a3ec8bb39139823f81929a762221f1296b",
+      "fit_count": 1676,
+      "select_count": 151,
+      "oof_count": 895,
+      "oof_native": {
+        "count": 895,
+        "MAE": 0.38360658288002014,
+        "Corr": 0.6876297071467041,
+        "Mult_acc_2": 0.8067039106145252,
+        "F1_score": 0.8082602769629474,
+        "weak_count": 307,
+        "Mult_acc_2_weak": 0.6840390879478827,
+        "Mult_acc_3": 0.7016759776536313,
+        "Mult_acc_5": 0.39664804469273746,
+        "R_squre": 0.44521449420888126
+      },
+      "best_epoch": 23,
+      "epochs_executed": 35,
+      "optimizer_updates": 1855,
+      "loop_seconds": 2.7104916000535013,
+      "trainable_parameters": 492801,
+      "checkpoint_sha256": "e6d55e5711a18a31c1373a7d529c7a0af1c954d94150c18af3fe2f776854e498",
+      "predictions_file": "runs\\native_source_text_capacity_v1\\formal\\text\\seed_2026\\fold_2\\oof_predictions.csv",
+      "predictions_sha256": "bc797f84fdd76648ce1e358c5ef4600b1f1f62212aa913dbfb1b79e6fcee102a"
+    }
+  ],
+  "oof": {
+    "text/seed_13": {
+      "path": "runs\\native_source_text_capacity_v1\\formal\\text\\seed_13\\oof_predictions.csv",
+      "count": 2722,
+      "sha256": "0b1a652f26cc8813f8c61df86ed2f9c6b7380e9630d71110a0cd76cad69bc984",
+      "coverage_exactly_once": true,
+      "complete": true
+    },
+    "text/seed_42": {
+      "path": "runs\\native_source_text_capacity_v1\\formal\\text\\seed_42\\oof_predictions.csv",
+      "count": 2722,
+      "sha256": "f21f26361f235eda9d9f0ff50a82585490d315353ef0633a41c1fbdd8fdbda57",
+      "coverage_exactly_once": true,
+      "complete": true
+    },
+    "text/seed_2026": {
+      "path": "runs\\native_source_text_capacity_v1\\formal\\text\\seed_2026\\oof_predictions.csv",
+      "count": 2722,
+      "sha256": "e7f492432981af48e5b9825880f71480de34b4d6126b3af4920a90364a11a109",
+      "coverage_exactly_once": true,
+      "complete": true
+    }
+  },
+  "has_full": false,
+  "complete": false,
+  "suite_complete": false,
+  "smoke_only": false,
+  "test_evaluated": false,
+  "official_validation_labels_parsed": false,
+  "selected": {
+    "seed": null,
+    "view": "text",
+    "fold": 2,
+    "smoke_groups": null
+  },
+  "source_transfer_limit": "The calibration inner holdout reuses this TRAIN OOF table, but point teachers in other folds may have trained on those heldout sources. This does not establish honest full-pipeline source transfer; nested outer source evaluation must rebuild point/view OOF and calibration before promotion."
+}

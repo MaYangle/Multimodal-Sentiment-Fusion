@@ -1,0 +1,67 @@
+{
+  "suite_sha256": "ad4519e7fad21bc16c7453c86216ed0fcd613d29c092933450ee52e6950d1b4a",
+  "point_suite_sha256": "ec9b0982199912cfebc6e4d54ae0fa08edd1a02ada4d9ace0e0b63b391d03fe9",
+  "scope": "post-study author TRAIN diagnostic; no refitting or promotion-rule changes",
+  "native_target_count": 2722,
+  "unique_native_scores": 11,
+  "within_author_bins": [
+    {
+      "bin": 0,
+      "count": 693,
+      "unique_native_scores": 2,
+      "minimum": -1.0,
+      "maximum": -0.800000011920929,
+      "score_population_SD": 0.0942808985710144
+    },
+    {
+      "bin": 1,
+      "count": 617,
+      "unique_native_scores": 3,
+      "minimum": -0.6000000238418579,
+      "maximum": -0.20000000298023224,
+      "score_population_SD": 0.16693586111068726
+    },
+    {
+      "bin": 2,
+      "count": 318,
+      "unique_native_scores": 1,
+      "minimum": 0.0,
+      "maximum": 0.0,
+      "score_population_SD": 0.0
+    },
+    {
+      "bin": 3,
+      "count": 676,
+      "unique_native_scores": 3,
+      "minimum": 0.20000000298023224,
+      "maximum": 0.6000000238418579,
+      "score_population_SD": 0.16122712194919586
+    },
+    {
+      "bin": 4,
+      "count": 418,
+      "unique_native_scores": 2,
+      "minimum": 0.800000011920929,
+      "maximum": 1.0,
+      "score_population_SD": 0.099541075527668
+    }
+  ],
+  "rows": {
+    "publication_omitted": true,
+    "original_count": 90
+  },
+  "official_VALID_used": false,
+  "official_TEST_used": false,
+  "native_metric_note": "CH author MAE/Corr clip predictions; frozen raw point is unchanged but native_raw_point producer key is an alias of clipped author-protocol metrics",
+  "supplemental_event_note": "additional clipped-point hit diagnostic matches CH author scoring; primary registered event stays centered on raw point and promotion rule is unchanged",
+  "interpretation": "bin scores coarsen multiple native targets; bin likelihood alone does not identify within-bin event probabilities",
+  "publication_redaction": {
+    "full_local_report_sha256": "b44242917ab78179f2e21a964ba1f8e28592ad1d6e1bd582b871899362274112",
+    "removed_path_count": 1,
+    "removed_paths": [
+      "/rows"
+    ],
+    "remaining_removed_paths_list_truncated": false,
+    "reason": "Exclude per-sample dataset records, long raw arrays and response/download capabilities; retain aggregate research evidence."
+  }
+}

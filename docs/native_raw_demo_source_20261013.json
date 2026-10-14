@@ -1,0 +1,19 @@
+{
+  "scope": "first two genuine TRAIN media clips already acquired through the competition channel; not full author-original acquisition",
+  "csv_sha256": "be7e482640e7ee24d2070033e1e2aef61ce183199286a8a18b0d6247556bf150",
+  "test_labels_parsed": false,
+  "labels_supplied_to_inference": false,
+  "records": {
+    "publication_omitted": true,
+    "original_count": 2
+  },
+  "publication_redaction": {
+    "full_local_report_sha256": "02c83c8530b87f1f4d09ef61450a28cf353c81d381688657165c530f1150829b",
+    "removed_path_count": 1,
+    "removed_paths": [
+      "/records"
+    ],
+    "remaining_removed_paths_list_truncated": false,
+    "reason": "Exclude per-sample dataset records, long raw arrays and response/download capabilities; retain aggregate research evidence."
+  }
+}

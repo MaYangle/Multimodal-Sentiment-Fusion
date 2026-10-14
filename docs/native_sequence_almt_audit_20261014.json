@@ -1,0 +1,82 @@
+{
+  "scope": "official validation selection results; not final-test results",
+  "test_evaluated": false,
+  "selection_rule": "minimum validation native MAE, fixed seeds 13/42/2026",
+  "suite_sha256": "0061d677dcf00d2d1478b73fbe4dd16747ab69c941039778deba5e2c0a5a1830",
+  "summary": {
+    "almt": {
+      "MAE": {
+        "mean": 0.4086804191271464,
+        "sample_sd": 0.0066902145770592605
+      },
+      "Corr": {
+        "mean": 0.6157304007719308,
+        "sample_sd": 0.01184809018507704
+      },
+      "Mult_acc_2": {
+        "mean": 0.7362184441009788,
+        "sample_sd": 0.012005337658661536
+      },
+      "F1_score": {
+        "mean": 0.7399449709727968,
+        "sample_sd": 0.010652522989997333
+      },
+      "Mult_acc_2_weak": {
+        "mean": 0.57909604519774,
+        "sample_sd": 0.037978332372171644
+      },
+      "Mult_acc_3": {
+        "mean": 0.6687274600721279,
+        "sample_sd": 0.003569398882161508
+      },
+      "Mult_acc_5": {
+        "mean": 0.41937145801133435,
+        "sample_sd": 0.013145132222744021
+      },
+      "R_squre": {
+        "mean": 0.3206020057658438,
+        "sample_sd": 0.03253274365070897
+      },
+      "total_loop_seconds": 362.45380200001455,
+      "trainable_parameters": 3288577
+    }
+  },
+  "evidence": [
+    {
+      "model": "almt",
+      "seed": 13,
+      "validation_ids": 647,
+      "author_target_match": true,
+      "metric_recomputation_match": true,
+      "checkpoint_hash_verified": true,
+      "minimum_MAE_epoch_verified": true,
+      "checkpoint_forward_audit": {
+        "reloaded": false
+      }
+    },
+    {
+      "model": "almt",
+      "seed": 42,
+      "validation_ids": 647,
+      "author_target_match": true,
+      "metric_recomputation_match": true,
+      "checkpoint_hash_verified": true,
+      "minimum_MAE_epoch_verified": true,
+      "checkpoint_forward_audit": {
+        "reloaded": false
+      }
+    },
+    {
+      "model": "almt",
+      "seed": 2026,
+      "validation_ids": 647,
+      "author_target_match": true,
+      "metric_recomputation_match": true,
+      "checkpoint_hash_verified": true,
+      "minimum_MAE_epoch_verified": true,
+      "checkpoint_forward_audit": {
+        "reloaded": false
+      }
+    }
+  ]
+}

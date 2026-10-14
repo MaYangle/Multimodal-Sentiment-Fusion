@@ -1,0 +1,15 @@
+{
+  "requested_ref": "yanglema/jevaffect-simsv2-raw-features",
+  "state": "response_received",
+  "at": "2026-10-11T18:56:41.922227+00:00",
+  "max_seconds": 5400,
+  "private": true,
+  "competition_submission": false,
+  "response": {
+    "ref": "/code/yanglema/jevaffect-simsv2-raw-features",
+    "url": "https://www.kaggle.com/code/yanglema/jevaffect-simsv2-raw-features",
+    "versionNumber": 1,
+    "kernelId": 138213744
+  },
+  "canonical_ref": "yanglema/jevaffect-simsv2-raw-features"
+}

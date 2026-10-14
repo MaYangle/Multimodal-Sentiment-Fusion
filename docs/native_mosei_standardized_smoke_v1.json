@@ -1,0 +1,37 @@
+{
+  "results": [
+    {
+      "dataset": "mosei",
+      "cohort": "mosei_multibench_aligned50",
+      "model": "early_fusion",
+      "seed": 13,
+      "root": "work\\native_mosei_standardized_smoke\\smoke\\early_fusion\\seed_13",
+      "smoke_only": true,
+      "complete": false,
+      "test_evaluated": false,
+      "train_count": 32,
+      "valid_count": 32,
+      "best_epoch": 2,
+      "epochs_executed": 2,
+      "optimizer_updates": 2,
+      "loop_seconds": 0.020380500005558133,
+      "parameters": 105217,
+      "valid_metrics": {
+        "count": 32,
+        "MAE": 0.7245970368385315,
+        "Corr": -0.04077658836678709,
+        "Mult_acc_5": 0.4375,
+        "Mult_acc_7": 0.4375,
+        "Has0_acc_2": 0.6875,
+        "Has0_F1_score": 0.6620370370370371,
+        "nonzero_count": 22,
+        "Non0_acc_2": 0.6363636363636364,
+        "Non0_F1_score": 0.5656565656565656
+      },
+      "checkpoint_sha256": "7131f7c1f3bddc5bb8d941910111a0ca19b2875cd5669230bffcab11f2c0a1ae",
+      "predictions_sha256": "317fca9902f71f387453a299b5dc49d6303f0cd3870aad36135d9cf49ec60845"
+    }
+  ],
+  "suite_complete": false,
+  "smoke_only": true
+}

@@ -1,0 +1,68 @@
+{
+  "raw_suite_sha256": "4817467b2453a6421901f0defa680fb7b83be9fe7c8415598566439ef6d0300a",
+  "normalized_suite_sha256": "3a62dff8fe3f7013fea81a41a3ccff9daa76a2d7460a2765d73150d3669192a9",
+  "comparisons": {
+    "text": {
+      "delta_by_seed": [
+        0.0034921429216447164,
+        0.007283403467634546,
+        0.004769071763873653
+      ],
+      "seed_percentile95": [
+        [
+          -0.006366507858566199,
+          0.012973375164167685
+        ],
+        [
+          -0.0015507635482005602,
+          0.01627449541084799
+        ],
+        [
+          -0.007607777227843712,
+          0.017289974729749545
+        ]
+      ],
+      "three_seed_delta": 0.005181539384384305,
+      "three_seed_percentile95": [
+        -0.0016925121954168994,
+        0.012014327781293042
+      ],
+      "replicates": 5000,
+      "seed": 20261013,
+      "source_count": 120,
+      "scope": "Conditional official VALID whole-source resampling of already-selected models; no selection-adjusted or final-test significance claim"
+    },
+    "early_fusion": {
+      "delta_by_seed": [
+        -0.01326697818370654,
+        -0.007118568135284382,
+        -0.011251000799756883
+      ],
+      "seed_percentile95": [
+        [
+          -0.02997077462359335,
+          0.0027208375720114415
+        ],
+        [
+          -0.02573039922087242,
+          0.009458176118370548
+        ],
+        [
+          -0.026920453858138047,
+          0.00445299489305443
+        ]
+      ],
+      "three_seed_delta": -0.01054551570624927,
+      "three_seed_percentile95": [
+        -0.023699427414068153,
+        0.0019887733113377053
+      ],
+      "replicates": 5000,
+      "seed": 20261013,
+      "source_count": 120,
+      "scope": "Conditional official VALID whole-source resampling of already-selected models; no selection-adjusted or final-test significance claim"
+    }
+  },
+  "test_evaluated": false,
+  "scope": "Official VALID development/selection comparison; conditional source-bootstrap intervals do not account for model selection or repeated development use"
+}

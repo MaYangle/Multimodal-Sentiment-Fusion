@@ -1,0 +1,51 @@
+{
+  "dataset": "simsv2",
+  "author_csv": "data/author/simsv2/meta.csv",
+  "source_csv_sha256": "be7e482640e7ee24d2070033e1e2aef61ce183199286a8a18b0d6247556bf150",
+  "cache_dir": "data/feature_cache/simsv2_full_macbert_raw_av",
+  "run_root": "runs/native_nested_shape_points_v1",
+  "seeds": [
+    13,
+    42,
+    2026
+  ],
+  "device": "cuda",
+  "torch_threads": 4,
+  "fold_count": 3,
+  "fold_seed": 20261012,
+  "inner_fraction": 0.1,
+  "full_selection_seed": 20261013,
+  "full_selection_fraction": 0.1,
+  "predict_valid": false,
+  "hidden": 256,
+  "dropout": 0.1,
+  "batch_size": 32,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0001,
+  "max_epochs": 80,
+  "patience": 12,
+  "gradient_norm": 1.0,
+  "scheduler_patience": 3,
+  "scheduler_factor": 0.5,
+  "nested_pipeline": {
+    "name": "nested-source-honest-shape-tables-v1",
+    "implementation_sha256": "5958b1d520f6523b5d670a3d6b428d395ff115452e45102b671cf471c607d6c0",
+    "role_seed": 20261013,
+    "calibration_source_fraction": 0.15,
+    "point_selection_fraction": 0.1,
+    "shape_selection_fraction": 0.3,
+    "point_holdout_semantics": "shape_fit+shape_select+outer; not global once-only OOF",
+    "scaler_fit_role": "point_fit",
+    "context_definition": "selected standardized fusion Linear(1920,256) then GELU and eval-mode Dropout",
+    "anchor_definition": "clip(selected raw native point output,-1,1)",
+    "target_definition": "original native CH-SIMS M score, float32",
+    "export_tables": [
+      "shape_fit",
+      "shape_select",
+      "outer"
+    ],
+    "outer_role": "fixed-stage final readout only; excluded from point selection and normalization",
+    "official_VALID_used": false,
+    "official_TEST_used": false
+  }
+}

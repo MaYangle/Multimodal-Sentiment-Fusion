@@ -1,0 +1,59 @@
+{
+  "report_date": "2026-10-13",
+  "dataset": "CH-SIMS v2",
+  "recorded_at_utc": "2026-10-12T20:34:06.766Z",
+  "selection": {
+    "inventory_audit_reports_exact_id_matches": {
+      "valid": 647,
+      "test": 1034,
+      "train": 2722
+    },
+    "metadata_sha256": "be7e482640e7ee24d2070033e1e2aef61ce183199286a8a18b0d6247556bf150",
+    "sentiment_labels_parsed": false,
+    "raw_inventory_sha256": "6f17ce5f376cdff46694c52973be636a0ca1a858516b9222120590f803de3ae1",
+    "annotation_channel_columns_seen": [
+      "label_T",
+      "label_A",
+      "label_V"
+    ],
+    "raw_inventory_entries": 6245,
+    "raw_inventory_path": "data/simsv2_drive_listing.json",
+    "rows": 4403,
+    "rule": "Two official TRAIN rows from distinct source video folders; exclude video_0001 and clip ID 0001; require exact Raw inventory path and no pre-existing author MP4/receipt. Selected IDs: video_0003/0002 and video_0006/0006.",
+    "fields_used": [
+      "mode",
+      "video_id",
+      "clip_id"
+    ],
+    "metadata_path": "data/author/simsv2/meta.csv",
+    "author_publication_channel": "CH-SIMS v2 author Google Drive Raw folder, accessed through public drive.usercontent.google.com URL; no account substitution or quota workaround.",
+    "inventory_coverage_audit": "docs/author_simsv2_raw_id_coverage.json",
+    "annotation_channel_values_used": false
+  },
+  "method": {
+    "retries": 0,
+    "stopping_rule": "Stop each target immediately on quota/HTML or range/version integrity anomaly.",
+    "no_gpu": true,
+    "preflight": "One 1-byte Range request per selected file ID, bytes=0-0, to validate public source metadata before a complete transfer.",
+    "full_payload_attempts": 0,
+    "test_media_or_labels_read": false,
+    "training": false,
+    "workers": 1,
+    "range_chunking_used": false
+  },
+  "records": {
+    "publication_omitted": true,
+    "original_count": 2
+  },
+  "comparison_limit": "Feature index records expose the prior competition-channel media SHA for each official TRAIN ID. With author payloads blocked at preflight, no byte comparison can be made and no cohort-wide equivalence is claimed.",
+  "timestamp_note": "Recorded time is the receipt/report write time after the probes; individual request start timestamps were not separately captured.",
+  "publication_redaction": {
+    "full_local_report_sha256": "54c9421c7329410bae0763356848bd9019fe2a84bb5c430963cde9392f16887a",
+    "removed_path_count": 1,
+    "removed_paths": [
+      "/records"
+    ],
+    "remaining_removed_paths_list_truncated": false,
+    "reason": "Exclude per-sample dataset records, long raw arrays and response/download capabilities; retain aggregate research evidence."
+  }
+}

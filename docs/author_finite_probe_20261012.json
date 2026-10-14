@@ -1,0 +1,32 @@
+{
+  "time_utc": "2026-10-12T14:14:21.627962+00:00",
+  "scope": "bounded fresh publisher range response; no completeness claim",
+  "results": [
+    {
+      "name": "mosei_senti_data.pkl",
+      "file_id": "180l4pN6XAv8-OAYQ6OrMheFUMwtqUWbz",
+      "expected_size": 3730509179,
+      "status": 206,
+      "content_range": "bytes 0-65535/3730509179",
+      "last_modified": "Thu, 01 Jul 2021 20:17:21 GMT",
+      "content_type": "application/octet-stream",
+      "bytes_read": 65536,
+      "sha256": "183772b45f40987f92a7f2ecd50527f26bfb85d1b23f8837765f2bc1636f8b45",
+      "pickle_header": "8004",
+      "finite_range_available": true
+    },
+    {
+      "name": "simsv2_unaligned.pkl",
+      "file_id": "13JdO6GbPHOGZ8yLBFUrNR8c2FvHN-E_O",
+      "expected_size": 3620390413,
+      "status": 206,
+      "content_range": "bytes 0-65535/3620390413",
+      "last_modified": "Tue, 19 Sep 2023 09:07:03 GMT",
+      "content_type": "application/octet-stream",
+      "bytes_read": 65536,
+      "sha256": "f89461397862b76973701ee3b803ed49e13ec5eb871932d2166f6d3675cca57a",
+      "pickle_header": "8004",
+      "finite_range_available": true
+    }
+  ]
+}

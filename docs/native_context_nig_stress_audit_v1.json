@@ -1,0 +1,363 @@
+{
+  "scope": "validation pooled-feature stress; actual saved-prediction audit",
+  "test_evaluated": false,
+  "checked_evaluations": {
+    "publication_omitted": true,
+    "original_count": 198
+  },
+  "summary": {
+    "joint_dynamic": {
+      "keep_text": {
+        "MAE_mean": 0.4525982439517975,
+        "MAE_sample_sd": 0.00694398856939834,
+        "coverage90_mean": 0.7238536836682122
+      },
+      "keep_audio": {
+        "MAE_mean": 0.5682211716969808,
+        "MAE_sample_sd": 0.00941558511883214,
+        "coverage90_mean": 0.9237506439979392
+      },
+      "keep_text+audio": {
+        "MAE_mean": 0.44264580806096393,
+        "MAE_sample_sd": 0.0073212716757319165,
+        "coverage90_mean": 0.6543019062339
+      },
+      "keep_vision": {
+        "MAE_mean": 0.5607980489730835,
+        "MAE_sample_sd": 0.005880900599599876,
+        "coverage90_mean": 0.7460072127769192
+      },
+      "keep_text+vision": {
+        "MAE_mean": 0.44231172402699787,
+        "MAE_sample_sd": 0.004081189834954272,
+        "coverage90_mean": 0.633693972179289
+      },
+      "keep_audio+vision": {
+        "MAE_mean": 0.5455310344696045,
+        "MAE_sample_sd": 0.005003817885522043,
+        "coverage90_mean": 0.6161772282328697
+      },
+      "keep_text+audio+vision": {
+        "MAE_mean": 0.43464313944180805,
+        "MAE_sample_sd": 0.003459248745339307,
+        "coverage90_mean": 0.616692426584235
+      },
+      "noise:audio:0.5": {
+        "MAE_mean": 0.4348134795824687,
+        "MAE_sample_sd": 0.003356721702886779,
+        "coverage90_mean": 0.613086038124678
+      },
+      "noise:audio:1.0": {
+        "MAE_mean": 0.4350895384947459,
+        "MAE_sample_sd": 0.0035142025720459116,
+        "coverage90_mean": 0.6182380216383307
+      },
+      "noise:vision:0.5": {
+        "MAE_mean": 0.43978941440582275,
+        "MAE_sample_sd": 0.0013506263615326464,
+        "coverage90_mean": 0.6048428645028336
+      },
+      "noise:vision:1.0": {
+        "MAE_mean": 0.4669492840766907,
+        "MAE_sample_sd": 0.009225127963394279,
+        "coverage90_mean": 0.5862957238536837
+      }
+    },
+    "joint_off_dynamic": {
+      "keep_text": {
+        "MAE_mean": 0.4394850730895996,
+        "MAE_sample_sd": 0.005363103041806265,
+        "coverage90_mean": 0.8418341061308604
+      },
+      "keep_audio": {
+        "MAE_mean": 0.5482549866040548,
+        "MAE_sample_sd": 0.011542804381666102,
+        "coverage90_mean": 0.9804224626481194
+      },
+      "keep_text+audio": {
+        "MAE_mean": 0.43624210357666016,
+        "MAE_sample_sd": 0.00017400820121672933,
+        "coverage90_mean": 0.7815558990211232
+      },
+      "keep_vision": {
+        "MAE_mean": 0.5613532265027364,
+        "MAE_sample_sd": 0.013806536203641948,
+        "coverage90_mean": 0.8686244204018547
+      },
+      "keep_text+vision": {
+        "MAE_mean": 0.43545666337013245,
+        "MAE_sample_sd": 0.0048092642100772244,
+        "coverage90_mean": 0.8119526017516744
+      },
+      "keep_audio+vision": {
+        "MAE_mean": 0.5422382752100626,
+        "MAE_sample_sd": 0.011189961417436608,
+        "coverage90_mean": 0.7573415765069552
+      },
+      "keep_text+audio+vision": {
+        "MAE_mean": 0.4410692850748698,
+        "MAE_sample_sd": 0.0017546120202043352,
+        "coverage90_mean": 0.7769191138588356
+      },
+      "noise:audio:0.5": {
+        "MAE_mean": 0.441062072912852,
+        "MAE_sample_sd": 0.0016865172989895354,
+        "coverage90_mean": 0.7769191138588356
+      },
+      "noise:audio:1.0": {
+        "MAE_mean": 0.44121332963307697,
+        "MAE_sample_sd": 0.0018047933029803473,
+        "coverage90_mean": 0.7764039155074703
+      },
+      "noise:vision:0.5": {
+        "MAE_mean": 0.44219552477200824,
+        "MAE_sample_sd": 0.0015999737862584175,
+        "coverage90_mean": 0.7748583204533745
+      },
+      "noise:vision:1.0": {
+        "MAE_mean": 0.45043079058329266,
+        "MAE_sample_sd": 0.006637838912313315,
+        "coverage90_mean": 0.7588871715610509
+      }
+    },
+    "joint_off_uniform": {
+      "keep_text": {
+        "MAE_mean": 0.4429408113161723,
+        "MAE_sample_sd": 0.0024486377366110565,
+        "coverage90_mean": 0.7856774858320453
+      },
+      "keep_audio": {
+        "MAE_mean": 0.518995463848114,
+        "MAE_sample_sd": 0.0016660450059845227,
+        "coverage90_mean": 0.9098402885110767
+      },
+      "keep_text+audio": {
+        "MAE_mean": 0.4359248876571655,
+        "MAE_sample_sd": 0.002108023670445584,
+        "coverage90_mean": 0.7810407006697578
+      },
+      "keep_vision": {
+        "MAE_mean": 0.562994380791982,
+        "MAE_sample_sd": 0.008009912074750493,
+        "coverage90_mean": 0.4770736733642453
+      },
+      "keep_text+vision": {
+        "MAE_mean": 0.45124882459640503,
+        "MAE_sample_sd": 0.003667973717616784,
+        "coverage90_mean": 0.5641421947449768
+      },
+      "keep_audio+vision": {
+        "MAE_mean": 0.5098350842793783,
+        "MAE_sample_sd": 0.005926021288994864,
+        "coverage90_mean": 0.6321483771251932
+      },
+      "keep_text+audio+vision": {
+        "MAE_mean": 0.45193715890248615,
+        "MAE_sample_sd": 0.003706803589651542,
+        "coverage90_mean": 0.6290571870170015
+      },
+      "noise:audio:0.5": {
+        "MAE_mean": 0.45330317815144855,
+        "MAE_sample_sd": 0.0037048602023472318,
+        "coverage90_mean": 0.628026790314271
+      },
+      "noise:audio:1.0": {
+        "MAE_mean": 0.45445170998573303,
+        "MAE_sample_sd": 0.003306676156587007,
+        "coverage90_mean": 0.6326635754765585
+      },
+      "noise:vision:0.5": {
+        "MAE_mean": 0.4548233250776927,
+        "MAE_sample_sd": 0.004694601533132925,
+        "coverage90_mean": 0.6208140133951572
+      },
+      "noise:vision:1.0": {
+        "MAE_mean": 0.4708632826805115,
+        "MAE_sample_sd": 0.004662614828127362,
+        "coverage90_mean": 0.5971148892323545
+      }
+    },
+    "joint_uniform": {
+      "keep_text": {
+        "MAE_mean": 0.4448050657908122,
+        "MAE_sample_sd": 0.003175244047632169,
+        "coverage90_mean": 0.613086038124678
+      },
+      "keep_audio": {
+        "MAE_mean": 0.5409348209698995,
+        "MAE_sample_sd": 0.00639362698123591,
+        "coverage90_mean": 0.9356002060793406
+      },
+      "keep_text+audio": {
+        "MAE_mean": 0.4361216028531392,
+        "MAE_sample_sd": 0.0028357151324030308,
+        "coverage90_mean": 0.6630602782071098
+      },
+      "keep_vision": {
+        "MAE_mean": 0.5605247815450033,
+        "MAE_sample_sd": 0.009949978982826476,
+        "coverage90_mean": 0.6259659969088099
+      },
+      "keep_text+vision": {
+        "MAE_mean": 0.441292941570282,
+        "MAE_sample_sd": 0.005433494497165336,
+        "coverage90_mean": 0.5085007727975271
+      },
+      "keep_audio+vision": {
+        "MAE_mean": 0.5236807862917582,
+        "MAE_sample_sd": 0.005036184810164722,
+        "coverage90_mean": 0.6254507985574446
+      },
+      "keep_text+audio+vision": {
+        "MAE_mean": 0.43885578711827594,
+        "MAE_sample_sd": 0.00383030265708311,
+        "coverage90_mean": 0.5754765584750129
+      },
+      "noise:audio:0.5": {
+        "MAE_mean": 0.4400036831696828,
+        "MAE_sample_sd": 0.003878207327974011,
+        "coverage90_mean": 0.577537351880474
+      },
+      "noise:audio:1.0": {
+        "MAE_mean": 0.44155635436375934,
+        "MAE_sample_sd": 0.003783260414483544,
+        "coverage90_mean": 0.577537351880474
+      },
+      "noise:vision:0.5": {
+        "MAE_mean": 0.4422045151392619,
+        "MAE_sample_sd": 0.0027512730639329412,
+        "coverage90_mean": 0.5744461617722822
+      },
+      "noise:vision:1.0": {
+        "MAE_mean": 0.4572543303171794,
+        "MAE_sample_sd": 0.004672964915348116,
+        "coverage90_mean": 0.5569294178258629
+      }
+    },
+    "three_dynamic": {
+      "keep_text": {
+        "MAE_mean": 0.4356202483177185,
+        "MAE_sample_sd": 0.0019005418086523904,
+        "coverage90_mean": 0.8377125193199383
+      },
+      "keep_audio": {
+        "MAE_mean": 0.5503737330436707,
+        "MAE_sample_sd": 0.009545616475098785,
+        "coverage90_mean": 0.9788768675940237
+      },
+      "keep_text+audio": {
+        "MAE_mean": 0.43399134278297424,
+        "MAE_sample_sd": 0.0017521219888198866,
+        "coverage90_mean": 0.7727975270479135
+      },
+      "keep_vision": {
+        "MAE_mean": 0.5627808173497518,
+        "MAE_sample_sd": 0.010389541362745497,
+        "coverage90_mean": 0.8665636269963936
+      },
+      "keep_text+vision": {
+        "MAE_mean": 0.43603819608688354,
+        "MAE_sample_sd": 0.004411232499457009,
+        "coverage90_mean": 0.8191653786707883
+      },
+      "keep_audio+vision": {
+        "MAE_mean": 0.5439456105232239,
+        "MAE_sample_sd": 0.003707841548655851,
+        "coverage90_mean": 0.7588871715610509
+      },
+      "keep_text+audio+vision": {
+        "MAE_mean": 0.44116300344467163,
+        "MAE_sample_sd": 0.0032002270579398685,
+        "coverage90_mean": 0.7717671303451829
+      },
+      "noise:audio:0.5": {
+        "MAE_mean": 0.44118934869766235,
+        "MAE_sample_sd": 0.0032222645354387063,
+        "coverage90_mean": 0.7738279237506441
+      },
+      "noise:audio:1.0": {
+        "MAE_mean": 0.44115904966990155,
+        "MAE_sample_sd": 0.0032097449706354987,
+        "coverage90_mean": 0.7738279237506439
+      },
+      "noise:vision:0.5": {
+        "MAE_mean": 0.44289228320121765,
+        "MAE_sample_sd": 0.0024009164617103777,
+        "coverage90_mean": 0.7805255023183926
+      },
+      "noise:vision:1.0": {
+        "MAE_mean": 0.4549294908841451,
+        "MAE_sample_sd": 0.007714218153369915,
+        "coverage90_mean": 0.7594023699124163
+      }
+    },
+    "three_uniform": {
+      "keep_text": {
+        "MAE_mean": 0.44283713897069293,
+        "MAE_sample_sd": 0.0028887336911382505,
+        "coverage90_mean": 0.7599175682637815
+      },
+      "keep_audio": {
+        "MAE_mean": 0.5189762314160665,
+        "MAE_sample_sd": 0.003047729885804499,
+        "coverage90_mean": 0.9077794951056157
+      },
+      "keep_text+audio": {
+        "MAE_mean": 0.43542665243148804,
+        "MAE_sample_sd": 0.0013204770726118976,
+        "coverage90_mean": 0.7784647089129315
+      },
+      "keep_vision": {
+        "MAE_mean": 0.5679408113161722,
+        "MAE_sample_sd": 0.003234588938741315,
+        "coverage90_mean": 0.4549201442555384
+      },
+      "keep_text+vision": {
+        "MAE_mean": 0.45166364312171936,
+        "MAE_sample_sd": 0.0034209655495305606,
+        "coverage90_mean": 0.5270479134466769
+      },
+      "keep_audio+vision": {
+        "MAE_mean": 0.5108977556228638,
+        "MAE_sample_sd": 0.00134421995613059,
+        "coverage90_mean": 0.6007212776919114
+      },
+      "keep_text+audio+vision": {
+        "MAE_mean": 0.4523343046506246,
+        "MAE_sample_sd": 0.0006137875642434355,
+        "coverage90_mean": 0.5960844925296239
+      },
+      "noise:audio:0.5": {
+        "MAE_mean": 0.45381755630175274,
+        "MAE_sample_sd": 0.0009332303650072924,
+        "coverage90_mean": 0.5971148892323545
+      },
+      "noise:audio:1.0": {
+        "MAE_mean": 0.45480355620384216,
+        "MAE_sample_sd": 0.0007741464549176006,
+        "coverage90_mean": 0.6012364760432767
+      },
+      "noise:vision:0.5": {
+        "MAE_mean": 0.4545911451180776,
+        "MAE_sample_sd": 0.002429617464782377,
+        "coverage90_mean": 0.5862957238536837
+      },
+      "noise:vision:1.0": {
+        "MAE_mean": 0.4809337755044301,
+        "MAE_sample_sd": 0.002116495153591839,
+        "coverage90_mean": 0.5461102524471922
+      }
+    }
+  },
+  "suite_sha256": "13be93e86ae06c3ef5f2f2b301fbefcebed7f32d97f7179b4acc0b66245216fc",
+  "stress_sha256": "15d95fe3e53a18e580f954582d6df394b3ab4012bc2464e61b035ab2701ba5c2",
+  "publication_redaction": {
+    "full_local_report_sha256": "c7e99f0b7bb19f8906c7fe89638eda60200d490b9d08acd23afb968de37d8757",
+    "removed_path_count": 1,
+    "removed_paths": [
+      "/checked_evaluations"
+    ],
+    "remaining_removed_paths_list_truncated": false,
+    "reason": "Exclude per-sample dataset records, long raw arrays and response/download capabilities; retain aggregate research evidence."
+  }
+}

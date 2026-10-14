@@ -1,0 +1,380 @@
+{
+  "passed": true,
+  "verified_fits": 36,
+  "verified_prediction_rows": 32664,
+  "original_sha256": "1cd634ea5c23f79ac8186ea4c02862a4e30b9b87e27b7539935c073215014f08",
+  "reproduction_sha256": "eeae371dc2fd646d4953d2be765919e7043c523d070afc5c16cd3b66c24c0447",
+  "evidence": [
+    {
+      "case": "bern_d6",
+      "seed": 13,
+      "fold": 0,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "bern_d6",
+      "seed": 13,
+      "fold": 1,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "bern_d6",
+      "seed": 13,
+      "fold": 2,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "bern_d6",
+      "seed": 42,
+      "fold": 0,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "bern_d6",
+      "seed": 42,
+      "fold": 1,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "bern_d6",
+      "seed": 42,
+      "fold": 2,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "bern_d6",
+      "seed": 2026,
+      "fold": 0,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "bern_d6",
+      "seed": 2026,
+      "fold": 1,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "bern_d6",
+      "seed": 2026,
+      "fold": 2,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "median_mdn",
+      "seed": 13,
+      "fold": 0,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "median_mdn",
+      "seed": 13,
+      "fold": 1,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "median_mdn",
+      "seed": 13,
+      "fold": 2,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "median_mdn",
+      "seed": 42,
+      "fold": 0,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "median_mdn",
+      "seed": 42,
+      "fold": 1,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "median_mdn",
+      "seed": 42,
+      "fold": 2,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "median_mdn",
+      "seed": 2026,
+      "fold": 0,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "median_mdn",
+      "seed": 2026,
+      "fold": 1,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "median_mdn",
+      "seed": 2026,
+      "fold": 2,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "mixture",
+      "seed": 13,
+      "fold": 0,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "mixture",
+      "seed": 13,
+      "fold": 1,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "mixture",
+      "seed": 13,
+      "fold": 2,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "mixture",
+      "seed": 42,
+      "fold": 0,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "mixture",
+      "seed": 42,
+      "fold": 1,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "mixture",
+      "seed": 42,
+      "fold": 2,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "mixture",
+      "seed": 2026,
+      "fold": 0,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "mixture",
+      "seed": 2026,
+      "fold": 1,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "mixture",
+      "seed": 2026,
+      "fold": 2,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "scale",
+      "seed": 13,
+      "fold": 0,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "scale",
+      "seed": 13,
+      "fold": 1,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "scale",
+      "seed": 13,
+      "fold": 2,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "scale",
+      "seed": 42,
+      "fold": 0,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "scale",
+      "seed": 42,
+      "fold": 1,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "scale",
+      "seed": 42,
+      "fold": 2,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "scale",
+      "seed": 2026,
+      "fold": 0,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "scale",
+      "seed": 2026,
+      "fold": 1,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    },
+    {
+      "case": "scale",
+      "seed": 2026,
+      "fold": 2,
+      "prediction_rows": {
+        "publication_omitted": true
+      },
+      "tensors_optimizer_predictions_metrics_history_selection_budget_exact": true
+    }
+  ],
+  "scope": "independent source-copy full probability-head retraining; audited point tables reused, no point/encoder/media re-extraction or final-method claim",
+  "official_VALID_used": false,
+  "official_TEST_used": false,
+  "publication_redaction": {
+    "full_local_report_sha256": "bbdcd78160f488fcbc055bf3190544bd1bac9cde5e687eea4644060d48648fc4",
+    "removed_path_count": 36,
+    "removed_paths": [
+      "/evidence/0/prediction_rows",
+      "/evidence/1/prediction_rows",
+      "/evidence/2/prediction_rows",
+      "/evidence/3/prediction_rows",
+      "/evidence/4/prediction_rows",
+      "/evidence/5/prediction_rows",
+      "/evidence/6/prediction_rows",
+      "/evidence/7/prediction_rows",
+      "/evidence/8/prediction_rows",
+      "/evidence/9/prediction_rows",
+      "/evidence/10/prediction_rows",
+      "/evidence/11/prediction_rows",
+      "/evidence/12/prediction_rows",
+      "/evidence/13/prediction_rows",
+      "/evidence/14/prediction_rows",
+      "/evidence/15/prediction_rows",
+      "/evidence/16/prediction_rows",
+      "/evidence/17/prediction_rows",
+      "/evidence/18/prediction_rows",
+      "/evidence/19/prediction_rows",
+      "/evidence/20/prediction_rows",
+      "/evidence/21/prediction_rows",
+      "/evidence/22/prediction_rows",
+      "/evidence/23/prediction_rows",
+      "/evidence/24/prediction_rows",
+      "/evidence/25/prediction_rows",
+      "/evidence/26/prediction_rows",
+      "/evidence/27/prediction_rows",
+      "/evidence/28/prediction_rows",
+      "/evidence/29/prediction_rows",
+      "/evidence/30/prediction_rows",
+      "/evidence/31/prediction_rows",
+      "/evidence/32/prediction_rows",
+      "/evidence/33/prediction_rows",
+      "/evidence/34/prediction_rows",
+      "/evidence/35/prediction_rows"
+    ],
+    "remaining_removed_paths_list_truncated": false,
+    "reason": "Exclude per-sample dataset records, long raw arrays and response/download capabilities; retain aggregate research evidence."
+  }
+}

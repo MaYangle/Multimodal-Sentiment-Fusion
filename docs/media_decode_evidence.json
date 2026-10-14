@@ -1,0 +1,38 @@
+[
+  {
+    "path": "D:\\MYL\\JevAffect\\data\\simsv2\\Raw\\video_0001\\0001.mp4",
+    "source_sha256": "e167e091b9a5b5a098dac8d8428b64ce538ddf92f81bca249adc812f2a53b5b3",
+    "source_duration_seconds": 1.28,
+    "audio_sample_rate": 16000,
+    "audio_samples": 20480,
+    "frame_count": 3,
+    "frame_timestamps_kind": "ffmpeg_resampled_output_timeline",
+    "fps": 2.0,
+    "frame_size": 224,
+    "audio_status": "present",
+    "video_status": "present",
+    "max_seconds": 120.0,
+    "truncated": false,
+    "decode_wall_seconds": 0.46459560000221245,
+    "audio_error": null,
+    "video_error": null
+  },
+  {
+    "path": "D:\\MYL\\JevAffect\\data\\simsv2\\Raw\\video_0001\\0002.mp4",
+    "source_sha256": "10328d564e355cd599bd07471f1b9f9f43b8803b93cbfdb3b6384e599494a05c",
+    "source_duration_seconds": 2.12,
+    "audio_sample_rate": 16000,
+    "audio_samples": 34133,
+    "frame_count": 4,
+    "frame_timestamps_kind": "ffmpeg_resampled_output_timeline",
+    "fps": 2.0,
+    "frame_size": 224,
+    "audio_status": "present",
+    "video_status": "present",
+    "max_seconds": 120.0,
+    "truncated": false,
+    "decode_wall_seconds": 0.1414267000000109,
+    "audio_error": null,
+    "video_error": null
+  }
+]

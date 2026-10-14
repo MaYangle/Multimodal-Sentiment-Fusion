@@ -1,0 +1,32 @@
+{
+  "time_utc": "2026-10-12T14:34:43.947665+00:00",
+  "scope": "two label-free VALID feature inference records, CPU vs saved GPU predictions",
+  "test_evaluated": false,
+  "results": [
+    {
+      "model": "early_fusion",
+      "count": 2,
+      "max_absolute_prediction_difference": 1.7881393432617188e-07,
+      "checkpoint_sha256": "a2e45f372d7bb9c463e6a7867e15764da8a8769db34131f35b7eadc2ca395966",
+      "inference_predictions_sha256": "a3dae7f8ab00d799f43964dc78d3b99f0452b94588b88c64e6073e8f9d416574",
+      "reference_predictions_sha256": "1685265ff7be74f2779c93c4fc1eab3780d35a29e98ad6d6489666ce680b2eb4"
+    },
+    {
+      "model": "almt",
+      "count": 2,
+      "max_absolute_prediction_difference": 1.7881393432617188e-07,
+      "checkpoint_sha256": "6855eacce2b432ad902862477157f443c53d7b45a654a688fafbc490a94b891f",
+      "inference_predictions_sha256": "3afbba026485cba6322b967f16fa113afc3cbc6957b214a6630bd1c5cb616dd9",
+      "reference_predictions_sha256": "9bb2a6a2b404511e5db95664042bad6c203ac060f8c89252a1f93c35ca052e5a"
+    },
+    {
+      "model": "joint_dynamic",
+      "count": 2,
+      "max_absolute_prediction_difference": 1.1920928955078125e-07,
+      "checkpoint_sha256": "8977077a712454f4a9e8eb6db1d8cf206024102e5d1d2f2f2158788d639687e7",
+      "inference_predictions_sha256": "ceee5a89c15697dbf759eb5804db94305c26ad8794aab248b0458cc945bac7a8",
+      "reference_predictions_sha256": "52ec31d4a36f1f1e72e3507c80d47a09cd76f995f3229c65e5c70bbda392044b"
+    }
+  ],
+  "all_passed": true
+}

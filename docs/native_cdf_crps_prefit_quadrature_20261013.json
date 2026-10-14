@@ -1,0 +1,23 @@
+{
+  "scope": "pre-CRPS-fit numerical assay of already-completed NLL controls; no refit/tuning",
+  "suite_sha256": "ad4519e7fad21bc16c7453c86216ed0fcd613d29c092933450ee52e6950d1b4a",
+  "quadrature_code_sha256": "51c3ed9cb553a5cdabe74ecc5e33afd6e2e6c9dbfd6aecf2a14d752d97659dc7",
+  "rows": {
+    "publication_omitted": true,
+    "original_count": 36
+  },
+  "complete": true,
+  "numerical_gate_passed": true,
+  "max_mean_absolute_difference_48_192": 5.041694321023496e-08,
+  "official_VALID_used": false,
+  "official_TEST_used": false,
+  "publication_redaction": {
+    "full_local_report_sha256": "8e11c44f052b4988c0e7d95422989e8399766cfca47c9106f59a16b34e9dbea0",
+    "removed_path_count": 1,
+    "removed_paths": [
+      "/rows"
+    ],
+    "remaining_removed_paths_list_truncated": false,
+    "reason": "Exclude per-sample dataset records, long raw arrays and response/download capabilities; retain aggregate research evidence."
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "time_utc": "2026-10-12T17:17:01.307198+00:00",
+  "scope": "fresh isolated install + source snapshot + complete author re-preparation + 176 tests + three real32/32 CPU resume smokes + two selected-model CPU inference paths",
+  "environment_audit_sha256": "80398a3afcefebec887a409fd4b5c1028530d44e0c599cac57f2fde5a3a92e79",
+  "cache_comparison_sha256": "125ef5f42697ff94fe0b26529832b385ac7de5833cf1a34fffe8f92d5ec90c2a",
+  "tests_log_sha256": "8102b7edcfeed0f9df10f29c9eecde304d78a084aa8ca03fbd30a8d552d88a38",
+  "smoke": [
+    {
+      "model": "text",
+      "train": 32,
+      "valid": 32,
+      "epochs": 2,
+      "optimizer_updates": 2,
+      "actual_resume_verified": true,
+      "result_sha256": "432fd9e70d14072367f554f36c29b15f74acddece0be5b35b962fe5b1377115e",
+      "checkpoint_sha256": "eceb654fe76aedabf398bf7095527ae5119c713b13a535177578f70379a6596f"
+    },
+    {
+      "model": "early_fusion",
+      "train": 32,
+      "valid": 32,
+      "epochs": 2,
+      "optimizer_updates": 2,
+      "actual_resume_verified": true,
+      "result_sha256": "62e9f0a127106a9bf2c9527b43cd470555d2f2ead22a6b2bfb54982b02861c36",
+      "checkpoint_sha256": "7a6b06f4dcea0938a85491a4003fed3971863895c20ad72ded7234f1cbae1d7a"
+    },
+    {
+      "model": "almt",
+      "train": 32,
+      "valid": 32,
+      "epochs": 2,
+      "optimizer_updates": 2,
+      "actual_resume_verified": true,
+      "result_sha256": "381c2e779bd78a52f6e098ffce46ee95f56c4d996d864dcb69b0e47a5a75abbb",
+      "checkpoint_sha256": "b4bd5269bbcfa8bcc69c3b7210fd228795db5c1ad3c70d0e765b4c64c3a080f5"
+    }
+  ],
+  "inference": [
+    {
+      "model": "early_fusion",
+      "count": 2,
+      "max_absolute_difference": 1.7881393432617188e-07,
+      "predictions_sha256": "67d439145d98ea9e78db1ab1b8e19aa181fd5f2c8436a257e61fdbce4b603630"
+    },
+    {
+      "model": "almt",
+      "count": 2,
+      "max_absolute_difference": 1.1920928955078125e-07,
+      "predictions_sha256": "c14bf9d3ed44096b2185b2b573d3d4c957cec32fa42880cb540d91be9530b07d"
+    }
+  ],
+  "all_passed": true,
+  "full_formal_reproduction_complete": false,
+  "original_method_or_raw_encoding_reproduced": false,
+  "test_evaluated": false
+}

@@ -1,0 +1,41 @@
+{
+  "scope": "small real English train/valid raw-media flow check; not a model benchmark",
+  "sample_count": 76,
+  "split_counts": {
+    "train": 54,
+    "valid": 22
+  },
+  "video_present": 70,
+  "video_missing": 6,
+  "separate_wav_present": 76,
+  "provided_transcript_present": 76,
+  "feature_lengths": {
+    "text": {
+      "min": 7,
+      "median": 30.0,
+      "max": 64
+    },
+    "audio": {
+      "min": 97,
+      "median": 352.5,
+      "max": 1187
+    },
+    "vision": {
+      "min": 0,
+      "median": 13.5,
+      "max": 48
+    }
+  },
+  "per_video_wall_seconds": {
+    "median": 0.1184681999948225,
+    "max": 0.3220666999986861
+  },
+  "selection_sha256": "9c2bba4971b81cc2219421f273b94acd634f8b7447f0b7b0489ed544146d9dd3",
+  "input_manifest_sha256": "ae64bc93e2d9271076e5a5765077c6f54f809585929e2cfe6b2c23becd22e28e",
+  "download_manifest_sha256": "ed47c67341096957fca564790b78bcd8a5701e55e28c6ce4eba777fd4aee7577",
+  "feature_index_sha256": "d4c9ac15cc3501998d3e7052b350a4382bed9ebaefa298e39eb6f15e7dae429a",
+  "feature_meta_sha256": "2a34be77bd99c1eea69edc1937d84d11dd5a820f7abdc09e86515c2e9ea22231",
+  "all_npz_sha256_verified": true,
+  "test_assets_or_labels_used": false,
+  "sentiment_checkpoint_loaded": false
+}

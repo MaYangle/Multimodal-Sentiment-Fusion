@@ -1,0 +1,101 @@
+[
+  {
+    "dataset": "simsv2",
+    "pooling": "cls",
+    "runs": [
+      {
+        "run_dir": "D:\\MYL\\JevAffect\\runs\\text_pooling_controls\\cls\\simsv2\\text_mlp\\seed_13",
+        "seed": 13,
+        "best_epoch": 5,
+        "best_accuracy": 0.38794435857805254,
+        "last_epoch": 15,
+        "completed": true,
+        "resumed": false
+      },
+      {
+        "run_dir": "D:\\MYL\\JevAffect\\runs\\text_pooling_controls\\cls\\simsv2\\text_mlp\\seed_42",
+        "seed": 42,
+        "best_epoch": 5,
+        "best_accuracy": 0.3910355486862442,
+        "last_epoch": 15,
+        "completed": true,
+        "resumed": false
+      },
+      {
+        "run_dir": "D:\\MYL\\JevAffect\\runs\\text_pooling_controls\\cls\\simsv2\\text_mlp\\seed_2026",
+        "seed": 2026,
+        "best_epoch": 4,
+        "best_accuracy": 0.3956723338485317,
+        "last_epoch": 14,
+        "completed": true,
+        "resumed": false
+      }
+    ]
+  },
+  {
+    "dataset": "simsv2",
+    "pooling": "masked_mean",
+    "runs": [
+      {
+        "run_dir": "D:\\MYL\\JevAffect\\runs\\text_pooling_controls\\masked_mean\\simsv2\\text_mlp\\seed_13",
+        "seed": 13,
+        "best_epoch": 4,
+        "best_accuracy": 0.38794435857805254,
+        "last_epoch": 14,
+        "completed": true,
+        "resumed": false
+      },
+      {
+        "run_dir": "D:\\MYL\\JevAffect\\runs\\text_pooling_controls\\masked_mean\\simsv2\\text_mlp\\seed_42",
+        "seed": 42,
+        "best_epoch": 4,
+        "best_accuracy": 0.3972179289026275,
+        "last_epoch": 14,
+        "completed": true,
+        "resumed": false
+      },
+      {
+        "run_dir": "D:\\MYL\\JevAffect\\runs\\text_pooling_controls\\masked_mean\\simsv2\\text_mlp\\seed_2026",
+        "seed": 2026,
+        "best_epoch": 2,
+        "best_accuracy": 0.3941267387944359,
+        "last_epoch": 12,
+        "completed": true,
+        "resumed": false
+      }
+    ]
+  },
+  {
+    "dataset": "mosei_author",
+    "pooling": "masked_mean",
+    "runs": [
+      {
+        "run_dir": "D:\\MYL\\JevAffect\\runs\\text_pooling_controls\\masked_mean\\mosei_author\\text_mlp\\seed_13",
+        "seed": 13,
+        "best_epoch": 3,
+        "best_accuracy": 0.5376803848209514,
+        "last_epoch": 13,
+        "completed": true,
+        "resumed": false
+      },
+      {
+        "run_dir": "D:\\MYL\\JevAffect\\runs\\text_pooling_controls\\masked_mean\\mosei_author\\text_mlp\\seed_42",
+        "seed": 42,
+        "best_epoch": 4,
+        "best_accuracy": 0.5424906467129877,
+        "last_epoch": 14,
+        "completed": true,
+        "resumed": false
+      },
+      {
+        "run_dir": "D:\\MYL\\JevAffect\\runs\\text_pooling_controls\\masked_mean\\mosei_author\\text_mlp\\seed_2026",
+        "seed": 2026,
+        "best_epoch": 2,
+        "best_accuracy": 0.5371459112773918,
+        "last_epoch": 12,
+        "completed": true,
+        "resumed": false
+      }
+    ]
+  }
+]

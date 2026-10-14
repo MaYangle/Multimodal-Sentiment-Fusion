@@ -1,0 +1,16 @@
+{
+  "source_files_verified": 633,
+  "source_root": "D:\\MYL\\JevAffect\\work\\source-native-cdf-crps-20261014",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "python_executable": "D:\\MYL\\JevAffect\\work\\fresh-env-20261013\\Scripts\\python.exe",
+  "venv": "D:\\MYL\\JevAffect\\work\\fresh-env-20261013",
+  "include_system_site_packages": false,
+  "torch": "2.11.0+cu128",
+  "numpy": "2.3.5",
+  "module_paths": {
+    "jevaffect": "D:\\MYL\\JevAffect\\work\\source-native-cdf-crps-20261014\\jevaffect\\__init__.py",
+    "trainer": "D:\\MYL\\JevAffect\\work\\source-native-cdf-crps-20261014\\jevaffect\\native_crps_training.py",
+    "scoring": "D:\\MYL\\JevAffect\\work\\source-native-cdf-crps-20261014\\jevaffect\\cdf_crps.py"
+  },
+  "scope": "independent source + existing isolated dependencies; reused point tables, not new environment install/full encoder extraction"
+}

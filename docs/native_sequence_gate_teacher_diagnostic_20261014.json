@@ -1,0 +1,758 @@
+{
+  "created_utc": "2026-10-14T03:59:49Z",
+  "cycle_offsets_within_availability_strata": [
+    1,
+    17,
+    113
+  ],
+  "diagnostic_contract": {
+    "VALID_M_passed_as_target_argument": false,
+    "VALID_M_used_externally_to_construct_privileged_oracle_R": true,
+    "deployment_forward_calls_are_feature_only": true,
+    "model_weights_or_training_plan_changed": false,
+    "no_forward_features_target_call": true,
+    "oracle_R_passed_only_to_explicit_eval_probe": true,
+    "oracle_is_not_deployable_not_benchmark_not_selection": true,
+    "oracle_route_is_privileged_label_diagnostic": true,
+    "same_647_VALID_clips_used_for_all_rows": true
+  },
+  "input_bindings": {
+    "author_csv_sha256": "be7e482640e7ee24d2070033e1e2aef61ce183199286a8a18b0d6247556bf150",
+    "config_sha256": "32d0cf0b6c9b5846ee8cb6a383e421afce34bda95d62009dcc489cb4d5c32ad0",
+    "standardized_cache_metadata_sha256": "f4952a6d3ecd31ab8b24b19e585b6a85b31d019b2cb4f622ba1a7e35a14be82b",
+    "test_feature_split_opened": false,
+    "test_scores_parsed": false,
+    "valid_M_parsed": true,
+    "valid_TAV_parsed": false,
+    "valid_rows": 647,
+    "valid_unique_ids": 647
+  },
+  "interpretation_guardrail": "Oracle routing uses VALID native M after target-free scores are produced and is a privileged-label diagnostic only. Do not describe it as deployable, benchmark performance, evidence for model selection, or a trained performance improvement. If the oracle route also fails to improve a frozen fuser, that supports a mismatch between the score-error teacher and the fuser's actual path on this checkpoint; it does not prove every architecture is ineffective.",
+  "models": {
+    "distilled_post_norm": {
+      "all_absent_safety": {
+        "passed": true,
+        "policy_mass": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "prediction_finite": true,
+        "routed_mass": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "availability_strata": {
+        "111": 647
+      },
+      "best_epoch": 10,
+      "case_route_at_deployment": "learned policy",
+      "checkpoint_sha256": "307464a9f77b1a292b392ed6fa942e7db574b44d04f3157340b0323a6c9ab17f",
+      "deployment_metrics": {
+        "Corr": 0.6567023002457069,
+        "F1_score": 0.7865884859728721,
+        "MAE": 0.38025590777397156,
+        "Mult_acc_2": 0.7836166924265843,
+        "Mult_acc_2_weak": 0.6483050847457628,
+        "Mult_acc_3": 0.6939721792890263,
+        "Mult_acc_5": 0.43894899536321486,
+        "R_squre": 0.38341677039513733,
+        "count": 647,
+        "weak_count": 236
+      },
+      "identity_sha256": "7d48f3cfcb84428f54b7ed9de5bacdcfb5929271db1452c2e8d50dd99146184c",
+      "per_clip_rows": 647,
+      "policy_route_interpretation": "teacher-trained policy used by the registered target-free inference path",
+      "policy_shift_offsets_preserve_availability": [
+        1,
+        17,
+        113
+      ],
+      "prediction_replay_max_abs_delta_vs_saved": 3.5762786865234375e-07,
+      "privileged_oracle_summary": {
+        "computed_outside_model_forward": true,
+        "formula": "softmax(-0.3 * (unimodal_score - VALID_native_M)^2) over present modalities",
+        "interpretation": "VALID labels grant privileged routing information; an oracle change is explanatory only and is not a performance claim or selectable checkpoint.",
+        "mean_KL_oracle_to_target_free_policy": 0.0037273533752684106,
+        "mean_oracle_entropy_nats": 1.0950589179992676,
+        "oracle_MAE_delta_vs_deploy": -0.0003820955753326416
+      },
+      "registered_policy_status": "trained_by_distillation_and_used_for_label_free_routing",
+      "scenarios": {
+        "deploy": {
+          "delta_MAE_vs_deploy": 0.0,
+          "metrics": {
+            "Corr": 0.6567023002457069,
+            "F1_score": 0.7865884859728721,
+            "MAE": 0.38025590777397156,
+            "Mult_acc_2": 0.7836166924265843,
+            "Mult_acc_2_weak": 0.6483050847457628,
+            "Mult_acc_3": 0.6939721792890263,
+            "Mult_acc_5": 0.43894899536321486,
+            "R_squre": 0.38341677039513733,
+            "count": 647,
+            "weak_count": 236
+          },
+          "route_summary": {
+            "absent_ratio_max": 0.0,
+            "mean_R_TAV": [
+              0.3395541,
+              0.33386552,
+              0.32658041
+            ],
+            "mean_total_R": 1.0
+          }
+        },
+        "policy_R_cycle_shift_1": {
+          "delta_MAE_vs_deploy": -9.387731552124023e-06,
+          "metrics": {
+            "Corr": 0.6567340008765692,
+            "F1_score": 0.7865884859728721,
+            "MAE": 0.38024652004241943,
+            "Mult_acc_2": 0.7836166924265843,
+            "Mult_acc_2_weak": 0.6483050847457628,
+            "Mult_acc_3": 0.6939721792890263,
+            "Mult_acc_5": 0.43894899536321486,
+            "R_squre": 0.38350499466008314,
+            "count": 647,
+            "weak_count": 236
+          },
+          "route_summary": {
+            "absent_ratio_max": 0.0,
+            "mean_R_TAV": [
+              0.33955413,
+              0.33386552,
+              0.32658041
+            ],
+            "mean_total_R": 1.0
+          }
+        },
+        "policy_R_cycle_shift_113": {
+          "delta_MAE_vs_deploy": 2.6702880859375e-05,
+          "metrics": {
+            "Corr": 0.6566510864238083,
+            "F1_score": 0.7865884859728721,
+            "MAE": 0.38028261065483093,
+            "Mult_acc_2": 0.7836166924265843,
+            "Mult_acc_2_weak": 0.6483050847457628,
+            "Mult_acc_3": 0.6939721792890263,
+            "Mult_acc_5": 0.43894899536321486,
+            "R_squre": 0.38335704220640576,
+            "count": 647,
+            "weak_count": 236
+          },
+          "route_summary": {
+            "absent_ratio_max": 0.0,
+            "mean_R_TAV": [
+              0.33955419,
+              0.33386552,
+              0.32658041
+            ],
+            "mean_total_R": 1.0
+          }
+        },
+        "policy_R_cycle_shift_17": {
+          "delta_MAE_vs_deploy": 9.447336196899414e-06,
+          "metrics": {
+            "Corr": 0.6566883226639796,
+            "F1_score": 0.7865884859728721,
+            "MAE": 0.38026535511016846,
+            "Mult_acc_2": 0.7836166924265843,
+            "Mult_acc_2_weak": 0.6483050847457628,
+            "Mult_acc_3": 0.6939721792890263,
+            "Mult_acc_5": 0.43894899536321486,
+            "R_squre": 0.38341790610831983,
+            "count": 647,
+            "weak_count": 236
+          },
+          "route_summary": {
+            "absent_ratio_max": 0.0,
+            "mean_R_TAV": [
+              0.33955419,
+              0.33386555,
+              0.32658041
+            ],
+            "mean_total_R": 1.0
+          }
+        },
+        "privileged_VALID_M_oracle_R": {
+          "delta_MAE_vs_deploy": -0.0003820955753326416,
+          "metrics": {
+            "Corr": 0.6573573277087138,
+            "F1_score": 0.7880521033631664,
+            "MAE": 0.3798738121986389,
+            "Mult_acc_2": 0.7851622874806801,
+            "Mult_acc_2_weak": 0.6483050847457628,
+            "Mult_acc_3": 0.6955177743431221,
+            "Mult_acc_5": 0.44049459041731065,
+            "R_squre": 0.3845153664058518,
+            "count": 647,
+            "weak_count": 236
+          },
+          "route_summary": {
+            "absent_ratio_max": 0.0,
+            "mean_R_TAV": [
+              0.33843002,
+              0.3332397,
+              0.32833031
+            ],
+            "mean_total_R": 1.0
+          }
+        },
+        "uniform_present_R_1": {
+          "delta_MAE_vs_deploy": 1.0281801223754883e-05,
+          "metrics": {
+            "Corr": 0.6566795666776826,
+            "F1_score": 0.7865884859728721,
+            "MAE": 0.3802661895751953,
+            "Mult_acc_2": 0.7836166924265843,
+            "Mult_acc_2_weak": 0.6483050847457628,
+            "Mult_acc_3": 0.6939721792890263,
+            "Mult_acc_5": 0.43894899536321486,
+            "R_squre": 0.3834533197102816,
+            "count": 647,
+            "weak_count": 236
+          },
+          "route_summary": {
+            "absent_ratio_max": 0.0,
+            "mean_R_TAV": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "mean_total_R": 3.0
+          }
+        },
+        "uniform_present_R_1_over_3": {
+          "delta_MAE_vs_deploy": 1.0281801223754883e-05,
+          "metrics": {
+            "Corr": 0.6566795704712718,
+            "F1_score": 0.7865884859728721,
+            "MAE": 0.3802661895751953,
+            "Mult_acc_2": 0.7836166924265843,
+            "Mult_acc_2_weak": 0.6483050847457628,
+            "Mult_acc_3": 0.6939721792890263,
+            "Mult_acc_5": 0.43894899536321486,
+            "R_squre": 0.38345342295693463,
+            "count": 647,
+            "weak_count": 236
+          },
+          "route_summary": {
+            "absent_ratio_max": 0.0,
+            "mean_R_TAV": [
+              0.33333185,
+              0.33333185,
+              0.33333185
+            ],
+            "mean_total_R": 1.0
+          }
+        }
+      },
+      "valid_clip_count": 647
+    },
+    "distilled_static": {
+      "all_absent_safety": {
+        "passed": true,
+        "policy_mass": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "prediction_finite": true,
+        "routed_mass": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "availability_strata": {
+        "111": 647
+      },
+      "best_epoch": 11,
+      "case_route_at_deployment": "R=1 per present modality",
+      "checkpoint_sha256": "cfffe005c6488c80ba92241307229c2aadd5a5e2a532600b7895003fc7b7b07a",
+      "deployment_metrics": {
+        "Corr": 0.6553705403949637,
+        "F1_score": 0.7819528833160634,
+        "MAE": 0.3796192705631256,
+        "Mult_acc_2": 0.7789799072642968,
+        "Mult_acc_2_weak": 0.635593220338983,
+        "Mult_acc_3": 0.6846986089644513,
+        "Mult_acc_5": 0.43585780525502316,
+        "R_squre": 0.38966138608218603,
+        "count": 647,
+        "weak_count": 236
+      },
+      "identity_sha256": "58b63337c4c9a163afdee60ff03a0816f0fb3e3cbbc6a340a6017253daff3fe0",
+      "per_clip_rows": 647,
+      "policy_route_interpretation": "teacher-trained auxiliary policy; registered inference does not execute it",
+      "policy_shift_offsets_preserve_availability": [
+        1,
+        17,
+        113
+      ],
+      "prediction_replay_max_abs_delta_vs_saved": 2.980232238769531e-07,
+      "privileged_oracle_summary": {
+        "computed_outside_model_forward": true,
+        "formula": "softmax(-0.3 * (unimodal_score - VALID_native_M)^2) over present modalities",
+        "interpretation": "VALID labels grant privileged routing information; an oracle change is explanatory only and is not a performance claim or selectable checkpoint.",
+        "mean_KL_oracle_to_target_free_policy": 0.003489880181076064,
+        "mean_oracle_entropy_nats": 1.0951007604599,
+        "oracle_MAE_delta_vs_deploy": 0.0
+      },
+      "registered_policy_status": "trained_by_distillation_but_not_used_for_routing",
+      "scenarios": {
+        "deploy": {
+          "delta_MAE_vs_deploy": 0.0,
+          "metrics": {
+            "Corr": 0.6553705403949637,
+            "F1_score": 0.7819528833160634,
+            "MAE": 0.3796192705631256,
+            "Mult_acc_2": 0.7789799072642968,
+            "Mult_acc_2_weak": 0.635593220338983,
+            "Mult_acc_3": 0.6846986089644513,
+            "Mult_acc_5": 0.43585780525502316,
+            "R_squre": 0.38966138608218603,
+            "count": 647,
+            "weak_count": 236
+          },
+          "route_summary": {
+            "absent_ratio_max": 0.0,
+            "mean_R_TAV": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "mean_total_R": 3.0
+          }
+        },
+        "policy_R_cycle_shift_1": {
+          "delta_MAE_vs_deploy": 0.0,
+          "metrics": {
+            "Corr": 0.6553705383960523,
+            "F1_score": 0.7819528833160634,
+            "MAE": 0.3796192705631256,
+            "Mult_acc_2": 0.7789799072642968,
+            "Mult_acc_2_weak": 0.635593220338983,
+            "Mult_acc_3": 0.6846986089644513,
+            "Mult_acc_5": 0.43585780525502316,
+            "R_squre": 0.38966133445885953,
+            "count": 647,
+            "weak_count": 236
+          },
+          "route_summary": {
+            "absent_ratio_max": 0.0,
+            "mean_R_TAV": [
+              0.33997434,
+              0.33280814,
+              0.32721761
+            ],
+            "mean_total_R": 1.0
+          }
+        },
+        "policy_R_cycle_shift_113": {
+          "delta_MAE_vs_deploy": 0.0,
+          "metrics": {
+            "Corr": 0.655370543657055,
+            "F1_score": 0.7819528833160634,
+            "MAE": 0.3796192705631256,
+            "Mult_acc_2": 0.7789799072642968,
+            "Mult_acc_2_weak": 0.635593220338983,
+            "Mult_acc_3": 0.6846986089644513,
+            "Mult_acc_5": 0.43585780525502316,
+            "R_squre": 0.38966133445885953,
+            "count": 647,
+            "weak_count": 236
+          },
+          "route_summary": {
+            "absent_ratio_max": 0.0,
+            "mean_R_TAV": [
+              0.33997446,
+              0.33280805,
+              0.32721764
+            ],
+            "mean_total_R": 1.0
+          }
+        },
+        "policy_R_cycle_shift_17": {
+          "delta_MAE_vs_deploy": 0.0,
+          "metrics": {
+            "Corr": 0.6553705409841677,
+            "F1_score": 0.7819528833160634,
+            "MAE": 0.3796192705631256,
+            "Mult_acc_2": 0.7789799072642968,
+            "Mult_acc_2_weak": 0.635593220338983,
+            "Mult_acc_3": 0.6846986089644513,
+            "Mult_acc_5": 0.43585780525502316,
+            "R_squre": 0.38966138608218603,
+            "count": 647,
+            "weak_count": 236
+          },
+          "route_summary": {
+            "absent_ratio_max": 0.0,
+            "mean_R_TAV": [
+              0.3399744,
+              0.33280808,
+              0.32721761
+            ],
+            "mean_total_R": 1.0
+          }
+        },
+        "privileged_VALID_M_oracle_R": {
+          "delta_MAE_vs_deploy": 0.0,
+          "metrics": {
+            "Corr": 0.6553705468596106,
+            "F1_score": 0.7819528833160634,
+            "MAE": 0.3796192705631256,
+            "Mult_acc_2": 0.7789799072642968,
+            "Mult_acc_2_weak": 0.635593220338983,
+            "Mult_acc_3": 0.6846986089644513,
+            "Mult_acc_5": 0.43585780525502316,
+            "R_squre": 0.38966138608218603,
+            "count": 647,
+            "weak_count": 236
+          },
+          "route_summary": {
+            "absent_ratio_max": 0.0,
+            "mean_R_TAV": [
+              0.33848512,
+              0.33318585,
+              0.32832882
+            ],
+            "mean_total_R": 1.0
+          }
+        },
+        "uniform_present_R_1": {
+          "delta_MAE_vs_deploy": 0.0,
+          "metrics": {
+            "Corr": 0.6553705403949637,
+            "F1_score": 0.7819528833160634,
+            "MAE": 0.3796192705631256,
+            "Mult_acc_2": 0.7789799072642968,
+            "Mult_acc_2_weak": 0.635593220338983,
+            "Mult_acc_3": 0.6846986089644513,
+            "Mult_acc_5": 0.43585780525502316,
+            "R_squre": 0.38966138608218603,
+            "count": 647,
+            "weak_count": 236
+          },
+          "route_summary": {
+            "absent_ratio_max": 0.0,
+            "mean_R_TAV": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "mean_total_R": 3.0
+          }
+        },
+        "uniform_present_R_1_over_3": {
+          "delta_MAE_vs_deploy": 0.0,
+          "metrics": {
+            "Corr": 0.6553705427077136,
+            "F1_score": 0.7819528833160634,
+            "MAE": 0.3796192705631256,
+            "Mult_acc_2": 0.7789799072642968,
+            "Mult_acc_2_weak": 0.635593220338983,
+            "Mult_acc_3": 0.6846986089644513,
+            "Mult_acc_5": 0.43585780525502316,
+            "R_squre": 0.38966138608218603,
+            "count": 647,
+            "weak_count": 236
+          },
+          "route_summary": {
+            "absent_ratio_max": 0.0,
+            "mean_R_TAV": [
+              0.33333185,
+              0.33333185,
+              0.33333185
+            ],
+            "mean_total_R": 1.0
+          }
+        }
+      },
+      "valid_clip_count": 647
+    },
+    "post_norm": {
+      "all_absent_safety": {
+        "passed": true,
+        "policy_mass": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "prediction_finite": true,
+        "routed_mass": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "availability_strata": {
+        "111": 647
+      },
+      "best_epoch": 11,
+      "case_route_at_deployment": "R=1 per present modality",
+      "checkpoint_sha256": "e8f8ac9b8656a08e81bb646d7e8a5145fb31ebeba452a6b425f7a4b58e7ac2c5",
+      "deployment_metrics": {
+        "Corr": 0.6553373761915547,
+        "F1_score": 0.7789032732925117,
+        "MAE": 0.3798142671585083,
+        "Mult_acc_2": 0.7758887171561051,
+        "Mult_acc_2_weak": 0.6271186440677966,
+        "Mult_acc_3": 0.6986089644513137,
+        "Mult_acc_5": 0.4435857805255023,
+        "R_squre": 0.3895781176565818,
+        "count": 647,
+        "weak_count": 236
+      },
+      "identity_sha256": "5d0d7d87b6bd6a8e3854a96a1ea8622c72d7c2dda8d62d05534ca0959c23d2c3",
+      "per_clip_rows": 647,
+      "policy_route_interpretation": "dormant, untrained policy head; policy-cycle shifts are a random-head negative control",
+      "policy_shift_offsets_preserve_availability": [
+        1,
+        17,
+        113
+      ],
+      "prediction_replay_max_abs_delta_vs_saved": 3.8743019104003906e-07,
+      "privileged_oracle_summary": {
+        "computed_outside_model_forward": true,
+        "formula": "softmax(-0.3 * (unimodal_score - VALID_native_M)^2) over present modalities",
+        "interpretation": "VALID labels grant privileged routing information; an oracle change is explanatory only and is not a performance claim or selectable checkpoint.",
+        "mean_KL_oracle_to_target_free_policy": 0.007179593926549301,
+        "mean_oracle_entropy_nats": 1.0949139595031738,
+        "oracle_MAE_delta_vs_deploy": -0.0009142756462097168
+      },
+      "registered_policy_status": "present_but_unused",
+      "scenarios": {
+        "deploy": {
+          "delta_MAE_vs_deploy": 0.0,
+          "metrics": {
+            "Corr": 0.6553373761915547,
+            "F1_score": 0.7789032732925117,
+            "MAE": 0.3798142671585083,
+            "Mult_acc_2": 0.7758887171561051,
+            "Mult_acc_2_weak": 0.6271186440677966,
+            "Mult_acc_3": 0.6986089644513137,
+            "Mult_acc_5": 0.4435857805255023,
+            "R_squre": 0.3895781176565818,
+            "count": 647,
+            "weak_count": 236
+          },
+          "route_summary": {
+            "absent_ratio_max": 0.0,
+            "mean_R_TAV": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "mean_total_R": 3.0
+          }
+        },
+        "policy_R_cycle_shift_1": {
+          "delta_MAE_vs_deploy": -3.8117170333862305e-05,
+          "metrics": {
+            "Corr": 0.6554618782213425,
+            "F1_score": 0.7789032732925117,
+            "MAE": 0.37977614998817444,
+            "Mult_acc_2": 0.7758887171561051,
+            "Mult_acc_2_weak": 0.6271186440677966,
+            "Mult_acc_3": 0.6986089644513137,
+            "Mult_acc_5": 0.4435857805255023,
+            "R_squre": 0.38976747201809214,
+            "count": 647,
+            "weak_count": 236
+          },
+          "route_summary": {
+            "absent_ratio_max": 0.0,
+            "mean_R_TAV": [
+              0.32253692,
+              0.36578295,
+              0.31168011
+            ],
+            "mean_total_R": 1.0
+          }
+        },
+        "policy_R_cycle_shift_113": {
+          "delta_MAE_vs_deploy": -5.441904067993164e-05,
+          "metrics": {
+            "Corr": 0.6554725638744305,
+            "F1_score": 0.7789032732925117,
+            "MAE": 0.37975984811782837,
+            "Mult_acc_2": 0.7758887171561051,
+            "Mult_acc_2_weak": 0.6271186440677966,
+            "Mult_acc_3": 0.6970633693972179,
+            "Mult_acc_5": 0.4420401854714065,
+            "R_squre": 0.38978543693570544,
+            "count": 647,
+            "weak_count": 236
+          },
+          "route_summary": {
+            "absent_ratio_max": 0.0,
+            "mean_R_TAV": [
+              0.32253674,
+              0.36578304,
+              0.31168017
+            ],
+            "mean_total_R": 1.0
+          }
+        },
+        "policy_R_cycle_shift_17": {
+          "delta_MAE_vs_deploy": -1.4871358871459961e-05,
+          "metrics": {
+            "Corr": 0.6554166744592954,
+            "F1_score": 0.7789032732925117,
+            "MAE": 0.37979939579963684,
+            "Mult_acc_2": 0.7758887171561051,
+            "Mult_acc_2_weak": 0.6271186440677966,
+            "Mult_acc_3": 0.6986089644513137,
+            "Mult_acc_5": 0.4435857805255023,
+            "R_squre": 0.3896874558620559,
+            "count": 647,
+            "weak_count": 236
+          },
+          "route_summary": {
+            "absent_ratio_max": 0.0,
+            "mean_R_TAV": [
+              0.32253686,
+              0.36578295,
+              0.31168002
+            ],
+            "mean_total_R": 1.0
+          }
+        },
+        "privileged_VALID_M_oracle_R": {
+          "delta_MAE_vs_deploy": -0.0009142756462097168,
+          "metrics": {
+            "Corr": 0.656978444743109,
+            "F1_score": 0.7804910141435256,
+            "MAE": 0.3788999915122986,
+            "Mult_acc_2": 0.7774343122102009,
+            "Mult_acc_2_weak": 0.6271186440677966,
+            "Mult_acc_3": 0.7001545595054096,
+            "Mult_acc_5": 0.4435857805255023,
+            "R_squre": 0.3921336788104003,
+            "count": 647,
+            "weak_count": 236
+          },
+          "route_summary": {
+            "absent_ratio_max": 0.0,
+            "mean_R_TAV": [
+              0.33853328,
+              0.33316842,
+              0.32829854
+            ],
+            "mean_total_R": 1.0
+          }
+        },
+        "uniform_present_R_1": {
+          "delta_MAE_vs_deploy": 0.0,
+          "metrics": {
+            "Corr": 0.6553373761915547,
+            "F1_score": 0.7789032732925117,
+            "MAE": 0.3798142671585083,
+            "Mult_acc_2": 0.7758887171561051,
+            "Mult_acc_2_weak": 0.6271186440677966,
+            "Mult_acc_3": 0.6986089644513137,
+            "Mult_acc_5": 0.4435857805255023,
+            "R_squre": 0.3895781176565818,
+            "count": 647,
+            "weak_count": 236
+          },
+          "route_summary": {
+            "absent_ratio_max": 0.0,
+            "mean_R_TAV": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "mean_total_R": 3.0
+          }
+        },
+        "uniform_present_R_1_over_3": {
+          "delta_MAE_vs_deploy": 0.0,
+          "metrics": {
+            "Corr": 0.6553373794030817,
+            "F1_score": 0.7789032732925117,
+            "MAE": 0.3798142671585083,
+            "Mult_acc_2": 0.7758887171561051,
+            "Mult_acc_2_weak": 0.6271186440677966,
+            "Mult_acc_3": 0.6986089644513137,
+            "Mult_acc_5": 0.4435857805255023,
+            "R_squre": 0.3895781176565818,
+            "count": 647,
+            "weak_count": 236
+          },
+          "route_summary": {
+            "absent_ratio_max": 0.0,
+            "mean_R_TAV": [
+              0.33333185,
+              0.33333185,
+              0.33333185
+            ],
+            "mean_total_R": 1.0
+          }
+        }
+      },
+      "valid_clip_count": 647
+    }
+  },
+  "per_clip_counts": {
+    "distilled_post_norm": 647,
+    "distilled_static": 647,
+    "post_norm": 647
+  },
+  "per_clip_diagnostics": {
+    "distilled_post_norm": {
+      "publication_omitted": true,
+      "original_count": 647
+    },
+    "distilled_static": {
+      "publication_omitted": true,
+      "original_count": 647
+    },
+    "post_norm": {
+      "publication_omitted": true,
+      "original_count": 647
+    }
+  },
+  "root": "D:\\MYL\\JevAffect",
+  "runtime": {
+    "cuda_device_or_encoder_used": false,
+    "device": "cpu",
+    "gpu_context_created": false,
+    "mha_fastpath_enabled": false,
+    "numpy_version": "2.3.5",
+    "python_executable": "D:\\MYL\\JevAffect\\work\\fresh-env-20261013\\Scripts\\python.exe",
+    "python_version": "3.12.10",
+    "torch_path": "D:\\MYL\\JevAffect\\work\\fresh-env-20261013\\Lib\\site-packages\\torch\\__init__.py",
+    "torch_version": "2.11.0+cu128"
+  },
+  "schema": "native_sequence_gate_teacher_mechanism_diagnostic_v1",
+  "status": "diagnostic_only",
+  "publication_redaction": {
+    "full_local_report_sha256": "68e18fca167acfe629134f8461a69463370c9a5dd8b59cbaefc4b30a76dd1ce7",
+    "removed_path_count": 3,
+    "removed_paths": [
+      "/per_clip_diagnostics/distilled_post_norm",
+      "/per_clip_diagnostics/distilled_static",
+      "/per_clip_diagnostics/post_norm"
+    ],
+    "remaining_removed_paths_list_truncated": false,
+    "reason": "Exclude per-sample dataset records, long raw arrays and response/download capabilities; retain aggregate research evidence."
+  }
+}

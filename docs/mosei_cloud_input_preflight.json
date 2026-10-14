@@ -1,0 +1,28 @@
+{
+  "scope": "label-free official CMU-MOSEI train/valid cloud extraction inputs",
+  "input_manifest_sha256": "f0b117185ae57bb1ccc62cd021a131028ac4d8e6530924504713f685c1e3321d",
+  "input_count": 18198,
+  "split_counts": {
+    "train": 16327,
+    "valid": 1871
+  },
+  "video_missing_count": 249,
+  "audio_missing_count": 0,
+  "video_bytes_if_present": 6032901090,
+  "audio_bytes": 8830018172,
+  "inventory_sha256": "61a744b8ea6eb0d50afa4de6feddb9d12d13e46818eac3228f1f42502adbc643",
+  "source_inputs": {
+    "train": {
+      "label_manifest_sha256": "358926964500fbe4bfd09241023b12fa48b7062012c4dc66abe50db41ae16855",
+      "transcript_json_sha256": "7f897d5c6da68ba7dfb111e888c7d25dfc1d6a32010b4328b66ac52519ba7347",
+      "rows": 16327
+    },
+    "valid": {
+      "label_manifest_sha256": "348870a49628b59180410c75ccfb9e28c41748baad4d5013e853399c6e49cc24",
+      "transcript_json_sha256": "bdd3c3a94582ae4d6abbc664ae7604c203ad6df7cb37934a1898e50f33b6e496",
+      "rows": 1871
+    }
+  },
+  "competition_labels_passed_to_feature_extractor": false,
+  "test_records_passed_to_feature_extractor": false
+}

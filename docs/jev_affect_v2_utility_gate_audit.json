@@ -1,0 +1,279 @@
+{
+  "scope": "train-only source-video-disjoint selection set; no official validation/test scoring",
+  "interpretation_limit": "Only the temporal base subnetwork is masked; V2's final cross-token residual is excluded. Prediction dependence is not human-grounded causal evidence.",
+  "cache_source_sha256": "9840632c1021a2eedbddf03aac6abd65ba375983f224f2f2863f20445e20cc06",
+  "checkpoint_sha256": "ab648d013875f446ebea8d577a6625be6cf786237e5d5721b4224de329a2422a",
+  "valid_count": 540,
+  "window_observations": 7634,
+  "gate_vs_mask_loss_change_pearson": 0.032457041526382034,
+  "by_modality": {
+    "audio": {
+      "count": 4315,
+      "gate_vs_mask_loss_change_pearson": 0.04409650286261207,
+      "mean_mask_loss_change": 0.002274813365756706
+    },
+    "vision": {
+      "count": 3319,
+      "gate_vs_mask_loss_change_pearson": -0.003796928066548125,
+      "mean_mask_loss_change": -0.0013105880517347566
+    }
+  },
+  "mean_highest_gate_window_mask_loss_change": 0.011107911486868505,
+  "mean_uniform_valid_window_mask_loss_change": 0.0009889453889393208,
+  "full_metrics": {
+    "accuracy": 0.4888888888888889,
+    "macro_f1": 0.46363009995606286,
+    "confusion_matrix": [
+      [
+        95,
+        28,
+        4,
+        2,
+        8
+      ],
+      [
+        36,
+        47,
+        17,
+        13,
+        6
+      ],
+      [
+        8,
+        14,
+        21,
+        17,
+        3
+      ],
+      [
+        12,
+        9,
+        25,
+        63,
+        25
+      ],
+      [
+        7,
+        4,
+        2,
+        36,
+        38
+      ]
+    ],
+    "per_class": [
+      {
+        "class_index": 0,
+        "class_name": "SNEG",
+        "precision": 0.6012658227848101,
+        "recall": 0.6934306569343066,
+        "f1": 0.6440677966101696,
+        "support": 137
+      },
+      {
+        "class_index": 1,
+        "class_name": "WNEG",
+        "precision": 0.46078431372549017,
+        "recall": 0.3949579831932773,
+        "f1": 0.4253393665158371,
+        "support": 119
+      },
+      {
+        "class_index": 2,
+        "class_name": "NEUT",
+        "precision": 0.30434782608695654,
+        "recall": 0.3333333333333333,
+        "f1": 0.31818181818181823,
+        "support": 63
+      },
+      {
+        "class_index": 3,
+        "class_name": "WPOS",
+        "precision": 0.48091603053435117,
+        "recall": 0.4701492537313433,
+        "f1": 0.4754716981132076,
+        "support": 134
+      },
+      {
+        "class_index": 4,
+        "class_name": "SPOS",
+        "precision": 0.475,
+        "recall": 0.4367816091954023,
+        "f1": 0.45508982035928147,
+        "support": 87
+      }
+    ],
+    "n_samples": 540
+  },
+  "whole_modality_removed_metrics": {
+    "audio": {
+      "accuracy": 0.45,
+      "macro_f1": 0.4267604474329684,
+      "confusion_matrix": [
+        [
+          78,
+          37,
+          9,
+          4,
+          9
+        ],
+        [
+          31,
+          51,
+          14,
+          17,
+          6
+        ],
+        [
+          5,
+          15,
+          18,
+          18,
+          7
+        ],
+        [
+          9,
+          10,
+          22,
+          64,
+          29
+        ],
+        [
+          4,
+          6,
+          3,
+          42,
+          32
+        ]
+      ],
+      "per_class": [
+        {
+          "class_index": 0,
+          "class_name": "SNEG",
+          "precision": 0.6141732283464567,
+          "recall": 0.5693430656934306,
+          "f1": 0.5909090909090908,
+          "support": 137
+        },
+        {
+          "class_index": 1,
+          "class_name": "WNEG",
+          "precision": 0.42857142857142855,
+          "recall": 0.42857142857142855,
+          "f1": 0.42857142857142855,
+          "support": 119
+        },
+        {
+          "class_index": 2,
+          "class_name": "NEUT",
+          "precision": 0.2727272727272727,
+          "recall": 0.2857142857142857,
+          "f1": 0.2790697674418604,
+          "support": 63
+        },
+        {
+          "class_index": 3,
+          "class_name": "WPOS",
+          "precision": 0.4413793103448276,
+          "recall": 0.47761194029850745,
+          "f1": 0.4587813620071684,
+          "support": 134
+        },
+        {
+          "class_index": 4,
+          "class_name": "SPOS",
+          "precision": 0.3855421686746988,
+          "recall": 0.367816091954023,
+          "f1": 0.3764705882352941,
+          "support": 87
+        }
+      ],
+      "n_samples": 540
+    },
+    "vision": {
+      "accuracy": 0.45925925925925926,
+      "macro_f1": 0.42636103427817423,
+      "confusion_matrix": [
+        [
+          83,
+          38,
+          10,
+          4,
+          2
+        ],
+        [
+          27,
+          55,
+          21,
+          12,
+          4
+        ],
+        [
+          8,
+          17,
+          21,
+          16,
+          1
+        ],
+        [
+          7,
+          17,
+          29,
+          70,
+          11
+        ],
+        [
+          6,
+          4,
+          7,
+          51,
+          19
+        ]
+      ],
+      "per_class": [
+        {
+          "class_index": 0,
+          "class_name": "SNEG",
+          "precision": 0.6335877862595419,
+          "recall": 0.6058394160583942,
+          "f1": 0.6194029850746268,
+          "support": 137
+        },
+        {
+          "class_index": 1,
+          "class_name": "WNEG",
+          "precision": 0.4198473282442748,
+          "recall": 0.46218487394957986,
+          "f1": 0.43999999999999995,
+          "support": 119
+        },
+        {
+          "class_index": 2,
+          "class_name": "NEUT",
+          "precision": 0.23863636363636365,
+          "recall": 0.3333333333333333,
+          "f1": 0.2781456953642384,
+          "support": 63
+        },
+        {
+          "class_index": 3,
+          "class_name": "WPOS",
+          "precision": 0.45751633986928103,
+          "recall": 0.5223880597014925,
+          "f1": 0.48780487804878053,
+          "support": 134
+        },
+        {
+          "class_index": 4,
+          "class_name": "SPOS",
+          "precision": 0.5135135135135135,
+          "recall": 0.21839080459770116,
+          "f1": 0.3064516129032258,
+          "support": 87
+        }
+      ],
+      "n_samples": 540
+    }
+  },
+  "audit_wall_seconds": 2.9421411999937845,
+  "test_labels_used": false
+}

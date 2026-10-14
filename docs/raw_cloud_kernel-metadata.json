@@ -1,0 +1,15 @@
+{
+  "id": "yanglema/jevaffect-simsv2-raw-features",
+  "title": "JevAffect SIMSv2 Raw Features",
+  "code_file": "raw_features.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [
+    "msa-challenge-at-the-4th-pazhou-ai-competition"
+  ],
+  "kernel_sources": []
+}

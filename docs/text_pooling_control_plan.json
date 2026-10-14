@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-11T18:33:50.839426+00:00",
+  "reason": "Frozen MLM CLS may be a weak sentence representation; check a simple masked mean pooling control before attributing gains to new fusion",
+  "primary_selection": "validation accuracy unchanged",
+  "changed": "pooling only for within-local comparisons",
+  "fixed": "mBERT revision, cached tokens, class mapping, MLP size, optimizer, seeds and epoch/early-stop budget",
+  "test_used": false,
+  "runs": [
+    "simsv2 local CLS three seeds to control cloud/runtime differences",
+    "simsv2 local masked mean three seeds",
+    "mosei author local masked mean three seeds vs existing local CLS"
+  ]
+}

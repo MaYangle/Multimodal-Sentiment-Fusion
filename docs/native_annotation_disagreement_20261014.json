@@ -1,0 +1,291 @@
+{
+  "author_csv_sha256": "be7e482640e7ee24d2070033e1e2aef61ce183199286a8a18b0d6247556bf150",
+  "source_held_oof_suite_sha256": "657cca69c1422470afd5d01caffab05da4bc8dde4d83b746f9f84c79d11fc750",
+  "implementation_sha256": "9ecd4a307c55f2cd7cd473659b5395f155d09ebc3b1a8650c2bb9c83557cec9d",
+  "annotation_summary": {
+    "count": 2722,
+    "channels": {
+      "M": {
+        "available": 2722,
+        "missing": 0,
+        "observed_scores": [
+          {
+            "score": -1.0,
+            "count": 462
+          },
+          {
+            "score": -0.800000011920929,
+            "count": 231
+          },
+          {
+            "score": -0.6000000238418579,
+            "count": 303
+          },
+          {
+            "score": -0.4000000059604645,
+            "count": 154
+          },
+          {
+            "score": -0.20000000298023224,
+            "count": 160
+          },
+          {
+            "score": 0.0,
+            "count": 318
+          },
+          {
+            "score": 0.20000000298023224,
+            "count": 137
+          },
+          {
+            "score": 0.4000000059604645,
+            "count": 114
+          },
+          {
+            "score": 0.6000000238418579,
+            "count": 425
+          },
+          {
+            "score": 0.800000011920929,
+            "count": 229
+          },
+          {
+            "score": 1.0,
+            "count": 189
+          }
+        ]
+      },
+      "T": {
+        "available": 2722,
+        "missing": 0,
+        "observed_scores": [
+          {
+            "score": -1.0,
+            "count": 270
+          },
+          {
+            "score": -0.800000011920929,
+            "count": 306
+          },
+          {
+            "score": -0.6000000238418579,
+            "count": 325
+          },
+          {
+            "score": -0.4000000059604645,
+            "count": 160
+          },
+          {
+            "score": -0.20000000298023224,
+            "count": 133
+          },
+          {
+            "score": 0.0,
+            "count": 514
+          },
+          {
+            "score": 0.20000000298023224,
+            "count": 150
+          },
+          {
+            "score": 0.4000000059604645,
+            "count": 145
+          },
+          {
+            "score": 0.6000000238418579,
+            "count": 365
+          },
+          {
+            "score": 0.800000011920929,
+            "count": 226
+          },
+          {
+            "score": 1.0,
+            "count": 128
+          }
+        ]
+      },
+      "A": {
+        "available": 2722,
+        "missing": 0,
+        "observed_scores": [
+          {
+            "score": -1.0,
+            "count": 365
+          },
+          {
+            "score": -0.800000011920929,
+            "count": 262
+          },
+          {
+            "score": -0.6000000238418579,
+            "count": 296
+          },
+          {
+            "score": -0.4000000059604645,
+            "count": 135
+          },
+          {
+            "score": -0.20000000298023224,
+            "count": 183
+          },
+          {
+            "score": 0.0,
+            "count": 453
+          },
+          {
+            "score": 0.20000000298023224,
+            "count": 215
+          },
+          {
+            "score": 0.4000000059604645,
+            "count": 203
+          },
+          {
+            "score": 0.6000000238418579,
+            "count": 358
+          },
+          {
+            "score": 0.800000011920929,
+            "count": 165
+          },
+          {
+            "score": 1.0,
+            "count": 87
+          }
+        ]
+      },
+      "V": {
+        "available": 2722,
+        "missing": 0,
+        "observed_scores": [
+          {
+            "score": -1.0,
+            "count": 401
+          },
+          {
+            "score": -0.800000011920929,
+            "count": 201
+          },
+          {
+            "score": -0.6000000238418579,
+            "count": 251
+          },
+          {
+            "score": -0.4000000059604645,
+            "count": 154
+          },
+          {
+            "score": -0.20000000298023224,
+            "count": 201
+          },
+          {
+            "score": 0.0,
+            "count": 521
+          },
+          {
+            "score": 0.20000000298023224,
+            "count": 113
+          },
+          {
+            "score": 0.4000000059604645,
+            "count": 102
+          },
+          {
+            "score": 0.6000000238418579,
+            "count": 335
+          },
+          {
+            "score": 0.800000011920929,
+            "count": 218
+          },
+          {
+            "score": 1.0,
+            "count": 225
+          }
+        ]
+      }
+    },
+    "channel_M_agreement": {
+      "T": {
+        "paired_count": 2722,
+        "mean_abs_difference_from_M": 0.29191771149635315,
+        "sign_match_with_M": 0.8361498897869214,
+        "five_bin_match_with_M": 0.5099191770756797
+      },
+      "A": {
+        "paired_count": 2722,
+        "mean_abs_difference_from_M": 0.21028655767440796,
+        "sign_match_with_M": 0.881704628949302,
+        "five_bin_match_with_M": 0.6322556943423953
+      },
+      "V": {
+        "paired_count": 2722,
+        "mean_abs_difference_from_M": 0.24467302858829498,
+        "sign_match_with_M": 0.860764144011756,
+        "five_bin_match_with_M": 0.5837619397501836
+      }
+    },
+    "slice_counts": {
+      "all_train": 2722,
+      "all_channels_available": 2722,
+      "unimodal_sign_agreement": 1884,
+      "unimodal_sign_conflict": 838,
+      "text_M_sign_conflict": 446,
+      "text_M_five_bin_conflict": 1334
+    }
+  },
+  "source_held_fusion": [
+    {
+      "seed": 13,
+      "predictions_path": "runs\\native_source_standardized_v1\\formal\\fusion\\seed_13\\oof_predictions.csv",
+      "sha256": "8b8803d1cfa7242f570761d3206620bda10d299c872ac48e7a295bd0a19c0592",
+      "native_MAE_by_annotation_slice": {
+        "all_train": 0.3926515281200409,
+        "all_channels_available": 0.3926515281200409,
+        "unimodal_sign_agreement": 0.3767194151878357,
+        "unimodal_sign_conflict": 0.428470253944397,
+        "text_M_sign_conflict": 0.49172133207321167,
+        "text_M_five_bin_conflict": 0.43879035115242004
+      }
+    },
+    {
+      "seed": 42,
+      "predictions_path": "runs\\native_source_standardized_v1\\formal\\fusion\\seed_42\\oof_predictions.csv",
+      "sha256": "5d1dc0d19a42201e657f9ca954c975a02d2c95ee222361878b90b420a9ad8e56",
+      "native_MAE_by_annotation_slice": {
+        "all_train": 0.398457407951355,
+        "all_channels_available": 0.398457407951355,
+        "unimodal_sign_agreement": 0.381700724363327,
+        "unimodal_sign_conflict": 0.4361301064491272,
+        "text_M_sign_conflict": 0.5049099326133728,
+        "text_M_five_bin_conflict": 0.44376787543296814
+      }
+    },
+    {
+      "seed": 2026,
+      "predictions_path": "runs\\native_source_standardized_v1\\formal\\fusion\\seed_2026\\oof_predictions.csv",
+      "sha256": "eeb2b94c1518e5737b8c90fcac23ea77fa84c06c26c735b757486b2aeb74d61e",
+      "native_MAE_by_annotation_slice": {
+        "all_train": 0.38961488008499146,
+        "all_channels_available": 0.38961488008499146,
+        "unimodal_sign_agreement": 0.37046298384666443,
+        "unimodal_sign_conflict": 0.432672381401062,
+        "text_M_sign_conflict": 0.5052064061164856,
+        "text_M_five_bin_conflict": 0.44024717807769775
+      }
+    }
+  ],
+  "three_seed_mean_native_MAE_by_slice": {
+    "all_train": 0.393574595451355,
+    "all_channels_available": 0.393574595451355,
+    "unimodal_sign_agreement": 0.37629434466362,
+    "unimodal_sign_conflict": 0.4324242174625397,
+    "text_M_sign_conflict": 0.5006126165390015,
+    "text_M_five_bin_conflict": 0.4409351050853729
+  },
+  "VALID_scores_parsed": false,
+  "TEST_scores_parsed": false,
+  "new_model_fits": 0,
+  "scope": "Descriptive TRAIN annotation slices and already-audited source-held OOF predictions. Annotation differences are subjective task-specific ratings, not physical reliability, rater uncertainty or evidence of causal utility. Channel labels are unavailable to the inference router; any future prediction must be learned from optimization TRAIN only. These slices establish no original mechanism or improvement."
+}

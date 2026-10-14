@@ -1,0 +1,100 @@
+{
+  "scope": "biased339train/43valid real-video pilot; NOT formal full-cohort result",
+  "seed": 13,
+  "best_epoch": 10,
+  "epochs": 18,
+  "selected_validation": {
+    "accuracy": 0.4418604651162791,
+    "macro_f1": 0.36787301587301585,
+    "confusion_matrix": [
+      [
+        2,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        7,
+        0,
+        2,
+        0
+      ],
+      [
+        3,
+        0,
+        1,
+        3,
+        0
+      ],
+      [
+        0,
+        2,
+        1,
+        8,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        4,
+        1
+      ]
+    ],
+    "per_class": [
+      {
+        "class_index": 0,
+        "class_name": "SNEG",
+        "precision": 0.2222222222222222,
+        "recall": 0.4,
+        "f1": 0.2857142857142857,
+        "support": 5
+      },
+      {
+        "class_index": 1,
+        "class_name": "WNEG",
+        "precision": 0.5384615384615384,
+        "recall": 0.5833333333333334,
+        "f1": 0.5599999999999999,
+        "support": 12
+      },
+      {
+        "class_index": 2,
+        "class_name": "NEUT",
+        "precision": 0.3333333333333333,
+        "recall": 0.14285714285714285,
+        "f1": 0.2,
+        "support": 7
+      },
+      {
+        "class_index": 3,
+        "class_name": "WPOS",
+        "precision": 0.47058823529411764,
+        "recall": 0.7272727272727273,
+        "f1": 0.5714285714285714,
+        "support": 11
+      },
+      {
+        "class_index": 4,
+        "class_name": "SPOS",
+        "precision": 1.0,
+        "recall": 0.125,
+        "f1": 0.2222222222222222,
+        "support": 8
+      }
+    ],
+    "n_samples": 43,
+    "nll": 2.761644805668163,
+    "ece15": 0.31648652277612666
+  },
+  "train_accuracy_at_last_epoch": 1.0,
+  "last_epoch_validation_accuracy": 0.3953488372093023,
+  "train_valid_loop_seconds": 9.816015599986713,
+  "peak_gpu_allocated_bytes": 187492352,
+  "candidate_utility_supervision_applied": false,
+  "test_scored": false,
+  "predictions_sha256": "fc160830c3ab8f7ba77caa091741c0ce359addc78b0892d7d49f0a283f1d5559",
+  "run_identity_sha256": "7cb7cdb072317be26d8eba968bae2a5d25ab8ea1c71b3cd87f6832100e59abc2"
+}

@@ -1,0 +1,99 @@
+{
+  "report_date": "2026-10-14",
+  "dataset": "CH-SIMS v2",
+  "author_source": "official public CH-SIMS v2 Google Drive Raw listing via drive.usercontent.google.com",
+  "status": "stopped_quota",
+  "source_pins": {
+    "author_csv_sha256": "be7e482640e7ee24d2070033e1e2aef61ce183199286a8a18b0d6247556bf150",
+    "raw_listing_sha256": "6f17ce5f376cdff46694c52973be636a0ca1a858516b9222120590f803de3ae1",
+    "selection_plan_sha256": "2f8a1162cc8f6860dc500eea9e901ad01d141f456cbc618f7c3ecafb4d63dc0d",
+    "selected_rows": 3369,
+    "split_counts": {
+      "train": 2722,
+      "valid": 647
+    },
+    "expected_split_counts": {
+      "train": 2722,
+      "valid": 647
+    },
+    "fields_used": [
+      "mode",
+      "video_id",
+      "clip_id"
+    ],
+    "csv_structure_scanned": true,
+    "test_rows_selected_or_used": false,
+    "score_values_inspected_or_numerically_parsed": false
+  },
+  "config_sha256": "6f6279181ed6871e373588e4239bd9a55f8773263ecb8311a54fb3934de6da10",
+  "runner_source_sha256_current": "a1bca34680ffb90001f271c9f058573abdc0cc8743ad7009e4ac2e6fa1238639",
+  "runner_source_hash_was_runtime_pinned_at_initial_launch": false,
+  "runner_source_history": [
+    {
+      "sha256": "2efb0a7f0008983064dd9dca8fe00f22a9859f517fbf5a04936d8804a6b2998e",
+      "recorded_at_utc": "post-stop source snapshot; launch-time hash was not recorded",
+      "method": "observed source snapshot and file-mtime evidence"
+    },
+    {
+      "sha256": "a1bca34680ffb90001f271c9f058573abdc0cc8743ad7009e4ac2e6fa1238639",
+      "recorded_at_utc": "2026-10-14T00:23:15.219035+00:00",
+      "method": "corrected runner loaded for resume/staging"
+    }
+  ],
+  "selection_method": {
+    "author_csv_fields_used": [
+      "mode",
+      "video_id",
+      "clip_id"
+    ],
+    "csv_structure_scanned": true,
+    "test_rows_selected_or_used": false,
+    "score_values_inspected_or_numerically_parsed": false,
+    "expected_split_counts": {
+      "train": 2722,
+      "valid": 647
+    }
+  },
+  "transfer_policy": {
+    "endpoint": "https://drive.usercontent.google.com/download",
+    "timeout_seconds": {
+      "connect": 15,
+      "read": 60
+    },
+    "max_file_bytes": 33554432,
+    "max_transport_attempts": 2,
+    "workers": 1,
+    "whole_file_range_only": true,
+    "csv_score_values_used": false,
+    "gpu_or_feature_extraction": false,
+    "runner_source_sha256": "a1bca34680ffb90001f271c9f058573abdc0cc8743ad7009e4ac2e6fa1238639"
+  },
+  "progress": {
+    "event": "cohort_progress",
+    "status": "stopped_quota",
+    "processed_files": 18,
+    "complete_files": 17,
+    "expected_files": 3369,
+    "downloaded_payload_bytes": 45964616,
+    "reused_payload_bytes": 3874478,
+    "available_payload_bytes": 49839094,
+    "preserved_partial_bytes": 0,
+    "quota_stop": "quota_html_on_payload: video_0001/0020",
+    "updated_at_utc": "2026-10-14T00:23:15.322237+00:00"
+  },
+  "stop_reason": "quota_html_on_payload: video_0001/0020",
+  "records": {
+    "publication_omitted": true,
+    "original_count": 3369
+  },
+  "updated_at_utc": "2026-10-14T00:23:15.322237+00:00",
+  "publication_redaction": {
+    "full_local_report_sha256": "3ddfdd12775f48671f9e9cdead49afe1475a7ca2f0e96dd0ac8c081e5dc4cf43",
+    "removed_path_count": 1,
+    "removed_paths": [
+      "/records"
+    ],
+    "remaining_removed_paths_list_truncated": false,
+    "reason": "Exclude per-sample dataset records, long raw arrays and response/download capabilities; retain aggregate research evidence."
+  }
+}

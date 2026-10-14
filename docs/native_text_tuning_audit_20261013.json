@@ -1,0 +1,144 @@
+{
+  "scope": "native official CH-SIMS VALID development/selection results; known text adaptation baseline",
+  "suite_sha256": "038b9e296d5c4c5b31e2db2fb9e316495d1f4156f45956b38497c3bd37c27cda",
+  "summary": {
+    "top4": {
+      "MAE": {
+        "mean": 0.4272380570570628,
+        "sample_sd": 0.002179795849364719
+      },
+      "Corr": {
+        "mean": 0.6037964874861497,
+        "sample_sd": 0.0030807301814594354
+      },
+      "Mult_acc_2": {
+        "mean": 0.7496136012364761,
+        "sample_sd": 0.011145444437292078
+      },
+      "F1_score": {
+        "mean": 0.7528147513640265,
+        "sample_sd": 0.010107169284151927
+      },
+      "Mult_acc_2_weak": {
+        "mean": 0.6398305084745762,
+        "sample_sd": 0.01121081064010421
+      },
+      "Mult_acc_3": {
+        "mean": 0.6424523441524987,
+        "sample_sd": 0.011181109950649503
+      },
+      "Mult_acc_5": {
+        "mean": 0.3740340030911901,
+        "sample_sd": 0.002677049161621147
+      },
+      "R_squre": {
+        "mean": 0.32167105602603907,
+        "sample_sd": 0.0005237474763161108
+      },
+      "total_parameters": 102268417,
+      "trainable_parameters": {
+        "encoder": 28351488,
+        "head": 769,
+        "total": 28352257
+      },
+      "epochs": [
+        10,
+        10,
+        10
+      ],
+      "updates": [
+        860,
+        860,
+        860
+      ],
+      "peak_cuda_allocated_bytes": 1234907648,
+      "total_loop_seconds": 114.1012819000025
+    },
+    "frozen": {
+      "MAE": {
+        "mean": 0.45742615063985187,
+        "sample_sd": 0.006726047779781032
+      },
+      "Corr": {
+        "mean": 0.5484709018168249,
+        "sample_sd": 0.01403929015170138
+      },
+      "Mult_acc_2": {
+        "mean": 0.7413704276146317,
+        "sample_sd": 0.008923497205403802
+      },
+      "F1_score": {
+        "mean": 0.74257340367402,
+        "sample_sd": 0.0076142892914147515
+      },
+      "Mult_acc_2_weak": {
+        "mean": 0.6454802259887006,
+        "sample_sd": 0.024828242699501332
+      },
+      "Mult_acc_3": {
+        "mean": 0.6182380216383309,
+        "sample_sd": 0.012071483270334894
+      },
+      "Mult_acc_5": {
+        "mean": 0.32663575476558476,
+        "sample_sd": 0.016381363313327808
+      },
+      "R_squre": {
+        "mean": 0.2924015419268138,
+        "sample_sd": 0.019077954418132443
+      },
+      "total_parameters": 102268417,
+      "trainable_parameters": {
+        "encoder": 0,
+        "head": 769,
+        "total": 769
+      },
+      "epochs": [
+        12,
+        12,
+        12
+      ],
+      "updates": [
+        1032,
+        1032,
+        1032
+      ],
+      "peak_cuda_allocated_bytes": 547394560,
+      "total_loop_seconds": 96.34148080002342
+    }
+  },
+  "evidence": [
+    {
+      "mode": "top4",
+      "seed": 13,
+      "id_target_metric_hash_epoch_checkpoint_audit_passed": true
+    },
+    {
+      "mode": "top4",
+      "seed": 42,
+      "id_target_metric_hash_epoch_checkpoint_audit_passed": true
+    },
+    {
+      "mode": "top4",
+      "seed": 2026,
+      "id_target_metric_hash_epoch_checkpoint_audit_passed": true
+    },
+    {
+      "mode": "frozen",
+      "seed": 13,
+      "id_target_metric_hash_epoch_checkpoint_audit_passed": true
+    },
+    {
+      "mode": "frozen",
+      "seed": 42,
+      "id_target_metric_hash_epoch_checkpoint_audit_passed": true
+    },
+    {
+      "mode": "frozen",
+      "seed": 2026,
+      "id_target_metric_hash_epoch_checkpoint_audit_passed": true
+    }
+  ],
+  "test_evaluated": false,
+  "original_contribution_claimed": false
+}

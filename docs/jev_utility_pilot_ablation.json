@@ -1,0 +1,162 @@
+{
+  "scope": "same339train/43valid biased raw-prefix pilot; not a formal full-cohort test",
+  "selection": "validation accuracy with NLL tie-break",
+  "test_scored": false,
+  "OOF_teacher_folds": 3,
+  "OOF_train_groups_disjoint": true,
+  "teacher_extra_training_cost_recorded_in": "runs/jev_temporal_oof_pilot/summary.json",
+  "conditions": [
+    {
+      "condition": "matched_control",
+      "seed": 13,
+      "best_epoch": 10,
+      "epochs": 18,
+      "accuracy": 0.4418604651162791,
+      "macro_f1": 0.36787301587301585,
+      "nll": 2.761644805668163,
+      "ece15": 0.31648652277612666,
+      "per_class": [
+        {
+          "class_index": 0,
+          "class_name": "SNEG",
+          "precision": 0.2222222222222222,
+          "recall": 0.4,
+          "f1": 0.2857142857142857,
+          "support": 5
+        },
+        {
+          "class_index": 1,
+          "class_name": "WNEG",
+          "precision": 0.5384615384615384,
+          "recall": 0.5833333333333334,
+          "f1": 0.5599999999999999,
+          "support": 12
+        },
+        {
+          "class_index": 2,
+          "class_name": "NEUT",
+          "precision": 0.3333333333333333,
+          "recall": 0.14285714285714285,
+          "f1": 0.2,
+          "support": 7
+        },
+        {
+          "class_index": 3,
+          "class_name": "WPOS",
+          "precision": 0.47058823529411764,
+          "recall": 0.7272727272727273,
+          "f1": 0.5714285714285714,
+          "support": 11
+        },
+        {
+          "class_index": 4,
+          "class_name": "SPOS",
+          "precision": 1.0,
+          "recall": 0.125,
+          "f1": 0.2222222222222222,
+          "support": 8
+        }
+      ],
+      "predictions_sha256": "fc160830c3ab8f7ba77caa091741c0ce359addc78b0892d7d49f0a283f1d5559",
+      "config": {
+        "seed": 13,
+        "model": "JevTemporalOrdinal",
+        "hidden": 96,
+        "windows": 8,
+        "gate_kind": "learned",
+        "temporal": true,
+        "utility_supervision": false,
+        "utility_weight": 0.0,
+        "utility_targets_sha256": null,
+        "matched_control": true,
+        "branch_ce_weight": 0.15,
+        "max_epochs": 30,
+        "batch_size": 16,
+        "patience": 8,
+        "lr": 0.001,
+        "weight_decay": 0.0001,
+        "selected_metric": "valid_accuracy",
+        "cache_source_sha256": "33f2ac9f7d30bb0a0a504056592ea11f3f3f0d2bebde867644b249fa9dbaaf3a",
+        "cohort": "339/43 raw-prefix pilot"
+      }
+    },
+    {
+      "condition": "train_only_oof_utility",
+      "seed": 13,
+      "best_epoch": 6,
+      "epochs": 14,
+      "accuracy": 0.4418604651162791,
+      "macro_f1": 0.26857142857142857,
+      "nll": 1.749056999917682,
+      "ece15": 0.22080029255057734,
+      "per_class": [
+        {
+          "class_index": 0,
+          "class_name": "SNEG",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        {
+          "class_index": 1,
+          "class_name": "WNEG",
+          "precision": 0.5625,
+          "recall": 0.75,
+          "f1": 0.6428571428571429,
+          "support": 12
+        },
+        {
+          "class_index": 2,
+          "class_name": "NEUT",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 7
+        },
+        {
+          "class_index": 3,
+          "class_name": "WPOS",
+          "precision": 0.36,
+          "recall": 0.8181818181818182,
+          "f1": 0.5,
+          "support": 11
+        },
+        {
+          "class_index": 4,
+          "class_name": "SPOS",
+          "precision": 0.5,
+          "recall": 0.125,
+          "f1": 0.2,
+          "support": 8
+        }
+      ],
+      "predictions_sha256": "0b25c5de2aea04ec7b3c500955959a6573aaac3864141206249b36a8c344ea19",
+      "config": {
+        "seed": 13,
+        "model": "JevTemporalOrdinal",
+        "hidden": 96,
+        "windows": 8,
+        "gate_kind": "learned",
+        "temporal": true,
+        "utility_supervision": true,
+        "utility_weight": 0.2,
+        "utility_targets_sha256": "737552612fc31eb6abd5377b80aef89031ff5a600cc8114a829f7439969c404b",
+        "matched_control": false,
+        "branch_ce_weight": 0.15,
+        "max_epochs": 30,
+        "batch_size": 16,
+        "patience": 8,
+        "lr": 0.001,
+        "weight_decay": 0.0001,
+        "selected_metric": "valid_accuracy",
+        "cache_source_sha256": "33f2ac9f7d30bb0a0a504056592ea11f3f3f0d2bebde867644b249fa9dbaaf3a",
+        "cohort": "339/43 raw-prefix pilot"
+      }
+    }
+  ],
+  "primary_accuracy_difference_utility_minus_control": 0.0,
+  "macro_f1_difference": -0.09930158730158728,
+  "nll_difference": -1.012587805750481,
+  "interpretation": "The small pilot cannot establish method improvement or originality; extra teacher training is not budget-matched to baselines."
+}

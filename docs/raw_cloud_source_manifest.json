@@ -1,0 +1,9 @@
+{
+  "configs/raw_encoder_definitions.json": "0074d08ffb24cabf295a59b6cc84d6da1405de44d152c9d3ef8d388f130fc97b",
+  "jevaffect/__init__.py": "88bd0209c5c276e1e8e4c3164f404590b6ffd648635d3c3dfde3e952e5bb38d2",
+  "jevaffect/media.py": "8694ba5d7a8cb271d3928e2a70d74bac4abe90ff42dbd47303c679f602696e68",
+  "jevaffect/raw_features.py": "5709358f20ae35979c0703d70fe94d93758528fa41c1a339681cd25c890e4c1e",
+  "scripts/download_encoders.py": "7cd63c0efc1e8a24230d84c5b4077659ad6627f7feda6120be0f8e6de911d694",
+  "work/raw_cloud_impl/cloud_runner.py": "8abd05075459dfd646586086bb942ded0ce1b87eb6c060e63096fa3ace593764",
+  "work/raw_cloud_impl/requirements-kaggle.txt": "228a175e8f783954df9c28fa0b3c1df9fefb6a0a31fc7f1075f3f2a1a93fc454"
+}

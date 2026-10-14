@@ -1,0 +1,25 @@
+{
+  "recorded_utc": "2026-10-14T11:08:00.820315+00:00",
+  "new_repository": "MaYangle/Multimodal-Sentiment-Fusion",
+  "repository_id": 1418766312,
+  "url": "https://github.com/MaYangle/Multimodal-Sentiment-Fusion",
+  "public": true,
+  "initial_name": "ModalAffect",
+  "head": "f5bd7d328c4c189d4d8d46b4901cd85c8d65fd15",
+  "published_files": [
+    ".gitignore",
+    "README.md",
+    "README.zh-CN.md"
+  ],
+  "source_release_complete": false,
+  "legacy_repository": "MaYangle/Multimodal-Sentiment-Analysis",
+  "legacy_delete_exit_code": 0,
+  "legacy_authenticated_get_status": 404,
+  "git_backup_commits_verified": 33,
+  "git_backup_refs_verified": 2,
+  "bundle_restore_fsck": "passed",
+  "checkpoint_archive_sha_crc": "passed",
+  "user_authorization": "latest explicit instruction: create new GitHub repository then delete old now; later rename more specifically",
+  "backup_scope": "complete Git history/source and acquired en.pt/zh.pt; additional external pretrained archive remains partial",
+  "full_research_goal_complete": false
+}

@@ -1,0 +1,87 @@
+{
+  "time_utc": "2026-10-12T17:11:32.990356+00:00",
+  "scope": "new environment/source, full author package re-preparation",
+  "source_sha256": "31007381c01dd346945ed8a64c7321239de5aaf1ef05bf112e952848a823186d",
+  "metadata_sha256": "1fd9a0c5b89e00fc89dc8e35b58b3def798ecda02125dc3af8da0cc6448acfcd",
+  "artifacts": [
+    {
+      "name": "train/audio.npy",
+      "sha256": "dbb3979a563e940ea667f4c69f0d61c275bfeeb389875d12ddbe7a7a5a58d800"
+    },
+    {
+      "name": "train/audio_lengths.npy",
+      "sha256": "3bcd5441b5cc238aa6cd475e430cb86907e2b5d93e52794076d16dcce6580c42"
+    },
+    {
+      "name": "train/ids.json",
+      "sha256": "9462341653c0684941ff40f2181e181df3b1dc97a8c9051f287757d9646de08c"
+    },
+    {
+      "name": "train/source_leading_padding.npy",
+      "sha256": "e78148dbfac6931a3fc028fb1075182700e23c2674292b1b36b813bf9f2b5a7b"
+    },
+    {
+      "name": "train/targets.npy",
+      "sha256": "0b1d03ef54373afda5a0e28975f312677510af66ac7e2a4478d0e78dfc7ceb2f"
+    },
+    {
+      "name": "train/text.npy",
+      "sha256": "19e85975f56b2b0bfd54660611e1ccc16a0d58a203f03eb2356c4e3ec72d2fce"
+    },
+    {
+      "name": "train/text_lengths.npy",
+      "sha256": "3bcd5441b5cc238aa6cd475e430cb86907e2b5d93e52794076d16dcce6580c42"
+    },
+    {
+      "name": "train/vision.npy",
+      "sha256": "8ca8b44dd57eed628dbdc0960215ff1807440f12c54e41cd5f5b12350cfe1c75"
+    },
+    {
+      "name": "train/vision_lengths.npy",
+      "sha256": "3bcd5441b5cc238aa6cd475e430cb86907e2b5d93e52794076d16dcce6580c42"
+    },
+    {
+      "name": "valid/audio.npy",
+      "sha256": "3c982547a51e2559e4f9add5b640d52c9e75c1d7cd001a274976216680bc378b"
+    },
+    {
+      "name": "valid/audio_lengths.npy",
+      "sha256": "ff48d6071e945c9d7f229154973c7727a987487112fa5c50c7a34aa88825106c"
+    },
+    {
+      "name": "valid/ids.json",
+      "sha256": "20720e9aeb376c1d0606cef494b0034a2c6b340fb3aad6bf479fc1433a333d64"
+    },
+    {
+      "name": "valid/source_leading_padding.npy",
+      "sha256": "8f9b96d3a117258a8ad4a52225f19a5de3115847048e3f27d98cfe0ec94ec864"
+    },
+    {
+      "name": "valid/targets.npy",
+      "sha256": "69cf6814dd34dee9602f6496a699c9b8b169a74d14602c559b94028a897f90f9"
+    },
+    {
+      "name": "valid/text.npy",
+      "sha256": "d2caa01a8cd3556f93e94413034064498c781b0a84b06a827d2affcab0d6cf06"
+    },
+    {
+      "name": "valid/text_lengths.npy",
+      "sha256": "ff48d6071e945c9d7f229154973c7727a987487112fa5c50c7a34aa88825106c"
+    },
+    {
+      "name": "valid/vision.npy",
+      "sha256": "ef2e9e3cdc88a7fb8abcfdc54f89d46aa8c22c6eeebf23dfc89a986c20877659"
+    },
+    {
+      "name": "valid/vision_lengths.npy",
+      "sha256": "ff48d6071e945c9d7f229154973c7727a987487112fa5c50c7a34aa88825106c"
+    },
+    {
+      "name": "frozen_test_ids.json",
+      "sha256": "8b84163c00396fba563c6c5dcd61becd90b759b7940fbdd2f31e3778f80f4f90"
+    }
+  ],
+  "all_exact": true,
+  "test_scored": false,
+  "test_features_or_labels_exported": false
+}

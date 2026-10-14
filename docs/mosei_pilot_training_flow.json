@@ -1,0 +1,54 @@
+{
+  "scope": "real 54-train/22-valid MOSEI missing-media flow smoke; NOT a generalization benchmark",
+  "validation_count": 22,
+  "selected_accuracy": 0.4090909090909091,
+  "selected_epoch": 16,
+  "finished_epoch": 28,
+  "train_final_accuracy": 1.0,
+  "confusion_matrix": [
+    [
+      3,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      2,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      2
+    ]
+  ],
+  "checkpoint_sha256": "cd397945c947939f0f7a0a89ae459dda6ad48af4d5b630eb1562a1b103cd6d74",
+  "prediction_sha256": "42ab27ed1b5b7f549fcd37e9c8007550d9c6d258b0e709f5242e526b6b0585eb",
+  "label_manifest_sha256": "348870a49628b59180410c75ccfb9e28c41748baad4d5013e853399c6e49cc24",
+  "source_sha256": "8cc75d1a1ed38ed277cf2a9d21cdaf81e0145ffc84b1591b2136081585c8c5f3",
+  "missing_video_train": 4,
+  "missing_video_valid": 2,
+  "exact_resume_used": true,
+  "test_labels_used": false,
+  "not_for_method_ranking": true
+}

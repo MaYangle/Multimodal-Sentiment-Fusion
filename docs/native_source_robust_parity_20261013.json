@@ -1,0 +1,48 @@
+{
+  "results": [
+    {
+      "root": "runs\\native_source_robust_v1\\formal\\clip_erm\\seed_13\\fold_0",
+      "case": "clip_erm",
+      "seed": 13,
+      "fold": 0,
+      "complete": true,
+      "smoke_only": false,
+      "official_VALID_used": false,
+      "test_evaluated": false,
+      "best_epoch": 18,
+      "epochs_executed": 30,
+      "optimizer_updates": 1560,
+      "loop_seconds": 3.1887305000709603,
+      "fit_count": 1641,
+      "select_count": 192,
+      "oof_count": 889,
+      "source_count": 78,
+      "point_parameters": 492033,
+      "domain_parameters": 20046,
+      "first_batch_nonzero_gradients": {
+        "point": 492033,
+        "domain": 0
+      },
+      "oof_native": {
+        "count": 889,
+        "MAE": 0.43234696984291077,
+        "Corr": 0.6236341648894635,
+        "Mult_acc_2": 0.7401574803149606,
+        "F1_score": 0.7435252783751023,
+        "weak_count": 285,
+        "Mult_acc_2_weak": 0.5614035087719298,
+        "Mult_acc_3": 0.6355455568053994,
+        "Mult_acc_5": 0.35545556805399325,
+        "R_squre": 0.3673020813339768
+      },
+      "checkpoint_sha256": "8230fa51bfdb263c15d80bd91b898b9d2dbd79aa7721472ad6ebec61b98ead99",
+      "predictions_file": "runs\\native_source_robust_v1\\formal\\clip_erm\\seed_13\\fold_0\\oof_predictions.csv",
+      "predictions_sha256": "483d930892a8a208a5d7a180036e8716f6005effb2ea3597bdbd8ae134193d2b"
+    }
+  ],
+  "oof": {},
+  "suite_complete": false,
+  "smoke_only": false,
+  "official_VALID_used": false,
+  "test_evaluated": false
+}

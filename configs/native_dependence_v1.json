@@ -1,0 +1,23 @@
+{
+  "dataset": "simsv2",
+  "author_csv": "data/author/simsv2/meta.csv",
+  "cache_dir": "data/feature_cache/simsv2_full_macbert_raw_av",
+  "run_root": "runs/native_dependence_oof_v1",
+  "seeds": [13, 42, 2026],
+  "device": "cuda",
+  "three_hidden": 256,
+  "joint_branch_hidden": 192,
+  "joint_hidden": 64,
+  "dropout": 0.1,
+  "batch_size": 32,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0001,
+  "max_epochs": 80,
+  "patience": 12,
+  "regularization": 0.01,
+  "fold_count": 3,
+  "fold_seed": 20261012,
+  "inner_fraction": 0.1,
+  "correlation_shrinkage": 0.1,
+  "log_variance_scale_bounds": [-6.0, 6.0]
+}

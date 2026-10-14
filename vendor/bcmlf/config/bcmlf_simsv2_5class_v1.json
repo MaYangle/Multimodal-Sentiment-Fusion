@@ -1,0 +1,152 @@
+{
+  "port_metadata": {
+    "port_version": "simsv2-fiveclass-v1",
+    "source_repo": "https://github.com/sunyulin0421/BC-MLF",
+    "source_commit": "428b973be580fd3cf09dd51bb61c448f2a26b2c9",
+    "status": "protocol-adapted reproduction; not the paper's old-SIMS result",
+    "official_dataset": "CH-SIMS v2.0",
+    "legacy_loader_alias": "sims",
+    "path_resolver": "vendor.bcmlf.adapters.config_paths.resolve_bcmlf_paths",
+    "split_counts": {
+      "train": 2722,
+      "valid": 647,
+      "test": 1034
+    },
+    "class_order": ["SNEG", "WNEG", "NEUT", "WPOS", "SPOS"],
+    "class_target_source": "jevaffect.protocol official SIMS v2 mapping",
+    "resource_note": "Upstream microbatch defaults are preserved; preflight on target GPU before full run."
+  },
+  "datasetCommonParams": {
+    "dataset_root_dir": "${BCMLF_DATA_ROOT}",
+    "sims": {
+      "unaligned": {
+        "featurePath": "simsv2/Processed/unaligned_39.pkl",
+        "seq_lens": [39, 400, 55],
+        "feature_dims": [768, 33, 709],
+        "train_samples": 2722,
+        "num_classes": 5,
+        "language": "cn",
+        "KeyEval": "Loss",
+        "missing_rate": [0, 0, 0],
+        "missing_seed": [1111, 1111, 1111]
+      }
+    }
+  },
+  "msalm": {
+    "commonParams": {
+      "need_data_aligned": false,
+      "need_model_aligned": false,
+      "early_stop": 10,
+      "use_bert": false,
+      "use_bert_finetune": false,
+      "attn_mask": true,
+      "excludeZero": true,
+      "update_epochs": 8
+    },
+    "datasetParams": {
+      "sims": {
+        "hfPath": "simsv2/Processed/mms2s",
+        "use_ulgm": false,
+        "update_labels_patience": 1,
+        "H": 3,
+        "del_model": false,
+        "max_token_len": 39,
+        "pad_token": "<|endoftext|>",
+        "lm": "${BCMLF_MODEL_ROOT}/gpt2-chinese-cluecorpussmall",
+        "local_files_only": true,
+        "use_bf16": false,
+        "task_out": 5,
+        "train_mode": "classification",
+        "use_clm": true,
+        "gamma": 1.0,
+        "l_bn": 1.0,
+        "l_av": 1.0,
+        "l_t": 1.0,
+        "warmup_epochs": 1,
+        "max_epochs": 100,
+        "beta_1": 0.9,
+        "beta_2": 0.95,
+        "use_lnorm": true,
+        "rescale": false,
+        "rescaler": "sqrt",
+        "use_seqaug": true,
+        "n_bn_fusion": 20,
+        "modded_loss": true,
+        "use_fusion_contrast": true,
+        "lambda_fusion_contrast": 0.005,
+        "contrast_temperature": 0.2,
+        "contrast_label_sigma": 0.8,
+        "use_contribution_calibrated_head": true,
+        "branch_head_mode": "adaptive",
+        "contribution_head_temperature": 1.0,
+        "contribution_min_weight": 0.08,
+        "embedding_attr_name": "transformer.wte",
+        "decoder_layers_attr_name": "transformer.h",
+        "mmgpt": {
+          "type": "gpt2",
+          "d_out": 64,
+          "combine": true,
+          "dropout": 0.1,
+          "mm_layer": [5, 6, 7, 8, 9, 10, 11],
+          "layer_dropout": 0,
+          "dense": true,
+          "tie_ffn": true,
+          "n_embd": 768,
+          "bias": true,
+          "kv_dim": 30,
+          "n_head": 16,
+          "d_mm": 768,
+          "gating": "sigmoid",
+          "init_gate": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "use_softperm": true,
+          "p_perm": 0.3,
+          "p_apply": 0.25,
+          "use_lora": false,
+          "lora": {
+            "lora_alpha": 128,
+            "r": 64,
+            "lora_dropout": 0.05
+          }
+        },
+        "av_enc": {
+          "finetune": true,
+          "from_pretrained": true,
+          "path_to_pretrained": "${BCMLF_CHECKPOINT_ROOT}/bcmlf-bienc-simsv2/bienc-simsv2-1990.pth",
+          "feature_dims": [768, 33, 709],
+          "d_enc": 30,
+          "n_embd": 30,
+          "n_head": 6,
+          "nlevels": 3,
+          "d_enc_out": 30,
+          "maxlen": 55,
+          "p_mask": 0.15,
+          "enc_attn_dropout": 0.1,
+          "enc_res_dropout": 0.1,
+          "enc_dropout": 0.1,
+          "use_softperm": true,
+          "p_perm": 0.2,
+          "mask_perm_ratio": 0.5,
+          "tf_fusion": false,
+          "use_bn": true,
+          "use_ln": false
+        },
+        "gpt": {
+          "vocab_size": 50257,
+          "block_size": 1024,
+          "bias": true,
+          "n_embd": 1024,
+          "n_layer": 24,
+          "n_head": 16,
+          "dropout": 0
+        },
+        "batch_size": 32,
+        "grad_clip": 5,
+        "patience": 10,
+        "weight_decay_mmgpt": 0.1,
+        "weight_decay_av": 0.1,
+        "learning_rate_av": 0.0001,
+        "learning_rate_mmgpt": 0.0001
+      }
+    }
+  }
+}

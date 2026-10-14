@@ -1,0 +1,20 @@
+{
+  "time_utc": "2026-10-12T17:38:01.746067+00:00",
+  "split": "valid",
+  "selection": "first two official CSV rows",
+  "sentiment_labels_parsed": false,
+  "test_scored": false,
+  "records": {
+    "publication_omitted": true,
+    "original_count": 2
+  },
+  "publication_redaction": {
+    "full_local_report_sha256": "d307fb71cf5170f54cdeeb99fa95489cd1cf9ccb8e7463259f0a3ffe26a3ecff",
+    "removed_path_count": 1,
+    "removed_paths": [
+      "/records"
+    ],
+    "remaining_removed_paths_list_truncated": false,
+    "reason": "Exclude per-sample dataset records, long raw arrays and response/download capabilities; retain aggregate research evidence."
+  }
+}

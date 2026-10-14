@@ -1,0 +1,16 @@
+{
+  "scripts\\train_lexical_pilot.py": "594341144413a1c769b88bb066abe0fae1781d35c10b7538eb334aff743a92fb",
+  "data\\simsv2\\meta.csv": "be7e482640e7ee24d2070033e1e2aef61ce183199286a8a18b0d6247556bf150",
+  "runs\\lexical-full-13\\best.npz": "dccb1a89b9f58bbb9cc73ea25d25ce37d865d8a8ad20e8e19cb1892612bd2704",
+  "runs\\lexical-full-13\\last.npz": "04c34f6f294ac042af49a5c7e51d95e41e70c645045efdd2411684a5aebc09de",
+  "runs\\lexical-full-2026\\best.npz": "06176a3b032bc10d9758cdef978f0d0f541c9267f826438924d894df9f847608",
+  "runs\\lexical-full-2026\\last.npz": "73fc134e2db90bc5dc46f85093d5da365873d14ca078a012ffba613fc1f5b0e2",
+  "runs\\lexical-full-42\\best.npz": "4e3a377c3e63d96105cfaadeba3dbef031a1c4eb0383880e10687cde4a1fa928",
+  "runs\\lexical-full-42\\last.npz": "a4a6e55f175b1a6cec528c23ada4d8ced50c04599ac00e2b91a09ec59d1bca6a",
+  "runs\\lexical-pilot-42\\best.npz": "b0d3bdceaddf92909a877af73206ae9827b6d91b12c60b73617883e3b4ceb564",
+  "runs\\lexical-pilot-42\\last.npz": "669fa2b3d7dfce33764a42e0bf5ae23e09ca85c7ae163199d51e387835f9c272",
+  "runs\\lexical-full-13\\validation_predictions.jsonl": "f64408f624f736c248f3a1b848421f01633e5f2c8280cc2aea933b41eff08abe",
+  "runs\\lexical-full-2026\\validation_predictions.jsonl": "342205874944ec0fdd4fdea49951612b7a10eb07939a7b64558bfc3813069e4b",
+  "runs\\lexical-full-42\\validation_predictions.jsonl": "5a7f1ea8b70e4831b08e9dab9d8f42613ebd538b4da77d08ad6b22203ede613b",
+  "runs\\lexical-pilot-42\\validation_predictions.jsonl": "7a262511783a03e31c68c2c698cf97777eb39883cf833d5299299b521df4a8b9"
+}

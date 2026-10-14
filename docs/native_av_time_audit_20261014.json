@@ -1,0 +1,533 @@
+{
+  "artifact_scope": {
+    "machine_report_path": "docs/native_av_time_audit_20261014.json",
+    "report_path": "docs/NATIVE_AV_TIME_AUDIT_20261014.md",
+    "script_path": "scripts/audit_native_av_times.py",
+    "script_sha256": "75eb3d7a95011b31872d6ad367ed2fd6dbb64e5f7cb763ade6a628a76d54dcec"
+  },
+  "audit_date": "2026-10-14",
+  "audit_name": "native_av_time_origin_and_retained_coverage",
+  "conclusion": {
+    "allowed_interpretation": "a numerical paired-sequence diagnostic using a declared timestamp join; do not call it physically synchronous or use it to claim physical-time cross-covariation until full-corpus stream origins/offsets are supported by source/decode records",
+    "full_corpus_physical_av_synchrony": "UNVERIFIED",
+    "reason": "audio is decoded to a raw PCM pipe without persisting first audio PTS/sample-origin metadata; video timestamps come from an FFmpeg fps=2:start_time=0 output timeline. The saved per-stream seconds and zero padding do not prove a shared source-time origin or drift.",
+    "representative_media_scope": "two SHA-verified local TRAIN clips only"
+  },
+  "expected_time_grids": {
+    "audio": {
+      "convolution_kernels": [
+        10,
+        3,
+        3,
+        3,
+        3,
+        2,
+        2
+      ],
+      "convolution_strides": [
+        5,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "feature": "WavLM convolution receptive-field center on waveform-relative 16 kHz samples",
+      "first_center_seconds": 0.01246875,
+      "hop_seconds": 0.02,
+      "output_stride_samples": 320,
+      "receptive_field_samples": 400,
+      "sample_rate_hz": 16000
+    },
+    "vision": {
+      "expected_first_timestamp_seconds": 0.0,
+      "feature": "FFmpeg fps=2:start_time=0 output timeline",
+      "hop_seconds": 0.5
+    }
+  },
+  "minimal_pairing_contract": [
+    "Join rows by canonical record ID and use only the valid prefixes from audio_lengths and vision_lengths; never treat zero padding as a real timestamp.",
+    "Establish and record the source audio-to-video offset for each applicable media pipeline before making physical-time claims; if it is unavailable, explicitly label the join as a numerical paired-sequence diagnostic.",
+    "After applying any verified offset, restrict candidate pairs to the closed intersection of the two retained timestamp supports. For this cache, nearest audio-to-vision joins within 10 ms give a reproducible diagnostic on the observed 20 ms/500 ms grids; use one-to-one pairs and report residuals and pair counts.",
+    "Do not interpolate, repeat rows, stretch either sequence to the other's length, or extrapolate across an unobserved tail. Report the retained support overlap and outside-overlap anchors per split.",
+    "The audio states are WavLM last_hidden_state rows with a local convolution-center timestamp; transformer context can span the clip, so a matched anchor does not mean the vector contains only local audio."
+  ],
+  "normalized_sequence_cache": {
+    "counts": {
+      "train": 2722,
+      "valid": 647
+    },
+    "input_form": "Original MacBERT CLS/WavLM/DINOv2 sequences; exact saved TRAIN clip-pooled coordinate scaler applied to valid steps",
+    "metadata_sha256": "f4952a6d3ecd31ab8b24b19e585b6a85b31d019b2cb4f622ba1a7e35a14be82b",
+    "normalization": {
+      "fit_count": 2722,
+      "fit_ids_sha256": "60f7ae7f1718a10e0470b2205dac4a64bbfbc90c86d3c42bf5626d863f1dc2fa",
+      "fit_split": "train",
+      "kind": "TRAIN clip-pooled coordinate mean/population STD; tiny STD<1e-6 uses1",
+      "source_metadata_sha256": "50c067883c3e52d6130eb8ed80f2df9d8a29bbc0c0a1dd9ac6a9e7d2847d1e7d",
+      "statistics_sha256": "56bb0bf8387deb740d195c87972d80aaee4f2def3dab2892e61fed40330e6f84"
+    },
+    "path": "data\\feature_cache\\simsv2_native_sequence_standardized_v1\\metadata.json",
+    "preserved_time_artifacts": {
+      "train": {
+        "audio_times.npy": {
+          "actual_output_sha256": "5779a750d566010ccb1fff86054b230e1d5c5be88d8dfad17172179a704e1297",
+          "declared_output_matches_actual": true,
+          "declared_output_sha256": "5779a750d566010ccb1fff86054b230e1d5c5be88d8dfad17172179a704e1297",
+          "output_relative_path": "train/audio_times.npy",
+          "source_matches_output": true,
+          "source_relative_path": "splits/train/audio_times.npy",
+          "source_sha256": "5779a750d566010ccb1fff86054b230e1d5c5be88d8dfad17172179a704e1297"
+        },
+        "vision_times.npy": {
+          "actual_output_sha256": "8b75a48e71af188bd9bbcb7ea682b2ba883fa987ce55834033d70022c27f6073",
+          "declared_output_matches_actual": true,
+          "declared_output_sha256": "8b75a48e71af188bd9bbcb7ea682b2ba883fa987ce55834033d70022c27f6073",
+          "output_relative_path": "train/vision_times.npy",
+          "source_matches_output": true,
+          "source_relative_path": "splits/train/vision_times.npy",
+          "source_sha256": "8b75a48e71af188bd9bbcb7ea682b2ba883fa987ce55834033d70022c27f6073"
+        }
+      },
+      "valid": {
+        "audio_times.npy": {
+          "actual_output_sha256": "309d8f5728ba3af6b13c1f7e522cf084d33a264e120164735dbb9429ed671947",
+          "declared_output_matches_actual": true,
+          "declared_output_sha256": "309d8f5728ba3af6b13c1f7e522cf084d33a264e120164735dbb9429ed671947",
+          "output_relative_path": "valid/audio_times.npy",
+          "source_matches_output": true,
+          "source_relative_path": "splits/valid/audio_times.npy",
+          "source_sha256": "309d8f5728ba3af6b13c1f7e522cf084d33a264e120164735dbb9429ed671947"
+        },
+        "vision_times.npy": {
+          "actual_output_sha256": "5fabd6ba694f032f7e15a24c69a6598ab745d7daee3944a0a308dab1efa6e4a4",
+          "declared_output_matches_actual": true,
+          "declared_output_sha256": "5fabd6ba694f032f7e15a24c69a6598ab745d7daee3944a0a308dab1efa6e4a4",
+          "output_relative_path": "valid/vision_times.npy",
+          "source_matches_output": true,
+          "source_relative_path": "splits/valid/vision_times.npy",
+          "source_sha256": "5fabd6ba694f032f7e15a24c69a6598ab745d7daee3944a0a308dab1efa6e4a4"
+        }
+      }
+    },
+    "raw_source_metadata_matches_actual": true,
+    "raw_source_metadata_sha256": "c80806f155b246139b6cffba023d9c9b2359f42d38c1c7141db0af9cef8749c6",
+    "sequence_shapes": {
+      "audio": [
+        400,
+        768
+      ],
+      "text": [
+        64,
+        768
+      ],
+      "vision": [
+        55,
+        384
+      ]
+    },
+    "source_cache": "D:\\MYL\\JevAffect\\data\\feature_cache\\simsv2_full_macbert_raw_av",
+    "test_exported": false
+  },
+  "raw_cache": {
+    "bundle_sidecar_verified": true,
+    "cache_kind": "jevaffect_raw_npz_train_valid_full",
+    "manifest_sha256": "ca1290da3dfca63bd97ea946c0ea21ca2997476a99bd0f5f24e2b40b3dc986df",
+    "metadata_hashes": {
+      "bundle.sha256": "b56dbf03f08b76bf27f1060cc24928c8215fce9ffb12959febe4d2389987eeae",
+      "meta.json": {
+        "bundle_sidecar_match": true,
+        "sha256": "1fae0633631fcde89bb0011e0f79953e9072a85978f78bc03f198273b01d7cda"
+      },
+      "metadata.json": {
+        "bundle_sidecar_match": true,
+        "sha256": "c80806f155b246139b6cffba023d9c9b2359f42d38c1c7141db0af9cef8749c6"
+      }
+    },
+    "padding_policy": "zero features; false mask and zero time for padding; lengths store kept raw sequence steps",
+    "path": "data\\feature_cache\\simsv2_full_macbert_raw_av",
+    "preprocessing": {
+      "audio_feature_times": "centers of WavLM convolutional receptive fields",
+      "audio_sample_rate": 16000,
+      "max_seconds": 120.0,
+      "mbert_max_tokens": 64,
+      "video_fps": 2.0,
+      "video_frame_size": 224,
+      "video_frame_timestamps_kind": "ffmpeg_resampled_output_timeline"
+    },
+    "source_sha256": "11f8f242ee9f909b202bc0f98b5a122946bb07c842164c690102bb1aa7802d48",
+    "timestamp_storage": "audio/vision timestamps are original raw seconds in valid positions; zero padding is disambiguated by masks",
+    "truncation": {
+      "audio_dropped_step_equivalent_seconds_at_20ms": 134.46,
+      "interpretation": "step-equivalent time is dropped anchor count times nominal hop; it is not a per-record source-duration reconstruction because the dropped timestamps are absent from this cache",
+      "metadata": {
+        "audio": {
+          "observed_max_raw_steps": 2132,
+          "policy": "keep the first target_steps in original order; no resampling/interpolation",
+          "target_steps": 400,
+          "total_dropped_frames_or_tokens": 6723,
+          "truncated_records": 69
+        },
+        "text": {
+          "observed_max_raw_steps": 49,
+          "policy": "MacBERT tokenizer truncates at 64 tokens; no record exceeded cap",
+          "target_steps": 64,
+          "total_dropped_frames_or_tokens": 0,
+          "truncated_records": 0
+        },
+        "vision": {
+          "observed_max_raw_steps": 85,
+          "policy": "keep the first target_steps in original order; no resampling/interpolation",
+          "target_steps": 55,
+          "total_dropped_frames_or_tokens": 30,
+          "truncated_records": 1
+        }
+      },
+      "vision_dropped_step_equivalent_seconds_at_2fps": 15.0
+    }
+  },
+  "representative_media": {
+    "available": true,
+    "ffmpeg_version": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+    "interpretation": "Both sampled TRAIN MP4s report container start 0 and first audio/video packet PTS 0; the filtered video output starts at 0. These two samples do not establish full-corpus audio/video origin or drift.",
+    "manifest_path": "docs\\native_raw_demo_source_20261013.json",
+    "manifest_sha256": "02c83c8530b87f1f4d09ef61450a28cf353c81d381688657165c530f1150829b",
+    "records": {
+      "publication_omitted": true,
+      "original_count": 2
+    },
+    "sample_count": 2
+  },
+  "scope": {
+    "dataset": "CH-SIMS-v2.0",
+    "feature_tensors_read": false,
+    "learned_models_or_predictions_run": false,
+    "split_counts": {
+      "train": 2722,
+      "valid": 647
+    },
+    "splits_read": [
+      "train",
+      "valid"
+    ],
+    "test_arrays_or_labels_read": false
+  },
+  "split_metrics": {
+    "train": {
+      "audio": {
+        "dtype": "float64",
+        "duplicate_valid_steps": 0,
+        "finite_values": 1088800,
+        "grid_check": {
+          "atol_seconds": 1e-09,
+          "expected_start_seconds": 0.01246875,
+          "expected_step_seconds": 0.02,
+          "max_abs_residual_seconds": 8.881784197001252e-16,
+          "violating_valid_values": 0
+        },
+        "lengths": {
+          "max": 400.0,
+          "mean": 171.25385745775165,
+          "median": 156.0,
+          "min": 27.0
+        },
+        "nonmonotonic_steps": 0,
+        "padded_time_values": 622647,
+        "shape": [
+          2722,
+          400
+        ],
+        "valid_span_seconds": {
+          "max": 7.9799999999999995,
+          "mean": 3.4050771491550327,
+          "median": 3.1,
+          "min": 0.52
+        },
+        "valid_steps_total": 466153,
+        "valid_time_first_seconds": {
+          "max": 0.01246875,
+          "mean": 0.012468750000000002,
+          "median": 0.01246875,
+          "min": 0.01246875
+        },
+        "valid_time_last_seconds": {
+          "max": 7.99246875,
+          "mean": 3.417545899155033,
+          "median": 3.11246875,
+          "min": 0.53246875
+        },
+        "zero_padded_time_values": 622647
+      },
+      "candidate_numeric_time_pairs": {
+        "absolute_time_delta_seconds": {
+          "max": 0.007531250000000433,
+          "mean": 0.007531250000000037,
+          "median": 0.007531249999999989,
+          "min": 0.007531249999999989
+        },
+        "method": "one-to-one nearest audio anchor for each vision anchor, both anchors within numeric support intersection",
+        "pairs_per_record": {
+          "max": 15.0,
+          "mean": 5.925789860396767,
+          "median": 5.0,
+          "min": 0.0
+        },
+        "pairs_total": 16130,
+        "physical_synchrony_established": false,
+        "records_with_pairs": 2715,
+        "tolerance_seconds": 0.01
+      },
+      "numeric_support_overlap": {
+        "audio_anchors_outside_intersection_total": 61548,
+        "audio_support_seconds_outside_intersection_total": 1210.8169999999973,
+        "no_intersection_ids": [
+          "aqgy3_0005/00036",
+          "aqgy4_0001/00066",
+          "aqgy4_0008/00033",
+          "aqgy5_0008/00028",
+          "aqgy5_0028/00032",
+          "aqgy5_0033/00023",
+          "aqgy5_0036/00001"
+        ],
+        "outside_seconds_definition": "sum of each valid timestamp support's start/end tail length beyond the per-record closed interval intersection; counts are valid anchors outside that interval",
+        "records_with_intersection": 2715,
+        "records_without_intersection": 7,
+        "seconds": {
+          "max": 7.9799999999999995,
+          "mean": 2.967883241252302,
+          "median": 2.48753125,
+          "min": 0.48753124999999997
+        },
+        "vision_anchors_outside_intersection_total": 2930,
+        "vision_support_seconds_outside_intersection_total": 111.19699999999271
+      },
+      "record_count": 2722,
+      "time_and_length_file_sha256": {
+        "audio_lengths.npy": {
+          "matches_expected": true,
+          "path": "data\\feature_cache\\simsv2_full_macbert_raw_av\\splits\\train\\audio_lengths.npy",
+          "sha256": "d0375c0044f4010a9f6137a0eeb47df93ec82a0a2ae0c02b2c6e76043743ccf7"
+        },
+        "audio_times.npy": {
+          "matches_expected": true,
+          "path": "data\\feature_cache\\simsv2_full_macbert_raw_av\\splits\\train\\audio_times.npy",
+          "sha256": "5779a750d566010ccb1fff86054b230e1d5c5be88d8dfad17172179a704e1297"
+        },
+        "vision_lengths.npy": {
+          "matches_expected": true,
+          "path": "data\\feature_cache\\simsv2_full_macbert_raw_av\\splits\\train\\vision_lengths.npy",
+          "sha256": "b29b4109712a7154dcc351b3fddc7c32eab12b2ad5e75c5e8da5f26fa434212a"
+        },
+        "vision_times.npy": {
+          "matches_expected": true,
+          "path": "data\\feature_cache\\simsv2_full_macbert_raw_av\\splits\\train\\vision_times.npy",
+          "sha256": "8b75a48e71af188bd9bbcb7ea682b2ba883fa987ce55834033d70022c27f6073"
+        }
+      },
+      "vision": {
+        "dtype": "float64",
+        "duplicate_valid_steps": 0,
+        "finite_values": 149710,
+        "grid_check": {
+          "atol_seconds": 1e-09,
+          "expected_start_seconds": 0.0,
+          "expected_step_seconds": 0.5,
+          "max_abs_residual_seconds": 0.0,
+          "violating_valid_values": 0
+        },
+        "lengths": {
+          "max": 55.0,
+          "mean": 7.002204261572373,
+          "median": 6.0,
+          "min": 1.0
+        },
+        "nonmonotonic_steps": 0,
+        "padded_time_values": 130650,
+        "shape": [
+          2722,
+          55
+        ],
+        "valid_span_seconds": {
+          "max": 27.0,
+          "mean": 3.0011021307861867,
+          "median": 2.5,
+          "min": 0.0
+        },
+        "valid_steps_total": 19060,
+        "valid_time_first_seconds": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0
+        },
+        "valid_time_last_seconds": {
+          "max": 27.0,
+          "mean": 3.0011021307861867,
+          "median": 2.5,
+          "min": 0.0
+        },
+        "zero_padded_time_values": 130650
+      }
+    },
+    "valid": {
+      "audio": {
+        "dtype": "float64",
+        "duplicate_valid_steps": 0,
+        "finite_values": 258800,
+        "grid_check": {
+          "atol_seconds": 1e-09,
+          "expected_start_seconds": 0.01246875,
+          "expected_step_seconds": 0.02,
+          "max_abs_residual_seconds": 8.881784197001252e-16,
+          "violating_valid_values": 0
+        },
+        "lengths": {
+          "max": 400.0,
+          "mean": 173.61823802163832,
+          "median": 161.0,
+          "min": 31.0
+        },
+        "nonmonotonic_steps": 0,
+        "padded_time_values": 146469,
+        "shape": [
+          647,
+          400
+        ],
+        "valid_span_seconds": {
+          "max": 7.9799999999999995,
+          "mean": 3.4523647604327663,
+          "median": 3.2,
+          "min": 0.6
+        },
+        "valid_steps_total": 112331,
+        "valid_time_first_seconds": {
+          "max": 0.01246875,
+          "mean": 0.01246875,
+          "median": 0.01246875,
+          "min": 0.01246875
+        },
+        "valid_time_last_seconds": {
+          "max": 7.99246875,
+          "mean": 3.4648335104327668,
+          "median": 3.21246875,
+          "min": 0.61246875
+        },
+        "zero_padded_time_values": 146469
+      },
+      "candidate_numeric_time_pairs": {
+        "absolute_time_delta_seconds": {
+          "max": 0.007531250000000433,
+          "mean": 0.007531250000000031,
+          "median": 0.007531249999999989,
+          "min": 0.007531249999999989
+        },
+        "method": "one-to-one nearest audio anchor for each vision anchor, both anchors within numeric support intersection",
+        "pairs_per_record": {
+          "max": 15.0,
+          "mean": 5.987635239567234,
+          "median": 5.0,
+          "min": 0.0
+        },
+        "pairs_total": 3874,
+        "physical_synchrony_established": false,
+        "records_with_pairs": 646,
+        "tolerance_seconds": 0.01
+      },
+      "numeric_support_overlap": {
+        "audio_anchors_outside_intersection_total": 15159,
+        "audio_support_seconds_outside_intersection_total": 298.3927187500005,
+        "no_intersection_ids": [
+          "aqgy3_0004/00030"
+        ],
+        "outside_seconds_definition": "sum of each valid timestamp support's start/end tail length beyond the per-record closed interval intersection; counts are valid anchors outside that interval",
+        "records_with_intersection": 646,
+        "records_without_intersection": 1,
+        "seconds": {
+          "max": 7.9799999999999995,
+          "mean": 2.9958007449690403,
+          "median": 2.73753125,
+          "min": 0.48753124999999997
+        },
+        "vision_anchors_outside_intersection_total": 697,
+        "vision_support_seconds_outside_intersection_total": 26.71271875000002
+      },
+      "record_count": 647,
+      "time_and_length_file_sha256": {
+        "audio_lengths.npy": {
+          "matches_expected": true,
+          "path": "data\\feature_cache\\simsv2_full_macbert_raw_av\\splits\\valid\\audio_lengths.npy",
+          "sha256": "b9b0e72b6038fb1e59d072895b46ac060a3572d9178c5a4fd7cf5e619b01008d"
+        },
+        "audio_times.npy": {
+          "matches_expected": true,
+          "path": "data\\feature_cache\\simsv2_full_macbert_raw_av\\splits\\valid\\audio_times.npy",
+          "sha256": "309d8f5728ba3af6b13c1f7e522cf084d33a264e120164735dbb9429ed671947"
+        },
+        "vision_lengths.npy": {
+          "matches_expected": true,
+          "path": "data\\feature_cache\\simsv2_full_macbert_raw_av\\splits\\valid\\vision_lengths.npy",
+          "sha256": "76e375fab2f83c2217363934bfc556f6d86af075c67300aecf74c6fc853ffe41"
+        },
+        "vision_times.npy": {
+          "matches_expected": true,
+          "path": "data\\feature_cache\\simsv2_full_macbert_raw_av\\splits\\valid\\vision_times.npy",
+          "sha256": "5fabd6ba694f032f7e15a24c69a6598ab745d7daee3944a0a308dab1efa6e4a4"
+        }
+      },
+      "vision": {
+        "dtype": "float64",
+        "duplicate_valid_steps": 0,
+        "finite_values": 35585,
+        "grid_check": {
+          "atol_seconds": 1e-09,
+          "expected_start_seconds": 0.0,
+          "expected_step_seconds": 0.5,
+          "max_abs_residual_seconds": 0.0,
+          "violating_valid_values": 0
+        },
+        "lengths": {
+          "max": 27.0,
+          "mean": 7.0649149922720245,
+          "median": 6.0,
+          "min": 1.0
+        },
+        "nonmonotonic_steps": 0,
+        "padded_time_values": 31014,
+        "shape": [
+          647,
+          55
+        ],
+        "valid_span_seconds": {
+          "max": 13.0,
+          "mean": 3.0324574961360122,
+          "median": 2.5,
+          "min": 0.0
+        },
+        "valid_steps_total": 4571,
+        "valid_time_first_seconds": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0
+        },
+        "valid_time_last_seconds": {
+          "max": 13.0,
+          "mean": 3.0324574961360122,
+          "median": 2.5,
+          "min": 0.0
+        },
+        "zero_padded_time_values": 31014
+      }
+    }
+  },
+  "publication_redaction": {
+    "full_local_report_sha256": "2e44d069a8ee3db871fb99ffc91f982abe9b80c37fdca4abfd2052c0436c1685",
+    "removed_path_count": 1,
+    "removed_paths": [
+      "/representative_media/records"
+    ],
+    "remaining_removed_paths_list_truncated": false,
+    "reason": "Exclude per-sample dataset records, long raw arrays and response/download capabilities; retain aggregate research evidence."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "implementation_sha256": "3a62eb5753f5d1b3d0b6f151b713f568022427f018aa519aa483ec6c159b58cd",
+  "source_hashes": {
+    "metadata.json": "50c067883c3e52d6130eb8ed80f2df9d8a29bbc0c0a1dd9ac6a9e7d2847d1e7d",
+    "train/ids.json": "60f7ae7f1718a10e0470b2205dac4a64bbfbc90c86d3c42bf5626d863f1dc2fa",
+    "train/text.npy": "b946de58023d0598c8cc11975aa38b275d97c79b217bf8f9a8b3bf097a594c5f",
+    "train/audio.npy": "4e1efcff070161c9c1cc199fcbb634a99e6ea1fa78847c5b662b7fe47341ed2f",
+    "train/vision.npy": "e7957505ddc7b5d2b3ede8d3dee78292852a725b54cd07e1dfe86b861a87208a"
+  },
+  "source_revision": "e60ef6bf070f23855e186c9fd7563902e9a8c056",
+  "source_file": "https://github.com/MKMaS-GUET/KuDA/blob/e60ef6bf070f23855e186c9fd7563902e9a8c056/models/DyRoutFusion_CLS.py",
+  "sample_count": 2722,
+  "projection_seed": 20261014,
+  "projection_width": 128,
+  "gate": "1+R_m; R changes from [.1,.2,.7] to [.7,.2,.1] in both placements",
+  "epsilon_zero": {
+    "inside_norm": {
+      "max_abs_output_change": 1.3322676295501878e-15,
+      "relative_l2_change_quantiles": [
+        5.985497534428767e-17,
+        1.2260288864565555e-16,
+        1.439698830126504e-16,
+        1.641344236772631e-16,
+        2.8570827680906033e-16
+      ]
+    },
+    "after_norm": {
+      "max_abs_output_change": 1.7454985476888671,
+      "relative_l2_change_quantiles": [
+        0.23637495959641813,
+        0.3394704534857013,
+        0.3576928664968657,
+        0.37956582794226584,
+        0.47789258370155197
+      ]
+    }
+  },
+  "epsilon_1e_5": {
+    "inside_norm": {
+      "max_abs_output_change": 9.491619118007222e-06,
+      "relative_l2_change_quantiles": [
+        1.281687803805585e-06,
+        1.844712571889376e-06,
+        1.945442902643486e-06,
+        2.0659771921365913e-06,
+        2.6087650668543416e-06
+      ]
+    },
+    "after_norm": {
+      "max_abs_output_change": 1.7454970260754863,
+      "relative_l2_change_quantiles": [
+        0.23637495854692633,
+        0.3394704482822619,
+        0.357692866968641,
+        0.3795658298352376,
+        0.4778926028841886
+      ]
+    }
+  },
+  "attention_gradients": [
+    {
+      "key_count": 1,
+      "Q_gradient_norm": 0.0,
+      "K_gradient_norm": 0.0,
+      "V_gradient_norm": 21.750362417640602
+    },
+    {
+      "key_count": 2,
+      "Q_gradient_norm": 2.180590636870163,
+      "K_gradient_norm": 3.2470617554515306,
+      "V_gradient_norm": 8.897164273683664
+    }
+  ],
+  "model_fits": 0,
+  "VALID_features_read": false,
+  "sentiment_scores_parsed": false,
+  "TEST_accessed": false,
+  "scope": "Analytical and numerical mechanism diagnosis on normalized random projections of actual TRAIN vectors, not learned KuDA states, paper-performance reproduction, original formula or improvement evidence. For positive scalar c and eps=0, LN(c*z)=LN(z). Finite epsilon, low variance and learned affine parameters qualify practical sensitivity. Singleton-key softmax gives zero Q/K gradients; multi-key attention is distinct."
+}

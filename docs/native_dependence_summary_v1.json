@@ -1,0 +1,145 @@
+{
+  "scope": "validation; all correction fits use official TRAIN OOF",
+  "results_sha256": "a956425241fa2b11b7997fbfaf5a93360053c7da0a6f08bc28d9c351304cf924",
+  "test_evaluated": false,
+  "summary": {
+    "original_NIG": {
+      "native_MAE": {
+        "mean": 0.43464313944180805,
+        "sample_sd": 0.003459248745339307
+      },
+      "density_NLL": {
+        "mean": 1.2600495659800306,
+        "sample_sd": 0.1899776656671181
+      },
+      "coverage90": {
+        "mean": 0.616692426584235,
+        "sample_sd": 0.040628869947743146
+      },
+      "width90": {
+        "mean": 0.9632506008189913,
+        "sample_sd": 0.08342559333604484
+      }
+    },
+    "global_NIG": {
+      "native_MAE": {
+        "mean": 0.43464313944180805,
+        "sample_sd": 0.003459248745339307
+      },
+      "density_NLL": {
+        "mean": 0.8005992676104907,
+        "sample_sd": 0.03241888532719337
+      },
+      "coverage90": {
+        "mean": 0.8526532715095313,
+        "sample_sd": 0.037297656461078355
+      },
+      "width90": {
+        "mean": 1.53775710311955,
+        "sample_sd": 0.12770729255446064
+      }
+    },
+    "independent": {
+      "native_MAE": {
+        "mean": 0.43464313944180805,
+        "sample_sd": 0.003459248745339307
+      },
+      "density_NLL": {
+        "mean": 0.7891952120157998,
+        "sample_sd": 0.017084915398880747
+      },
+      "coverage90": {
+        "mean": 0.8675940236991243,
+        "sample_sd": 0.023457089001199815
+      },
+      "width90": {
+        "mean": 1.6159475604819633,
+        "sample_sd": 0.09983786634350122
+      }
+    },
+    "correlated": {
+      "native_MAE": {
+        "mean": 0.43464313944180805,
+        "sample_sd": 0.003459248745339307
+      },
+      "density_NLL": {
+        "mean": 0.800244831156618,
+        "sample_sd": 0.035300621095277616
+      },
+      "coverage90": {
+        "mean": 0.8578052550231839,
+        "sample_sd": 0.03751054435706831
+      },
+      "width90": {
+        "mean": 1.5600304340142583,
+        "sample_sd": 0.1506227572284512
+      }
+    },
+    "proper_pool": {
+      "native_MAE": {
+        "mean": 0.43464313944180805,
+        "sample_sd": 0.003459248745339307
+      },
+      "density_NLL": {
+        "mean": 0.8260072593563398,
+        "sample_sd": 0.03604169789205103
+      },
+      "coverage90": {
+        "mean": 0.8511076764554354,
+        "sample_sd": 0.04116431603387566
+      },
+      "width90": {
+        "mean": 1.5820024348254076,
+        "sample_sd": 0.1358579933052843
+      }
+    },
+    "scaled_proper_pool": {
+      "native_MAE": {
+        "mean": 0.43464313944180805,
+        "sample_sd": 0.003459248745339307
+      },
+      "density_NLL": {
+        "mean": 0.8094018046791883,
+        "sample_sd": 0.022769476743353067
+      },
+      "coverage90": {
+        "mean": 0.889747552807831,
+        "sample_sd": 0.028763575171989412
+      },
+      "width90": {
+        "mean": 1.703841467003521,
+        "sample_sd": 0.1481904338361548
+      }
+    }
+  },
+  "paired_seeds": [
+    {
+      "seed": 13,
+      "correlated_minus_global_NIG_NLL": 0.0023748062963957484,
+      "correlated_minus_independent_NLL": -0.00218982000648682,
+      "correlated_minus_scaled_pool_NLL": -0.01082772056505621,
+      "point_mean_max_difference": 1.19272306919882e-07
+    },
+    {
+      "seed": 42,
+      "correlated_minus_global_NIG_NLL": 0.0029001022576740088,
+      "correlated_minus_independent_NLL": 0.03284669459330669,
+      "correlated_minus_scaled_pool_NLL": 0.005404962078761288,
+      "point_mean_max_difference": 1.5622001292570076e-07
+    },
+    {
+      "seed": 2026,
+      "correlated_minus_global_NIG_NLL": -0.006338217915687894,
+      "correlated_minus_independent_NLL": 0.0024919828356350093,
+      "correlated_minus_scaled_pool_NLL": -0.022048162081415912,
+      "point_mean_max_difference": 8.748852087236969e-08
+    }
+  ],
+  "raw_correlation_off_diagonal_mean": 0.6658213614630895,
+  "max_seed_pair_correlation_difference": 0.03970063971261634,
+  "max_within_seed_fold_correlation_difference": 0.2418357199538178,
+  "oof_loop_seconds": 122.27092029975029,
+  "all_fitted_scales_interior": true,
+  "correlation_consistently_beats_scalar_control": false,
+  "new_contribution_verified": false
+}

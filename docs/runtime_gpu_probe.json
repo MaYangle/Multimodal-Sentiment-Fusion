@@ -1,0 +1,36 @@
+{
+  "time_utc": "2026-10-11T15:02:36.795104+00:00",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "executable": "D:\\MYL\\JevAffect\\work\\train-env\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.28000-SP0",
+  "torch": "2.11.0+cu128",
+  "cuda_build": "12.8",
+  "cuda_available": true,
+  "disk": {
+    "total": 1833341095936,
+    "used": 631977123840,
+    "free": 1201363972096
+  },
+  "nvidia_smi": "name, driver_version, memory.total [MiB], memory.used [MiB], utilization.gpu [%]\nNVIDIA GeForce RTX 5070 Ti, 610.62, 16303 MiB, 3256 MiB, 1 %\n",
+  "device": "NVIDIA GeForce RTX 5070 Ti",
+  "capability": [
+    12,
+    0
+  ],
+  "compiled_architectures": [
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ],
+  "synthetic_environment_probe": {
+    "steps": 50,
+    "seconds": 0.0319571999971231,
+    "final_loss_finite": true,
+    "peak_allocated_bytes": 33845248,
+    "note": "Synthetic CUDA environment check only; not a data/model performance result."
+  },
+  "environment_kind": "project venv inherits existing system packages; clean-environment reproduction remains pending"
+}

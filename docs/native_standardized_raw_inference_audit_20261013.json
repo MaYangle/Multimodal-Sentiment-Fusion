@@ -1,0 +1,21 @@
+{
+  "media_audit_sha256": "c4d215fa65cac78200b1dfe7a1bc926a46c74b4294755e359e449b14c5795541",
+  "checkpoint_sha256": "e14f47e482e76d3b7faabcfc8728813e5d9c46ff3833bc4950012426296ea28e",
+  "metadata_sha256": "50c067883c3e52d6130eb8ed80f2df9d8a29bbc0c0a1dd9ac6a9e7d2847d1e7d",
+  "records": {
+    "publication_omitted": true,
+    "original_count": 2
+  },
+  "labels_read": false,
+  "test_evaluated": false,
+  "scope": "Two genuine competition-acquired TRAIN MP4 flow checks; no held-out performance or author-original byte-equivalence claim",
+  "publication_redaction": {
+    "full_local_report_sha256": "b5ef8f14ca0ea9b8e90ca9e5c793590c92bdab2a2061532024256744da7896b4",
+    "removed_path_count": 1,
+    "removed_paths": [
+      "/records"
+    ],
+    "remaining_removed_paths_list_truncated": false,
+    "reason": "Exclude per-sample dataset records, long raw arrays and response/download capabilities; retain aggregate research evidence."
+  }
+}

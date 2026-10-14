@@ -1,0 +1,366 @@
+{
+  "manifest": {
+    "scope": "official TRAIN only; inner selection is not official validation",
+    "seed": 20261012,
+    "inner_fraction": 0.1,
+    "source_count": 129,
+    "folds": [
+      {
+        "fold": 0,
+        "fit_ids": {
+          "publication_omitted": true,
+          "original_count": 1641
+        },
+        "select_ids": {
+          "publication_omitted": true,
+          "original_count": 192
+        },
+        "oof_ids": {
+          "publication_omitted": true,
+          "original_count": 889
+        }
+      },
+      {
+        "fold": 1,
+        "fit_ids": {
+          "publication_omitted": true,
+          "original_count": 1589
+        },
+        "select_ids": {
+          "publication_omitted": true,
+          "original_count": 195
+        },
+        "oof_ids": {
+          "publication_omitted": true,
+          "original_count": 938
+        }
+      },
+      {
+        "fold": 2,
+        "fit_ids": {
+          "publication_omitted": true,
+          "original_count": 1676
+        },
+        "select_ids": {
+          "publication_omitted": true,
+          "original_count": 151
+        },
+        "oof_ids": {
+          "publication_omitted": true,
+          "original_count": 895
+        }
+      }
+    ]
+  },
+  "results": [
+    {
+      "root": "runs\\native_dependence_oof_v1\\formal\\seed_13\\fold_0",
+      "seed": 13,
+      "fold": 0,
+      "smoke_only": false,
+      "complete": true,
+      "test_evaluated": false,
+      "manifest_sha256": "ba6e40c3ec2d721191be068ab23253a3ec8bb39139823f81929a762221f1296b",
+      "counts": {
+        "fit": 1641,
+        "select": 192,
+        "oof": 889
+      },
+      "best_epoch": 18,
+      "epochs_executed": 30,
+      "optimizer_updates": 1560,
+      "loop_seconds": 16.593918099926668,
+      "oof_native": {
+        "count": 889,
+        "MAE": 0.4273013472557068,
+        "Corr": 0.630040222632525,
+        "Mult_acc_2": 0.7637795275590551,
+        "F1_score": 0.7654993201600202,
+        "weak_count": 285,
+        "Mult_acc_2_weak": 0.5964912280701754,
+        "Mult_acc_3": 0.6434195725534309,
+        "Mult_acc_5": 0.35883014623172105,
+        "R_squre": 0.392461051257318
+      },
+      "checkpoint_sha256": "5bf97fa901950a456b035dd029de47c5b49ec5324b0cce9ced608c71ca60fe74",
+      "predictions_sha256": "91e88f10211c6076de4e04b962738fd5e4bfd01acf1e8696e1c13f05a47f4236"
+    },
+    {
+      "root": "runs\\native_dependence_oof_v1\\formal\\seed_13\\fold_1",
+      "seed": 13,
+      "fold": 1,
+      "smoke_only": false,
+      "complete": true,
+      "test_evaluated": false,
+      "manifest_sha256": "ba6e40c3ec2d721191be068ab23253a3ec8bb39139823f81929a762221f1296b",
+      "counts": {
+        "fit": 1589,
+        "select": 195,
+        "oof": 938
+      },
+      "best_epoch": 11,
+      "epochs_executed": 23,
+      "optimizer_updates": 1150,
+      "loop_seconds": 12.074315199963166,
+      "oof_native": {
+        "count": 938,
+        "MAE": 0.436597615480423,
+        "Corr": 0.6621825411264455,
+        "Mult_acc_2": 0.7889125799573561,
+        "F1_score": 0.7860289104534427,
+        "weak_count": 291,
+        "Mult_acc_2_weak": 0.6666666666666666,
+        "Mult_acc_3": 0.6780383795309168,
+        "Mult_acc_5": 0.3411513859275053,
+        "R_squre": 0.41995753889491505
+      },
+      "checkpoint_sha256": "eaac2bbef54d8594016d82b80f76c76cae29021f5fb2102299f1411ab9bb8bd7",
+      "predictions_sha256": "5f30207ef76332170aafcbf722d59db912bdc7c59d95f53fcb79f3c178e3c6a8"
+    },
+    {
+      "root": "runs\\native_dependence_oof_v1\\formal\\seed_13\\fold_2",
+      "seed": 13,
+      "fold": 2,
+      "smoke_only": false,
+      "complete": true,
+      "test_evaluated": false,
+      "manifest_sha256": "ba6e40c3ec2d721191be068ab23253a3ec8bb39139823f81929a762221f1296b",
+      "counts": {
+        "fit": 1676,
+        "select": 151,
+        "oof": 895
+      },
+      "best_epoch": 12,
+      "epochs_executed": 24,
+      "optimizer_updates": 1272,
+      "loop_seconds": 12.967783300045994,
+      "oof_native": {
+        "count": 895,
+        "MAE": 0.3791747987270355,
+        "Corr": 0.690543561648029,
+        "Mult_acc_2": 0.8044692737430168,
+        "F1_score": 0.8062290930370875,
+        "weak_count": 307,
+        "Mult_acc_2_weak": 0.6872964169381107,
+        "Mult_acc_3": 0.7150837988826816,
+        "Mult_acc_5": 0.4134078212290503,
+        "R_squre": 0.4754920496395638
+      },
+      "checkpoint_sha256": "868c2934cff363350fdcc0d60d817a95eebf7c5cc64facba89d0f7ccdd571b4f",
+      "predictions_sha256": "45863ecc5844b4f51339cc1c712945bc79e9661a4fd9999160624007b1784eb2"
+    },
+    {
+      "root": "runs\\native_dependence_oof_v1\\formal\\seed_42\\fold_0",
+      "seed": 42,
+      "fold": 0,
+      "smoke_only": false,
+      "complete": true,
+      "test_evaluated": false,
+      "manifest_sha256": "ba6e40c3ec2d721191be068ab23253a3ec8bb39139823f81929a762221f1296b",
+      "counts": {
+        "fit": 1641,
+        "select": 192,
+        "oof": 889
+      },
+      "best_epoch": 10,
+      "epochs_executed": 22,
+      "optimizer_updates": 1144,
+      "loop_seconds": 12.011414499982493,
+      "oof_native": {
+        "count": 889,
+        "MAE": 0.42307937145233154,
+        "Corr": 0.6535929767649955,
+        "Mult_acc_2": 0.7626546681664792,
+        "F1_score": 0.7648185175972988,
+        "weak_count": 285,
+        "Mult_acc_2_weak": 0.5929824561403508,
+        "Mult_acc_3": 0.6602924634420697,
+        "Mult_acc_5": 0.3655793025871766,
+        "R_squre": 0.41296057509107864
+      },
+      "checkpoint_sha256": "f47c4c7d77a0eba14845094dc93b7681a81041531140d275a6cd831d78bf3c1c",
+      "predictions_sha256": "5f0a7ebe36cf7b8f6053f2148b6b7ab074be4ed8160ee244b62943090f6dd4e8"
+    },
+    {
+      "root": "runs\\native_dependence_oof_v1\\formal\\seed_42\\fold_1",
+      "seed": 42,
+      "fold": 1,
+      "smoke_only": false,
+      "complete": true,
+      "test_evaluated": false,
+      "manifest_sha256": "ba6e40c3ec2d721191be068ab23253a3ec8bb39139823f81929a762221f1296b",
+      "counts": {
+        "fit": 1589,
+        "select": 195,
+        "oof": 938
+      },
+      "best_epoch": 10,
+      "epochs_executed": 22,
+      "optimizer_updates": 1100,
+      "loop_seconds": 11.505999899964081,
+      "oof_native": {
+        "count": 938,
+        "MAE": 0.4390561282634735,
+        "Corr": 0.6689047760412317,
+        "Mult_acc_2": 0.8038379530916845,
+        "F1_score": 0.8010351176092618,
+        "weak_count": 291,
+        "Mult_acc_2_weak": 0.6701030927835051,
+        "Mult_acc_3": 0.6673773987206824,
+        "Mult_acc_5": 0.32409381663113007,
+        "R_squre": 0.424072125572881
+      },
+      "checkpoint_sha256": "bff27f527665ca62eb4e8424d4b958583d9fa43c4a06bc26a33ce6249b7d7bee",
+      "predictions_sha256": "204bccc543b632f78723aa6f744963b8b8a311add1384bd920d3a4ee78f5646f"
+    },
+    {
+      "root": "runs\\native_dependence_oof_v1\\formal\\seed_42\\fold_2",
+      "seed": 42,
+      "fold": 2,
+      "smoke_only": false,
+      "complete": true,
+      "test_evaluated": false,
+      "manifest_sha256": "ba6e40c3ec2d721191be068ab23253a3ec8bb39139823f81929a762221f1296b",
+      "counts": {
+        "fit": 1676,
+        "select": 151,
+        "oof": 895
+      },
+      "best_epoch": 21,
+      "epochs_executed": 33,
+      "optimizer_updates": 1749,
+      "loop_seconds": 17.80650099994091,
+      "oof_native": {
+        "count": 895,
+        "MAE": 0.3966176211833954,
+        "Corr": 0.6662474364264112,
+        "Mult_acc_2": 0.7877094972067039,
+        "F1_score": 0.7899568739938846,
+        "weak_count": 307,
+        "Mult_acc_2_weak": 0.6547231270358306,
+        "Mult_acc_3": 0.7094972067039106,
+        "Mult_acc_5": 0.4134078212290503,
+        "R_squre": 0.43526141197927426
+      },
+      "checkpoint_sha256": "16f1e02a43f293d51d662e573bb19e78492f230447c4c74c08c3796b07d5cf33",
+      "predictions_sha256": "d85a18eb0d9fecd134efb8a6a5da451855ff0ab5db8f8a73d19599d1bb964abd"
+    },
+    {
+      "root": "runs\\native_dependence_oof_v1\\formal\\seed_2026\\fold_0",
+      "seed": 2026,
+      "fold": 0,
+      "smoke_only": false,
+      "complete": true,
+      "test_evaluated": false,
+      "manifest_sha256": "ba6e40c3ec2d721191be068ab23253a3ec8bb39139823f81929a762221f1296b",
+      "counts": {
+        "fit": 1641,
+        "select": 192,
+        "oof": 889
+      },
+      "best_epoch": 7,
+      "epochs_executed": 19,
+      "optimizer_updates": 988,
+      "loop_seconds": 10.182557199965231,
+      "oof_native": {
+        "count": 889,
+        "MAE": 0.423698365688324,
+        "Corr": 0.6497701325832,
+        "Mult_acc_2": 0.7930258717660292,
+        "F1_score": 0.7910408689853727,
+        "weak_count": 285,
+        "Mult_acc_2_weak": 0.6701754385964912,
+        "Mult_acc_3": 0.6861642294713161,
+        "Mult_acc_5": 0.3847019122609674,
+        "R_squre": 0.4082084559520167
+      },
+      "checkpoint_sha256": "901d13328c8231ac2af2d57848fb8b7d465df40b752784f1e5b313b0e0c53cbd",
+      "predictions_sha256": "6f668523e9bd762f8b8de31cec3902b00956607c49a0382563a5e304ee3d49f1"
+    },
+    {
+      "root": "runs\\native_dependence_oof_v1\\formal\\seed_2026\\fold_1",
+      "seed": 2026,
+      "fold": 1,
+      "smoke_only": false,
+      "complete": true,
+      "test_evaluated": false,
+      "manifest_sha256": "ba6e40c3ec2d721191be068ab23253a3ec8bb39139823f81929a762221f1296b",
+      "counts": {
+        "fit": 1589,
+        "select": 195,
+        "oof": 938
+      },
+      "best_epoch": 7,
+      "epochs_executed": 19,
+      "optimizer_updates": 950,
+      "loop_seconds": 10.299625900006504,
+      "oof_native": {
+        "count": 938,
+        "MAE": 0.44045883417129517,
+        "Corr": 0.6763439371457826,
+        "Mult_acc_2": 0.8059701492537313,
+        "F1_score": 0.8045218991909084,
+        "weak_count": 291,
+        "Mult_acc_2_weak": 0.6529209621993127,
+        "Mult_acc_3": 0.6801705756929638,
+        "Mult_acc_5": 0.3315565031982942,
+        "R_squre": 0.4267976513256232
+      },
+      "checkpoint_sha256": "be4178170844d28aeaeb6563cb40deab47387c3f4a6a834baa5506d97d4dd3e8",
+      "predictions_sha256": "c9380bb7d6de22e040b0e220ef0ce3b6a640291a77269148b353eafac4c587ea"
+    },
+    {
+      "root": "runs\\native_dependence_oof_v1\\formal\\seed_2026\\fold_2",
+      "seed": 2026,
+      "fold": 2,
+      "smoke_only": false,
+      "complete": true,
+      "test_evaluated": false,
+      "manifest_sha256": "ba6e40c3ec2d721191be068ab23253a3ec8bb39139823f81929a762221f1296b",
+      "counts": {
+        "fit": 1676,
+        "select": 151,
+        "oof": 895
+      },
+      "best_epoch": 23,
+      "epochs_executed": 35,
+      "optimizer_updates": 1855,
+      "loop_seconds": 18.82880519995524,
+      "oof_native": {
+        "count": 895,
+        "MAE": 0.39983639121055603,
+        "Corr": 0.6639047583558475,
+        "Mult_acc_2": 0.8067039106145252,
+        "F1_score": 0.8084843918647925,
+        "weak_count": 307,
+        "Mult_acc_2_weak": 0.6840390879478827,
+        "Mult_acc_3": 0.6882681564245811,
+        "Mult_acc_5": 0.4011173184357542,
+        "R_squre": 0.43398844075718523
+      },
+      "checkpoint_sha256": "a8b60b3c3f48e39bdeaa5e440cae8ba365a0dad70fb6214f217faf85776e7aad",
+      "predictions_sha256": "9196d146efd85c85d231f657ca9b4b1dfce1e3dcba146dbf4094702279c64a51"
+    }
+  ],
+  "suite_complete": true,
+  "smoke_only": false,
+  "official_validation_labels_parsed": false,
+  "test_evaluated": false,
+  "publication_redaction": {
+    "full_local_report_sha256": "3ae82025723f67b81f3e7deb33a740b5babf53b3eba76170ab53611e80751eaf",
+    "removed_path_count": 9,
+    "removed_paths": [
+      "/manifest/folds/0/fit_ids",
+      "/manifest/folds/0/select_ids",
+      "/manifest/folds/0/oof_ids",
+      "/manifest/folds/1/fit_ids",
+      "/manifest/folds/1/select_ids",
+      "/manifest/folds/1/oof_ids",
+      "/manifest/folds/2/fit_ids",
+      "/manifest/folds/2/select_ids",
+      "/manifest/folds/2/oof_ids"
+    ],
+    "remaining_removed_paths_list_truncated": false,
+    "reason": "Exclude per-sample dataset records, long raw arrays and response/download capabilities; retain aggregate research evidence."
+  }
+}

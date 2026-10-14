@@ -1,0 +1,25 @@
+{
+  "time_utc": "2026-10-12T17:17:01.309197+00:00",
+  "workers": 1,
+  "chunk_bytes": 8388608,
+  "transfer_exit_code": 1,
+  "complete": false,
+  "received_bytes_including_partials": 1604845568,
+  "new_bytes_added": 0,
+  "log_sha256": "e2de003f6441282947e40e8b8344d4e6b4d3b553012500d073d2f69fa3f18ccb",
+  "response": {
+    "status": 200,
+    "Content-Range": null,
+    "Last-Modified": null,
+    "expected_range": "bytes 1596456960-1604845567/3620390413",
+    "expected_version": "Tue, 19 Sep 2023 09:07:03 GMT",
+    "diagnostic": {
+      "Content-Type": "text/html; charset=utf-8",
+      "body_prefix_bytes": 2040,
+      "body_prefix_sha256": "6e8b883ea2aead916cafce21ddc8d33ad427ec5704431fb8a73780d1b1f5da71",
+      "html_prefix": true,
+      "quota_phrase_observed": true
+    }
+  },
+  "conclusion": "This exact 8MiB request returned HTML with a download-quota phrase; small206 probes did not establish full-range availability."
+}

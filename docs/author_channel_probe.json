@@ -1,0 +1,113 @@
+{
+  "channels": [
+    {
+      "url": "https://immortal.multicomp.cs.cmu.edu/CMU-MOSEI/labels/CMU_MOSEI_Labels.csd",
+      "error": "SSLError"
+    },
+    {
+      "url": "https://immortal.multicomp.cs.cmu.edu/CMU-MOSEI/language/CMU_MOSEI_TimestampedWords.csd",
+      "error": "SSLError"
+    },
+    {
+      "url": "https://immortal.multicomp.cs.cmu.edu/CMU-MOSEI/language/CMU_MOSEI_TimestampedWordVectors.csd",
+      "error": "SSLError"
+    },
+    {
+      "url": "https://immortal.multicomp.cs.cmu.edu/CMU-MOSEI/acoustic/CMU_MOSEI_COVAREP.csd",
+      "error": "SSLError"
+    },
+    {
+      "url": "https://immortal.multicomp.cs.cmu.edu/CMU-MOSEI/visual/CMU_MOSEI_VisualOpenFace2.csd",
+      "error": "SSLError"
+    },
+    {
+      "url": "http://immortal.multicomp.cs.cmu.edu/CMU-MOSEI/labels/CMU_MOSEI_Labels.csd",
+      "status": 500,
+      "content_type": "text/html",
+      "content_length": "744",
+      "content_range": null,
+      "prefix_bytes": 744,
+      "hdf5_header": false
+    },
+    {
+      "url": "http://immortal.multicomp.cs.cmu.edu/CMU-MOSEI/language/CMU_MOSEI_TimestampedWords.csd",
+      "status": 500,
+      "content_type": "text/html",
+      "content_length": "744",
+      "content_range": null,
+      "prefix_bytes": 744,
+      "hdf5_header": false
+    },
+    {
+      "url": "http://immortal.multicomp.cs.cmu.edu/CMU-MOSEI/language/CMU_MOSEI_TimestampedWordVectors.csd",
+      "status": 500,
+      "content_type": "text/html",
+      "content_length": "744",
+      "content_range": null,
+      "prefix_bytes": 744,
+      "hdf5_header": false
+    },
+    {
+      "url": "http://immortal.multicomp.cs.cmu.edu/CMU-MOSEI/acoustic/CMU_MOSEI_COVAREP.csd",
+      "status": 500,
+      "content_type": "text/html",
+      "content_length": "744",
+      "content_range": null,
+      "prefix_bytes": 744,
+      "hdf5_header": false
+    },
+    {
+      "url": "http://immortal.multicomp.cs.cmu.edu/CMU-MOSEI/visual/CMU_MOSEI_VisualOpenFace2.csd",
+      "status": 500,
+      "content_type": "text/html",
+      "content_length": "744",
+      "content_range": null,
+      "prefix_bytes": 744,
+      "hdf5_header": false
+    }
+  ],
+  "paid_resources": false,
+  "raw_media_downloaded": false,
+  "sdk_recipe": {
+    "revision": "4f2eadcd7e7b9e20e83b868cdad385b41830285c",
+    "source_url": "https://raw.githubusercontent.com/CMU-MultiComp-Lab/CMU-MultimodalSDK/4f2eadcd7e7b9e20e83b868cdad385b41830285c/mmsdk/mmdatasdk/dataset/standard_datasets/CMU_MOSEI/cmu_mosei.py",
+    "source_sha256": "03492e9efa958cc3adfbedf55d3b8e1a42d1eb3d1e00158ee5f4a406d2c27815",
+    "published_urls": [
+      "http://immortal.multicomp.cs.cmu.edu/CMU-MOSEI/labels/CMU_MOSEI_Labels.csd",
+      "http://immortal.multicomp.cs.cmu.edu/CMU-MOSEI/language/CMU_MOSEI_TimestampedWords.csd",
+      "http://immortal.multicomp.cs.cmu.edu/CMU-MOSEI/language/CMU_MOSEI_TimestampedWordVectors.csd",
+      "http://immortal.multicomp.cs.cmu.edu/CMU-MOSEI/acoustic/CMU_MOSEI_COVAREP.csd",
+      "http://immortal.multicomp.cs.cmu.edu/CMU-MOSEI/visual/CMU_MOSEI_VisualOpenFace2.csd"
+    ]
+  },
+  "rejected_previous_paths": [
+    "https://immortal.multicomp.cs.cmu.edu/CMU-MOSEI/language/CMU_MOSEI_TimestampedGloveVectors.csd",
+    "http://immortal.multicomp.cs.cmu.edu/CMU-MOSEI/language/CMU_MOSEI_TimestampedGloveVectors.csd"
+  ],
+  "mosei_folds": {
+    "sdk_revision": "4f2eadcd7e7b9e20e83b868cdad385b41830285c",
+    "source_url": "https://raw.githubusercontent.com/CMU-MultiComp-Lab/CMU-MultimodalSDK/4f2eadcd7e7b9e20e83b868cdad385b41830285c/mmsdk/mmdatasdk/dataset/standard_datasets/CMU_MOSEI/cmu_mosei_std_folds.py",
+    "source_sha256": "4e13a2f538cf02ab56144eb2a91ca48a4024ce64faaae790ab9ff1c3f399b473",
+    "rows_checked": 22856,
+    "membership_errors": 4,
+    "first_errors": [
+      {
+        "video_id": "-NFrJFQijFE",
+        "split": "train"
+      },
+      {
+        "video_id": "-NFrJFQijFE",
+        "split": "train"
+      },
+      {
+        "video_id": "-NFrJFQijFE",
+        "split": "train"
+      },
+      {
+        "video_id": "-NFrJFQijFE",
+        "split": "train"
+      }
+    ],
+    "cohort_csv_sha256": "52d885bd1e8b29a4c06a69e2b1dd67dd02f7bcbdfa38ad918144fd5673a83521"
+  }
+}

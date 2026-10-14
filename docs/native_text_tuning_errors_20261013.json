@@ -1,0 +1,119 @@
+{
+  "scope": "post-training official VALID development errors; annotation strata are not inference inputs",
+  "test_evaluated": false,
+  "author_csv_sha256": "be7e482640e7ee24d2070033e1e2aef61ce183199286a8a18b0d6247556bf150",
+  "groups": {
+    "all": 647,
+    "exact_neutral": 92,
+    "weak": 236,
+    "strong": 281,
+    "opposite_annotation_sign": 117
+  },
+  "models": {
+    "top4": {
+      "all": {
+        "MAE_mean": 0.4272380769252777,
+        "MAE_sample_sd": 0.002179795876145363
+      },
+      "exact_neutral": {
+        "MAE_mean": 0.3599323332309723,
+        "MAE_sample_sd": 0.010863201692700386
+      },
+      "weak": {
+        "MAE_mean": 0.3654215335845947,
+        "MAE_sample_sd": 0.01318334974348545
+      },
+      "strong": {
+        "MAE_mean": 0.4808347225189209,
+        "MAE_sample_sd": 0.007838877849280834
+      },
+      "opposite_annotation_sign": {
+        "MAE_mean": 0.5430631041526794,
+        "MAE_sample_sd": 0.0038290403317660093
+      }
+    },
+    "frozen": {
+      "all": {
+        "MAE_mean": 0.45742616057395935,
+        "MAE_sample_sd": 0.006726047955453396
+      },
+      "exact_neutral": {
+        "MAE_mean": 0.2841763198375702,
+        "MAE_sample_sd": 0.007355872541666031
+      },
+      "weak": {
+        "MAE_mean": 0.30584850907325745,
+        "MAE_sample_sd": 0.0078671183437109
+      },
+      "strong": {
+        "MAE_mean": 0.5988249778747559,
+        "MAE_sample_sd": 0.008208584040403366
+      },
+      "opposite_annotation_sign": {
+        "MAE_mean": 0.4882562458515167,
+        "MAE_sample_sd": 0.017284676432609558
+      }
+    },
+    "text": {
+      "all": {
+        "MAE_mean": 0.43730902671813965,
+        "MAE_sample_sd": 0.0024351042229682207
+      },
+      "exact_neutral": {
+        "MAE_mean": 0.3143846094608307,
+        "MAE_sample_sd": 0.0059662554413080215
+      },
+      "weak": {
+        "MAE_mean": 0.32566937804222107,
+        "MAE_sample_sd": 0.007460580673068762
+      },
+      "strong": {
+        "MAE_mean": 0.5441250205039978,
+        "MAE_sample_sd": 0.014361003413796425
+      },
+      "opposite_annotation_sign": {
+        "MAE_mean": 0.5056059956550598,
+        "MAE_sample_sd": 0.008821285329759121
+      }
+    },
+    "early_fusion": {
+      "all": {
+        "MAE_mean": 0.422069787979126,
+        "MAE_sample_sd": 0.000735894835088402
+      },
+      "exact_neutral": {
+        "MAE_mean": 0.3039332926273346,
+        "MAE_sample_sd": 0.013364656828343868
+      },
+      "weak": {
+        "MAE_mean": 0.3288276493549347,
+        "MAE_sample_sd": 0.010345770977437496
+      },
+      "strong": {
+        "MAE_mean": 0.5068147778511047,
+        "MAE_sample_sd": 0.009072154760360718
+      },
+      "opposite_annotation_sign": {
+        "MAE_mean": 0.47183990478515625,
+        "MAE_sample_sd": 0.008183225989341736
+      }
+    }
+  },
+  "paired": [
+    {
+      "seed": 13,
+      "top4_minus_frozen_MAE": -0.02747485041618347,
+      "top4_minus_fusion_MAE": 0.006589531898498535
+    },
+    {
+      "seed": 42,
+      "top4_minus_frozen_MAE": -0.035934239625930786,
+      "top4_minus_fusion_MAE": 0.0062088072299957275
+    },
+    {
+      "seed": 2026,
+      "top4_minus_frozen_MAE": -0.027155190706253052,
+      "top4_minus_fusion_MAE": 0.0027064383029937744
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "dataset": "CMU-MOSEI",
+  "duplicate_ids_across_splits": 0,
+  "duplicate_ids_within_split": 0,
+  "inventory_complete": true,
+  "inventory_duplicate_paths": 0,
+  "inventory_entries": 75384,
+  "inventory_sha256": "61a744b8ea6eb0d50afa4de6feddb9d12d13e46818eac3228f1f42502adbc643",
+  "inventory_unique_paths": 75384,
+  "mapping_note": "project-adopted application of the competition's one possible MOSEI mapping",
+  "media_inventory_missing_by_split": {
+    "test": {
+      "audio": 0,
+      "text": 0,
+      "video": 76
+    },
+    "train": {
+      "audio": 0,
+      "text": 0,
+      "video": 237
+    },
+    "valid": {
+      "audio": 0,
+      "text": 0,
+      "video": 12
+    }
+  },
+  "media_inventory_present_by_split": {
+    "test": {
+      "audio": 4662,
+      "text": 4662,
+      "video": 4586
+    },
+    "train": {
+      "audio": 16327,
+      "text": 16327,
+      "video": 16090
+    },
+    "valid": {
+      "audio": 1871,
+      "text": 1871,
+      "video": 1859
+    }
+  },
+  "source_video_groups_cross_split": 0,
+  "source_video_id_type_row_counts": {
+    "numeric_alias": 6920,
+    "youtube_id_11": 15940
+  },
+  "split_csv_sha256": {
+    "test": "36f1b443f2ccbd90ba96c47edfc58f17a3f11ad430f4dba064f3a036bf9eb8d0",
+    "train": "da852f956853313c716e86c414adffc860276de085299a4e670792b71e5f062e",
+    "valid": "ef76f87543394063c4f7f23b27ee3b670167e6b3b9eec0d618b9553260191cce"
+  },
+  "split_row_counts": {
+    "test": 4662,
+    "train": 16327,
+    "valid": 1871
+  },
+  "test_ids_count": 4662,
+  "test_ids_sha256": "3f39ec8108baae0671053669fa67738c8c344aaab06904caf6c75a98acbb19b8"
+}

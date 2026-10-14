@@ -1,0 +1,8 @@
+[
+  {"name": "simsv2_early_fusion", "run": "runs/native_simsv2_v1/early_fusion/seed_13", "predictions": "work/native_feature_demo/predictions.jsonl"},
+  {"name": "simsv2_almt", "run": "runs/native_simsv2_v1/almt/seed_13", "predictions": "work/native_feature_demo/almt_predictions.jsonl"},
+  {"name": "simsv2_joint_dynamic", "run": "runs/native_context_nig_v1/joint_dynamic/formal/seed_13", "predictions": "work/native_feature_demo/context_predictions.jsonl"},
+  {"name": "mosei_early_fusion", "run": "runs/native_mosei_author_v1/formal/early_fusion/seed_13", "predictions": "work/mosei_native_feature_demo/early_fusion_predictions.jsonl"},
+  {"name": "mosei_almt", "run": "runs/native_mosei_author_v1/formal/almt/seed_13", "predictions": "work/mosei_native_feature_demo/almt_predictions.jsonl"},
+  {"name": "simsv2_reference_sum1", "run": "runs/native_reference_residual_v1/sum1/formal/seed_13", "predictions": "work/native_feature_demo/reference_sum_predictions.jsonl"}
+]

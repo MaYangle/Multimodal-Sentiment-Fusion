@@ -1,0 +1,75 @@
+{
+  "scope": "published MultiBench cohort VALID selection scores, not final test or exact-current-SDK cohort",
+  "test_evaluated": false,
+  "suite_sha256": "59b3e1ad478626c93aadeb3b0cc5680751507df5157052ad14c08b73cab2038e",
+  "cache_metadata_sha256": "1fd9a0c5b89e00fc89dc8e35b58b3def798ecda02125dc3af8da0cc6448acfcd",
+  "summary": {
+    "almt_masked": {
+      "MAE": {
+        "mean": 0.6127370993296305,
+        "sample_sd": 0.004018228547769267
+      },
+      "Corr": {
+        "mean": 0.605624874556343,
+        "sample_sd": 0.00843218183400189
+      },
+      "Mult_acc_5": {
+        "mean": 0.5115034777956127,
+        "sample_sd": 0.007017055670735138
+      },
+      "Mult_acc_7": {
+        "mean": 0.5031210986267166,
+        "sample_sd": 0.00435769278504393
+      },
+      "Has0_acc_2": {
+        "mean": 0.7306937756375959,
+        "sample_sd": 0.036513995671797306
+      },
+      "Has0_F1_score": {
+        "mean": 0.7421581562829322,
+        "sample_sd": 0.030971035559304447
+      },
+      "Non0_acc_2": {
+        "mean": 0.7729805013927576,
+        "sample_sd": 0.01826584547159332
+      },
+      "Non0_F1_score": {
+        "mean": 0.7742904516575978,
+        "sample_sd": 0.014845872222116155
+      },
+      "parameters": 3047937,
+      "epochs": [
+        21,
+        22,
+        31
+      ],
+      "optimizer_updates": [
+        10689,
+        11198,
+        15779
+      ],
+      "total_loop_seconds": 1192.9485436999967
+    }
+  },
+  "evidence": [
+    {
+      "model": "almt_masked",
+      "seed": 13,
+      "count": 1869,
+      "id_target_metric_hash_epoch_audit_passed": true
+    },
+    {
+      "model": "almt_masked",
+      "seed": 42,
+      "count": 1869,
+      "id_target_metric_hash_epoch_audit_passed": true
+    },
+    {
+      "model": "almt_masked",
+      "seed": 2026,
+      "count": 1869,
+      "id_target_metric_hash_epoch_audit_passed": true
+    }
+  ],
+  "new_contribution_claimed": false
+}

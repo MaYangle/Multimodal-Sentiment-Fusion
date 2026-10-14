@@ -1,0 +1,34 @@
+# JevAffect architecture reassessment (2026-10-12)
+
+This note distinguishes published task results, our matched adaptations, and an unproven new hypothesis. All local numbers below are **validation selection** results; no frozen official test split or competition hidden set has been scored.
+
+## Relevant public methods
+
+| Work | Useful mechanism | Applicability / limitation here |
+|---|---|---|
+| [MMSA official results](https://github.com/thuiar/MMSA/blob/master/results/result-stat.md) and [CH-SIMS v2 authors](https://thuiar.github.io/sims.github.io/chsims) | Reproducible classic fusion, attention and multi-task baselines. The public table includes SIMSv2 five-class numbers such as MulT 54.81% and MTFN 56.05%. | Native author features and published setting differ from our frozen raw-derived MacBERT/WavLM/DINOv2 setting. We cannot claim to exceed these published figures by comparing unlike protocols. |
+| [KuDA (EMNLP 2024)](https://github.com/MKMaS-GUET/KuDA) | Knowledge-guided dynamic modality weighting; author code covers CH-SIMSv2 and MOSEI. | Strong future native-feature reproduction candidate. Requires the paper's data/feature recipe and text pretraining to compare fairly. |
+| [CMC (2025)](https://arxiv.org/abs/2510.20256) | Pseudo-unimodal targets, parameter-free fusion and consensus routing counter text dominance. | We ported its two-stage logic to a five-class frozen-encoder cache; seed 13 reached 40.80% on the full CH-SIMS author validation. This adaptation is **not** its published native-model score. |
+| [BC-MLF (2026)](https://arxiv.org/abs/2609.37100), [author implementation](https://github.com/sunyulin0421/BC-MLF) | Sample-adaptive prediction-layer branch calibration and fusion-token contrastive learning. | Closest branch-calibration comparison; current author configuration covers MOSEI and earlier SIMS, not a turnkey SIMSv2 five-class run. Our native-feature retrieval was quota-blocked; no score is claimed. |
+| [MRCF (2026)](https://arxiv.org/abs/2608.03611), [TMSON (2024)](https://arxiv.org/abs/2404.08923) | Reliability-aware interaction under missing data and ordinal-space uncertainty fusion. | These make generic reliability gating and ordinal fusion prior art, not standalone JevAffect novelty. |
+| [TCaN (2026)](https://ieeexplore.ieee.org/abstract/document/11661618), [CorrFuse (online)](https://www.sciencedirect.com/science/article/abs/pii/S1566253526005051) | Temporal calibration and multi-round asynchronous interaction with ordinal supervision. | Recent architecture guidance. Metrics are not directly comparable until data version, feature backbone, split and label bins match. |
+| [TypeSafe Jev announcement](https://typesafe.ai/blog/introducing-system-one-models-and-jev) | Typed parallel probability decisions and calibrated confidence. | No public Jev weights or full training recipe underpin this project. Our five-class classifier is independent and labeled **Jev-inspired**. |
+
+Cross-token attention is a valid engineering option, but prior work already uses it. On our source-video-disjoint 2,182/540 diagnostic split, direct 128-dimensional MacBERT/WavLM/DINOv2 token attention reached 49.44% in seed 13; removing its cross-attention reached 49.81%. The first controlled result does **not** support attention itself as the contribution. Three-seed audit is in `group_holdout_model_paired_audit.json`.
+
+## Local failure analysis that drives the new hypothesis
+
+The official CH-SIMS v2 train/validation split shares a source video for **646 of 647 validation clips**. We therefore also built a fixed, class-stratified, source-video-disjoint split solely from official TRAIN: 2,182 train / 540 validation and zero shared source groups. It is a diagnostic selection set, not an untouched independent test. The complete official-split MacBERT baseline remains useful for challenge protocol comparison: three-seed ALMT mean 47.04% accuracy / 44.69% Macro-F1, versus our earlier mask-aware temporal model 49.72% / 47.13%. On the source-disjoint diagnostic split the corresponding accuracy gap shrinks to roughly one percentage point.
+
+The earlier temporal model's learned gate has almost no linear relationship to its true per-window masking loss change on the official validation set (Pearson 0.031 over 9,103 observed windows). Masking all audio drops seed-13 accuracy from 49.92% to 33.38%, while masking all vision yields 46.68%. The network uses audio, yet its displayed per-window gate is not a verified contribution explanation. The old pilot's utility supervision did not improve accuracy, so a larger controlled test is necessary.
+
+## JevAffect V2 experiment
+
+**Hypothesis:** Supervising fine-grained audiovisual reliability from *out-of-fold intervention utility* rather than only final-label gradients makes reliability estimates more faithful and improves five-class accuracy on unseen source videos. The prior art above includes branch calibration, uncertainty/ordinal fusion, and counterfactual learning. The proposed incremental test is the combination of **source-group OOF window-level loss-difference targets**, utility-biased token attention, and a bounded residual correction; novelty remains a hypothesis until comparisons support it.
+
+1. Freeze MacBERT-base text, WavLM-base-plus audio and DINOv2-small vision features. The model keeps original masks and physical AV timestamps; text token order is not treated as word-to-frame alignment.
+2. Within the 2,182 training clips, train three teacher folds with disjoint source videos. For held training clips only, record the signed increase in five-class loss when one of eight audio/vision time windows is masked. The 540 group validation labels and all official validation/test labels are excluded. This produced 30,377 finite training targets; folds and hashes are resumable.
+3. A temporal five-class base predicts text and per-window audiovisual evidence and ordinal probability disagreements. Text tokens attend to audiovisual tokens with a learned **bounded** residual; predicted window utility biases that attention toward potentially useful evidence. The decision remains five legal probabilities with missing-modality masks.
+4. Compare at identical encoders, group split, seed, maximum epochs and patience: utility-supervised V2, no-utility V2, no-cross-attention V2, no-time V2, earlier temporal model, direct cross-token model, and ALMT. Report accuracy, Macro-F1, class errors, masking faithfulness, calibration, missing-modality robustness, memory and time. Use three fixed seeds for the selected candidate. Test stays frozen.
+
+Promote V2 only if the mechanism improves both accuracy and masking faithfulness under the source-disjoint diagnostic. A validation-only gain or a gate that merely looks plausible is insufficient. Full English MOSEI raw-media training and independent raw-video inference remain required before any bilingual or release claim.

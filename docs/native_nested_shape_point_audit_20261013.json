@@ -1,0 +1,2621 @@
+{
+  "audit": "independent-cpu-native-nested-shape-point-stage-v1",
+  "suite": "D:\\MYL\\JevAffect\\runs\\native_nested_shape_points_v1\\suite.json",
+  "config": "D:\\MYL\\JevAffect\\configs\\native_nested_shape_points_v1.json",
+  "cpu_gpu_tolerance": 1e-05,
+  "checks": [
+    {
+      "name": "formal suite file",
+      "passed": true
+    },
+    {
+      "name": "pinned config hash",
+      "passed": true
+    },
+    {
+      "name": "author CSV SHA256",
+      "passed": true
+    },
+    {
+      "name": "pinned author TRAIN cohort",
+      "passed": true
+    },
+    {
+      "name": "suite manifest file",
+      "passed": true
+    },
+    {
+      "name": "suite-to-manifest hash",
+      "passed": true
+    },
+    {
+      "name": "formal suite completion markers",
+      "passed": true
+    },
+    {
+      "name": "suite manifest source/config identity",
+      "passed": true
+    },
+    {
+      "name": "formal artifact root",
+      "passed": true
+    },
+    {
+      "name": "producer implementation freeze",
+      "passed": true
+    },
+    {
+      "name": "cache TRAIN IDs join author TRAIN",
+      "passed": true
+    },
+    {
+      "name": "cache raw labels match author TRAIN",
+      "passed": true
+    },
+    {
+      "name": "text cache artifact pin",
+      "passed": true
+    },
+    {
+      "name": "text cache artifact pin",
+      "passed": true
+    },
+    {
+      "name": "audio cache artifact pin",
+      "passed": true
+    },
+    {
+      "name": "audio cache artifact pin",
+      "passed": true
+    },
+    {
+      "name": "vision cache artifact pin",
+      "passed": true
+    },
+    {
+      "name": "vision cache artifact pin",
+      "passed": true
+    },
+    {
+      "name": "raw cache hash map matches suite manifest",
+      "passed": true
+    },
+    {
+      "name": "pooled raw feature content hash",
+      "passed": true
+    },
+    {
+      "name": "fusion input width",
+      "passed": true
+    },
+    {
+      "name": "suite manifest author ID order",
+      "passed": true
+    },
+    {
+      "name": "cache-row-order-safe ID join",
+      "passed": true
+    },
+    {
+      "name": "nested manifest content hash",
+      "passed": true
+    },
+    {
+      "name": "nested manifest identity",
+      "passed": true
+    },
+    {
+      "name": "outer folds independently reconstructed",
+      "passed": true
+    },
+    {
+      "name": "nested fold count",
+      "passed": true
+    },
+    {
+      "name": "fold 0 point_fit IDs",
+      "passed": true
+    },
+    {
+      "name": "fold 0 point_fit sources",
+      "passed": true
+    },
+    {
+      "name": "fold 0 point_select IDs",
+      "passed": true
+    },
+    {
+      "name": "fold 0 point_select sources",
+      "passed": true
+    },
+    {
+      "name": "fold 0 shape_fit IDs",
+      "passed": true
+    },
+    {
+      "name": "fold 0 shape_fit sources",
+      "passed": true
+    },
+    {
+      "name": "fold 0 shape_select IDs",
+      "passed": true
+    },
+    {
+      "name": "fold 0 shape_select sources",
+      "passed": true
+    },
+    {
+      "name": "fold 0 outer IDs",
+      "passed": true
+    },
+    {
+      "name": "fold 0 outer sources",
+      "passed": true
+    },
+    {
+      "name": "fold 0 point holdout",
+      "passed": true
+    },
+    {
+      "name": "fold 0 aliases and scaler scope",
+      "passed": true
+    },
+    {
+      "name": "fold 0 full role partition",
+      "passed": true
+    },
+    {
+      "name": "fold 0 source isolation",
+      "passed": true
+    },
+    {
+      "name": "fold 0 calibration exclusion",
+      "passed": true
+    },
+    {
+      "name": "fold 0 holdout semantics",
+      "passed": true
+    },
+    {
+      "name": "fold 1 point_fit IDs",
+      "passed": true
+    },
+    {
+      "name": "fold 1 point_fit sources",
+      "passed": true
+    },
+    {
+      "name": "fold 1 point_select IDs",
+      "passed": true
+    },
+    {
+      "name": "fold 1 point_select sources",
+      "passed": true
+    },
+    {
+      "name": "fold 1 shape_fit IDs",
+      "passed": true
+    },
+    {
+      "name": "fold 1 shape_fit sources",
+      "passed": true
+    },
+    {
+      "name": "fold 1 shape_select IDs",
+      "passed": true
+    },
+    {
+      "name": "fold 1 shape_select sources",
+      "passed": true
+    },
+    {
+      "name": "fold 1 outer IDs",
+      "passed": true
+    },
+    {
+      "name": "fold 1 outer sources",
+      "passed": true
+    },
+    {
+      "name": "fold 1 point holdout",
+      "passed": true
+    },
+    {
+      "name": "fold 1 aliases and scaler scope",
+      "passed": true
+    },
+    {
+      "name": "fold 1 full role partition",
+      "passed": true
+    },
+    {
+      "name": "fold 1 source isolation",
+      "passed": true
+    },
+    {
+      "name": "fold 1 calibration exclusion",
+      "passed": true
+    },
+    {
+      "name": "fold 1 holdout semantics",
+      "passed": true
+    },
+    {
+      "name": "fold 2 point_fit IDs",
+      "passed": true
+    },
+    {
+      "name": "fold 2 point_fit sources",
+      "passed": true
+    },
+    {
+      "name": "fold 2 point_select IDs",
+      "passed": true
+    },
+    {
+      "name": "fold 2 point_select sources",
+      "passed": true
+    },
+    {
+      "name": "fold 2 shape_fit IDs",
+      "passed": true
+    },
+    {
+      "name": "fold 2 shape_fit sources",
+      "passed": true
+    },
+    {
+      "name": "fold 2 shape_select IDs",
+      "passed": true
+    },
+    {
+      "name": "fold 2 shape_select sources",
+      "passed": true
+    },
+    {
+      "name": "fold 2 outer IDs",
+      "passed": true
+    },
+    {
+      "name": "fold 2 outer sources",
+      "passed": true
+    },
+    {
+      "name": "fold 2 point holdout",
+      "passed": true
+    },
+    {
+      "name": "fold 2 aliases and scaler scope",
+      "passed": true
+    },
+    {
+      "name": "fold 2 full role partition",
+      "passed": true
+    },
+    {
+      "name": "fold 2 source isolation",
+      "passed": true
+    },
+    {
+      "name": "fold 2 calibration exclusion",
+      "passed": true
+    },
+    {
+      "name": "fold 2 holdout semantics",
+      "passed": true
+    },
+    {
+      "name": "outer ID once-only coverage",
+      "passed": true
+    },
+    {
+      "name": "outer source once-only coverage",
+      "passed": true
+    },
+    {
+      "name": "manifest implementation hashes",
+      "passed": true
+    },
+    {
+      "name": "nine unique point identities",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 point model path",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 stage record",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 best.pt hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 last.pt hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 history.json hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 identity.json hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 oof_predictions.csv hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 fold role checkpoint",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 scaler file hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 scaler fit IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 fit-only scaler statistics",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 scaler provenance",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 scaler exclusion",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 identity roles and IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 source/config identity hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 identity config hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 frozen implementation hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 no VALID/TEST use",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 nested trainer checkpoint hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 point cohort counts",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 trainable parameter count",
+      "passed": true
+    },
+    {
+      "name": "nonempty bounded point history",
+      "passed": true
+    },
+    {
+      "name": "sequential point history epochs",
+      "passed": true
+    },
+    {
+      "name": "first minimum point_select MAE",
+      "passed": true
+    },
+    {
+      "name": "reported first-minimum selection rule",
+      "passed": true
+    },
+    {
+      "name": "history optimizer update counts",
+      "passed": true
+    },
+    {
+      "name": "ReduceLROnPlateau learning-rate replay",
+      "passed": true
+    },
+    {
+      "name": "history and result epoch counts",
+      "passed": true
+    },
+    {
+      "name": "stopping budget and patience",
+      "passed": true
+    },
+    {
+      "name": "formal point stage completion",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint selected epoch",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint identity",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint selection metric",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint history state",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint stale count",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint best MAE",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 checkpoint tensor schema",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 table role set",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 canonical ID file",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 shape_fit table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 shape_fit declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 shape_fit ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 shape_fit array names",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 shape_fit tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 shape_fit canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 shape_fit independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 shape_fit target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 shape_select table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 shape_select declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 shape_select ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 shape_select array names",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 shape_select tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 shape_select canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 shape_select independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 shape_select target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 outer table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 outer declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 outer ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 outer array names",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 outer tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 outer canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 outer independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 0 outer target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 point model path",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 stage record",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 best.pt hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 last.pt hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 history.json hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 identity.json hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 oof_predictions.csv hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 fold role checkpoint",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 scaler file hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 scaler fit IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 fit-only scaler statistics",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 scaler provenance",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 scaler exclusion",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 identity roles and IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 source/config identity hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 identity config hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 frozen implementation hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 no VALID/TEST use",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 nested trainer checkpoint hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 point cohort counts",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 trainable parameter count",
+      "passed": true
+    },
+    {
+      "name": "nonempty bounded point history",
+      "passed": true
+    },
+    {
+      "name": "sequential point history epochs",
+      "passed": true
+    },
+    {
+      "name": "first minimum point_select MAE",
+      "passed": true
+    },
+    {
+      "name": "reported first-minimum selection rule",
+      "passed": true
+    },
+    {
+      "name": "history optimizer update counts",
+      "passed": true
+    },
+    {
+      "name": "ReduceLROnPlateau learning-rate replay",
+      "passed": true
+    },
+    {
+      "name": "history and result epoch counts",
+      "passed": true
+    },
+    {
+      "name": "stopping budget and patience",
+      "passed": true
+    },
+    {
+      "name": "formal point stage completion",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint selected epoch",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint identity",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint selection metric",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint history state",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint stale count",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint best MAE",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 checkpoint tensor schema",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 table role set",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 canonical ID file",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 shape_fit table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 shape_fit declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 shape_fit ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 shape_fit array names",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 shape_fit tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 shape_fit canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 shape_fit independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 shape_fit target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 shape_select table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 shape_select declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 shape_select ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 shape_select array names",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 shape_select tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 shape_select canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 shape_select independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 shape_select target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 outer table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 outer declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 outer ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 outer array names",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 outer tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 outer canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 outer independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 1 outer target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 point model path",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 stage record",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 best.pt hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 last.pt hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 history.json hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 identity.json hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 oof_predictions.csv hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 fold role checkpoint",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 scaler file hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 scaler fit IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 fit-only scaler statistics",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 scaler provenance",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 scaler exclusion",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 identity roles and IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 source/config identity hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 identity config hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 frozen implementation hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 no VALID/TEST use",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 nested trainer checkpoint hash",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 point cohort counts",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 trainable parameter count",
+      "passed": true
+    },
+    {
+      "name": "nonempty bounded point history",
+      "passed": true
+    },
+    {
+      "name": "sequential point history epochs",
+      "passed": true
+    },
+    {
+      "name": "first minimum point_select MAE",
+      "passed": true
+    },
+    {
+      "name": "reported first-minimum selection rule",
+      "passed": true
+    },
+    {
+      "name": "history optimizer update counts",
+      "passed": true
+    },
+    {
+      "name": "ReduceLROnPlateau learning-rate replay",
+      "passed": true
+    },
+    {
+      "name": "history and result epoch counts",
+      "passed": true
+    },
+    {
+      "name": "stopping budget and patience",
+      "passed": true
+    },
+    {
+      "name": "formal point stage completion",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint selected epoch",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint identity",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint selection metric",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint history state",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint stale count",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint best MAE",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 checkpoint tensor schema",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 table role set",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 canonical ID file",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 shape_fit table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 shape_fit declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 shape_fit ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 shape_fit array names",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 shape_fit tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 shape_fit canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 shape_fit independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 shape_fit target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 shape_select table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 shape_select declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 shape_select ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 shape_select array names",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 shape_select tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 shape_select canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 shape_select independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 shape_select target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 outer table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 outer declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 outer ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 outer array names",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 outer tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 outer canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 outer independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 13 fold 2 outer target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 point model path",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 stage record",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 best.pt hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 last.pt hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 history.json hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 identity.json hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 oof_predictions.csv hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 fold role checkpoint",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 scaler file hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 scaler fit IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 fit-only scaler statistics",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 scaler provenance",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 scaler exclusion",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 identity roles and IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 source/config identity hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 identity config hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 frozen implementation hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 no VALID/TEST use",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 nested trainer checkpoint hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 point cohort counts",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 trainable parameter count",
+      "passed": true
+    },
+    {
+      "name": "nonempty bounded point history",
+      "passed": true
+    },
+    {
+      "name": "sequential point history epochs",
+      "passed": true
+    },
+    {
+      "name": "first minimum point_select MAE",
+      "passed": true
+    },
+    {
+      "name": "reported first-minimum selection rule",
+      "passed": true
+    },
+    {
+      "name": "history optimizer update counts",
+      "passed": true
+    },
+    {
+      "name": "ReduceLROnPlateau learning-rate replay",
+      "passed": true
+    },
+    {
+      "name": "history and result epoch counts",
+      "passed": true
+    },
+    {
+      "name": "stopping budget and patience",
+      "passed": true
+    },
+    {
+      "name": "formal point stage completion",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint selected epoch",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint identity",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint selection metric",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint history state",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint stale count",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint best MAE",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 checkpoint tensor schema",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 table role set",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 canonical ID file",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 shape_fit table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 shape_fit declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 shape_fit ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 shape_fit array names",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 shape_fit tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 shape_fit canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 shape_fit independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 shape_fit target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 shape_select table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 shape_select declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 shape_select ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 shape_select array names",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 shape_select tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 shape_select canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 shape_select independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 shape_select target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 outer table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 outer declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 outer ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 outer array names",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 outer tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 outer canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 outer independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 0 outer target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 point model path",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 stage record",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 best.pt hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 last.pt hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 history.json hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 identity.json hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 oof_predictions.csv hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 fold role checkpoint",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 scaler file hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 scaler fit IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 fit-only scaler statistics",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 scaler provenance",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 scaler exclusion",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 identity roles and IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 source/config identity hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 identity config hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 frozen implementation hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 no VALID/TEST use",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 nested trainer checkpoint hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 point cohort counts",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 trainable parameter count",
+      "passed": true
+    },
+    {
+      "name": "nonempty bounded point history",
+      "passed": true
+    },
+    {
+      "name": "sequential point history epochs",
+      "passed": true
+    },
+    {
+      "name": "first minimum point_select MAE",
+      "passed": true
+    },
+    {
+      "name": "reported first-minimum selection rule",
+      "passed": true
+    },
+    {
+      "name": "history optimizer update counts",
+      "passed": true
+    },
+    {
+      "name": "ReduceLROnPlateau learning-rate replay",
+      "passed": true
+    },
+    {
+      "name": "history and result epoch counts",
+      "passed": true
+    },
+    {
+      "name": "stopping budget and patience",
+      "passed": true
+    },
+    {
+      "name": "formal point stage completion",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint selected epoch",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint identity",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint selection metric",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint history state",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint stale count",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint best MAE",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 checkpoint tensor schema",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 table role set",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 canonical ID file",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 shape_fit table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 shape_fit declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 shape_fit ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 shape_fit array names",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 shape_fit tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 shape_fit canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 shape_fit independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 shape_fit target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 shape_select table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 shape_select declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 shape_select ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 shape_select array names",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 shape_select tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 shape_select canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 shape_select independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 shape_select target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 outer table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 outer declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 outer ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 outer array names",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 outer tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 outer canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 outer independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 1 outer target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 point model path",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 stage record",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 best.pt hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 last.pt hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 history.json hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 identity.json hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 oof_predictions.csv hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 fold role checkpoint",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 scaler file hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 scaler fit IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 fit-only scaler statistics",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 scaler provenance",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 scaler exclusion",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 identity roles and IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 source/config identity hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 identity config hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 frozen implementation hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 no VALID/TEST use",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 nested trainer checkpoint hash",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 point cohort counts",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 trainable parameter count",
+      "passed": true
+    },
+    {
+      "name": "nonempty bounded point history",
+      "passed": true
+    },
+    {
+      "name": "sequential point history epochs",
+      "passed": true
+    },
+    {
+      "name": "first minimum point_select MAE",
+      "passed": true
+    },
+    {
+      "name": "reported first-minimum selection rule",
+      "passed": true
+    },
+    {
+      "name": "history optimizer update counts",
+      "passed": true
+    },
+    {
+      "name": "ReduceLROnPlateau learning-rate replay",
+      "passed": true
+    },
+    {
+      "name": "history and result epoch counts",
+      "passed": true
+    },
+    {
+      "name": "stopping budget and patience",
+      "passed": true
+    },
+    {
+      "name": "formal point stage completion",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint selected epoch",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint identity",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint selection metric",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint history state",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint stale count",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint best MAE",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 checkpoint tensor schema",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 table role set",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 canonical ID file",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 shape_fit table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 shape_fit declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 shape_fit ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 shape_fit array names",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 shape_fit tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 shape_fit canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 shape_fit independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 shape_fit target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 shape_select table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 shape_select declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 shape_select ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 shape_select array names",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 shape_select tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 shape_select canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 shape_select independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 shape_select target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 outer table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 outer declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 outer ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 outer array names",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 outer tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 outer canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 outer independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 42 fold 2 outer target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 point model path",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 stage record",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 best.pt hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 last.pt hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 history.json hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 identity.json hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 oof_predictions.csv hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 fold role checkpoint",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 scaler file hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 scaler fit IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 fit-only scaler statistics",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 scaler provenance",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 scaler exclusion",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 identity roles and IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 source/config identity hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 identity config hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 frozen implementation hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 no VALID/TEST use",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 nested trainer checkpoint hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 point cohort counts",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 trainable parameter count",
+      "passed": true
+    },
+    {
+      "name": "nonempty bounded point history",
+      "passed": true
+    },
+    {
+      "name": "sequential point history epochs",
+      "passed": true
+    },
+    {
+      "name": "first minimum point_select MAE",
+      "passed": true
+    },
+    {
+      "name": "reported first-minimum selection rule",
+      "passed": true
+    },
+    {
+      "name": "history optimizer update counts",
+      "passed": true
+    },
+    {
+      "name": "ReduceLROnPlateau learning-rate replay",
+      "passed": true
+    },
+    {
+      "name": "history and result epoch counts",
+      "passed": true
+    },
+    {
+      "name": "stopping budget and patience",
+      "passed": true
+    },
+    {
+      "name": "formal point stage completion",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint selected epoch",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint identity",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint selection metric",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint history state",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint stale count",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint best MAE",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 checkpoint tensor schema",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 table role set",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 canonical ID file",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 shape_fit table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 shape_fit declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 shape_fit ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 shape_fit array names",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 shape_fit tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 shape_fit canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 shape_fit independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 shape_fit target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 shape_select table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 shape_select declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 shape_select ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 shape_select array names",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 shape_select tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 shape_select canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 shape_select independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 shape_select target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 outer table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 outer declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 outer ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 outer array names",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 outer tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 outer canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 outer independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 0 outer target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 point model path",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 stage record",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 best.pt hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 last.pt hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 history.json hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 identity.json hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 oof_predictions.csv hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 fold role checkpoint",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 scaler file hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 scaler fit IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 fit-only scaler statistics",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 scaler provenance",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 scaler exclusion",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 identity roles and IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 source/config identity hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 identity config hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 frozen implementation hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 no VALID/TEST use",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 nested trainer checkpoint hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 point cohort counts",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 trainable parameter count",
+      "passed": true
+    },
+    {
+      "name": "nonempty bounded point history",
+      "passed": true
+    },
+    {
+      "name": "sequential point history epochs",
+      "passed": true
+    },
+    {
+      "name": "first minimum point_select MAE",
+      "passed": true
+    },
+    {
+      "name": "reported first-minimum selection rule",
+      "passed": true
+    },
+    {
+      "name": "history optimizer update counts",
+      "passed": true
+    },
+    {
+      "name": "ReduceLROnPlateau learning-rate replay",
+      "passed": true
+    },
+    {
+      "name": "history and result epoch counts",
+      "passed": true
+    },
+    {
+      "name": "stopping budget and patience",
+      "passed": true
+    },
+    {
+      "name": "formal point stage completion",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint selected epoch",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint identity",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint selection metric",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint history state",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint stale count",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint best MAE",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 checkpoint tensor schema",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 table role set",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 canonical ID file",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 shape_fit table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 shape_fit declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 shape_fit ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 shape_fit array names",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 shape_fit tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 shape_fit canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 shape_fit independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 shape_fit target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 shape_select table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 shape_select declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 shape_select ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 shape_select array names",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 shape_select tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 shape_select canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 shape_select independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 shape_select target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 outer table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 outer declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 outer ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 outer array names",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 outer tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 outer canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 outer independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 1 outer target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 point model path",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 stage record",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 best.pt hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 last.pt hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 history.json hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 identity.json hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 oof_predictions.csv hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 fold role checkpoint",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 scaler file hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 scaler fit IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 fit-only scaler statistics",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 scaler provenance",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 scaler exclusion",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 identity roles and IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 source/config identity hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 identity config hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 frozen implementation hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 no VALID/TEST use",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 nested trainer checkpoint hash",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 point cohort counts",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 trainable parameter count",
+      "passed": true
+    },
+    {
+      "name": "nonempty bounded point history",
+      "passed": true
+    },
+    {
+      "name": "sequential point history epochs",
+      "passed": true
+    },
+    {
+      "name": "first minimum point_select MAE",
+      "passed": true
+    },
+    {
+      "name": "reported first-minimum selection rule",
+      "passed": true
+    },
+    {
+      "name": "history optimizer update counts",
+      "passed": true
+    },
+    {
+      "name": "ReduceLROnPlateau learning-rate replay",
+      "passed": true
+    },
+    {
+      "name": "history and result epoch counts",
+      "passed": true
+    },
+    {
+      "name": "stopping budget and patience",
+      "passed": true
+    },
+    {
+      "name": "formal point stage completion",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint selected epoch",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint identity",
+      "passed": true
+    },
+    {
+      "name": "best checkpoint selection metric",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint history state",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint stale count",
+      "passed": true
+    },
+    {
+      "name": "last checkpoint best MAE",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 checkpoint tensor schema",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 table role set",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 canonical ID file",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 shape_fit table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 shape_fit declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 shape_fit ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 shape_fit array names",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 shape_fit tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 shape_fit canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 shape_fit independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 shape_fit target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 shape_select table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 shape_select declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 shape_select ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 shape_select array names",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 shape_select tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 shape_select canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 shape_select independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 shape_select target and anchor semantics",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 outer table hashes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 outer declared row metadata",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 outer ID sidecar",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 outer array names",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 outer tensor shapes",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 outer canonical IDs",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 outer independent CPU forward",
+      "passed": true
+    },
+    {
+      "name": "seed 2026 fold 2 outer target and anchor semantics",
+      "passed": true
+    }
+  ],
+  "findings": [],
+  "complete": true,
+  "audited_point_identities": 9,
+  "audited_tables": 27,
+  "max_cpu_replay_absolute_error": {
+    "context": 5.0067901611328125e-06,
+    "native_point": 7.152557373046875e-07,
+    "anchor": 5.960464477539062e-07,
+    "target": 0.0
+  },
+  "role_semantics": {
+    "outer": "each TRAIN ID/source is outer-held once across the three folds",
+    "calibration": "shape_fit and shape_select are separate source roles excluded from point fitting, selection, and scaler fitting",
+    "point_holdout": "shape_fit + shape_select + this fold's outer rows; it repeats across folds and is not global once-only OOF"
+  },
+  "summary": {
+    "author_train_ids": 2722,
+    "author_train_sources": 129,
+    "raw_cache_order_differs_from_author_order": false,
+    "raw_cache_content_sha256": "cfeb462e85865d2eb3705704e464ba6eea31770eca3d5317b37b4ba1d97244d2",
+    "raw_cache_file_count": 8,
+    "dimensions": {
+      "text": 768,
+      "audio": 768,
+      "vision": 384
+    },
+    "checks_passed": 646,
+    "checks_failed": 0
+  }
+}

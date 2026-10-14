@@ -1,0 +1,53 @@
+{
+  "report_date": "2026-10-14",
+  "dataset": "CH-SIMS v2",
+  "purpose": "one fresh availability recheck of two exact official TRAIN raw MP4 targets",
+  "author_publication_channel": "CH-SIMS v2 author public Google Drive Raw folder via drive.usercontent.google.com",
+  "selection": {
+    "inventory_path": "data/simsv2_drive_listing.json",
+    "metadata_path": "data/author/simsv2/meta.csv",
+    "fields_used": [
+      "mode",
+      "video_id",
+      "clip_id"
+    ],
+    "csv_structure_scanned": true,
+    "test_rows_structurally_scanned": true,
+    "sentiment_labels_parsed": false,
+    "test_rows_selected_or_used": false,
+    "selected_ids": [
+      "video_0003/0002",
+      "video_0006/0006"
+    ]
+  },
+  "method": {
+    "requests_per_target_max": 2,
+    "preflight": "one bytes=0-0 request; require exact206 Content-Range with total and Last-Modified version",
+    "full_attempt": "at most one whole-object finite Range request after valid preflight and only if total <=32MiB",
+    "retries": 0,
+    "workers": 1,
+    "request_timeout_seconds": {
+      "connect": 15,
+      "read": 60
+    },
+    "per_file_payload_budget_bytes": 33554432,
+    "range_chunking": false,
+    "accounts_cookies_or_alternate_endpoints": false,
+    "gpu_or_feature_extraction": false
+  },
+  "started_at_utc": "2026-10-14T00:03:59.522744+00:00",
+  "records": {
+    "publication_omitted": true,
+    "original_count": 2
+  },
+  "completed_at_utc": "2026-10-14T00:04:07.556119+00:00",
+  "publication_redaction": {
+    "full_local_report_sha256": "b265ba4f1984b91916f01f3b441bd31e507f6402b4390f11ad63603e1607ccec",
+    "removed_path_count": 1,
+    "removed_paths": [
+      "/records"
+    ],
+    "remaining_removed_paths_list_truncated": false,
+    "reason": "Exclude per-sample dataset records, long raw arrays and response/download capabilities; retain aggregate research evidence."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "scope": "two official validation MP4s used for CSV formatting rehearsal only",
+  "id_includes_mp4_extension": true,
+  "header": "ID,Label",
+  "rows": 2,
+  "low_confidence_sidecar_rows": 2,
+  "all_rows_in_main_csv": true,
+  "test_labels_used": false,
+  "competition_submitted": false,
+  "csv_sha256": "b514dfdcab433340a951f10ab7aa8eedb10755c7e6ed4862761c37df2341e0ae"
+}

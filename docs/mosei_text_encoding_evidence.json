@@ -1,0 +1,15 @@
+{
+  "source_sha256": "8f53c4b5404eb57786dbce0d84ef71df128a1952155a7d27db916964bba2cebf",
+  "split_counts": {
+    "train": 16326,
+    "valid": 1871
+  },
+  "truncated_rows": {
+    "train": 653,
+    "valid": 74
+  },
+  "test_encoded": false,
+  "test_manifest_read": false,
+  "encode_seconds_this_invocation": 15.87400030000208,
+  "peak_cuda_allocated_bytes": 803728384
+}

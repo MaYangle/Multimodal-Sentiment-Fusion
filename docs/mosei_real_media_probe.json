@@ -1,0 +1,40 @@
+{
+  "scope": "single real CMU-MOSEI validation clip; source and encoder flow check only",
+  "competition_id": "--qXJuDtHPw_0",
+  "split": "valid",
+  "author_transcript_crosswalk": "matching normalized text; no model selection",
+  "text_crosswalk_valid_pairs_exact": 1871,
+  "video_sha256": "b78b5803db2d489918a8469b77d8707b8cc9b491ad096e5a4bd605c53bd84a15",
+  "audio_sha256": "baddc2aa27b8e25c678b0f82423d34b1664222715c12f24ae57ecf09c3fdcbd6",
+  "video_audio_separate": true,
+  "audio_status": "present",
+  "video_status": "present",
+  "feature_shapes": {
+    "text": [
+      24,
+      768
+    ],
+    "audio": [
+      356,
+      768
+    ],
+    "vision": [
+      14,
+      384
+    ]
+  },
+  "timestamp_shapes": {
+    "audio_times": [
+      356
+    ],
+    "vision_times": [
+      14
+    ]
+  },
+  "video_duration_seconds": 7.13,
+  "artifact_sha256": "942e35aba091a1faa81f661a5ad280c0bfb6645b0463d0279be36769d57b426f",
+  "feature_pipeline_wall_seconds": 0.29317360000277404,
+  "sentiment_checkpoint_loaded": false,
+  "test_scored": false,
+  "media_identity_for_all_cohort_proven": false
+}

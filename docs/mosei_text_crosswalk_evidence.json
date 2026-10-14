@@ -1,0 +1,35 @@
+{
+  "author_source_sha256": "52d885bd1e8b29a4c06a69e2b1dd67dd02f7bcbdfa38ad918144fd5673a83521",
+  "competition_transcript_sha256": {
+    "train": "7f897d5c6da68ba7dfb111e888c7d25dfc1d6a32010b4328b66ac52519ba7347",
+    "valid": "bdd3c3a94582ae4d6abbc664ae7604c203ad6df7cb37934a1898e50f33b6e496"
+  },
+  "provisional_crosswalk_sha256": "6fa8c7d9b1e514e78147d96cd680f609a91c358fc56ebd5db43be00a9b6d7b53",
+  "scope": "only train/valid transcript alignment; no test data or scores",
+  "author_train_valid_rows": 18197,
+  "competition_train_valid_transcripts": 18198,
+  "pairing_counts": {
+    "valid_pairs": 1871,
+    "valid_normalized_exact": 1871,
+    "train_pairs": 16320,
+    "train_normalized_exact": 16318,
+    "train_text_different": 2
+  },
+  "paired_author_rows": 18191,
+  "unpaired_author_train_valid": 6,
+  "unpaired_competition_train_valid": 7,
+  "text_mismatch_ids_first20": [
+    {
+      "author_id": "Q2uHXKA8cq8_9",
+      "competition_id": "Q2uHXKA8cq8_4",
+      "split": "train"
+    },
+    {
+      "author_id": "WaaSYRPwQBw_1",
+      "competition_id": "WaaSYRPwQBw_0",
+      "split": "train"
+    }
+  ],
+  "media_identity_proven": false,
+  "interpretation": "Independent transcript agreement tests the label/order crosswalk. Video/audio identity still needs raw-media checks."
+}

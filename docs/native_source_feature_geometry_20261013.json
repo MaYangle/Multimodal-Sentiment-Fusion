@@ -1,0 +1,91 @@
+{
+  "config_sha256": "0d4a0806baad15d1940d5a3ff6d661f608f8878add89909660d1cc2371f60886",
+  "author_csv_sha256": "be7e482640e7ee24d2070033e1e2aef61ce183199286a8a18b0d6247556bf150",
+  "feature_sha256": {
+    "data\\feature_cache\\simsv2_full_macbert_raw_av\\metadata.json": "c80806f155b246139b6cffba023d9c9b2359f42d38c1c7141db0af9cef8749c6",
+    "D:\\MYL\\JevAffect\\data\\feature_cache\\simsv2_full_macbert_raw_av\\splits\\train\\ids.json": "f971fce772d47758814fdba1f3eb08598d29e50fdca6ecea8dbfa0ef28ba4e83",
+    "splits/train/text.npy": "f219d9ae36c10dbf585696b21516ed82d1b18e5318232692658553e760ce8792",
+    "splits/train/text_lengths.npy": "db7f12ef707e7bbebd1daca39091af2f297edeab16134176ecccc74970bd2c92",
+    "splits/train/audio.npy": "0b5fea655d84264cba5f906908ccb823cc9f34e019053ca8c1c25eedf5dd3205",
+    "splits/train/audio_lengths.npy": "d0375c0044f4010a9f6137a0eeb47df93ec82a0a2ae0c02b2c6e76043743ccf7",
+    "splits/train/vision.npy": "1beb4c21693778cbbfa12e55ef4e36963a246e1f5560ab73cdea5116f3e90a4c",
+    "splits/train/vision_lengths.npy": "b29b4109712a7154dcc351b3fddc7c32eab12b2ad5e75c5e8da5f26fa434212a"
+  },
+  "modalities": {
+    "text": {
+      "dimension": 768,
+      "count": 2722,
+      "zero_variance_coordinates": 0,
+      "sample_L2_norm_quantiles": [
+        19.873815806127606,
+        20.195135760581742,
+        20.26225403734711,
+        20.337056354590615,
+        20.69321662341127
+      ],
+      "coordinate_std_quantiles": [
+        0.22963610009974095,
+        0.27441999103919246,
+        0.29023082287233104,
+        0.3068932373026567,
+        0.6734921257076442
+      ],
+      "total_variance_trace": 66.73197174913864,
+      "within_source_variance_trace": 60.24700511666951,
+      "between_source_variance_trace": 6.484966632469115,
+      "between_fraction_trace_weighted": 0.09717930494917261,
+      "between_fraction_coordinate_equal": 0.09456062282047119
+    },
+    "audio": {
+      "dimension": 768,
+      "count": 2722,
+      "zero_variance_coordinates": 0,
+      "sample_L2_norm_quantiles": [
+        1.6881467709114435,
+        1.954611966435463,
+        2.0374835695527747,
+        2.1438404905789,
+        3.477331801495825
+      ],
+      "coordinate_std_quantiles": [
+        0.012283578165788112,
+        0.021455888285881894,
+        0.02357324789827231,
+        0.02709084786607452,
+        0.30168712123327074
+      ],
+      "total_variance_trace": 1.337509479798206,
+      "within_source_variance_trace": 1.1428488850798595,
+      "between_source_variance_trace": 0.1946605947183463,
+      "between_fraction_trace_weighted": 0.14553960002415484,
+      "between_fraction_coordinate_equal": 0.11668341241464901
+    },
+    "vision": {
+      "dimension": 384,
+      "count": 2722,
+      "zero_variance_coordinates": 0,
+      "sample_L2_norm_quantiles": [
+        33.09891386691129,
+        42.39783808740516,
+        43.849201428188366,
+        45.05456854593059,
+        48.527081889861165
+      ],
+      "coordinate_std_quantiles": [
+        0.7344683407260656,
+        1.6160496672334272,
+        1.804322478581522,
+        1.9589857652716944,
+        2.877171913362144
+      ],
+      "total_variance_trace": 1247.5570804989602,
+      "within_source_variance_trace": 955.8150437192216,
+      "between_source_variance_trace": 291.7420367797383,
+      "between_fraction_trace_weighted": 0.23385065207842526,
+      "between_fraction_coordinate_equal": 0.2279794480772925
+    }
+  },
+  "scope": "Descriptive source-video geometry only; between-source variance includes real content/sentiment and is not identified causal nuisance.",
+  "official_VALID_used": false,
+  "test_evaluated": false
+}

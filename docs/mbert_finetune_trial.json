@@ -1,0 +1,127 @@
+{
+  "scope": "official train2722/valid647 provided-transcript seed13 only; stopped after no improvement",
+  "model": "mBERT all-layer fine-tune + five-class CLS head",
+  "selected_validation": {
+    "accuracy": 0.3848531684698609,
+    "macro_f1": 0.27661177040680046,
+    "confusion_matrix": [
+      [
+        137,
+        28,
+        0,
+        17,
+        0
+      ],
+      [
+        80,
+        38,
+        3,
+        22,
+        0
+      ],
+      [
+        39,
+        10,
+        6,
+        37,
+        0
+      ],
+      [
+        45,
+        18,
+        1,
+        67,
+        0
+      ],
+      [
+        29,
+        17,
+        0,
+        52,
+        1
+      ]
+    ],
+    "per_class": [
+      {
+        "class_index": 0,
+        "class_name": "SNEG",
+        "precision": 0.41515151515151516,
+        "recall": 0.7527472527472527,
+        "f1": 0.5351562500000001,
+        "support": 182
+      },
+      {
+        "class_index": 1,
+        "class_name": "WNEG",
+        "precision": 0.34234234234234234,
+        "recall": 0.26573426573426573,
+        "f1": 0.2992125984251969,
+        "support": 143
+      },
+      {
+        "class_index": 2,
+        "class_name": "NEUT",
+        "precision": 0.6,
+        "recall": 0.06521739130434782,
+        "f1": 0.11764705882352941,
+        "support": 92
+      },
+      {
+        "class_index": 3,
+        "class_name": "WPOS",
+        "precision": 0.3435897435897436,
+        "recall": 0.5114503816793893,
+        "f1": 0.41104294478527603,
+        "support": 131
+      },
+      {
+        "class_index": 4,
+        "class_name": "SPOS",
+        "precision": 1.0,
+        "recall": 0.010101010101010102,
+        "f1": 0.02,
+        "support": 99
+      }
+    ],
+    "n_samples": 647
+  },
+  "nll": 1.5034855523698962,
+  "brier": 0.7566456022016914,
+  "ece15": 0.133957656750977,
+  "best_epoch": 2,
+  "last_epoch": 5,
+  "train_valid_seconds": 52.5450045999969,
+  "peak_cuda_allocated_bytes": 3646552576,
+  "test_scored": false,
+  "selection": "validation accuracy; not published or selected backbone",
+  "config": {
+    "seed": 13,
+    "max_epochs": 12,
+    "batch_size": 16,
+    "early_stop": 3,
+    "encoder_lr": 2e-05,
+    "head_lr": 0.001,
+    "weight_decay": 0.01,
+    "dropout": 0.1,
+    "max_tokens": 64,
+    "warmup_fraction": 0.1,
+    "selection": "valid_accuracy_then_nll",
+    "split": "official author train/valid",
+    "source": {
+      "csv_sha256": "be7e482640e7ee24d2070033e1e2aef61ce183199286a8a18b0d6247556bf150",
+      "model_sha256": "876f584f15ebf14887dec17539c114bb99a032e96b9e72507a51c41e205337fc",
+      "model_revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+      "tokenizer_files_sha256": {
+        "tokenizer.json": "f4a4d5bf7301717e261fafbe26e1eb967f6ba4cb3ae0ab7a29f4642ec229f386",
+        "vocab.txt": "fe0fda7c425b48c516fc8f160d594c8022a0808447475c1a7c6d6479763f310c",
+        "tokenizer_config.json": "0f6d13e6f4da6f9e24f22ada6bc3be571123d858d7c0c05a8a7cd55a9c23c2e8"
+      },
+      "split_ids_sha256": {
+        "train": "5c3198508b0b182134222a5130cb8700fd2402a1dcef3bc5a25f52516f53bbdc",
+        "valid": "e5d6a12971f2911802b36ce51301948637b09ff3c6b528c64dd0f871af35c917"
+      }
+    },
+    "test_scored": false
+  },
+  "predictions_sha256": "ce8a24538af6b80d6f75956abc7c6147e8be5944ee15452a1c44227df6aad3b5"
+}

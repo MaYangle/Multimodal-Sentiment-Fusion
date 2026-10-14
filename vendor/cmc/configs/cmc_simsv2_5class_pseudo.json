@@ -1,0 +1,75 @@
+{
+  "port_id": "cmc-simsv2-fiveclass-pseudo-v1",
+  "source": {
+    "repository": "https://github.com/gw-zhong/CMC",
+    "commit": "c695f719f9cd0136e52dc2f7a9e75a40aabd37ad",
+    "license": "MIT",
+    "paper": "https://arxiv.org/abs/2510.20256",
+    "source_mode": "--is_pseudo"
+  },
+  "dataset": {
+    "name": "CH-SIMS-v2.0",
+    "language": "zh",
+    "cache_split_api": "jevaffect.cache.load_cached_split",
+    "read_splits": ["train", "valid"],
+    "class_order": ["SNEG", "WNEG", "NEUT", "WPOS", "SPOS"],
+    "class_target_source": "author manifest labels.npy int64 0..4",
+    "raw_labels_file": "raw_labels.npy",
+    "pseudo_initialization": "copy one-hot multimodal class target to each modality bank",
+    "uses_ground_truth_unimodal_labels": false
+  },
+  "cache_input": {
+    "preferred_text": "text_bert [N,3,T] (input_ids, attention_mask, token_type_ids)",
+    "contextual_fallback": "text [N,T,D] through frozen identity encoder only",
+    "audio": "audio [N,T,D]",
+    "vision": "vision [N,T,D]",
+    "lengths": "retained in cache; source CMC encoders use fixed padded sequences without attention masks"
+  },
+  "model": {
+    "embed_dim": 32,
+    "transformer_layers": 4,
+    "nhead": 2,
+    "out_dropout": 0.3,
+    "top_k": 3,
+    "pfm_temperature": 0.07,
+    "num_classes": 5
+  },
+  "stage1_pseudo_pretraining": {
+    "num_epochs": 100,
+    "batch_size": 64,
+    "patience": 10,
+    "learning_rate": 0.001,
+    "bert_learning_rate": 0.00005,
+    "bert_weight_decay": 0.001,
+    "bert_finetune": false,
+    "contrastive_temperature": 0.07,
+    "initial_pseudo_momentum": {"text": 0.8, "audio": 0.99, "vision": 0.99},
+    "pseudo_momentum_gamma": {"text": 0.5, "audio": 0.5, "vision": 0.5},
+    "initial_ema_momentum": {"text": 0.8, "audio": 0.9, "vision": 0.6},
+    "ema_momentum_gamma": {"text": 2.5, "audio": 5.0, "vision": 2.0},
+    "seed": 1111
+  },
+  "stage2_fusion": {
+    "num_epochs": 100,
+    "batch_size": 64,
+    "patience": 10,
+    "learning_rate": 0.001,
+    "bert_learning_rate": 0.00005,
+    "bert_weight_decay": 0.001,
+    "bert_finetune": true,
+    "contrastive_temperature": 0.07,
+    "seed": 1111
+  },
+  "five_class_adaptations": [
+    "all author output heads change from three to five logits",
+    "main and three pseudo-branch objectives remain CE",
+    "CMC three-class SIMS polarity contrast is generalized to positive=(WPOS,SPOS), non-positive=(SNEG,WNEG,NEUT)",
+    "CMC pseudo-label alpha/nearest-one-hot update generalized from three to five classes",
+    "test is excluded from training, validation, model selection, and scoring"
+  ],
+  "raw_score_policy": {
+    "preserve_raw_labels": true,
+    "source_pseudo_path_regression_loss": false,
+    "note": "The inspected --is_pseudo source path trains CE and SupCon on three-class labels derived from regression scores; it contains no MSE/L1 regression auxiliary. No regression loss is invented in this five-class port."
+  }
+}

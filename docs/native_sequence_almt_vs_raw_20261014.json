@@ -1,0 +1,40 @@
+{
+  "raw_suite_sha256": "4817467b2453a6421901f0defa680fb7b83be9fe7c8415598566439ef6d0300a",
+  "normalized_suite_sha256": "0061d677dcf00d2d1478b73fbe4dd16747ab69c941039778deba5e2c0a5a1830",
+  "comparisons": {
+    "almt": {
+      "delta_by_seed": [
+        -0.015206429537333883,
+        -0.016196653292941898,
+        -0.023814543644095867
+      ],
+      "seed_percentile95": [
+        [
+          -0.03170232329524538,
+          0.0008739432527563666
+        ],
+        [
+          -0.033128993624671456,
+          0.0007969385668220054
+        ],
+        [
+          -0.041408719530804175,
+          -0.006870769515787865
+        ]
+      ],
+      "three_seed_delta": -0.018405875491457217,
+      "three_seed_percentile95": [
+        -0.029832123148968312,
+        -0.007161377027638517
+      ],
+      "replicates": 5000,
+      "seed": 20261013,
+      "source_count": 120,
+      "scope": "Conditional official VALID whole-source resampling of already-selected models; no selection-adjusted or final-test significance claim",
+      "reference_model": "almt",
+      "candidate_model": "almt"
+    }
+  },
+  "test_evaluated": false,
+  "scope": "Official VALID development/selection comparison; conditional source-bootstrap intervals do not account for model selection or repeated development use"
+}

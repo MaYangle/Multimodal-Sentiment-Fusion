@@ -1,0 +1,25 @@
+{
+  "scope": "Complete pooled normalization preparation from independent source copy, same authorized raw encoder cache",
+  "artifacts_verified": {
+    "normalization.json": true,
+    "train/audio.npy": true,
+    "train/audio_lengths.npy": true,
+    "train/ids.json": true,
+    "train/raw_labels.json": true,
+    "train/text.npy": true,
+    "train/text_lengths.npy": true,
+    "train/vision.npy": true,
+    "train/vision_lengths.npy": true,
+    "valid/audio.npy": true,
+    "valid/audio_lengths.npy": true,
+    "valid/ids.json": true,
+    "valid/raw_labels.json": true,
+    "valid/text.npy": true,
+    "valid/text_lengths.npy": true,
+    "valid/vision.npy": true,
+    "valid/vision_lengths.npy": true,
+    "metadata.json": true
+  },
+  "all_exact": true,
+  "test_exported": false
+}

@@ -1,0 +1,570 @@
+{
+  "results": [
+    {
+      "root": "runs\\native_anchor_calibration_v1\\smoke\\global\\seed_13",
+      "case": "global",
+      "seed": 13,
+      "complete": true,
+      "smoke_only": true,
+      "parameters": 1,
+      "optimizer_calls": 18,
+      "loop_seconds": 0.045991399994818494,
+      "valid": {
+        "native": {
+          "count": 32,
+          "MAE": 0.6457532644271851,
+          "Corr": 0.5520139787614025,
+          "Mult_acc_2": 0.71875,
+          "F1_score": 0.7207692307692308,
+          "weak_count": 4,
+          "Mult_acc_2_weak": 0.0,
+          "Mult_acc_3": 0.625,
+          "Mult_acc_5": 0.15625,
+          "R_squre": 0.29107480600954083
+        },
+        "hit_count": 2,
+        "count": 32,
+        "hit_Brier": 0.04632710219020143,
+        "hit_log_score": 0.18538095406127797,
+        "hit_ECE15": 0.02217715464017355,
+        "risk_AURC": 0.599295823491647,
+        "reliability": [
+          {
+            "bin": 0,
+            "count": 30,
+            "mean_probability": 0.05515061124146947,
+            "observed_hit_rate": 0.03333333333333333
+          },
+          {
+            "bin": 7,
+            "count": 2,
+            "mean_probability": 0.5275753056207347,
+            "observed_hit_rate": 0.5
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.5662339329719543,
+          "0.25": 0.5265800803899765,
+          "0.5": 0.6590530164539814,
+          "0.75": 0.6262220456264913,
+          "1.0": 0.6457532524364069
+        },
+        "bin_log_score": 1.2140557765007634,
+        "bin_Brier": 0.6066373710520877,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.84375,
+            "mean_width": 1.6080849780145234
+          },
+          "0.8": {
+            "coverage": 1.0,
+            "mean_width": 2.0
+          },
+          "0.9": {
+            "coverage": 1.0,
+            "mean_width": 2.0
+          },
+          "0.95": {
+            "coverage": 1.0,
+            "mean_width": 2.0
+          }
+        }
+      },
+      "scale": 0.9056883636113058,
+      "predictions_sha256": "c467655d6ad08059e086f42f27ab90c0a101e918bb2a5124a4f038c5b269cdc5",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\smoke\\scale\\seed_13",
+      "case": "scale",
+      "seed": 13,
+      "complete": false,
+      "smoke_only": true,
+      "best_epoch": 1,
+      "epochs_executed": 1,
+      "optimizer_updates": 1,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 61537,
+      "loop_seconds": 0.020113099992158823,
+      "valid": {
+        "native": {
+          "count": 32,
+          "MAE": 0.6457532644271851,
+          "Corr": 0.5520139787614025,
+          "Mult_acc_2": 0.71875,
+          "F1_score": 0.7207692307692308,
+          "weak_count": 4,
+          "Mult_acc_2_weak": 0.0,
+          "Mult_acc_3": 0.625,
+          "Mult_acc_5": 0.15625,
+          "R_squre": 0.29107480600954083
+        },
+        "hit_count": 2,
+        "count": 32,
+        "hit_Brier": 0.055191308309523825,
+        "hit_log_score": 0.2332193286831986,
+        "hit_ECE15": 0.09576938856020613,
+        "risk_AURC": 0.6563279736156266,
+        "reliability": [
+          {
+            "bin": 1,
+            "count": 16,
+            "mean_probability": 0.11534220930661301,
+            "observed_hit_rate": 0.0
+          },
+          {
+            "bin": 2,
+            "count": 14,
+            "mean_probability": 0.1481635114792153,
+            "observed_hit_rate": 0.07142857142857142
+          },
+          {
+            "bin": 8,
+            "count": 2,
+            "mean_probability": 0.5724279621558868,
+            "observed_hit_rate": 0.5
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.5310656726360321,
+          "0.25": 0.6585198268294334,
+          "0.5": 0.6370783767197281,
+          "0.75": 0.6599440365098417,
+          "1.0": 0.6457532524364069
+        },
+        "bin_log_score": 1.467496801252969,
+        "bin_Brier": 0.7470157836169893,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.1875,
+            "mean_width": 0.7977590666294412
+          },
+          "0.8": {
+            "coverage": 0.75,
+            "mean_width": 1.418237146567786
+          },
+          "0.9": {
+            "coverage": 0.875,
+            "mean_width": 1.7165057811928597
+          },
+          "0.95": {
+            "coverage": 1.0,
+            "mean_width": 1.8690326924093172
+          }
+        }
+      },
+      "checkpoint_sha256": "a4cc12810d332812a3cf36ef92c41fb3621ce0ebd6fad5db29af5cbfa30f5e17",
+      "predictions_sha256": "96a3970118a608a987838f08e7152024e2dc7ecc6e2f92a29b9f29d59c385a44",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\smoke\\mixture\\seed_13",
+      "case": "mixture",
+      "seed": 13,
+      "complete": false,
+      "smoke_only": true,
+      "best_epoch": 1,
+      "epochs_executed": 1,
+      "optimizer_updates": 1,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 61570,
+      "loop_seconds": 0.004041299995151348,
+      "valid": {
+        "native": {
+          "count": 32,
+          "MAE": 0.6457532644271851,
+          "Corr": 0.5520139787614025,
+          "Mult_acc_2": 0.71875,
+          "F1_score": 0.7207692307692308,
+          "weak_count": 4,
+          "Mult_acc_2_weak": 0.0,
+          "Mult_acc_3": 0.625,
+          "Mult_acc_5": 0.15625,
+          "R_squre": 0.29107480600954083
+        },
+        "hit_count": 2,
+        "count": 32,
+        "hit_Brier": 0.05510191375116682,
+        "hit_log_score": 0.23218173335274828,
+        "hit_ECE15": 0.10249920680559485,
+        "risk_AURC": 0.6887737751594358,
+        "reliability": [
+          {
+            "bin": 1,
+            "count": 17,
+            "mean_probability": 0.11378636446632462,
+            "observed_hit_rate": 0.0
+          },
+          {
+            "bin": 2,
+            "count": 12,
+            "mean_probability": 0.16637672495834835,
+            "observed_hit_rate": 0.08333333333333333
+          },
+          {
+            "bin": 3,
+            "count": 1,
+            "mean_probability": 0.2120800996193175,
+            "observed_hit_rate": 0.0
+          },
+          {
+            "bin": 8,
+            "count": 2,
+            "mean_probability": 0.5685028113660096,
+            "observed_hit_rate": 0.5
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.8054384738206863,
+          "0.25": 0.6634336304850876,
+          "0.5": 0.6719334407243878,
+          "0.75": 0.6599440365098417,
+          "1.0": 0.6457532524364069
+        },
+        "bin_log_score": 1.4703876027948963,
+        "bin_Brier": 0.7396981534610627,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.25,
+            "mean_width": 0.782975656027427
+          },
+          "0.8": {
+            "coverage": 0.75,
+            "mean_width": 1.3792830693351852
+          },
+          "0.9": {
+            "coverage": 0.875,
+            "mean_width": 1.6812282198631041
+          },
+          "0.95": {
+            "coverage": 1.0,
+            "mean_width": 1.8440669238577532
+          }
+        }
+      },
+      "checkpoint_sha256": "724b0805fdef8be5ab94650cc96e58f5ae65810d9df08039034eb7ce2a8c7de8",
+      "predictions_sha256": "b7ba530074bbd8050db33c0412e08eb710ef9858978b9c6bd37ea861941872f6",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\smoke\\views\\seed_13",
+      "case": "views",
+      "seed": 13,
+      "complete": false,
+      "smoke_only": true,
+      "best_epoch": 1,
+      "epochs_executed": 1,
+      "optimizer_updates": 1,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 61576,
+      "loop_seconds": 0.004095399999641813,
+      "valid": {
+        "native": {
+          "count": 32,
+          "MAE": 0.6457532644271851,
+          "Corr": 0.5520139787614025,
+          "Mult_acc_2": 0.71875,
+          "F1_score": 0.7207692307692308,
+          "weak_count": 4,
+          "Mult_acc_2_weak": 0.0,
+          "Mult_acc_3": 0.625,
+          "Mult_acc_5": 0.15625,
+          "R_squre": 0.29107480600954083
+        },
+        "hit_count": 2,
+        "count": 32,
+        "hit_Brier": 0.05526157778587182,
+        "hit_log_score": 0.23281112431695578,
+        "hit_ECE15": 0.10080580806031482,
+        "risk_AURC": 0.6891363910439978,
+        "reliability": [
+          {
+            "bin": 1,
+            "count": 16,
+            "mean_probability": 0.11265967582848449,
+            "observed_hit_rate": 0.0
+          },
+          {
+            "bin": 2,
+            "count": 14,
+            "mean_probability": 0.1633815351326727,
+            "observed_hit_rate": 0.07142857142857142
+          },
+          {
+            "bin": 8,
+            "count": 2,
+            "mean_probability": 0.5679447764084522,
+            "observed_hit_rate": 0.5
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.8196609318256378,
+          "0.25": 0.6749775600619614,
+          "0.5": 0.6719334407243878,
+          "0.75": 0.6599440365098417,
+          "1.0": 0.6457532524364069
+        },
+        "bin_log_score": 1.470522041266565,
+        "bin_Brier": 0.7402254099506783,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.25,
+            "mean_width": 0.7883052346621061
+          },
+          "0.8": {
+            "coverage": 0.75,
+            "mean_width": 1.3827598122824962
+          },
+          "0.9": {
+            "coverage": 0.875,
+            "mean_width": 1.6830331635553304
+          },
+          "0.95": {
+            "coverage": 1.0,
+            "mean_width": 1.8432659140033227
+          }
+        }
+      },
+      "checkpoint_sha256": "fabfa7e1e0336f0c286c40f722290a3937ed529b179171a190e9feb5a8536d57",
+      "predictions_sha256": "939aff97ef4eaa7391f57c996e93a9863bf9655c1dc58d7295f2eb59f666760e",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\smoke\\disagreement\\seed_13",
+      "case": "disagreement",
+      "seed": 13,
+      "complete": false,
+      "smoke_only": true,
+      "best_epoch": 1,
+      "epochs_executed": 1,
+      "optimizer_updates": 1,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 61576,
+      "loop_seconds": 0.004109800007427111,
+      "valid": {
+        "native": {
+          "count": 32,
+          "MAE": 0.6457532644271851,
+          "Corr": 0.5520139787614025,
+          "Mult_acc_2": 0.71875,
+          "F1_score": 0.7207692307692308,
+          "weak_count": 4,
+          "Mult_acc_2_weak": 0.0,
+          "Mult_acc_3": 0.625,
+          "Mult_acc_5": 0.15625,
+          "R_squre": 0.29107480600954083
+        },
+        "hit_count": 2,
+        "count": 32,
+        "hit_Brier": 0.05464303078285976,
+        "hit_log_score": 0.2306694979244821,
+        "hit_ECE15": 0.10247506952585396,
+        "risk_AURC": 0.6885769833868867,
+        "reliability": [
+          {
+            "bin": 1,
+            "count": 16,
+            "mean_probability": 0.11283429720300478,
+            "observed_hit_rate": 0.0
+          },
+          {
+            "bin": 2,
+            "count": 13,
+            "mean_probability": 0.16360373426144198,
+            "observed_hit_rate": 0.07692307692307693
+          },
+          {
+            "bin": 3,
+            "count": 1,
+            "mean_probability": 0.20765608416647746,
+            "observed_hit_rate": 0.0
+          },
+          {
+            "bin": 8,
+            "count": 2,
+            "mean_probability": 0.5696744200070136,
+            "observed_hit_rate": 0.5
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.8196609318256378,
+          "0.25": 0.6749775600619614,
+          "0.5": 0.6719334407243878,
+          "0.75": 0.6599440365098417,
+          "1.0": 0.6457532524364069
+        },
+        "bin_log_score": 1.4676595554460559,
+        "bin_Brier": 0.7392426812140793,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.25,
+            "mean_width": 0.7832118328737698
+          },
+          "0.8": {
+            "coverage": 0.75,
+            "mean_width": 1.3799921858220576
+          },
+          "0.9": {
+            "coverage": 0.875,
+            "mean_width": 1.682175533633102
+          },
+          "0.95": {
+            "coverage": 1.0,
+            "mean_width": 1.8454451224587887
+          }
+        }
+      },
+      "checkpoint_sha256": "2565e5f8de3937abecaf1615d1ce715677fae66a715ed47c5c81f8bcb7d811c5",
+      "predictions_sha256": "7f6470ddcce216e30781270d9f7f026ada1579a946e268509acff664852796cd",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\smoke\\direct_hit\\seed_13",
+      "case": "direct_hit",
+      "seed": 13,
+      "complete": false,
+      "smoke_only": true,
+      "best_epoch": 1,
+      "epochs_executed": 1,
+      "optimizer_updates": 1,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 61543,
+      "loop_seconds": 0.0029913000034866855,
+      "valid": {
+        "native": {
+          "count": 32,
+          "MAE": 0.6457532644271851,
+          "Corr": 0.5520139787614025,
+          "Mult_acc_2": 0.71875,
+          "F1_score": 0.7207692307692308,
+          "weak_count": 4,
+          "Mult_acc_2_weak": 0.0,
+          "Mult_acc_3": 0.625,
+          "Mult_acc_5": 0.15625,
+          "R_squre": 0.29107480600954083
+        },
+        "hit_count": 2,
+        "count": 32,
+        "hit_Brier": 0.05898286382646542,
+        "hit_log_score": 0.24226371204929714,
+        "hit_ECE15": 0.1027033377904445,
+        "risk_AURC": 0.6832400223121613,
+        "reliability": [
+          {
+            "bin": 0,
+            "count": 9,
+            "mean_probability": 0.05409311834308836,
+            "observed_hit_rate": 0.1111111111111111
+          },
+          {
+            "bin": 1,
+            "count": 21,
+            "mean_probability": 0.09914481923693702,
+            "observed_hit_rate": 0.0
+          },
+          {
+            "bin": 2,
+            "count": 2,
+            "mean_probability": 0.15434816479682922,
+            "observed_hit_rate": 0.5
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.5876367622986436,
+          "0.25": 0.7746345293708146,
+          "0.5": 0.7532851977739483,
+          "0.75": 0.6597083448432386,
+          "1.0": 0.6457532524364069
+        }
+      },
+      "checkpoint_sha256": "ee20a11b6cd39f8534f4f8b0aad6a7bed07f298a9e093b33efa4a9bcfb1ebba3",
+      "predictions_sha256": "f0606ef31707cd2e833c0f63502547046efe43e03047b55d8bce35a05232c5c8",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\smoke\\mdn\\seed_13",
+      "case": "mdn",
+      "seed": 13,
+      "complete": false,
+      "smoke_only": true,
+      "best_epoch": 1,
+      "epochs_executed": 1,
+      "optimizer_updates": 1,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 62032,
+      "loop_seconds": 0.00432409999484662,
+      "valid": {
+        "native": {
+          "count": 32,
+          "MAE": 0.6457532644271851,
+          "Corr": 0.5520139787614025,
+          "Mult_acc_2": 0.71875,
+          "F1_score": 0.7207692307692308,
+          "weak_count": 4,
+          "Mult_acc_2_weak": 0.0,
+          "Mult_acc_3": 0.625,
+          "Mult_acc_5": 0.15625,
+          "R_squre": 0.29107480600954083
+        },
+        "hit_count": 2,
+        "count": 32,
+        "hit_Brier": 0.049625275344357525,
+        "hit_log_score": 0.19563251303664658,
+        "hit_ECE15": 0.04428122723119429,
+        "risk_AURC": 0.6335526891937322,
+        "reliability": [
+          {
+            "bin": 0,
+            "count": 20,
+            "mean_probability": 0.0609786851837776,
+            "observed_hit_rate": 0.05
+          },
+          {
+            "bin": 1,
+            "count": 10,
+            "mean_probability": 0.06817480449035382,
+            "observed_hit_rate": 0.0
+          },
+          {
+            "bin": 3,
+            "count": 2,
+            "mean_probability": 0.2421612385904365,
+            "observed_hit_rate": 0.5
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.650625616312027,
+          "0.25": 0.6438408046960831,
+          "0.5": 0.6792312376201153,
+          "0.75": 0.6286683220726749,
+          "1.0": 0.6457532524364069
+        },
+        "bin_log_score": 1.390657368334286,
+        "bin_Brier": 0.7166305040420484,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.25,
+            "mean_width": 1.593895491498114
+          },
+          "0.8": {
+            "coverage": 1.0,
+            "mean_width": 2.0
+          },
+          "0.9": {
+            "coverage": 1.0,
+            "mean_width": 2.0
+          },
+          "0.95": {
+            "coverage": 1.0,
+            "mean_width": 2.0
+          }
+        }
+      },
+      "checkpoint_sha256": "3c8134ee428edbc605f62256f6f13a1ff7d06904db3890999f5bf78e813e653a",
+      "predictions_sha256": "401c04e9d9688138b48dcaf8a5b5f68f30e52afdf90aadddfb11e8f0f9203d95",
+      "test_evaluated": false
+    }
+  ],
+  "suite_complete": false,
+  "smoke_only": true
+}

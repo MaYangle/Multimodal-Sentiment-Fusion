@@ -1,0 +1,65 @@
+{
+  "port_id": "cmc-simsv2-fiveclass-pseudo-v1",
+  "status": "model-and-CPU-fixture-port; no real-data training or score",
+  "source": {
+    "repository": "https://github.com/gw-zhong/CMC",
+    "commit": "c695f719f9cd0136e52dc2f7a9e75a40aabd37ad",
+    "license": "MIT",
+    "source_file_hashes": "source_manifest.json",
+    "paper": "https://arxiv.org/abs/2510.20256"
+  },
+  "adaptation": {
+    "task": "five-class CH-SIMS v2.0",
+    "class_order": ["SNEG", "WNEG", "NEUT", "WPOS", "SPOS"],
+    "mapped_target": "canonical labels.npy int64 class index",
+    "pseudo_mode": true,
+    "uses_ground_truth_unimodal_labels": false,
+    "regression_loss": false,
+    "raw_labels": "retained in cache batch for provenance; not an auxiliary regression target in source --is_pseudo",
+    "test_requested_by_cache_adapter": false,
+    "test_scored": false,
+    "stage1_checkpoint_selection": "valid pseudo objective (source-like helper); project wrapper may select final fusion by valid five-class accuracy/NLL"
+  },
+  "source_architecture_preserved": [
+    "Text/Audio/Vision temporal projection and Transformer encoders",
+    "sequence mean pooling and normalized modality representations",
+    "PFM cosine-similarity consensus attention",
+    "MCR top-k sparse expert router and per-expert residual heads",
+    "three modality branch logits and weighted final fusion logits",
+    "per-ID modality pseudo-label momentum updates and EMA encoders",
+    "source ratio-style supervised contrastive loss"
+  ],
+  "five_class_changes": [
+    "three-logit pseudo/fusion heads become five-logit heads",
+    "source three-class pseudo-label interpolation generalizes over five one-hot classes",
+    "source binary polarity SupCon threshold moves from class>1 in 3-class SIMS to class>2 in five-class Jev order",
+    "source test-each-epoch and CMC-GT paths are omitted"
+  ],
+  "text_input": {
+    "preferred": "canonical text_bert.npy [N,3,T] with local BERT model supplied explicitly",
+    "no_download": true,
+    "contextual_text_fallback": "allowed only as a frozen identity encoder; cannot fine-tune BERT",
+    "external_weight_license": "not bundled or independently cleared by the CMC MIT source license"
+  },
+  "cache": {
+    "reader": "jevaffect.cache.load_cached_split",
+    "requested_splits": ["train", "valid"],
+    "feature_axes": {"text_tokens": "[N,3,T]", "contextual_text": "[N,T,D]", "audio": "[N,T,D]", "vision": "[N,T,D]"}
+  },
+  "files": [
+    "models.py",
+    "cache_adapter.py",
+    "training.py",
+    "builders.py",
+    "configs/cmc_simsv2_5class_pseudo.json",
+    "tests/test_cmc_port.py",
+    "SOURCE.md",
+    "source_manifest.json",
+    "LICENSE_CMC"
+  ],
+  "prohibited_claims": [
+    "not a reproduced published two-class CMC score",
+    "not CMC-GT or ground-truth unimodal supervision",
+    "not a trained or evaluated real-data result"
+  ]
+}

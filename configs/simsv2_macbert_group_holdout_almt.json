@@ -1,0 +1,26 @@
+{
+  "dataset": "simsv2_macbert_train_group_holdout_v1",
+  "language": "zh",
+  "cache_dir": "data/feature_cache/simsv2_macbert_train_group_holdout_v1",
+  "run_root": "runs/group_holdout_baselines",
+  "seeds": [13, 42, 2026],
+  "model": {
+    "name": "almt",
+    "params": {"dim": 128, "token_len": 8, "num_classes": 5}
+  },
+  "training": {
+    "max_epochs": 80,
+    "batch_size": 32,
+    "patience": 12,
+    "min_delta": 0.0,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "grad_clip_norm": 1.0,
+    "scheduler_patience": 3,
+    "scheduler_factor": 0.5,
+    "num_workers": 0,
+    "device": "cuda",
+    "amp": false,
+    "amp_dtype": "float16"
+  }
+}

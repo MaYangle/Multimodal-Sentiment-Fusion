@@ -1,0 +1,379 @@
+{
+  "source_sha256": "31007381c01dd346945ed8a64c7321239de5aaf1ef05bf112e952848a823186d",
+  "receipt_sha256": "8ef3e8ab09e040d8b0cf0c3796c224f1ded3e2710ee95ff7ee7c17102111d8d6",
+  "sdk_revision": "4f2eadcd7e7b9e20e83b868cdad385b41830285c",
+  "sdk_fold_sha256": "4e13a2f538cf02ab56144eb2a91ca48a4024ce64faaae790ab9ff1c3f399b473",
+  "scope": "actual temporal IDs and source folds; no ordinal joins or test scoring",
+  "test_scored": false,
+  "splits": {
+    "train": {
+      "count": 16265,
+      "source_videos": 2247,
+      "SDK_fold_membership_errors": 4,
+      "invalid_interval_count": 163,
+      "first_invalid_intervals": [
+        [
+          "-NFrJFQijFE",
+          "-0.477551020408",
+          "4.10430839002"
+        ],
+        [
+          "08d4NTXkSxw",
+          "-0.038548752834",
+          "6.69841269841"
+        ],
+        [
+          "0BVed2nBq1g",
+          "-0.487528344671",
+          "3.73514739229"
+        ],
+        [
+          "0EAAfLCQabY",
+          "-0.487528344671",
+          "5.71065759637"
+        ],
+        [
+          "0EphpADwdPg",
+          "-0.487528344671",
+          "3.42585034014"
+        ],
+        [
+          "0YdYFtVdlWE",
+          "-0.457596371882",
+          "3.13650793651"
+        ],
+        [
+          "0vXaXWx7Rvo",
+          "-0.487528344671",
+          "6.379138322"
+        ],
+        [
+          "15ktF-6wutk",
+          "-0.487528344671",
+          "2.14875283447"
+        ],
+        [
+          "1A7dqFxx8wU",
+          "-0.487528344671",
+          "2.83718820862"
+        ],
+        [
+          "1CjUHNYzW1E",
+          "-0.487528344671",
+          "5.58095238095"
+        ]
+      ],
+      "negative_start_count": 163,
+      "nonpositive_duration_count": 0,
+      "duplicate_temporal_ids": 0,
+      "cross_split_duplicate_ids": 0,
+      "first_wrong_sources": [
+        "-NFrJFQijFE"
+      ],
+      "temporal_ids_sha256": "8aa61ca9376ed7b6e82eea3ea53e396c2474a0b96aa2feeb99f31f5441a7c758",
+      "features": {
+        "text": {
+          "shape": [
+            16265,
+            50,
+            300
+          ],
+          "dtype": "float64",
+          "nan_count": 0,
+          "positive_inf_count": 0,
+          "negative_inf_count": 0,
+          "all_zero_records": 0,
+          "all_zero_steps": 409332,
+          "nonfinite_records": 0,
+          "author_sum_zero_drop_count": 0,
+          "leading_zero_record_count": 15092,
+          "interior_zero_record_count": 93
+        },
+        "audio": {
+          "shape": [
+            16265,
+            50,
+            74
+          ],
+          "dtype": "float64",
+          "nan_count": 0,
+          "positive_inf_count": 0,
+          "negative_inf_count": 1249,
+          "all_zero_records": 0,
+          "all_zero_steps": 409231,
+          "nonfinite_records": 1020
+        },
+        "vision": {
+          "shape": [
+            16265,
+            50,
+            35
+          ],
+          "dtype": "float64",
+          "nan_count": 0,
+          "positive_inf_count": 0,
+          "negative_inf_count": 0,
+          "all_zero_records": 82,
+          "all_zero_steps": 423072,
+          "nonfinite_records": 0
+        }
+      },
+      "labels": {
+        "shape": [
+          16265,
+          1,
+          1
+        ],
+        "min": -3.0,
+        "max": 3.0,
+        "unique_scores": 27
+      }
+    },
+    "valid": {
+      "count": 1869,
+      "source_videos": 300,
+      "SDK_fold_membership_errors": 0,
+      "invalid_interval_count": 15,
+      "first_invalid_intervals": [
+        [
+          "0y022OlZ3W0",
+          "-0.457596371882",
+          "3.64535147392"
+        ],
+        [
+          "Baz0VVQ-E9E",
+          "-0.447619047619",
+          "3.04671201814"
+        ],
+        [
+          "H1DpVwktfDQ",
+          "-0.487528344671",
+          "5.06213151927"
+        ],
+        [
+          "JPT38CA3sGI",
+          "-0.3179138322",
+          "6.60861678005"
+        ],
+        [
+          "PboaYD5hlG8",
+          "-0.158276643991",
+          "8.57414965986"
+        ],
+        [
+          "Pt-D0LUHDSc",
+          "-0.487528344671",
+          "3.40589569161"
+        ],
+        [
+          "Q4WzApjaCNI",
+          "-0.058503401361",
+          "6.30929705215"
+        ],
+        [
+          "RArhIHk4Qs4",
+          "-0.487528344671",
+          "5.25170068027"
+        ],
+        [
+          "SHa756SwGJQ",
+          "-0.487528344671",
+          "4.97233560091"
+        ],
+        [
+          "UlTJmndbGHM",
+          "-0.018594104308",
+          "11.7469387755"
+        ]
+      ],
+      "negative_start_count": 15,
+      "nonpositive_duration_count": 0,
+      "duplicate_temporal_ids": 0,
+      "cross_split_duplicate_ids": 0,
+      "first_wrong_sources": [],
+      "temporal_ids_sha256": "cccc763eeca831f413052e0dd1eed16ac52fba54576f20026f190cf16bb82713",
+      "features": {
+        "text": {
+          "shape": [
+            1869,
+            50,
+            300
+          ],
+          "dtype": "float64",
+          "nan_count": 0,
+          "positive_inf_count": 0,
+          "negative_inf_count": 0,
+          "all_zero_records": 0,
+          "all_zero_steps": 45484,
+          "nonfinite_records": 0,
+          "author_sum_zero_drop_count": 0,
+          "leading_zero_record_count": 1746,
+          "interior_zero_record_count": 12
+        },
+        "audio": {
+          "shape": [
+            1869,
+            50,
+            74
+          ],
+          "dtype": "float64",
+          "nan_count": 0,
+          "positive_inf_count": 0,
+          "negative_inf_count": 191,
+          "all_zero_records": 0,
+          "all_zero_steps": 45471,
+          "nonfinite_records": 161
+        },
+        "vision": {
+          "shape": [
+            1869,
+            50,
+            35
+          ],
+          "dtype": "float64",
+          "nan_count": 0,
+          "positive_inf_count": 0,
+          "negative_inf_count": 0,
+          "all_zero_records": 2,
+          "all_zero_steps": 46568,
+          "nonfinite_records": 0
+        }
+      },
+      "labels": {
+        "shape": [
+          1869,
+          1,
+          1
+        ],
+        "min": -3.0,
+        "max": 3.0,
+        "unique_scores": 25
+      }
+    },
+    "test": {
+      "count": 4643,
+      "source_videos": 675,
+      "SDK_fold_membership_errors": 0,
+      "invalid_interval_count": 46,
+      "first_invalid_intervals": [
+        [
+          "-ri04Z7vwnc",
+          "-0.487528344671",
+          "3.23628117914"
+        ],
+        [
+          "221153",
+          "-0.228117913832",
+          "2.74739229025"
+        ],
+        [
+          "5eY4S1F62Z4",
+          "-0.487528344671",
+          "13.7024943311"
+        ],
+        [
+          "5lrDS7LluCA",
+          "-0.487528344671",
+          "3.2462585034"
+        ],
+        [
+          "8i7u3fl-hP8",
+          "-0.487528344671",
+          "12.7047619048"
+        ],
+        [
+          "8wNr-NQImFg",
+          "-0.427664399093",
+          "1.91927437642"
+        ],
+        [
+          "93iGT5oueTA",
+          "-0.487528344671",
+          "5.25170068027"
+        ],
+        [
+          "97ENTofrmNo",
+          "-0.487528344671",
+          "8.11519274376"
+        ],
+        [
+          "AHiA9hohKr8",
+          "-0.487528344671",
+          "3.39591836735"
+        ],
+        [
+          "BRSyH6yfDLk",
+          "-0.487528344671",
+          "12.4253968254"
+        ]
+      ],
+      "negative_start_count": 46,
+      "nonpositive_duration_count": 0,
+      "duplicate_temporal_ids": 0,
+      "cross_split_duplicate_ids": 0,
+      "first_wrong_sources": [],
+      "temporal_ids_sha256": "764ec635adc4d3d0b4c9cadff80db90691b67aacf9039bf0dfb8685afbadedb7",
+      "features": {
+        "text": {
+          "shape": [
+            4643,
+            50,
+            300
+          ],
+          "dtype": "float64",
+          "nan_count": 0,
+          "positive_inf_count": 0,
+          "negative_inf_count": 0,
+          "all_zero_records": 0,
+          "all_zero_steps": 115616,
+          "nonfinite_records": 0,
+          "author_sum_zero_drop_count": 0,
+          "leading_zero_record_count": 4321,
+          "interior_zero_record_count": 29
+        },
+        "audio": {
+          "shape": [
+            4643,
+            50,
+            74
+          ],
+          "dtype": "float64",
+          "nan_count": 0,
+          "positive_inf_count": 0,
+          "negative_inf_count": 425,
+          "all_zero_records": 0,
+          "all_zero_steps": 115586,
+          "nonfinite_records": 319
+        },
+        "vision": {
+          "shape": [
+            4643,
+            50,
+            35
+          ],
+          "dtype": "float64",
+          "nan_count": 0,
+          "positive_inf_count": 0,
+          "negative_inf_count": 0,
+          "all_zero_records": 49,
+          "all_zero_steps": 120399,
+          "nonfinite_records": 0
+        }
+      }
+    }
+  },
+  "identity_cohort": "MultiBench author-linked processed temporal-ID cohort; separate from MMSA ordinal CSV",
+  "source_split_overlaps": {
+    "train+valid": [],
+    "train+test": [],
+    "valid+test": []
+  },
+  "SDK_source_splits_passed": false,
+  "temporal_identity_quality_passed": false,
+  "public_loader": {
+    "revision": "49f9be224f342de005b7f001281f33df4301eb22",
+    "url": "https://raw.githubusercontent.com/pliang279/MultiBench/49f9be224f342de005b7f001281f33df4301eb22/datasets/affect/get_data.py",
+    "sha256": "032531dd949c032c6e6ac7e4368474bc0d7c2c2955e22c9b04332ab48aee960f",
+    "imported_or_executed": false
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "time_utc": "2026-10-12T17:13:22Z",
+  "scope": {
+    "purpose": "Bounded diagnosis at the first missing CH-SIMS v2 author-feature range",
+    "network_probe_count": 3,
+    "max_requested_range_bytes": 65536,
+    "stream": true,
+    "timeout_seconds": [15, 45],
+    "automatic_redirects": false,
+    "authentication_or_cookie_header_used": false,
+    "execution_environment": "The bundled Python initially failed before any network call because requests was not installed (ModuleNotFoundError). The three probes then ran with the existing work/research-env Python and requests 2.34.2.",
+    "full_download_started": false,
+    "cache_or_script_modified": false,
+    "gpu_used": false,
+    "response_close": "Each response was closed after reading at most 65536 bytes for an exact 206 range, or at most 4096 bytes otherwise."
+  },
+  "local_state": {
+    "source": {
+      "publisher": "https://github.com/thuiar/ch-sims-v2",
+      "file_id": "13JdO6GbPHOGZ8yLBFUrNR8c2FvHN-E_O",
+      "url": "https://drive.usercontent.google.com/download?id=13JdO6GbPHOGZ8yLBFUrNR8c2FvHN-E_O&export=download&confirm=t",
+      "size": 3620390413,
+      "last_modified": "Tue, 19 Sep 2023 09:07:03 GMT",
+      "prefix_size": 371720192,
+      "chunk_bytes": 8388608
+    },
+    "supervisor_received_bytes_counter": 1604845568,
+    "progress_json_completed_bytes_counter": 1588068352,
+    "complete_block_count": 147,
+    "complete_block_bytes": 1233125376,
+    "first_missing_block": {
+      "start": 1596456960,
+      "end": 1604845567,
+      "partial_file_present": false
+    },
+    "next_present_block": {
+      "start": 1604845568,
+      "end": 1613234175,
+      "bytes": 8388608
+    },
+    "counter_interpretation": "Counters are received/completed byte totals, not contiguous coverage. Existing blocks after a hole make the first missing offset lower than the cumulative counter."
+  },
+  "historical_8mib_failure": {
+    "log": "data/simsv2/unaligned.pkl.range_parts/resume_attempt_1_1791818082.stderr.log",
+    "request_range": "bytes=1596456960-1604845567",
+    "status": 200,
+    "content_range": null,
+    "last_modified": null,
+    "content_type_recorded": false,
+    "body_read_or_recorded": false,
+    "script_failure": "Publisher range/version mismatch",
+    "classification": "Unresolved. The saved failure does not distinguish a range-ignored full-object response, an HTML/quota fallback, or an intermediary response. It is not a recorded 5xx server error."
+  },
+  "probes": [
+    {
+      "label": "usercontent_if_range",
+      "request": {
+        "host": "drive.usercontent.google.com",
+        "path": "/download",
+        "range": "bytes=1596456960-1596522495",
+        "if_range": "Tue, 19 Sep 2023 09:07:03 GMT"
+      },
+      "status": 206,
+      "content_range": "bytes 1596456960-1596522495/3620390413",
+      "last_modified": "Tue, 19 Sep 2023 09:07:03 GMT",
+      "content_type": "application/octet-stream",
+      "content_length": "65536",
+      "accept_ranges": "bytes",
+      "range_match": true,
+      "bytes_read": 65536,
+      "body_sha256": "3797b2a1d50dcee4f800b3bdf16ed61ea72178395aae9551cdf689c74199bf91",
+      "quota_text_detected": false,
+      "html_detected": false
+    },
+    {
+      "label": "usercontent_no_if_range",
+      "request": {
+        "host": "drive.usercontent.google.com",
+        "path": "/download",
+        "range": "bytes=1596456960-1596522495",
+        "if_range": null
+      },
+      "status": 206,
+      "content_range": "bytes 1596456960-1596522495/3620390413",
+      "last_modified": "Tue, 19 Sep 2023 09:07:03 GMT",
+      "content_type": "application/octet-stream",
+      "content_length": "65536",
+      "accept_ranges": "bytes",
+      "range_match": true,
+      "bytes_read": 65536,
+      "body_sha256": "3797b2a1d50dcee4f800b3bdf16ed61ea72178395aae9551cdf689c74199bf91",
+      "quota_text_detected": false,
+      "html_detected": false
+    },
+    {
+      "label": "legacy_public_drive_route",
+      "request": {
+        "host": "drive.google.com",
+        "path": "/uc",
+        "range": "bytes=1596456960-1596522495",
+        "if_range": null
+      },
+      "status": 303,
+      "content_range": null,
+      "last_modified": null,
+      "content_type": "application/binary",
+      "content_length": "0",
+      "bytes_read": 0,
+      "location_host": "drive.usercontent.google.com",
+      "location_path": "/download",
+      "redirect_followed": false,
+      "interpretation": "The public legacy route redirects to the usercontent download route; no payload or redirect target query was captured."
+    }
+  ],
+  "diagnosis": {
+    "small_range_at_current_gap": "The existing public usercontent URL returns the exact 64 KiB range with matching Last-Modified both with and without If-Range; both bodies have the same SHA-256.",
+    "quota_or_html": "No quota text or HTML was observed in either successful 64 KiB response. The earlier 8 MiB response body and Content-Type were not recorded, so its type cannot be determined.",
+    "range_behavior": "Range is not globally ignored: the same starting offset succeeds for 64 KiB. The previously recorded 8 MiB request returned 200 without Content-Range or Last-Modified, but this bounded probe did not reproduce or classify that response.",
+    "if_range": "A missing or mismatched If-Range validator does not explain the 64 KiB result; both variants return identical data. The historical 8 MiB response remains unexplained.",
+    "server_or_gateway": "No 5xx occurred in these three requests. The historical 200 may be a server or intermediary fallback, but available headers are insufficient to attribute it."
+  },
+  "decision": "Do not start the full download from this diagnosis. Small public ranges at the gap are accessible, but the 8 MiB range failure remains unclassified; do not label it as a quota page or a confirmed gateway fault."
+}

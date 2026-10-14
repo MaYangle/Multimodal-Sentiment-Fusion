@@ -1,0 +1,348 @@
+{
+  "scope": "source-video paired bootstrap on official valid, conditional on frozen selected models",
+  "test_evaluated": false,
+  "results_sha256": "a956425241fa2b11b7997fbfaf5a93360053c7da0a6f08bc28d9c351304cf924",
+  "readout_sha256": {
+    "runs\\native_dependence_oof_v1\\readouts\\seed_13\\original_NIG.json": "2236b4109d817bf30a6f802bd2f081d0afbf11769c3e55d9174e97fbed71b42c",
+    "runs\\native_dependence_oof_v1\\readouts\\seed_13\\global_NIG.json": "28cfc5a5165a9bf62ea84d43a02f4dc9bc9cb7887a8bc8cd1de7d04f9f3c86ca",
+    "runs\\native_dependence_oof_v1\\readouts\\seed_13\\independent.json": "610a11939b88f04b075bd4295c7241c2d4d049a5740215eb27fcef0ea1751c5a",
+    "runs\\native_dependence_oof_v1\\readouts\\seed_13\\correlated.json": "210c118ae758923415037506587880593bd83c3f9fe26ee28fb87e5b1e3d4c9e",
+    "runs\\native_dependence_oof_v1\\readouts\\seed_13\\proper_pool.json": "11ad5802eedb1bca6833ed797df922c1dfffe9070a784a8367da4c2e673c4d8f",
+    "runs\\native_dependence_oof_v1\\readouts\\seed_13\\scaled_proper_pool.json": "19db8fdf983524e30e7ee8629d13ac3b212c4eee4e068c16e90d164b6070d534",
+    "runs\\native_dependence_oof_v1\\readouts\\seed_42\\original_NIG.json": "0dd99c4ad17997b1b67d52cb9cc0ac8d8332ce9297fce9549febec4283b0a000",
+    "runs\\native_dependence_oof_v1\\readouts\\seed_42\\global_NIG.json": "e62f920e572539ce854fd5c0988ca4bacb9d4cb0565ad9ee60459740da566a70",
+    "runs\\native_dependence_oof_v1\\readouts\\seed_42\\independent.json": "1087d16d4d0de06e8d9ba2bedd83cd0effe5e5d01a4e9a4f946e08a0df6d2a09",
+    "runs\\native_dependence_oof_v1\\readouts\\seed_42\\correlated.json": "70678d98296dc3e6b61c0aafd99ecd5e85b09261658c7b297b48e2905acefbfd",
+    "runs\\native_dependence_oof_v1\\readouts\\seed_42\\proper_pool.json": "e3126a36cc33272064dbb79be5ec6424269cd79062ad51578ea08bffd560dd1f",
+    "runs\\native_dependence_oof_v1\\readouts\\seed_42\\scaled_proper_pool.json": "68789b12b7120d5ec8439d05e943d0485efca14ccc3c8ee30f3664ca499f14bb",
+    "runs\\native_dependence_oof_v1\\readouts\\seed_2026\\original_NIG.json": "f4ac8b6b9f96bd27cc217df141c4cb0ce9c877bbb6fea8481f3fee17dda1fd7f",
+    "runs\\native_dependence_oof_v1\\readouts\\seed_2026\\global_NIG.json": "34833d14a02bd7e36ea201cf913238fb1343ff93f616940d3c0b5effac807694",
+    "runs\\native_dependence_oof_v1\\readouts\\seed_2026\\independent.json": "686cb99e6fd30cb2a55e1df612f31d76b323f1034c384fdd558dd8f89c457988",
+    "runs\\native_dependence_oof_v1\\readouts\\seed_2026\\correlated.json": "968d8d0341ff0253c767183f81d583e4f23af4dcaefb90c319fa88483e1975a5",
+    "runs\\native_dependence_oof_v1\\readouts\\seed_2026\\proper_pool.json": "b1fd4bd11f9d1d0f7d43a4320982749cce6bfeb5499d8090492b062446c1f349",
+    "runs\\native_dependence_oof_v1\\readouts\\seed_2026\\scaled_proper_pool.json": "f51c49dbc13043e250b4ae365a9db0e2bfceef1bdaac3607f5bd822664878b68"
+  },
+  "seed": 105,
+  "replicates": 2000,
+  "sources": 120,
+  "clips": 647,
+  "estimator": "clip-weighted mean after source resampling; percentile 95% interval",
+  "limitation": "Does not include training-population, OOF fit, or validation-selection uncertainty; no multiplicity correction.",
+  "contrasts": [
+    {
+      "candidate": "correlated",
+      "baseline": "global_NIG",
+      "metric": "NLL",
+      "results": {
+        "13": {
+          "difference": 0.0023748062963956677,
+          "percentile95": [
+            -0.006959128606924128,
+            0.012493691295416033
+          ]
+        },
+        "42": {
+          "difference": 0.002900102257674025,
+          "percentile95": [
+            -0.012553758373290239,
+            0.01894383316486932
+          ]
+        },
+        "2026": {
+          "difference": -0.006338217915688013,
+          "percentile95": [
+            -0.017076460462922542,
+            0.004000011478264586
+          ]
+        },
+        "mean_over_three_frozen_seeds": {
+          "difference": -0.00035443645387277386,
+          "percentile95": [
+            -0.010631655279697694,
+            0.009622394664104892
+          ]
+        }
+      }
+    },
+    {
+      "candidate": "correlated",
+      "baseline": "global_NIG",
+      "metric": "coverage90",
+      "results": {
+        "13": {
+          "difference": 0.00463678516228748,
+          "percentile95": [
+            -0.0034309753356597857,
+            0.01242284323290476
+          ]
+        },
+        "42": {
+          "difference": 0.00463678516228748,
+          "percentile95": [
+            -0.010474441751614157,
+            0.02166946460980035
+          ]
+        },
+        "2026": {
+          "difference": 0.0061823802163833074,
+          "percentile95": [
+            -0.008091601547083431,
+            0.02055951678096189
+          ]
+        },
+        "mean_over_three_frozen_seeds": {
+          "difference": 0.005151983513652756,
+          "percentile95": [
+            -0.003602629833690439,
+            0.014133570474743283
+          ]
+        }
+      }
+    },
+    {
+      "candidate": "correlated",
+      "baseline": "global_NIG",
+      "metric": "width90",
+      "results": {
+        "13": {
+          "difference": 0.013078245366189591,
+          "percentile95": [
+            -0.0012549223611802384,
+            0.027079071510464018
+          ]
+        },
+        "42": {
+          "difference": -0.012360901254585072,
+          "percentile95": [
+            -0.02357527533842665,
+            0.0008524366334811658
+          ]
+        },
+        "2026": {
+          "difference": 0.06610264857251943,
+          "percentile95": [
+            0.05025192524273217,
+            0.08125794026737328
+          ]
+        },
+        "mean_over_three_frozen_seeds": {
+          "difference": 0.022273330894707982,
+          "percentile95": [
+            0.010166405365565677,
+            0.0346591006634591
+          ]
+        }
+      }
+    },
+    {
+      "candidate": "correlated",
+      "baseline": "independent",
+      "metric": "NLL",
+      "results": {
+        "13": {
+          "difference": -0.002189820006486762,
+          "percentile95": [
+            -0.004532344104418102,
+            0.00024685799366163606
+          ]
+        },
+        "42": {
+          "difference": 0.03284669459330684,
+          "percentile95": [
+            0.02068690877954199,
+            0.046925346214220565
+          ]
+        },
+        "2026": {
+          "difference": 0.0024919828356349673,
+          "percentile95": [
+            -0.0019368277652301123,
+            0.007220318043607983
+          ]
+        },
+        "mean_over_three_frozen_seeds": {
+          "difference": 0.011049619140818348,
+          "percentile95": [
+            0.005685508309252341,
+            0.017127764013915234
+          ]
+        }
+      }
+    },
+    {
+      "candidate": "correlated",
+      "baseline": "independent",
+      "metric": "coverage90",
+      "results": {
+        "13": {
+          "difference": 0.0,
+          "percentile95": [
+            -0.004637506279731071,
+            0.004286175445788069
+          ]
+        },
+        "42": {
+          "difference": -0.02627511591962906,
+          "percentile95": [
+            -0.036860892612859096,
+            -0.016610606987212336
+          ]
+        },
+        "2026": {
+          "difference": -0.0030911901081916537,
+          "percentile95": [
+            -0.011594623588060831,
+            0.006525552037019266
+          ]
+        },
+        "mean_over_three_frozen_seeds": {
+          "difference": -0.009788768675940238,
+          "percentile95": [
+            -0.01488095238095238,
+            -0.004711425206124852
+          ]
+        }
+      }
+    },
+    {
+      "candidate": "correlated",
+      "baseline": "independent",
+      "metric": "width90",
+      "results": {
+        "13": {
+          "difference": -0.01560738762302367,
+          "percentile95": [
+            -0.019911501849600277,
+            -0.010689883572157924
+          ]
+        },
+        "42": {
+          "difference": -0.11351886154007541,
+          "percentile95": [
+            -0.11871789195776342,
+            -0.10864469644745482
+          ]
+        },
+        "2026": {
+          "difference": -0.03862513024001661,
+          "percentile95": [
+            -0.04567773656687797,
+            -0.03081864618466476
+          ]
+        },
+        "mean_over_three_frozen_seeds": {
+          "difference": -0.05591712646770523,
+          "percentile95": [
+            -0.05982787575373249,
+            -0.05166009418989155
+          ]
+        }
+      }
+    },
+    {
+      "candidate": "correlated",
+      "baseline": "scaled_proper_pool",
+      "metric": "NLL",
+      "results": {
+        "13": {
+          "difference": -0.010827720565056192,
+          "percentile95": [
+            -0.02806396428979246,
+            0.008407400583796383
+          ]
+        },
+        "42": {
+          "difference": 0.005404962078761415,
+          "percentile95": [
+            -0.023753781734668467,
+            0.035753085023999494
+          ]
+        },
+        "2026": {
+          "difference": -0.02204816208141598,
+          "percentile95": [
+            -0.040925423945138775,
+            -0.0025850692520635503
+          ]
+        },
+        "mean_over_three_frozen_seeds": {
+          "difference": -0.009156973522570252,
+          "percentile95": [
+            -0.02872243168352705,
+            0.011455912330587743
+          ]
+        }
+      }
+    },
+    {
+      "candidate": "correlated",
+      "baseline": "scaled_proper_pool",
+      "metric": "coverage90",
+      "results": {
+        "13": {
+          "difference": -0.027820710973724884,
+          "percentile95": [
+            -0.042389550440164216,
+            -0.01570537243238372
+          ]
+        },
+        "42": {
+          "difference": -0.04327666151468315,
+          "percentile95": [
+            -0.06164833478012322,
+            -0.024793388429752067
+          ]
+        },
+        "2026": {
+          "difference": -0.02472952086553323,
+          "percentile95": [
+            -0.039726145169425464,
+            -0.011455229052602406
+          ]
+        },
+        "mean_over_three_frozen_seeds": {
+          "difference": -0.031942297784647085,
+          "percentile95": [
+            -0.042667323481116584,
+            -0.021921877153367478
+          ]
+        }
+      }
+    },
+    {
+      "candidate": "correlated",
+      "baseline": "scaled_proper_pool",
+      "metric": "width90",
+      "results": {
+        "13": {
+          "difference": -0.16339486838740505,
+          "percentile95": [
+            -0.1778589629606387,
+            -0.1509263738703437
+          ]
+        },
+        "42": {
+          "difference": -0.1524818177049279,
+          "percentile95": [
+            -0.1666658036643911,
+            -0.13764241596642326
+          ]
+        },
+        "2026": {
+          "difference": -0.1155564128754547,
+          "percentile95": [
+            -0.13445137853180153,
+            -0.09902558318661844
+          ]
+        },
+        "mean_over_three_frozen_seeds": {
+          "difference": -0.14381103298926257,
+          "percentile95": [
+            -0.157973475950889,
+            -0.1309320907743481
+          ]
+        }
+      }
+    }
+  ]
+}

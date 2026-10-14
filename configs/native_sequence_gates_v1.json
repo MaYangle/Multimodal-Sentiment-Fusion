@@ -1,0 +1,79 @@
+{
+  "schema": "native_sequence_scalar_gates_v1",
+  "dataset": "simsv2",
+  "author_csv": "data/author/simsv2/meta.csv",
+  "author_csv_sha256": "be7e482640e7ee24d2070033e1e2aef61ce183199286a8a18b0d6247556bf150",
+  "raw_cache": "data/feature_cache/simsv2_full_macbert_raw_av",
+  "standardized_cache": "data/feature_cache/simsv2_native_sequence_standardized_v1",
+  "pooled_cache": "data/feature_cache/simsv2_native_pooled_standardized_v1",
+  "run_root": "runs/native_sequence_gates_v1",
+  "device": "cuda",
+  "smoke": {
+    "stage1_epochs": 2,
+    "fusion_epochs": 2
+  },
+  "seeds": [13, 42, 2026],
+  "cases": ["static", "pre_norm", "post_norm", "distilled_static", "distilled_pre_norm", "distilled_post_norm", "learned_post_norm"],
+  "source_holdout": {
+    "seed": 20261014,
+    "fraction": 0.1,
+    "unit": "official TRAIN video_id",
+    "held_count_rule": "ceil(fraction * sorted unique TRAIN sources) after deterministic seeded shuffle"
+  },
+  "model": {
+    "dim": 128,
+    "queries": 8,
+    "depth": 3,
+    "heads": 4,
+    "ff_dim": 256,
+    "dropout": 0.3
+  },
+  "expected_parameters": {
+    "unimodal_total": 353091,
+    "fusion_total": 2084871,
+    "fusion_trainable": 1978692,
+    "policy_head": 25027
+  },
+  "stage1": {
+    "epochs": 50,
+    "batch_size": 32,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "gradient_clip": 1.0,
+    "loss": "sum of three per-modality mean absolute errors over present modality rows",
+    "selection": "minimum clipped native channel MAE on source-held official TRAIN; first minimum wins ties"
+  },
+  "refit": {
+    "batch_size": 32,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "gradient_clip": 1.0,
+    "loss": "sum of channel L1 terms; each branch stops after its source-selected epoch count",
+    "normalization": "reuse existing pooled scaler fit on all official TRAIN; no additional statistics are fit"
+  },
+  "fusion": {
+    "epochs": 50,
+    "batch_size": 32,
+    "learning_rate": 0.00003,
+    "weight_decay": 0.00001,
+    "gradient_clip": 1.0,
+    "contrastive_weight": 0.01,
+    "distillation_weight": 0.1,
+    "loss": "native aggregate M L1 plus 0.01 contrastive plus 0.1 teacher-to-policy KL distillation",
+    "distillation": "KL(stopgrad(softmax(-0.3*(unimodal_score-TRAIN_M)^2)),policy_ratios); TRAIN targets only",
+    "selection": "minimum native VALID M MAE; first minimum wins ties",
+    "updates_per_epoch": 86,
+    "total_updates_per_fit": 4300
+  },
+  "formal_matrix": {
+    "train_rows": 2722,
+    "valid_rows": 647,
+    "train_sources": 129,
+    "source_held_sources": 13,
+    "selection_fits": 3,
+    "refit_fits": 3,
+    "fusion_fits": 21,
+    "test_loader": false,
+    "test_annotations_read": false
+  }
+}

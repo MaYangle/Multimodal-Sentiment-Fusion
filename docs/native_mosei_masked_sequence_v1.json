@@ -1,0 +1,268 @@
+{
+  "scope": "frozen VALID feature sensitivity, not raw robustness or causal intervention",
+  "test_evaluated": false,
+  "suite_sha256": "59b3e1ad478626c93aadeb3b0cc5680751507df5157052ad14c08b73cab2038e",
+  "implementation_sha256": "d7ce1c1ff0802c7fa718d989831ea20f602cc6d127088d993e97a5f0dfb4ee58",
+  "device": "cpu",
+  "results": [
+    {
+      "model": "almt_masked",
+      "seed": 13,
+      "conditions": {
+        "identity": {
+          "native": {
+            "count": 1869,
+            "MAE": 0.608252763748169,
+            "Corr": 0.6153097542179227,
+            "Mult_acc_5": 0.512573568753344,
+            "Mult_acc_7": 0.5050829320492242,
+            "Has0_acc_2": 0.7271268057784912,
+            "Has0_F1_score": 0.7390261849874682,
+            "nonzero_count": 1436,
+            "Non0_acc_2": 0.7701949860724234,
+            "Non0_F1_score": 0.7713616096490411
+          },
+          "max_prediction_change": 1.1920928955078125e-06,
+          "predictions_sha256": "42144d2f66fb501f4ab0d9626861947ce9d67f446d78f30d2b1a09ac0c74387f"
+        },
+        "joint_permute": {
+          "native": {
+            "count": 1869,
+            "MAE": 0.6158406138420105,
+            "Corr": 0.5980511966315324,
+            "Mult_acc_5": 0.5195291599785982,
+            "Mult_acc_7": 0.5115034777956127,
+            "Has0_acc_2": 0.7346174424826111,
+            "Has0_F1_score": 0.7457666942048676,
+            "nonzero_count": 1436,
+            "Non0_acc_2": 0.7799442896935933,
+            "Non0_F1_score": 0.7805225076915847
+          },
+          "max_prediction_change": 1.719350278377533,
+          "predictions_sha256": "ce7cdd98800bb4198b89fe2a508c92589c5f047e83defb6e25a555c83af6dea9"
+        },
+        "av_permute": {
+          "native": {
+            "count": 1869,
+            "MAE": 0.6077274680137634,
+            "Corr": 0.6165887434663209,
+            "Mult_acc_5": 0.5109684323167469,
+            "Mult_acc_7": 0.5029427501337613,
+            "Has0_acc_2": 0.7319422150882825,
+            "Has0_F1_score": 0.7433855662370951,
+            "nonzero_count": 1436,
+            "Non0_acc_2": 0.775766016713092,
+            "Non0_F1_score": 0.7766347372101394
+          },
+          "max_prediction_change": 0.2294599413871765,
+          "predictions_sha256": "a3005073f45ff8e566ae8efd462b2a520b29edd7bd3af07da06b9eea1a0a2fb1"
+        },
+        "reverse_all": {
+          "native": {
+            "count": 1869,
+            "MAE": 0.61220383644104,
+            "Corr": 0.6068958988167674,
+            "Mult_acc_5": 0.507223113964687,
+            "Mult_acc_7": 0.49812734082397003,
+            "Has0_acc_2": 0.7383627608346709,
+            "Has0_F1_score": 0.7488705127660189,
+            "nonzero_count": 1436,
+            "Non0_acc_2": 0.7771587743732591,
+            "Non0_F1_score": 0.7776495101430719
+          },
+          "max_prediction_change": 1.507320523262024,
+          "predictions_sha256": "00fdb0b11ff26bd47188acadf72065a502290192c46c6fbc5566aaed9a6d84b7"
+        },
+        "front_padding": {
+          "native": {
+            "count": 1869,
+            "MAE": 0.608252763748169,
+            "Corr": 0.6153097541146483,
+            "Mult_acc_5": 0.512573568753344,
+            "Mult_acc_7": 0.5050829320492242,
+            "Has0_acc_2": 0.7271268057784912,
+            "Has0_F1_score": 0.7390261849874682,
+            "nonzero_count": 1436,
+            "Non0_acc_2": 0.7701949860724234,
+            "Non0_F1_score": 0.7713616096490411
+          },
+          "max_prediction_change": 1.1920928955078125e-06,
+          "predictions_sha256": "48f6bb4cb6ef773be50512ed450a280fc3f3ad656922f82a861c860e68a91dcb"
+        }
+      }
+    },
+    {
+      "model": "almt_masked",
+      "seed": 42,
+      "conditions": {
+        "identity": {
+          "native": {
+            "count": 1869,
+            "MAE": 0.6139472126960754,
+            "Corr": 0.5999140912399786,
+            "Mult_acc_5": 0.5040128410914928,
+            "Mult_acc_7": 0.49812734082397003,
+            "Has0_acc_2": 0.7688603531300161,
+            "Has0_F1_score": 0.7745761776895732,
+            "nonzero_count": 1436,
+            "Non0_acc_2": 0.7924791086350975,
+            "Non0_F1_score": 0.7903824608226798
+          },
+          "max_prediction_change": 1.8030405044555664e-06,
+          "predictions_sha256": "1e4a2307d97c2cef1f189ba16810f930c7b8c4de0576013f01139dbfb5e5022b"
+        },
+        "joint_permute": {
+          "native": {
+            "count": 1869,
+            "MAE": 0.617978036403656,
+            "Corr": 0.5919485411974842,
+            "Mult_acc_5": 0.5104333868378812,
+            "Mult_acc_7": 0.5040128410914928,
+            "Has0_acc_2": 0.7715355805243446,
+            "Has0_F1_score": 0.7769339452462323,
+            "nonzero_count": 1436,
+            "Non0_acc_2": 0.7938718662952646,
+            "Non0_F1_score": 0.7916735503335982
+          },
+          "max_prediction_change": 1.645744264125824,
+          "predictions_sha256": "3c9ff1bb8decfdc5a72770db96a44503600a4c36a40cb8d2a526699151a80f83"
+        },
+        "av_permute": {
+          "native": {
+            "count": 1869,
+            "MAE": 0.6132329702377319,
+            "Corr": 0.6010471937380749,
+            "Mult_acc_5": 0.5098983413590155,
+            "Mult_acc_7": 0.5040128410914928,
+            "Has0_acc_2": 0.7672552166934189,
+            "Has0_F1_score": 0.7733603675999625,
+            "nonzero_count": 1436,
+            "Non0_acc_2": 0.7903899721448467,
+            "Non0_F1_score": 0.7886750875339291
+          },
+          "max_prediction_change": 0.3297985792160034,
+          "predictions_sha256": "503ad6656f20ca4a77824fffe96030e73fde8863914bf11acd016ebb01ad1346"
+        },
+        "reverse_all": {
+          "native": {
+            "count": 1869,
+            "MAE": 0.621524453163147,
+            "Corr": 0.5879435843096787,
+            "Mult_acc_5": 0.507223113964687,
+            "Mult_acc_7": 0.5024077046548957,
+            "Has0_acc_2": 0.7683253076511504,
+            "Has0_F1_score": 0.7744999689933213,
+            "nonzero_count": 1436,
+            "Non0_acc_2": 0.7924791086350975,
+            "Non0_F1_score": 0.7908371642191699
+          },
+          "max_prediction_change": 1.0326204001903534,
+          "predictions_sha256": "0fc7ea1b0a4270b8733a93f6a1c6f125be997a353f74d43fe586d43bbc47ecec"
+        },
+        "front_padding": {
+          "native": {
+            "count": 1869,
+            "MAE": 0.6139472126960754,
+            "Corr": 0.5999140909729167,
+            "Mult_acc_5": 0.5040128410914928,
+            "Mult_acc_7": 0.49812734082397003,
+            "Has0_acc_2": 0.7688603531300161,
+            "Has0_F1_score": 0.7745761776895732,
+            "nonzero_count": 1436,
+            "Non0_acc_2": 0.7924791086350975,
+            "Non0_F1_score": 0.7903824608226798
+          },
+          "max_prediction_change": 1.773238182067871e-06,
+          "predictions_sha256": "8b264d4c28d1fd0cf6a382330b5fd931e0c4b88308c980693ba2c9c35acf8510"
+        }
+      }
+    },
+    {
+      "model": "almt_masked",
+      "seed": 2026,
+      "conditions": {
+        "identity": {
+          "native": {
+            "count": 1869,
+            "MAE": 0.6160112023353577,
+            "Corr": 0.6016507660746595,
+            "Mult_acc_5": 0.5179240235420011,
+            "Mult_acc_7": 0.5061530230069556,
+            "Has0_acc_2": 0.6960941680042804,
+            "Has0_F1_score": 0.7128721061717554,
+            "nonzero_count": 1436,
+            "Non0_acc_2": 0.7562674094707521,
+            "Non0_F1_score": 0.7611272845010724
+          },
+          "max_prediction_change": 1.1920928955078125e-06,
+          "predictions_sha256": "758736ef06a19c1a395d77d6992b78a6258ce423245d94b6a2c3147477d867e4"
+        },
+        "joint_permute": {
+          "native": {
+            "count": 1869,
+            "MAE": 0.6333333253860474,
+            "Corr": 0.5776105037202063,
+            "Mult_acc_5": 0.512573568753344,
+            "Mult_acc_7": 0.5013376136971642,
+            "Has0_acc_2": 0.6944890315676833,
+            "Has0_F1_score": 0.7112231630732284,
+            "nonzero_count": 1436,
+            "Non0_acc_2": 0.7562674094707521,
+            "Non0_F1_score": 0.7608140401994608
+          },
+          "max_prediction_change": 2.2056844830513,
+          "predictions_sha256": "59ae647673b84ca001006da0a3dad2e3800c91a2db50202f564d1223dd2b6aa5"
+        },
+        "av_permute": {
+          "native": {
+            "count": 1869,
+            "MAE": 0.6179379224777222,
+            "Corr": 0.598657851219684,
+            "Mult_acc_5": 0.5248796147672552,
+            "Mult_acc_7": 0.5141787051899411,
+            "Has0_acc_2": 0.695024077046549,
+            "Has0_F1_score": 0.7118237420746737,
+            "nonzero_count": 1436,
+            "Non0_acc_2": 0.7555710306406686,
+            "Non0_F1_score": 0.7603536220112529
+          },
+          "max_prediction_change": 0.6786982417106628,
+          "predictions_sha256": "0b054d24672e0ad8effece8d3093a1074341783f751940e968699e0adfce0a49"
+        },
+        "reverse_all": {
+          "native": {
+            "count": 1869,
+            "MAE": 0.6258224248886108,
+            "Corr": 0.5896113188032609,
+            "Mult_acc_5": 0.5131086142322098,
+            "Mult_acc_7": 0.5024077046548957,
+            "Has0_acc_2": 0.6939539860888175,
+            "Has0_F1_score": 0.7107927475403458,
+            "nonzero_count": 1436,
+            "Non0_acc_2": 0.7555710306406686,
+            "Non0_F1_score": 0.7602761174652825
+          },
+          "max_prediction_change": 1.4365342259407043,
+          "predictions_sha256": "769a225ac1bec46c4dbac6c5ed9f6992d848ce799701f1cb314f77daeffdb5a0"
+        },
+        "front_padding": {
+          "native": {
+            "count": 1869,
+            "MAE": 0.6160112023353577,
+            "Corr": 0.6016507665685198,
+            "Mult_acc_5": 0.5179240235420011,
+            "Mult_acc_7": 0.5061530230069556,
+            "Has0_acc_2": 0.6960941680042804,
+            "Has0_F1_score": 0.7128721061717554,
+            "nonzero_count": 1436,
+            "Non0_acc_2": 0.7562674094707521,
+            "Non0_F1_score": 0.7611272845010724
+          },
+          "max_prediction_change": 1.0728836059570312e-06,
+          "predictions_sha256": "c1856ccaa2c334ea320e6afc8e084899c21edcd986a914cf0ca018dc6613c2b9"
+        }
+      }
+    }
+  ],
+  "complete": true
+}

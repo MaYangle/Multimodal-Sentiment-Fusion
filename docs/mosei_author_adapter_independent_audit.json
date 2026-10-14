@@ -1,0 +1,187 @@
+{
+  "report_kind": "independent_read_only_data_and_code_audit",
+  "reported_by": "Codex subagent /root/mosei_adapter_review",
+  "audit_date": "2026-10-12",
+  "runtime": {
+    "python": "bundled Python 3.12.14",
+    "numpy": "2.3.5",
+    "execution_scope": "CPU-only data/hash inspection; no training",
+    "requested_work_train_env_python": "Could not launch: its configured system Python process returned access denied; audit completed with bundled Python/NumPy.",
+    "torch_dataset_api_checked": false,
+    "torch_dataset_api_reason": "The bundled runtime has no torch; the configured environment interpreter could not be launched."
+  },
+  "scope": {
+    "source_pickle": "data/author/mosei/multibench/mosei_senti_data.pkl",
+    "cache_directory": "data/feature_cache/mosei_multibench_native_v1",
+    "fixed_public_loader": "work/mosei_author_source_audit/multibench_get_data.py",
+    "checked_splits": [
+      "train",
+      "valid"
+    ],
+    "test_policy": "The pickle was deserialized as a whole; only data[\"test\"][\"id\"] was accessed. No test labels or features were read or scored."
+  },
+  "provenance_sha256": {
+    "source_pickle": "31007381c01dd346945ed8a64c7321239de5aaf1ef05bf112e952848a823186d",
+    "cache_metadata_json": "1fd9a0c5b89e00fc89dc8e35b58b3def798ecda02125dc3af8da0cc6448acfcd",
+    "fixed_public_loader": "032531dd949c032c6e6ac7e4368474bc0d7c2c2955e22c9b04332ab48aee960f",
+    "preparation_recipe_frozen_in_cache": "844b8d6b4977020964ead95fbc5deee1a4db3a9f8ed1a6247bc28664019547f3",
+    "adapter_recorded_in_cache": "de77bc2273635cec8156441a7482f84ed1f5a7241ad79a468766e2c45dd5bfe2"
+  },
+  "source_and_loader_pins_match": {
+    "source_pickle_sha256": "31007381c01dd346945ed8a64c7321239de5aaf1ef05bf112e952848a823186d",
+    "source_matches_metadata_pin": true,
+    "public_loader_sha256": "032531dd949c032c6e6ac7e4368474bc0d7c2c2955e22c9b04332ab48aee960f",
+    "public_loader_matches_metadata_pin": true,
+    "public_loader_revision": "49f9be224f342de005b7f001281f33df4301eb22"
+  },
+  "ids_and_targets": {
+    "train": {
+      "count": 16265,
+      "unique": true,
+      "cache_order_exactly_matches_source": true,
+      "source_labels_flat_shape": [
+        16265
+      ],
+      "target_shape": [
+        16265
+      ],
+      "source_labels_cast_float32_exactly_match_targets": true,
+      "source_label_min": -3.0,
+      "source_label_max": 3.0,
+      "unique_native_scores": 27
+    },
+    "valid": {
+      "count": 1869,
+      "unique": true,
+      "cache_order_exactly_matches_source": true,
+      "source_labels_flat_shape": [
+        1869
+      ],
+      "target_shape": [
+        1869
+      ],
+      "source_labels_cast_float32_exactly_match_targets": true,
+      "source_label_min": -3.0,
+      "source_label_max": 3.0,
+      "unique_native_scores": 25
+    },
+    "test": {
+      "count": 4643,
+      "frozen_ids_unique": true,
+      "frozen_ids_order_exactly_matches_source": true,
+      "labels_or_features_accessed": false
+    },
+    "temporal_id_cross_split_overlaps": {
+      "train_valid": 0,
+      "train_test": 0,
+      "valid_test": 0
+    }
+  },
+  "sequence_audit": {
+    "source_shapes": {
+      "text": [
+        "N",
+        50,
+        300
+      ],
+      "audio": [
+        "N",
+        50,
+        74
+      ],
+      "vision": [
+        "N",
+        50,
+        35
+      ]
+    },
+    "shared_start_rule": "First timestep containing any nonzero text feature, equivalent to the public loader text.nonzero(as_tuple=False)[0][0].",
+    "train": {
+      "starts_exactly_match_source_leading_padding": true,
+      "leading_padding_steps_sum": 409235,
+      "lengths_equal_50_minus_start_for_all_modalities": true,
+      "interior_zero_text_steps_preserved": true,
+      "interior_zero_text_steps_between_first_and_last_nonzero": 96,
+      "text_sum_zero_records_public_loader_would_drop": 0,
+      "source_nan_count": 0,
+      "source_positive_inf_count": 0,
+      "source_audio_negative_inf_count": 1249,
+      "cache_audio_negative_inf_count_after_replacement": 0,
+      "all_three_modalities_float32_and_finite": true,
+      "all_three_modalities_exactly_match_trimmed_source_float32_suffix": true,
+      "mismatched_records_by_modality": {
+        "text": 0,
+        "audio": 0,
+        "vision": 0
+      },
+      "records_with_nonzero_right_padding": {
+        "text": 0,
+        "audio": 0,
+        "vision": 0
+      }
+    },
+    "valid": {
+      "starts_exactly_match_source_leading_padding": true,
+      "leading_padding_steps_sum": 45472,
+      "lengths_equal_50_minus_start_for_all_modalities": true,
+      "interior_zero_text_steps_preserved": true,
+      "interior_zero_text_steps_between_first_and_last_nonzero": 11,
+      "text_sum_zero_records_public_loader_would_drop": 0,
+      "source_nan_count": 0,
+      "source_positive_inf_count": 0,
+      "source_audio_negative_inf_count": 191,
+      "cache_audio_negative_inf_count_after_replacement": 0,
+      "all_three_modalities_float32_and_finite": true,
+      "all_three_modalities_exactly_match_trimmed_source_float32_suffix": true,
+      "mismatched_records_by_modality": {
+        "text": 0,
+        "audio": 0,
+        "vision": 0
+      },
+      "records_with_nonzero_right_padding": {
+        "text": 0,
+        "audio": 0,
+        "vision": 0
+      }
+    },
+    "interior_zero_count_note": "These are zero timestep counts between the first and last nonzero text timestep. The cohort audit reports records containing interior zeros (93 train, 12 valid), which is a different count."
+  },
+  "cache_completeness": {
+    "metadata_artifact_entry_count": 19,
+    "actual_nonmetadata_file_count_at_audit": 19,
+    "missing_manifest_files": [],
+    "unlisted_files": [],
+    "sha256_mismatch_count": 0,
+    "sha256_mismatches": [],
+    "verified_artifact_sha256": {
+      "train/audio.npy": "dbb3979a563e940ea667f4c69f0d61c275bfeeb389875d12ddbe7a7a5a58d800",
+      "train/audio_lengths.npy": "3bcd5441b5cc238aa6cd475e430cb86907e2b5d93e52794076d16dcce6580c42",
+      "train/ids.json": "9462341653c0684941ff40f2181e181df3b1dc97a8c9051f287757d9646de08c",
+      "train/source_leading_padding.npy": "e78148dbfac6931a3fc028fb1075182700e23c2674292b1b36b813bf9f2b5a7b",
+      "train/targets.npy": "0b1d03ef54373afda5a0e28975f312677510af66ac7e2a4478d0e78dfc7ceb2f",
+      "train/text.npy": "19e85975f56b2b0bfd54660611e1ccc16a0d58a203f03eb2356c4e3ec72d2fce",
+      "train/text_lengths.npy": "3bcd5441b5cc238aa6cd475e430cb86907e2b5d93e52794076d16dcce6580c42",
+      "train/vision.npy": "8ca8b44dd57eed628dbdc0960215ff1807440f12c54e41cd5f5b12350cfe1c75",
+      "train/vision_lengths.npy": "3bcd5441b5cc238aa6cd475e430cb86907e2b5d93e52794076d16dcce6580c42",
+      "valid/audio.npy": "3c982547a51e2559e4f9add5b640d52c9e75c1d7cd001a274976216680bc378b",
+      "valid/audio_lengths.npy": "ff48d6071e945c9d7f229154973c7727a987487112fa5c50c7a34aa88825106c",
+      "valid/ids.json": "20720e9aeb376c1d0606cef494b0034a2c6b340fb3aad6bf479fc1433a333d64",
+      "valid/source_leading_padding.npy": "8f9b96d3a117258a8ad4a52225f19a5de3115847048e3f27d98cfe0ec94ec864",
+      "valid/targets.npy": "69cf6814dd34dee9602f6496a699c9b8b169a74d14602c559b94028a897f90f9",
+      "valid/text.npy": "d2caa01a8cd3556f93e94413034064498c781b0a84b06a827d2affcab0d6cf06",
+      "valid/text_lengths.npy": "ff48d6071e945c9d7f229154973c7727a987487112fa5c50c7a34aa88825106c",
+      "valid/vision.npy": "ef2e9e3cdc88a7fb8abcfdc54f89d46aa8c22c6eeebf23dfc89a986c20877659",
+      "valid/vision_lengths.npy": "ff48d6071e945c9d7f229154973c7727a987487112fa5c50c7a34aa88825106c",
+      "frozen_test_ids.json": "8b84163c00396fba563c6c5dcd61becd90b759b7940fbdd2f31e3778f80f4f90"
+    }
+  },
+  "code_review_note": {
+    "finding": "The original preparation recipe contains project-root-relative references for the adapter and cohort audit document.",
+    "follow_up": "The project owner reports that the recipe is preserved byte-for-byte as scripts/prepare_mosei_author_features_v1.py and a new entry point switches to the project root; the owner also reports it successfully reused the cache from a visualization working directory. This follow-up was not independently re-run by this audit agent.",
+    "recorded_preparation_sha256_matches_metadata": true
+  },
+  "limitations": [
+    "No PyTorch Dataset API execution was performed.",
+    "No model training, GPU work, downloads, test-label inspection, test-feature inspection, or test scoring was performed."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "dataset": "mosei",
+  "cohort": "mosei_multibench_aligned50",
+  "model": "almt_masked",
+  "expected_source_sha256": "31007381c01dd346945ed8a64c7321239de5aaf1ef05bf112e952848a823186d",
+  "cache_dir": "data/feature_cache/mosei_multibench_native_v1",
+  "run_root": "runs/native_mosei_masked_almt_v1",
+  "seeds": [13, 42, 2026],
+  "device": "cuda",
+  "hidden": 256,
+  "dropout": 0.1,
+  "batch_size": 32,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0001,
+  "max_epochs": 80,
+  "patience": 12
+}

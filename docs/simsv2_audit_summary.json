@@ -1,0 +1,28 @@
+{
+  "allow_unresolved_test_labels": true,
+  "dataset": "CH-SIMS-v2.0",
+  "invalid_label_rows": 1,
+  "invalid_test_label_rows": 1,
+  "manifest_generated": true,
+  "manifest_row_count": 4403,
+  "manifest_status": "contains_unresolved_test_labels",
+  "normalized_transcript_cross_split_mapped_conflict_check_complete": false,
+  "normalized_transcript_groups_repeated_across_splits": 4,
+  "normalized_transcript_groups_with_cross_split_mapped_label_conflicts": null,
+  "normalized_transcript_groups_with_cross_split_raw_score_disagreements": 2,
+  "official_mode_split_counts": {
+    "test": 1034,
+    "train": 2722,
+    "valid": 647
+  },
+  "scoring_policy": "never treat null or unresolved labels as correct, incorrect, or silently ignored",
+  "source_csv": "meta.csv",
+  "source_csv_sha256": "be7e482640e7ee24d2070033e1e2aef61ce183199286a8a18b0d6247556bf150",
+  "source_video_groups_overlapping_splits": 129,
+  "speaker_leakage_status": "unknown; no speaker ID column is available in meta.csv",
+  "test_ids_count": 1034,
+  "test_ids_sha256": "70e28fb4e53db9ea8102afb518aeced349db7ae18cce2cffd5a09f112b4cfc01",
+  "test_label_policy": "test rows are excluded from training, tuning, and scoring; unresolved labels are null in opted-in JSONL",
+  "text_normalization": "Unicode NFKC, casefold, collapse whitespace, strip",
+  "train_valid_manifest_generated": true
+}

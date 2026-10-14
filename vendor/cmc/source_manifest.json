@@ -1,0 +1,39 @@
+{
+  "source_repository": "https://github.com/gw-zhong/CMC",
+  "source_commit": "c695f719f9cd0136e52dc2f7a9e75a40aabd37ad",
+  "license": "MIT",
+  "source_files": {
+    "src/models.py": {
+      "sha256": "3d50b86848cef45d2a4e556a7cf8def6597ab95f85e3edbc62beb3404ff88272",
+      "size_bytes": 18699
+    },
+    "src/train_pseudo_pretrain.py": {
+      "sha256": "1f778f32d620cbadde6ac17d07949bd70000697de36e7d1b0142e5ebb289e71d",
+      "size_bytes": 27794
+    },
+    "src/train_run.py": {
+      "sha256": "5a336f5d7defa3481f0f7473b69d803290e7d7a62ca34f33ec15bd98a845a7f7",
+      "size_bytes": 11907
+    },
+    "src/utils.py": {
+      "sha256": "019ed260cc6874cead74a6b48b9670da42c85c33569e851f05342587df117894",
+      "size_bytes": 4399
+    },
+    "dataloader.py": {
+      "sha256": "b1a0c2592cfa32181abead593638bf77b1768ff6755f798a32570e7cbb270553",
+      "size_bytes": 5195
+    },
+    "main.py": {
+      "sha256": "6925b89e23f7dea30595579f1ea0dee5e225ffd4e442dfa47f788f9ef20876d1",
+      "size_bytes": 9334
+    },
+    "README.md": {
+      "sha256": "119e202bde197c75c216a52946be262fb39e702d39869fd1fa210fb55c24b9c7",
+      "size_bytes": 2994
+    },
+    "LICENSE": {
+      "sha256": "408b68308be2cb2b1552c634661fe23da1c0adc4ea04fd340baf9cd2eb29270d",
+      "size_bytes": 1090
+    }
+  }
+}

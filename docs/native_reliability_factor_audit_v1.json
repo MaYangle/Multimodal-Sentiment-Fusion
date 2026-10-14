@@ -1,0 +1,161 @@
+{
+  "scope": "validation selection factor experiment; not final test",
+  "test_evaluated": false,
+  "all_12_prediction_audits_passed": true,
+  "same_feature_bytes": true,
+  "same_parameter_count": 496143,
+  "suite_sha256": "b6074f084f60aa6ed67197f19d538b68cd3d5c97a80a015fc2d190639277596f",
+  "summary": {
+    "S0G0": {
+      "MAE": {
+        "mean": 0.4397120277086894,
+        "sample_sd": 0.002089168530683008
+      },
+      "Corr": {
+        "mean": 0.6161255541835654,
+        "sample_sd": 0.0018783710322032147
+      },
+      "Mult_acc_2": {
+        "mean": 0.7779495105615662,
+        "sample_sd": 0.003217412673054295
+      },
+      "uncertainty": {
+        "density_NLL_mean": 1.3726725590906195,
+        "coverage90_mean": 0.5667181865018032,
+        "width90_mean": 0.9129055368711344,
+        "error_vs_variance_spearman_mean": 0.26780329767891425
+      },
+      "epochs": [
+        45,
+        41,
+        51
+      ],
+      "total_optimizer_updates": 11782,
+      "total_loop_seconds": 111.56334410005365
+    },
+    "S0G1": {
+      "MAE": {
+        "mean": 0.43625639875729877,
+        "sample_sd": 0.0036247747094194454
+      },
+      "Corr": {
+        "mean": 0.6075082018418952,
+        "sample_sd": 0.0030886294150954236
+      },
+      "Mult_acc_2": {
+        "mean": 0.7635239567233385,
+        "sample_sd": 0.010135144550698616
+      },
+      "uncertainty": {
+        "density_NLL_mean": 0.8459324429114913,
+        "coverage90_mean": 0.8031942297784648,
+        "width90_mean": 1.4044647528551504,
+        "error_vs_variance_spearman_mean": 0.1884994091689882
+      },
+      "epochs": [
+        17,
+        19,
+        16
+      ],
+      "total_optimizer_updates": 4472,
+      "total_loop_seconds": 41.5233736000373
+    },
+    "S1G0": {
+      "MAE": {
+        "mean": 0.4392622212568919,
+        "sample_sd": 0.002563488481414795
+      },
+      "Corr": {
+        "mean": 0.6164463804280373,
+        "sample_sd": 0.0029246859612490407
+      },
+      "Mult_acc_2": {
+        "mean": 0.7753735188047397,
+        "sample_sd": 0.003569398882161508
+      },
+      "uncertainty": {
+        "density_NLL_mean": 1.386279648031195,
+        "coverage90_mean": 0.5620814013395158,
+        "width90_mean": 0.9046186976400131,
+        "error_vs_variance_spearman_mean": 0.2668680071851211
+      },
+      "epochs": [
+        45,
+        48,
+        51
+      ],
+      "total_optimizer_updates": 12384,
+      "total_loop_seconds": 129.25044069986325
+    },
+    "S1G1": {
+      "MAE": {
+        "mean": 0.4359833598136902,
+        "sample_sd": 0.0035177748976799594
+      },
+      "Corr": {
+        "mean": 0.6058885012491633,
+        "sample_sd": 0.003909445207224367
+      },
+      "Mult_acc_2": {
+        "mean": 0.7624935600206079,
+        "sample_sd": 0.007779324508264558
+      },
+      "uncertainty": {
+        "density_NLL_mean": 0.8344820613945837,
+        "coverage90_mean": 0.8232869654817104,
+        "width90_mean": 1.464098318669765,
+        "error_vs_variance_spearman_mean": 0.1539154648685441
+      },
+      "epochs": [
+        17,
+        16,
+        16
+      ],
+      "total_optimizer_updates": 4214,
+      "total_loop_seconds": 43.9809549999336
+    }
+  },
+  "paired_seed_MAE_effects": [
+    {
+      "seed": 13,
+      "dynamic_minus_uniform_without_aux": -0.006054222583770752,
+      "dynamic_minus_uniform_with_aux": -0.006878256797790527,
+      "interaction": -0.0008240342140197754,
+      "aux_minus_noaux_uniform": 0.0002821385860443115,
+      "aux_minus_noaux_dynamic": -0.0005418956279754639
+    },
+    {
+      "seed": 42,
+      "dynamic_minus_uniform_without_aux": -0.00010353326797485352,
+      "dynamic_minus_uniform_with_aux": 0.00042134523391723633,
+      "interaction": 0.0005248785018920898,
+      "aux_minus_noaux_uniform": -0.000834733247756958,
+      "aux_minus_noaux_dynamic": -0.00030985474586486816
+    },
+    {
+      "seed": 2026,
+      "dynamic_minus_uniform_without_aux": -0.0042091310024261475,
+      "dynamic_minus_uniform_with_aux": -0.0033796727657318115,
+      "interaction": 0.0008294582366943359,
+      "aux_minus_noaux_uniform": -0.0007968246936798096,
+      "aux_minus_noaux_dynamic": 3.263354301452637e-05
+    }
+  ],
+  "effect_direction": "negative difference means lower MAE",
+  "existing_point_baselines": {
+    "text": {
+      "mean": 0.43730901678403217,
+      "sample_sd": 0.002435104256816992
+    },
+    "early_fusion": {
+      "mean": 0.42206979791323346,
+      "sample_sd": 0.000735894791847424
+    },
+    "almt": {
+      "mean": 0.42708630363146466,
+      "sample_sd": 0.006546509789931172
+    }
+  },
+  "promoted": false,
+  "interpretation": "A factor effect alone does not establish novelty or independent-test gains; compare the simple-fusion baseline and stress/calibration controls before promotion."
+}

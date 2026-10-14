@@ -1,0 +1,116 @@
+{
+  "scope": "small biased raw-prefix pipeline pilot; NOT a formal benchmark or latest-method comparison",
+  "train_count": 339,
+  "valid_count": 43,
+  "seed": 13,
+  "validation_metrics": {
+    "accuracy": 0.5348837209302325,
+    "macro_f1": 0.4497387669801462,
+    "confusion_matrix": [
+      [
+        2,
+        2,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        7,
+        0,
+        4,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        4,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        8,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        6
+      ]
+    ],
+    "per_class": [
+      {
+        "class_index": 0,
+        "class_name": "SNEG",
+        "precision": 0.3333333333333333,
+        "recall": 0.4,
+        "f1": 0.3636363636363636,
+        "support": 5
+      },
+      {
+        "class_index": 1,
+        "class_name": "WNEG",
+        "precision": 0.7777777777777778,
+        "recall": 0.5833333333333334,
+        "f1": 0.6666666666666666,
+        "support": 12
+      },
+      {
+        "class_index": 2,
+        "class_name": "NEUT",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 7
+      },
+      {
+        "class_index": 3,
+        "class_name": "WPOS",
+        "precision": 0.4444444444444444,
+        "recall": 0.7272727272727273,
+        "f1": 0.5517241379310345,
+        "support": 11
+      },
+      {
+        "class_index": 4,
+        "class_name": "SPOS",
+        "precision": 0.6,
+        "recall": 0.75,
+        "f1": 0.6666666666666665,
+        "support": 8
+      }
+    ],
+    "n_samples": 43
+  },
+  "train_epochs": 16,
+  "train_valid_loop_seconds": 16.01737759999378,
+  "train_peak_gpu_bytes": 557619200,
+  "provided_transcript_raw_inference_matches_saved_validation": true,
+  "max_allowed_probability_difference": 5e-05,
+  "input_videos": 2,
+  "prediction_rows": {
+    "publication_omitted": true
+  },
+  "low_confidence_rows": 4,
+  "test_scored": false,
+  "inference_initialization_seconds": 6.279726800006756,
+  "predictions": {
+    "publication_omitted": true
+  },
+  "checkpoint_sha256": "230b7def5bcf9b50457ecf7c37a1434bd92a4e9173accb9c9766a20a9bdd60a1",
+  "publication_redaction": {
+    "full_local_report_sha256": "681dfcba9901b5b5cdb10dcf30b3306435068cc5d40a94f1340203809e70e5db",
+    "removed_path_count": 2,
+    "removed_paths": [
+      "/prediction_rows",
+      "/predictions"
+    ],
+    "remaining_removed_paths_list_truncated": false,
+    "reason": "Exclude per-sample dataset records, long raw arrays and response/download capabilities; retain aggregate research evidence."
+  }
+}

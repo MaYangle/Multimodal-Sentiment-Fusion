@@ -1,0 +1,2837 @@
+{
+  "audit": "independent-cpu-numpy-native-timed-moment-audit-v1",
+  "scope": "Official CH-SIMS v2 TRAIN/VALID development evidence; no TEST targets, predictions, or scores",
+  "matrix_path": "D:\\MYL\\JevAffect\\runs\\native_timed_moments_v1\\matrix.json",
+  "registered_config_path": "D:\\MYL\\JevAffect\\configs\\native_timed_moments_v1.json",
+  "report_path": "D:\\MYL\\JevAffect\\docs\\native_timed_moment_audit_20261014.json",
+  "complete": true,
+  "promotion_gate_passed": false,
+  "numpy_replay_tolerance": 1e-05,
+  "bootstrap": {
+    "replicates": 5000,
+    "seed": 20261014,
+    "unit": "whole VALID source video",
+    "scope": "conditional selected-model development interval"
+  },
+  "checks": [
+    {
+      "name": "registered plan and config hashes",
+      "passed": true,
+      "detail": "Config and frozen study plan must be readable and hash-bound"
+    },
+    {
+      "name": "registered comparison and intervention gates",
+      "passed": true,
+      "detail": "Frozen plan must state the source bootstrap, fixed seed and paired permutation intervention"
+    },
+    {
+      "name": "pinned official author CSV SHA256",
+      "passed": true,
+      "detail": "actual=be7e482640e7ee24d2070033e1e2aef61ce183199286a8a18b0d6247556bf150; expected=be7e482640e7ee24d2070033e1e2aef61ce183199286a8a18b0d6247556bf150"
+    },
+    {
+      "name": "complete TRAIN/VALID author ID counts",
+      "passed": true,
+      "detail": "found {'train': 2722, 'valid': 647}"
+    },
+    {
+      "name": "registered study config contract",
+      "passed": true,
+      "detail": "Config must retain the registered dataset, cache, seeds, model shape and training budget"
+    },
+    {
+      "name": "timed-grid cache metadata and split scope",
+      "passed": true,
+      "detail": "Timed cache must be the pinned complete TRAIN/VALID grid only"
+    },
+    {
+      "name": "pooled normalizer provenance and TRAIN fit",
+      "passed": true,
+      "detail": "Pooled coordinates must be fitted on all 2,722 official TRAIN clips"
+    },
+    {
+      "name": "all timed-grid artifact hashes",
+      "passed": true,
+      "detail": "verified 20/20 declared hashes"
+    },
+    {
+      "name": "all pooled-normalizer artifact hashes",
+      "passed": true,
+      "detail": "verified 17/17 declared hashes"
+    },
+    {
+      "name": "pooled normalizer JSON SHA256",
+      "passed": true,
+      "detail": "actual=56bb0bf8387deb740d195c87972d80aaee4f2def3dab2892e61fed40330e6f84; declared=56bb0bf8387deb740d195c87972d80aaee4f2def3dab2892e61fed40330e6f84"
+    },
+    {
+      "name": "normalization and timed-grid common source cache",
+      "passed": true,
+      "detail": "timed=D:\\MYL\\JevAffect\\data\\feature_cache\\simsv2_full_macbert_raw_av; pooled=D:\\MYL\\JevAffect\\data\\feature_cache\\simsv2_full_macbert_raw_av"
+    },
+    {
+      "name": "timed-grid train source artifact hashes",
+      "passed": true,
+      "detail": "verified 12/12 declared hashes"
+    },
+    {
+      "name": "timed-grid valid source artifact hashes",
+      "passed": true,
+      "detail": "verified 12/12 declared hashes"
+    },
+    {
+      "name": "pooled normalizer train source artifact hashes",
+      "passed": true,
+      "detail": "verified 8/8 declared hashes"
+    },
+    {
+      "name": "pooled normalizer valid source artifact hashes",
+      "passed": true,
+      "detail": "verified 8/8 declared hashes"
+    },
+    {
+      "name": "raw source cache artifact hashes",
+      "passed": true,
+      "detail": "verified 38/38 declared hashes"
+    },
+    {
+      "name": "timed-grid and pooled-normalizer producer/reader hashes",
+      "passed": true,
+      "detail": "Producer, reader and normalization implementation hashes match current files"
+    },
+    {
+      "name": "timed-grid train: shapes, types, IDs and author targets",
+      "passed": true,
+      "detail": "expected 2722 official rows with T/A/V dimensions {'text': 768, 'audio': 768, 'vision': 384}"
+    },
+    {
+      "name": "timed-grid train: pair eligibility and increasing query times",
+      "passed": true,
+      "detail": "valid pairs=2715; invalid rows retain global fallback"
+    },
+    {
+      "name": "timed-grid valid: shapes, types, IDs and author targets",
+      "passed": true,
+      "detail": "expected 647 official rows with T/A/V dimensions {'text': 768, 'audio': 768, 'vision': 384}"
+    },
+    {
+      "name": "timed-grid valid: pair eligibility and increasing query times",
+      "passed": true,
+      "detail": "valid pairs=646; invalid rows retain global fallback"
+    },
+    {
+      "name": "timed-grid VALID has no TEST inputs",
+      "passed": true,
+      "detail": "The audit consumes only the stored official TRAIN and VALID splits"
+    },
+    {
+      "name": "timed-grid split artifact completeness",
+      "passed": true,
+      "detail": "Each split must contain IDs, labels, globals, four-row grids, masks and times"
+    },
+    {
+      "name": "pooled standardized cache matches independently transformed timed globals",
+      "passed": true,
+      "detail": "Pooled cache IDs/labels and all three transformed global modalities must align with the raw timed cache"
+    },
+    {
+      "name": "TRAIN: TRAIN-only mean and population-STD recomputation",
+      "passed": true,
+      "detail": "Saved mean/scale must exactly match independent float64 TRAIN fit with float32 output and fit indices"
+    },
+    {
+      "name": "canonical no-overlap pair coverage",
+      "passed": true,
+      "detail": "Use the frozen pair counts and retain the corpus physical-synchrony qualification"
+    },
+    {
+      "name": "12-fit formal matrix completion",
+      "passed": true,
+      "detail": "matrix_complete=True; unique fits=12; expected 12"
+    },
+    {
+      "name": "registered seeded initialization policy",
+      "passed": true,
+      "detail": "Hashed trainer must reseed Python, NumPy and Torch before constructing the same case-independent module, and seed the train loader"
+    },
+    {
+      "name": "case-matched seeded model initialization",
+      "passed": true,
+      "detail": "Reconstructing each registered case under the same seed yields identical projection and head initial weights"
+    },
+    {
+      "name": "static_product/seed_13: matrix matches result artifact",
+      "passed": true,
+      "detail": "Formal matrix row must exactly match the case/seed result.json"
+    },
+    {
+      "name": "static_product/seed_13: run identity binds registered config, seed, author CSV, CUDA and parameter budget",
+      "passed": true,
+      "detail": "Checkpoint identity must match the frozen formal config and full native run"
+    },
+    {
+      "name": "static_product/seed_13: complete non-smoke result",
+      "passed": true,
+      "detail": "Formal fit must use the complete TRAIN/VALID splits and no TEST export"
+    },
+    {
+      "name": "static_product/seed_13: result artifact SHA256 bindings",
+      "passed": true,
+      "detail": "Reported best, last, predictions and identity hashes must match disk"
+    },
+    {
+      "name": "static_product/seed_13: train timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "static_product/seed_13: valid timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "static_product/seed_13: implementation hashes",
+      "passed": true,
+      "detail": "verified 9/9 declared hashes"
+    },
+    {
+      "name": "static_product/seed_13: timed-cache and normalizer identity provenance",
+      "passed": true,
+      "detail": "Identity must bind current cache metadata, pooled normalization metadata and their source provenance"
+    },
+    {
+      "name": "static_product/seed_13: saved VALID IDs and targets",
+      "passed": true,
+      "detail": "Ordered IDs, original author M targets and finite predictions must match the canonical VALID split"
+    },
+    {
+      "name": "static_product/seed_13: result and saved history agree",
+      "passed": true,
+      "detail": "Result, history and prediction artifacts must be present for the selected run"
+    },
+    {
+      "name": "static_product/seed_13: first-minimum MAE selection and early-stop accounting",
+      "passed": true,
+      "detail": "Selected epoch 6; history has 18 epochs, final stale count 12"
+    },
+    {
+      "name": "static_product/seed_13: contiguous epoch history",
+      "passed": true,
+      "detail": "History epoch numbers must be the full sequential training trace"
+    },
+    {
+      "name": "static_product/seed_13: scheduler learning-rate trace",
+      "passed": true,
+      "detail": "Independent ReduceLROnPlateau replay must match each recorded epoch learning rate"
+    },
+    {
+      "name": "static_product/seed_13: selected model shape and 494101 parameters",
+      "passed": true,
+      "detail": "Saved selected model must match the frozen 1952-to-234 head and rank-32 projections"
+    },
+    {
+      "name": "static_product/seed_13: best/last checkpoint identity and selected epoch",
+      "passed": true,
+      "detail": "Both checkpoints must bind the run identity and the selected/last epoch"
+    },
+    {
+      "name": "static_product/seed_13: last optimizer, scheduler and all RNG states",
+      "passed": true,
+      "detail": "Last checkpoint must preserve AdamW moments, plateau scheduler state, CPU/NumPy/Python/loader/CUDA RNG"
+    },
+    {
+      "name": "static_product/seed_13: registered training budget",
+      "passed": true,
+      "detail": "Identity training budget must match the pre-registered contract"
+    },
+    {
+      "name": "static_product/seed_13: independent clipped native MAE/Corr/Acc2",
+      "passed": true,
+      "detail": "NumPy recomputation from saved VALID outputs must match clipped author metrics"
+    },
+    {
+      "name": "static_product/seed_13: selected checkpoint native MAE is first minimum",
+      "passed": true,
+      "detail": "Saved selected predictions must reproduce the first minimum validation native MAE"
+    },
+    {
+      "name": "static_product/seed_13: independent NumPy and Torch CPU replay",
+      "passed": true,
+      "detail": "maximum |NumPy-saved|=4.25e-07; maximum |TorchCPU-saved|=3.87e-07; tolerance=1e-05"
+    },
+    {
+      "name": "static_product/seed_42: matrix matches result artifact",
+      "passed": true,
+      "detail": "Formal matrix row must exactly match the case/seed result.json"
+    },
+    {
+      "name": "static_product/seed_42: run identity binds registered config, seed, author CSV, CUDA and parameter budget",
+      "passed": true,
+      "detail": "Checkpoint identity must match the frozen formal config and full native run"
+    },
+    {
+      "name": "static_product/seed_42: complete non-smoke result",
+      "passed": true,
+      "detail": "Formal fit must use the complete TRAIN/VALID splits and no TEST export"
+    },
+    {
+      "name": "static_product/seed_42: result artifact SHA256 bindings",
+      "passed": true,
+      "detail": "Reported best, last, predictions and identity hashes must match disk"
+    },
+    {
+      "name": "static_product/seed_42: train timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "static_product/seed_42: valid timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "static_product/seed_42: implementation hashes",
+      "passed": true,
+      "detail": "verified 9/9 declared hashes"
+    },
+    {
+      "name": "static_product/seed_42: timed-cache and normalizer identity provenance",
+      "passed": true,
+      "detail": "Identity must bind current cache metadata, pooled normalization metadata and their source provenance"
+    },
+    {
+      "name": "static_product/seed_42: saved VALID IDs and targets",
+      "passed": true,
+      "detail": "Ordered IDs, original author M targets and finite predictions must match the canonical VALID split"
+    },
+    {
+      "name": "static_product/seed_42: result and saved history agree",
+      "passed": true,
+      "detail": "Result, history and prediction artifacts must be present for the selected run"
+    },
+    {
+      "name": "static_product/seed_42: first-minimum MAE selection and early-stop accounting",
+      "passed": true,
+      "detail": "Selected epoch 3; history has 15 epochs, final stale count 12"
+    },
+    {
+      "name": "static_product/seed_42: contiguous epoch history",
+      "passed": true,
+      "detail": "History epoch numbers must be the full sequential training trace"
+    },
+    {
+      "name": "static_product/seed_42: scheduler learning-rate trace",
+      "passed": true,
+      "detail": "Independent ReduceLROnPlateau replay must match each recorded epoch learning rate"
+    },
+    {
+      "name": "static_product/seed_42: selected model shape and 494101 parameters",
+      "passed": true,
+      "detail": "Saved selected model must match the frozen 1952-to-234 head and rank-32 projections"
+    },
+    {
+      "name": "static_product/seed_42: best/last checkpoint identity and selected epoch",
+      "passed": true,
+      "detail": "Both checkpoints must bind the run identity and the selected/last epoch"
+    },
+    {
+      "name": "static_product/seed_42: last optimizer, scheduler and all RNG states",
+      "passed": true,
+      "detail": "Last checkpoint must preserve AdamW moments, plateau scheduler state, CPU/NumPy/Python/loader/CUDA RNG"
+    },
+    {
+      "name": "static_product/seed_42: registered training budget",
+      "passed": true,
+      "detail": "Identity training budget must match the pre-registered contract"
+    },
+    {
+      "name": "static_product/seed_42: independent clipped native MAE/Corr/Acc2",
+      "passed": true,
+      "detail": "NumPy recomputation from saved VALID outputs must match clipped author metrics"
+    },
+    {
+      "name": "static_product/seed_42: selected checkpoint native MAE is first minimum",
+      "passed": true,
+      "detail": "Saved selected predictions must reproduce the first minimum validation native MAE"
+    },
+    {
+      "name": "static_product/seed_42: independent NumPy and Torch CPU replay",
+      "passed": true,
+      "detail": "maximum |NumPy-saved|=3.61e-07; maximum |TorchCPU-saved|=4.25e-07; tolerance=1e-05"
+    },
+    {
+      "name": "static_product/seed_2026: matrix matches result artifact",
+      "passed": true,
+      "detail": "Formal matrix row must exactly match the case/seed result.json"
+    },
+    {
+      "name": "static_product/seed_2026: run identity binds registered config, seed, author CSV, CUDA and parameter budget",
+      "passed": true,
+      "detail": "Checkpoint identity must match the frozen formal config and full native run"
+    },
+    {
+      "name": "static_product/seed_2026: complete non-smoke result",
+      "passed": true,
+      "detail": "Formal fit must use the complete TRAIN/VALID splits and no TEST export"
+    },
+    {
+      "name": "static_product/seed_2026: result artifact SHA256 bindings",
+      "passed": true,
+      "detail": "Reported best, last, predictions and identity hashes must match disk"
+    },
+    {
+      "name": "static_product/seed_2026: train timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "static_product/seed_2026: valid timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "static_product/seed_2026: implementation hashes",
+      "passed": true,
+      "detail": "verified 9/9 declared hashes"
+    },
+    {
+      "name": "static_product/seed_2026: timed-cache and normalizer identity provenance",
+      "passed": true,
+      "detail": "Identity must bind current cache metadata, pooled normalization metadata and their source provenance"
+    },
+    {
+      "name": "static_product/seed_2026: saved VALID IDs and targets",
+      "passed": true,
+      "detail": "Ordered IDs, original author M targets and finite predictions must match the canonical VALID split"
+    },
+    {
+      "name": "static_product/seed_2026: result and saved history agree",
+      "passed": true,
+      "detail": "Result, history and prediction artifacts must be present for the selected run"
+    },
+    {
+      "name": "static_product/seed_2026: first-minimum MAE selection and early-stop accounting",
+      "passed": true,
+      "detail": "Selected epoch 4; history has 16 epochs, final stale count 12"
+    },
+    {
+      "name": "static_product/seed_2026: contiguous epoch history",
+      "passed": true,
+      "detail": "History epoch numbers must be the full sequential training trace"
+    },
+    {
+      "name": "static_product/seed_2026: scheduler learning-rate trace",
+      "passed": true,
+      "detail": "Independent ReduceLROnPlateau replay must match each recorded epoch learning rate"
+    },
+    {
+      "name": "static_product/seed_2026: selected model shape and 494101 parameters",
+      "passed": true,
+      "detail": "Saved selected model must match the frozen 1952-to-234 head and rank-32 projections"
+    },
+    {
+      "name": "static_product/seed_2026: best/last checkpoint identity and selected epoch",
+      "passed": true,
+      "detail": "Both checkpoints must bind the run identity and the selected/last epoch"
+    },
+    {
+      "name": "static_product/seed_2026: last optimizer, scheduler and all RNG states",
+      "passed": true,
+      "detail": "Last checkpoint must preserve AdamW moments, plateau scheduler state, CPU/NumPy/Python/loader/CUDA RNG"
+    },
+    {
+      "name": "static_product/seed_2026: registered training budget",
+      "passed": true,
+      "detail": "Identity training budget must match the pre-registered contract"
+    },
+    {
+      "name": "static_product/seed_2026: independent clipped native MAE/Corr/Acc2",
+      "passed": true,
+      "detail": "NumPy recomputation from saved VALID outputs must match clipped author metrics"
+    },
+    {
+      "name": "static_product/seed_2026: selected checkpoint native MAE is first minimum",
+      "passed": true,
+      "detail": "Saved selected predictions must reproduce the first minimum validation native MAE"
+    },
+    {
+      "name": "static_product/seed_2026: independent NumPy and Torch CPU replay",
+      "passed": true,
+      "detail": "maximum |NumPy-saved|=3.83e-07; maximum |TorchCPU-saved|=4.77e-07; tolerance=1e-05"
+    },
+    {
+      "name": "marginal_variance/seed_13: matrix matches result artifact",
+      "passed": true,
+      "detail": "Formal matrix row must exactly match the case/seed result.json"
+    },
+    {
+      "name": "marginal_variance/seed_13: run identity binds registered config, seed, author CSV, CUDA and parameter budget",
+      "passed": true,
+      "detail": "Checkpoint identity must match the frozen formal config and full native run"
+    },
+    {
+      "name": "marginal_variance/seed_13: complete non-smoke result",
+      "passed": true,
+      "detail": "Formal fit must use the complete TRAIN/VALID splits and no TEST export"
+    },
+    {
+      "name": "marginal_variance/seed_13: result artifact SHA256 bindings",
+      "passed": true,
+      "detail": "Reported best, last, predictions and identity hashes must match disk"
+    },
+    {
+      "name": "marginal_variance/seed_13: train timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "marginal_variance/seed_13: valid timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "marginal_variance/seed_13: implementation hashes",
+      "passed": true,
+      "detail": "verified 9/9 declared hashes"
+    },
+    {
+      "name": "marginal_variance/seed_13: timed-cache and normalizer identity provenance",
+      "passed": true,
+      "detail": "Identity must bind current cache metadata, pooled normalization metadata and their source provenance"
+    },
+    {
+      "name": "marginal_variance/seed_13: saved VALID IDs and targets",
+      "passed": true,
+      "detail": "Ordered IDs, original author M targets and finite predictions must match the canonical VALID split"
+    },
+    {
+      "name": "marginal_variance/seed_13: result and saved history agree",
+      "passed": true,
+      "detail": "Result, history and prediction artifacts must be present for the selected run"
+    },
+    {
+      "name": "marginal_variance/seed_13: first-minimum MAE selection and early-stop accounting",
+      "passed": true,
+      "detail": "Selected epoch 11; history has 23 epochs, final stale count 12"
+    },
+    {
+      "name": "marginal_variance/seed_13: contiguous epoch history",
+      "passed": true,
+      "detail": "History epoch numbers must be the full sequential training trace"
+    },
+    {
+      "name": "marginal_variance/seed_13: scheduler learning-rate trace",
+      "passed": true,
+      "detail": "Independent ReduceLROnPlateau replay must match each recorded epoch learning rate"
+    },
+    {
+      "name": "marginal_variance/seed_13: selected model shape and 494101 parameters",
+      "passed": true,
+      "detail": "Saved selected model must match the frozen 1952-to-234 head and rank-32 projections"
+    },
+    {
+      "name": "marginal_variance/seed_13: best/last checkpoint identity and selected epoch",
+      "passed": true,
+      "detail": "Both checkpoints must bind the run identity and the selected/last epoch"
+    },
+    {
+      "name": "marginal_variance/seed_13: last optimizer, scheduler and all RNG states",
+      "passed": true,
+      "detail": "Last checkpoint must preserve AdamW moments, plateau scheduler state, CPU/NumPy/Python/loader/CUDA RNG"
+    },
+    {
+      "name": "marginal_variance/seed_13: registered training budget",
+      "passed": true,
+      "detail": "Identity training budget must match the pre-registered contract"
+    },
+    {
+      "name": "marginal_variance/seed_13: independent clipped native MAE/Corr/Acc2",
+      "passed": true,
+      "detail": "NumPy recomputation from saved VALID outputs must match clipped author metrics"
+    },
+    {
+      "name": "marginal_variance/seed_13: selected checkpoint native MAE is first minimum",
+      "passed": true,
+      "detail": "Saved selected predictions must reproduce the first minimum validation native MAE"
+    },
+    {
+      "name": "marginal_variance/seed_13: independent NumPy and Torch CPU replay",
+      "passed": true,
+      "detail": "maximum |NumPy-saved|=3.06e-07; maximum |TorchCPU-saved|=3.58e-07; tolerance=1e-05"
+    },
+    {
+      "name": "marginal_variance/seed_42: matrix matches result artifact",
+      "passed": true,
+      "detail": "Formal matrix row must exactly match the case/seed result.json"
+    },
+    {
+      "name": "marginal_variance/seed_42: run identity binds registered config, seed, author CSV, CUDA and parameter budget",
+      "passed": true,
+      "detail": "Checkpoint identity must match the frozen formal config and full native run"
+    },
+    {
+      "name": "marginal_variance/seed_42: complete non-smoke result",
+      "passed": true,
+      "detail": "Formal fit must use the complete TRAIN/VALID splits and no TEST export"
+    },
+    {
+      "name": "marginal_variance/seed_42: result artifact SHA256 bindings",
+      "passed": true,
+      "detail": "Reported best, last, predictions and identity hashes must match disk"
+    },
+    {
+      "name": "marginal_variance/seed_42: train timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "marginal_variance/seed_42: valid timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "marginal_variance/seed_42: implementation hashes",
+      "passed": true,
+      "detail": "verified 9/9 declared hashes"
+    },
+    {
+      "name": "marginal_variance/seed_42: timed-cache and normalizer identity provenance",
+      "passed": true,
+      "detail": "Identity must bind current cache metadata, pooled normalization metadata and their source provenance"
+    },
+    {
+      "name": "marginal_variance/seed_42: saved VALID IDs and targets",
+      "passed": true,
+      "detail": "Ordered IDs, original author M targets and finite predictions must match the canonical VALID split"
+    },
+    {
+      "name": "marginal_variance/seed_42: result and saved history agree",
+      "passed": true,
+      "detail": "Result, history and prediction artifacts must be present for the selected run"
+    },
+    {
+      "name": "marginal_variance/seed_42: first-minimum MAE selection and early-stop accounting",
+      "passed": true,
+      "detail": "Selected epoch 2; history has 14 epochs, final stale count 12"
+    },
+    {
+      "name": "marginal_variance/seed_42: contiguous epoch history",
+      "passed": true,
+      "detail": "History epoch numbers must be the full sequential training trace"
+    },
+    {
+      "name": "marginal_variance/seed_42: scheduler learning-rate trace",
+      "passed": true,
+      "detail": "Independent ReduceLROnPlateau replay must match each recorded epoch learning rate"
+    },
+    {
+      "name": "marginal_variance/seed_42: selected model shape and 494101 parameters",
+      "passed": true,
+      "detail": "Saved selected model must match the frozen 1952-to-234 head and rank-32 projections"
+    },
+    {
+      "name": "marginal_variance/seed_42: best/last checkpoint identity and selected epoch",
+      "passed": true,
+      "detail": "Both checkpoints must bind the run identity and the selected/last epoch"
+    },
+    {
+      "name": "marginal_variance/seed_42: last optimizer, scheduler and all RNG states",
+      "passed": true,
+      "detail": "Last checkpoint must preserve AdamW moments, plateau scheduler state, CPU/NumPy/Python/loader/CUDA RNG"
+    },
+    {
+      "name": "marginal_variance/seed_42: registered training budget",
+      "passed": true,
+      "detail": "Identity training budget must match the pre-registered contract"
+    },
+    {
+      "name": "marginal_variance/seed_42: independent clipped native MAE/Corr/Acc2",
+      "passed": true,
+      "detail": "NumPy recomputation from saved VALID outputs must match clipped author metrics"
+    },
+    {
+      "name": "marginal_variance/seed_42: selected checkpoint native MAE is first minimum",
+      "passed": true,
+      "detail": "Saved selected predictions must reproduce the first minimum validation native MAE"
+    },
+    {
+      "name": "marginal_variance/seed_42: independent NumPy and Torch CPU replay",
+      "passed": true,
+      "detail": "maximum |NumPy-saved|=2.81e-07; maximum |TorchCPU-saved|=3.87e-07; tolerance=1e-05"
+    },
+    {
+      "name": "marginal_variance/seed_2026: matrix matches result artifact",
+      "passed": true,
+      "detail": "Formal matrix row must exactly match the case/seed result.json"
+    },
+    {
+      "name": "marginal_variance/seed_2026: run identity binds registered config, seed, author CSV, CUDA and parameter budget",
+      "passed": true,
+      "detail": "Checkpoint identity must match the frozen formal config and full native run"
+    },
+    {
+      "name": "marginal_variance/seed_2026: complete non-smoke result",
+      "passed": true,
+      "detail": "Formal fit must use the complete TRAIN/VALID splits and no TEST export"
+    },
+    {
+      "name": "marginal_variance/seed_2026: result artifact SHA256 bindings",
+      "passed": true,
+      "detail": "Reported best, last, predictions and identity hashes must match disk"
+    },
+    {
+      "name": "marginal_variance/seed_2026: train timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "marginal_variance/seed_2026: valid timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "marginal_variance/seed_2026: implementation hashes",
+      "passed": true,
+      "detail": "verified 9/9 declared hashes"
+    },
+    {
+      "name": "marginal_variance/seed_2026: timed-cache and normalizer identity provenance",
+      "passed": true,
+      "detail": "Identity must bind current cache metadata, pooled normalization metadata and their source provenance"
+    },
+    {
+      "name": "marginal_variance/seed_2026: saved VALID IDs and targets",
+      "passed": true,
+      "detail": "Ordered IDs, original author M targets and finite predictions must match the canonical VALID split"
+    },
+    {
+      "name": "marginal_variance/seed_2026: result and saved history agree",
+      "passed": true,
+      "detail": "Result, history and prediction artifacts must be present for the selected run"
+    },
+    {
+      "name": "marginal_variance/seed_2026: first-minimum MAE selection and early-stop accounting",
+      "passed": true,
+      "detail": "Selected epoch 5; history has 17 epochs, final stale count 12"
+    },
+    {
+      "name": "marginal_variance/seed_2026: contiguous epoch history",
+      "passed": true,
+      "detail": "History epoch numbers must be the full sequential training trace"
+    },
+    {
+      "name": "marginal_variance/seed_2026: scheduler learning-rate trace",
+      "passed": true,
+      "detail": "Independent ReduceLROnPlateau replay must match each recorded epoch learning rate"
+    },
+    {
+      "name": "marginal_variance/seed_2026: selected model shape and 494101 parameters",
+      "passed": true,
+      "detail": "Saved selected model must match the frozen 1952-to-234 head and rank-32 projections"
+    },
+    {
+      "name": "marginal_variance/seed_2026: best/last checkpoint identity and selected epoch",
+      "passed": true,
+      "detail": "Both checkpoints must bind the run identity and the selected/last epoch"
+    },
+    {
+      "name": "marginal_variance/seed_2026: last optimizer, scheduler and all RNG states",
+      "passed": true,
+      "detail": "Last checkpoint must preserve AdamW moments, plateau scheduler state, CPU/NumPy/Python/loader/CUDA RNG"
+    },
+    {
+      "name": "marginal_variance/seed_2026: registered training budget",
+      "passed": true,
+      "detail": "Identity training budget must match the pre-registered contract"
+    },
+    {
+      "name": "marginal_variance/seed_2026: independent clipped native MAE/Corr/Acc2",
+      "passed": true,
+      "detail": "NumPy recomputation from saved VALID outputs must match clipped author metrics"
+    },
+    {
+      "name": "marginal_variance/seed_2026: selected checkpoint native MAE is first minimum",
+      "passed": true,
+      "detail": "Saved selected predictions must reproduce the first minimum validation native MAE"
+    },
+    {
+      "name": "marginal_variance/seed_2026: independent NumPy and Torch CPU replay",
+      "passed": true,
+      "detail": "maximum |NumPy-saved|=2.9e-07; maximum |TorchCPU-saved|=3.58e-07; tolerance=1e-05"
+    },
+    {
+      "name": "paired_cov/seed_13: matrix matches result artifact",
+      "passed": true,
+      "detail": "Formal matrix row must exactly match the case/seed result.json"
+    },
+    {
+      "name": "paired_cov/seed_13: run identity binds registered config, seed, author CSV, CUDA and parameter budget",
+      "passed": true,
+      "detail": "Checkpoint identity must match the frozen formal config and full native run"
+    },
+    {
+      "name": "paired_cov/seed_13: complete non-smoke result",
+      "passed": true,
+      "detail": "Formal fit must use the complete TRAIN/VALID splits and no TEST export"
+    },
+    {
+      "name": "paired_cov/seed_13: result artifact SHA256 bindings",
+      "passed": true,
+      "detail": "Reported best, last, predictions and identity hashes must match disk"
+    },
+    {
+      "name": "paired_cov/seed_13: train timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "paired_cov/seed_13: valid timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "paired_cov/seed_13: implementation hashes",
+      "passed": true,
+      "detail": "verified 9/9 declared hashes"
+    },
+    {
+      "name": "paired_cov/seed_13: timed-cache and normalizer identity provenance",
+      "passed": true,
+      "detail": "Identity must bind current cache metadata, pooled normalization metadata and their source provenance"
+    },
+    {
+      "name": "paired_cov/seed_13: saved VALID IDs and targets",
+      "passed": true,
+      "detail": "Ordered IDs, original author M targets and finite predictions must match the canonical VALID split"
+    },
+    {
+      "name": "paired_cov/seed_13: result and saved history agree",
+      "passed": true,
+      "detail": "Result, history and prediction artifacts must be present for the selected run"
+    },
+    {
+      "name": "paired_cov/seed_13: first-minimum MAE selection and early-stop accounting",
+      "passed": true,
+      "detail": "Selected epoch 11; history has 23 epochs, final stale count 12"
+    },
+    {
+      "name": "paired_cov/seed_13: contiguous epoch history",
+      "passed": true,
+      "detail": "History epoch numbers must be the full sequential training trace"
+    },
+    {
+      "name": "paired_cov/seed_13: scheduler learning-rate trace",
+      "passed": true,
+      "detail": "Independent ReduceLROnPlateau replay must match each recorded epoch learning rate"
+    },
+    {
+      "name": "paired_cov/seed_13: selected model shape and 494101 parameters",
+      "passed": true,
+      "detail": "Saved selected model must match the frozen 1952-to-234 head and rank-32 projections"
+    },
+    {
+      "name": "paired_cov/seed_13: best/last checkpoint identity and selected epoch",
+      "passed": true,
+      "detail": "Both checkpoints must bind the run identity and the selected/last epoch"
+    },
+    {
+      "name": "paired_cov/seed_13: last optimizer, scheduler and all RNG states",
+      "passed": true,
+      "detail": "Last checkpoint must preserve AdamW moments, plateau scheduler state, CPU/NumPy/Python/loader/CUDA RNG"
+    },
+    {
+      "name": "paired_cov/seed_13: registered training budget",
+      "passed": true,
+      "detail": "Identity training budget must match the pre-registered contract"
+    },
+    {
+      "name": "paired_cov/seed_13: independent clipped native MAE/Corr/Acc2",
+      "passed": true,
+      "detail": "NumPy recomputation from saved VALID outputs must match clipped author metrics"
+    },
+    {
+      "name": "paired_cov/seed_13: selected checkpoint native MAE is first minimum",
+      "passed": true,
+      "detail": "Saved selected predictions must reproduce the first minimum validation native MAE"
+    },
+    {
+      "name": "paired_cov/seed_13: independent NumPy and Torch CPU replay",
+      "passed": true,
+      "detail": "maximum |NumPy-saved|=3.08e-07; maximum |TorchCPU-saved|=4.17e-07; tolerance=1e-05"
+    },
+    {
+      "name": "paired_cov/seed_42: matrix matches result artifact",
+      "passed": true,
+      "detail": "Formal matrix row must exactly match the case/seed result.json"
+    },
+    {
+      "name": "paired_cov/seed_42: run identity binds registered config, seed, author CSV, CUDA and parameter budget",
+      "passed": true,
+      "detail": "Checkpoint identity must match the frozen formal config and full native run"
+    },
+    {
+      "name": "paired_cov/seed_42: complete non-smoke result",
+      "passed": true,
+      "detail": "Formal fit must use the complete TRAIN/VALID splits and no TEST export"
+    },
+    {
+      "name": "paired_cov/seed_42: result artifact SHA256 bindings",
+      "passed": true,
+      "detail": "Reported best, last, predictions and identity hashes must match disk"
+    },
+    {
+      "name": "paired_cov/seed_42: train timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "paired_cov/seed_42: valid timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "paired_cov/seed_42: implementation hashes",
+      "passed": true,
+      "detail": "verified 9/9 declared hashes"
+    },
+    {
+      "name": "paired_cov/seed_42: timed-cache and normalizer identity provenance",
+      "passed": true,
+      "detail": "Identity must bind current cache metadata, pooled normalization metadata and their source provenance"
+    },
+    {
+      "name": "paired_cov/seed_42: saved VALID IDs and targets",
+      "passed": true,
+      "detail": "Ordered IDs, original author M targets and finite predictions must match the canonical VALID split"
+    },
+    {
+      "name": "paired_cov/seed_42: result and saved history agree",
+      "passed": true,
+      "detail": "Result, history and prediction artifacts must be present for the selected run"
+    },
+    {
+      "name": "paired_cov/seed_42: first-minimum MAE selection and early-stop accounting",
+      "passed": true,
+      "detail": "Selected epoch 3; history has 15 epochs, final stale count 12"
+    },
+    {
+      "name": "paired_cov/seed_42: contiguous epoch history",
+      "passed": true,
+      "detail": "History epoch numbers must be the full sequential training trace"
+    },
+    {
+      "name": "paired_cov/seed_42: scheduler learning-rate trace",
+      "passed": true,
+      "detail": "Independent ReduceLROnPlateau replay must match each recorded epoch learning rate"
+    },
+    {
+      "name": "paired_cov/seed_42: selected model shape and 494101 parameters",
+      "passed": true,
+      "detail": "Saved selected model must match the frozen 1952-to-234 head and rank-32 projections"
+    },
+    {
+      "name": "paired_cov/seed_42: best/last checkpoint identity and selected epoch",
+      "passed": true,
+      "detail": "Both checkpoints must bind the run identity and the selected/last epoch"
+    },
+    {
+      "name": "paired_cov/seed_42: last optimizer, scheduler and all RNG states",
+      "passed": true,
+      "detail": "Last checkpoint must preserve AdamW moments, plateau scheduler state, CPU/NumPy/Python/loader/CUDA RNG"
+    },
+    {
+      "name": "paired_cov/seed_42: registered training budget",
+      "passed": true,
+      "detail": "Identity training budget must match the pre-registered contract"
+    },
+    {
+      "name": "paired_cov/seed_42: independent clipped native MAE/Corr/Acc2",
+      "passed": true,
+      "detail": "NumPy recomputation from saved VALID outputs must match clipped author metrics"
+    },
+    {
+      "name": "paired_cov/seed_42: selected checkpoint native MAE is first minimum",
+      "passed": true,
+      "detail": "Saved selected predictions must reproduce the first minimum validation native MAE"
+    },
+    {
+      "name": "paired_cov/seed_42: independent NumPy and Torch CPU replay",
+      "passed": true,
+      "detail": "maximum |NumPy-saved|=2.56e-07; maximum |TorchCPU-saved|=3.43e-07; tolerance=1e-05"
+    },
+    {
+      "name": "paired_cov/seed_2026: matrix matches result artifact",
+      "passed": true,
+      "detail": "Formal matrix row must exactly match the case/seed result.json"
+    },
+    {
+      "name": "paired_cov/seed_2026: run identity binds registered config, seed, author CSV, CUDA and parameter budget",
+      "passed": true,
+      "detail": "Checkpoint identity must match the frozen formal config and full native run"
+    },
+    {
+      "name": "paired_cov/seed_2026: complete non-smoke result",
+      "passed": true,
+      "detail": "Formal fit must use the complete TRAIN/VALID splits and no TEST export"
+    },
+    {
+      "name": "paired_cov/seed_2026: result artifact SHA256 bindings",
+      "passed": true,
+      "detail": "Reported best, last, predictions and identity hashes must match disk"
+    },
+    {
+      "name": "paired_cov/seed_2026: train timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "paired_cov/seed_2026: valid timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "paired_cov/seed_2026: implementation hashes",
+      "passed": true,
+      "detail": "verified 9/9 declared hashes"
+    },
+    {
+      "name": "paired_cov/seed_2026: timed-cache and normalizer identity provenance",
+      "passed": true,
+      "detail": "Identity must bind current cache metadata, pooled normalization metadata and their source provenance"
+    },
+    {
+      "name": "paired_cov/seed_2026: saved VALID IDs and targets",
+      "passed": true,
+      "detail": "Ordered IDs, original author M targets and finite predictions must match the canonical VALID split"
+    },
+    {
+      "name": "paired_cov/seed_2026: result and saved history agree",
+      "passed": true,
+      "detail": "Result, history and prediction artifacts must be present for the selected run"
+    },
+    {
+      "name": "paired_cov/seed_2026: first-minimum MAE selection and early-stop accounting",
+      "passed": true,
+      "detail": "Selected epoch 5; history has 17 epochs, final stale count 12"
+    },
+    {
+      "name": "paired_cov/seed_2026: contiguous epoch history",
+      "passed": true,
+      "detail": "History epoch numbers must be the full sequential training trace"
+    },
+    {
+      "name": "paired_cov/seed_2026: scheduler learning-rate trace",
+      "passed": true,
+      "detail": "Independent ReduceLROnPlateau replay must match each recorded epoch learning rate"
+    },
+    {
+      "name": "paired_cov/seed_2026: selected model shape and 494101 parameters",
+      "passed": true,
+      "detail": "Saved selected model must match the frozen 1952-to-234 head and rank-32 projections"
+    },
+    {
+      "name": "paired_cov/seed_2026: best/last checkpoint identity and selected epoch",
+      "passed": true,
+      "detail": "Both checkpoints must bind the run identity and the selected/last epoch"
+    },
+    {
+      "name": "paired_cov/seed_2026: last optimizer, scheduler and all RNG states",
+      "passed": true,
+      "detail": "Last checkpoint must preserve AdamW moments, plateau scheduler state, CPU/NumPy/Python/loader/CUDA RNG"
+    },
+    {
+      "name": "paired_cov/seed_2026: registered training budget",
+      "passed": true,
+      "detail": "Identity training budget must match the pre-registered contract"
+    },
+    {
+      "name": "paired_cov/seed_2026: independent clipped native MAE/Corr/Acc2",
+      "passed": true,
+      "detail": "NumPy recomputation from saved VALID outputs must match clipped author metrics"
+    },
+    {
+      "name": "paired_cov/seed_2026: selected checkpoint native MAE is first minimum",
+      "passed": true,
+      "detail": "Saved selected predictions must reproduce the first minimum validation native MAE"
+    },
+    {
+      "name": "paired_cov/seed_2026: independent NumPy and Torch CPU replay",
+      "passed": true,
+      "detail": "maximum |NumPy-saved|=4.63e-07; maximum |TorchCPU-saved|=4.77e-07; tolerance=1e-05"
+    },
+    {
+      "name": "unpaired_cov/seed_13: matrix matches result artifact",
+      "passed": true,
+      "detail": "Formal matrix row must exactly match the case/seed result.json"
+    },
+    {
+      "name": "unpaired_cov/seed_13: run identity binds registered config, seed, author CSV, CUDA and parameter budget",
+      "passed": true,
+      "detail": "Checkpoint identity must match the frozen formal config and full native run"
+    },
+    {
+      "name": "unpaired_cov/seed_13: complete non-smoke result",
+      "passed": true,
+      "detail": "Formal fit must use the complete TRAIN/VALID splits and no TEST export"
+    },
+    {
+      "name": "unpaired_cov/seed_13: result artifact SHA256 bindings",
+      "passed": true,
+      "detail": "Reported best, last, predictions and identity hashes must match disk"
+    },
+    {
+      "name": "unpaired_cov/seed_13: train timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "unpaired_cov/seed_13: valid timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "unpaired_cov/seed_13: implementation hashes",
+      "passed": true,
+      "detail": "verified 9/9 declared hashes"
+    },
+    {
+      "name": "unpaired_cov/seed_13: timed-cache and normalizer identity provenance",
+      "passed": true,
+      "detail": "Identity must bind current cache metadata, pooled normalization metadata and their source provenance"
+    },
+    {
+      "name": "unpaired_cov/seed_13: saved VALID IDs and targets",
+      "passed": true,
+      "detail": "Ordered IDs, original author M targets and finite predictions must match the canonical VALID split"
+    },
+    {
+      "name": "unpaired_cov/seed_13: result and saved history agree",
+      "passed": true,
+      "detail": "Result, history and prediction artifacts must be present for the selected run"
+    },
+    {
+      "name": "unpaired_cov/seed_13: first-minimum MAE selection and early-stop accounting",
+      "passed": true,
+      "detail": "Selected epoch 5; history has 17 epochs, final stale count 12"
+    },
+    {
+      "name": "unpaired_cov/seed_13: contiguous epoch history",
+      "passed": true,
+      "detail": "History epoch numbers must be the full sequential training trace"
+    },
+    {
+      "name": "unpaired_cov/seed_13: scheduler learning-rate trace",
+      "passed": true,
+      "detail": "Independent ReduceLROnPlateau replay must match each recorded epoch learning rate"
+    },
+    {
+      "name": "unpaired_cov/seed_13: selected model shape and 494101 parameters",
+      "passed": true,
+      "detail": "Saved selected model must match the frozen 1952-to-234 head and rank-32 projections"
+    },
+    {
+      "name": "unpaired_cov/seed_13: best/last checkpoint identity and selected epoch",
+      "passed": true,
+      "detail": "Both checkpoints must bind the run identity and the selected/last epoch"
+    },
+    {
+      "name": "unpaired_cov/seed_13: last optimizer, scheduler and all RNG states",
+      "passed": true,
+      "detail": "Last checkpoint must preserve AdamW moments, plateau scheduler state, CPU/NumPy/Python/loader/CUDA RNG"
+    },
+    {
+      "name": "unpaired_cov/seed_13: registered training budget",
+      "passed": true,
+      "detail": "Identity training budget must match the pre-registered contract"
+    },
+    {
+      "name": "unpaired_cov/seed_13: independent clipped native MAE/Corr/Acc2",
+      "passed": true,
+      "detail": "NumPy recomputation from saved VALID outputs must match clipped author metrics"
+    },
+    {
+      "name": "unpaired_cov/seed_13: selected checkpoint native MAE is first minimum",
+      "passed": true,
+      "detail": "Saved selected predictions must reproduce the first minimum validation native MAE"
+    },
+    {
+      "name": "unpaired_cov/seed_13: independent NumPy and Torch CPU replay",
+      "passed": true,
+      "detail": "maximum |NumPy-saved|=4.14e-07; maximum |TorchCPU-saved|=4.77e-07; tolerance=1e-05"
+    },
+    {
+      "name": "unpaired_cov/seed_42: matrix matches result artifact",
+      "passed": true,
+      "detail": "Formal matrix row must exactly match the case/seed result.json"
+    },
+    {
+      "name": "unpaired_cov/seed_42: run identity binds registered config, seed, author CSV, CUDA and parameter budget",
+      "passed": true,
+      "detail": "Checkpoint identity must match the frozen formal config and full native run"
+    },
+    {
+      "name": "unpaired_cov/seed_42: complete non-smoke result",
+      "passed": true,
+      "detail": "Formal fit must use the complete TRAIN/VALID splits and no TEST export"
+    },
+    {
+      "name": "unpaired_cov/seed_42: result artifact SHA256 bindings",
+      "passed": true,
+      "detail": "Reported best, last, predictions and identity hashes must match disk"
+    },
+    {
+      "name": "unpaired_cov/seed_42: train timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "unpaired_cov/seed_42: valid timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "unpaired_cov/seed_42: implementation hashes",
+      "passed": true,
+      "detail": "verified 9/9 declared hashes"
+    },
+    {
+      "name": "unpaired_cov/seed_42: timed-cache and normalizer identity provenance",
+      "passed": true,
+      "detail": "Identity must bind current cache metadata, pooled normalization metadata and their source provenance"
+    },
+    {
+      "name": "unpaired_cov/seed_42: saved VALID IDs and targets",
+      "passed": true,
+      "detail": "Ordered IDs, original author M targets and finite predictions must match the canonical VALID split"
+    },
+    {
+      "name": "unpaired_cov/seed_42: result and saved history agree",
+      "passed": true,
+      "detail": "Result, history and prediction artifacts must be present for the selected run"
+    },
+    {
+      "name": "unpaired_cov/seed_42: first-minimum MAE selection and early-stop accounting",
+      "passed": true,
+      "detail": "Selected epoch 2; history has 14 epochs, final stale count 12"
+    },
+    {
+      "name": "unpaired_cov/seed_42: contiguous epoch history",
+      "passed": true,
+      "detail": "History epoch numbers must be the full sequential training trace"
+    },
+    {
+      "name": "unpaired_cov/seed_42: scheduler learning-rate trace",
+      "passed": true,
+      "detail": "Independent ReduceLROnPlateau replay must match each recorded epoch learning rate"
+    },
+    {
+      "name": "unpaired_cov/seed_42: selected model shape and 494101 parameters",
+      "passed": true,
+      "detail": "Saved selected model must match the frozen 1952-to-234 head and rank-32 projections"
+    },
+    {
+      "name": "unpaired_cov/seed_42: best/last checkpoint identity and selected epoch",
+      "passed": true,
+      "detail": "Both checkpoints must bind the run identity and the selected/last epoch"
+    },
+    {
+      "name": "unpaired_cov/seed_42: last optimizer, scheduler and all RNG states",
+      "passed": true,
+      "detail": "Last checkpoint must preserve AdamW moments, plateau scheduler state, CPU/NumPy/Python/loader/CUDA RNG"
+    },
+    {
+      "name": "unpaired_cov/seed_42: registered training budget",
+      "passed": true,
+      "detail": "Identity training budget must match the pre-registered contract"
+    },
+    {
+      "name": "unpaired_cov/seed_42: independent clipped native MAE/Corr/Acc2",
+      "passed": true,
+      "detail": "NumPy recomputation from saved VALID outputs must match clipped author metrics"
+    },
+    {
+      "name": "unpaired_cov/seed_42: selected checkpoint native MAE is first minimum",
+      "passed": true,
+      "detail": "Saved selected predictions must reproduce the first minimum validation native MAE"
+    },
+    {
+      "name": "unpaired_cov/seed_42: independent NumPy and Torch CPU replay",
+      "passed": true,
+      "detail": "maximum |NumPy-saved|=2.98e-07; maximum |TorchCPU-saved|=2.98e-07; tolerance=1e-05"
+    },
+    {
+      "name": "unpaired_cov/seed_2026: matrix matches result artifact",
+      "passed": true,
+      "detail": "Formal matrix row must exactly match the case/seed result.json"
+    },
+    {
+      "name": "unpaired_cov/seed_2026: run identity binds registered config, seed, author CSV, CUDA and parameter budget",
+      "passed": true,
+      "detail": "Checkpoint identity must match the frozen formal config and full native run"
+    },
+    {
+      "name": "unpaired_cov/seed_2026: complete non-smoke result",
+      "passed": true,
+      "detail": "Formal fit must use the complete TRAIN/VALID splits and no TEST export"
+    },
+    {
+      "name": "unpaired_cov/seed_2026: result artifact SHA256 bindings",
+      "passed": true,
+      "detail": "Reported best, last, predictions and identity hashes must match disk"
+    },
+    {
+      "name": "unpaired_cov/seed_2026: train timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "unpaired_cov/seed_2026: valid timed-cache artifact hashes",
+      "passed": true,
+      "detail": "verified 10/10 declared hashes"
+    },
+    {
+      "name": "unpaired_cov/seed_2026: implementation hashes",
+      "passed": true,
+      "detail": "verified 9/9 declared hashes"
+    },
+    {
+      "name": "unpaired_cov/seed_2026: timed-cache and normalizer identity provenance",
+      "passed": true,
+      "detail": "Identity must bind current cache metadata, pooled normalization metadata and their source provenance"
+    },
+    {
+      "name": "unpaired_cov/seed_2026: saved VALID IDs and targets",
+      "passed": true,
+      "detail": "Ordered IDs, original author M targets and finite predictions must match the canonical VALID split"
+    },
+    {
+      "name": "unpaired_cov/seed_2026: result and saved history agree",
+      "passed": true,
+      "detail": "Result, history and prediction artifacts must be present for the selected run"
+    },
+    {
+      "name": "unpaired_cov/seed_2026: first-minimum MAE selection and early-stop accounting",
+      "passed": true,
+      "detail": "Selected epoch 4; history has 16 epochs, final stale count 12"
+    },
+    {
+      "name": "unpaired_cov/seed_2026: contiguous epoch history",
+      "passed": true,
+      "detail": "History epoch numbers must be the full sequential training trace"
+    },
+    {
+      "name": "unpaired_cov/seed_2026: scheduler learning-rate trace",
+      "passed": true,
+      "detail": "Independent ReduceLROnPlateau replay must match each recorded epoch learning rate"
+    },
+    {
+      "name": "unpaired_cov/seed_2026: selected model shape and 494101 parameters",
+      "passed": true,
+      "detail": "Saved selected model must match the frozen 1952-to-234 head and rank-32 projections"
+    },
+    {
+      "name": "unpaired_cov/seed_2026: best/last checkpoint identity and selected epoch",
+      "passed": true,
+      "detail": "Both checkpoints must bind the run identity and the selected/last epoch"
+    },
+    {
+      "name": "unpaired_cov/seed_2026: last optimizer, scheduler and all RNG states",
+      "passed": true,
+      "detail": "Last checkpoint must preserve AdamW moments, plateau scheduler state, CPU/NumPy/Python/loader/CUDA RNG"
+    },
+    {
+      "name": "unpaired_cov/seed_2026: registered training budget",
+      "passed": true,
+      "detail": "Identity training budget must match the pre-registered contract"
+    },
+    {
+      "name": "unpaired_cov/seed_2026: independent clipped native MAE/Corr/Acc2",
+      "passed": true,
+      "detail": "NumPy recomputation from saved VALID outputs must match clipped author metrics"
+    },
+    {
+      "name": "unpaired_cov/seed_2026: selected checkpoint native MAE is first minimum",
+      "passed": true,
+      "detail": "Saved selected predictions must reproduce the first minimum validation native MAE"
+    },
+    {
+      "name": "unpaired_cov/seed_2026: independent NumPy and Torch CPU replay",
+      "passed": true,
+      "detail": "maximum |NumPy-saved|=3.24e-07; maximum |TorchCPU-saved|=3.87e-07; tolerance=1e-05"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_13: actual registered reference config path",
+      "passed": true,
+      "detail": "Identity must match configs/native_simsv2_standardized_fusion.json and the completed standardized run directory"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_13: implementation hashes",
+      "passed": true,
+      "detail": "verified 3/3 declared hashes"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_13: reference train cache hashes",
+      "passed": true,
+      "detail": "verified 8/8 declared hashes"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_13: reference valid cache hashes",
+      "passed": true,
+      "detail": "verified 8/8 declared hashes"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_13: reference VALID IDs and targets",
+      "passed": true,
+      "detail": "Ordered IDs, original author M targets and finite predictions must match the canonical VALID split"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_13: result checkpoint/prediction hashes",
+      "passed": true,
+      "detail": "Reference result must bind its selected checkpoint and VALID predictions"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_13: reference first-minimum selection and parameter budget",
+      "passed": true,
+      "detail": "First validation MAE minimum from 17 recorded epochs must match the result"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_13: independent native metrics",
+      "passed": true,
+      "detail": "Recomputed clipped MAE, Corr and positive-only Acc2 must match the saved reference result"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_13: full reference counts and no TEST",
+      "passed": true,
+      "detail": "Reference run must cover full author TRAIN/VALID and no TEST"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_42: actual registered reference config path",
+      "passed": true,
+      "detail": "Identity must match configs/native_simsv2_standardized_fusion.json and the completed standardized run directory"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_42: implementation hashes",
+      "passed": true,
+      "detail": "verified 3/3 declared hashes"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_42: reference train cache hashes",
+      "passed": true,
+      "detail": "verified 8/8 declared hashes"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_42: reference valid cache hashes",
+      "passed": true,
+      "detail": "verified 8/8 declared hashes"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_42: reference VALID IDs and targets",
+      "passed": true,
+      "detail": "Ordered IDs, original author M targets and finite predictions must match the canonical VALID split"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_42: result checkpoint/prediction hashes",
+      "passed": true,
+      "detail": "Reference result must bind its selected checkpoint and VALID predictions"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_42: reference first-minimum selection and parameter budget",
+      "passed": true,
+      "detail": "First validation MAE minimum from 23 recorded epochs must match the result"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_42: independent native metrics",
+      "passed": true,
+      "detail": "Recomputed clipped MAE, Corr and positive-only Acc2 must match the saved reference result"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_42: full reference counts and no TEST",
+      "passed": true,
+      "detail": "Reference run must cover full author TRAIN/VALID and no TEST"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_2026: actual registered reference config path",
+      "passed": true,
+      "detail": "Identity must match configs/native_simsv2_standardized_fusion.json and the completed standardized run directory"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_2026: implementation hashes",
+      "passed": true,
+      "detail": "verified 3/3 declared hashes"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_2026: reference train cache hashes",
+      "passed": true,
+      "detail": "verified 8/8 declared hashes"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_2026: reference valid cache hashes",
+      "passed": true,
+      "detail": "verified 8/8 declared hashes"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_2026: reference VALID IDs and targets",
+      "passed": true,
+      "detail": "Ordered IDs, original author M targets and finite predictions must match the canonical VALID split"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_2026: result checkpoint/prediction hashes",
+      "passed": true,
+      "detail": "Reference result must bind its selected checkpoint and VALID predictions"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_2026: reference first-minimum selection and parameter budget",
+      "passed": true,
+      "detail": "First validation MAE minimum from 14 recorded epochs must match the result"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_2026: independent native metrics",
+      "passed": true,
+      "detail": "Recomputed clipped MAE, Corr and positive-only Acc2 must match the saved reference result"
+    },
+    {
+      "name": "conditioned_pooled_fusion/seed_2026: full reference counts and no TEST",
+      "passed": true,
+      "detail": "Reference run must cover full author TRAIN/VALID and no TEST"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_13: actual registered reference config path",
+      "passed": true,
+      "detail": "Identity must match configs/native_simsv2_sequence_standardized_almt.json and the completed standardized run directory"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_13: implementation hashes",
+      "passed": true,
+      "detail": "verified 5/5 declared hashes"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_13: reference train cache hashes",
+      "passed": true,
+      "detail": "verified 8/8 declared hashes"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_13: reference valid cache hashes",
+      "passed": true,
+      "detail": "verified 8/8 declared hashes"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_13: reference VALID IDs and targets",
+      "passed": true,
+      "detail": "Ordered IDs, original author M targets and finite predictions must match the canonical VALID split"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_13: result checkpoint/prediction hashes",
+      "passed": true,
+      "detail": "Reference result must bind its selected checkpoint and VALID predictions"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_13: reference first-minimum selection and parameter budget",
+      "passed": true,
+      "detail": "First validation MAE minimum from 23 recorded epochs must match the result"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_13: independent native metrics",
+      "passed": true,
+      "detail": "Recomputed clipped MAE, Corr and positive-only Acc2 must match the saved reference result"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_13: full reference counts and no TEST",
+      "passed": true,
+      "detail": "Reference run must cover full author TRAIN/VALID and no TEST"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_42: actual registered reference config path",
+      "passed": true,
+      "detail": "Identity must match configs/native_simsv2_sequence_standardized_almt.json and the completed standardized run directory"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_42: implementation hashes",
+      "passed": true,
+      "detail": "verified 5/5 declared hashes"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_42: reference train cache hashes",
+      "passed": true,
+      "detail": "verified 8/8 declared hashes"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_42: reference valid cache hashes",
+      "passed": true,
+      "detail": "verified 8/8 declared hashes"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_42: reference VALID IDs and targets",
+      "passed": true,
+      "detail": "Ordered IDs, original author M targets and finite predictions must match the canonical VALID split"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_42: result checkpoint/prediction hashes",
+      "passed": true,
+      "detail": "Reference result must bind its selected checkpoint and VALID predictions"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_42: reference first-minimum selection and parameter budget",
+      "passed": true,
+      "detail": "First validation MAE minimum from 33 recorded epochs must match the result"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_42: independent native metrics",
+      "passed": true,
+      "detail": "Recomputed clipped MAE, Corr and positive-only Acc2 must match the saved reference result"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_42: full reference counts and no TEST",
+      "passed": true,
+      "detail": "Reference run must cover full author TRAIN/VALID and no TEST"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_2026: actual registered reference config path",
+      "passed": true,
+      "detail": "Identity must match configs/native_simsv2_sequence_standardized_almt.json and the completed standardized run directory"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_2026: implementation hashes",
+      "passed": true,
+      "detail": "verified 5/5 declared hashes"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_2026: reference train cache hashes",
+      "passed": true,
+      "detail": "verified 8/8 declared hashes"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_2026: reference valid cache hashes",
+      "passed": true,
+      "detail": "verified 8/8 declared hashes"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_2026: reference VALID IDs and targets",
+      "passed": true,
+      "detail": "Ordered IDs, original author M targets and finite predictions must match the canonical VALID split"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_2026: result checkpoint/prediction hashes",
+      "passed": true,
+      "detail": "Reference result must bind its selected checkpoint and VALID predictions"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_2026: reference first-minimum selection and parameter budget",
+      "passed": true,
+      "detail": "First validation MAE minimum from 33 recorded epochs must match the result"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_2026: independent native metrics",
+      "passed": true,
+      "detail": "Recomputed clipped MAE, Corr and positive-only Acc2 must match the saved reference result"
+    },
+    {
+      "name": "conditioned_sequence_almt/seed_2026: full reference counts and no TEST",
+      "passed": true,
+      "detail": "Reference run must cover full author TRAIN/VALID and no TEST"
+    },
+    {
+      "name": "paired_cov/seed_13: common paired permutation invariant",
+      "passed": true,
+      "detail": "max absolute output change=3.08e-07; tolerance=1e-05"
+    },
+    {
+      "name": "paired_cov/seed_42: common paired permutation invariant",
+      "passed": true,
+      "detail": "max absolute output change=2.56e-07; tolerance=1e-05"
+    },
+    {
+      "name": "paired_cov/seed_2026: common paired permutation invariant",
+      "passed": true,
+      "detail": "max absolute output change=4.63e-07; tolerance=1e-05"
+    }
+  ],
+  "findings": [],
+  "registered_hashes": {
+    "config_sha256": "76609e0440de588f3220dfcda1ec6eb61c8dae591376a713862f591e5dbaa03c",
+    "plan_sha256": "bc92a2a0e2c615ad3c1aeac12c3f568fc0fd893ddea32c1f336ee5d19e78b00a",
+    "training_implementation_sha256": "476113a8c0db39a625fbde4d07fe38de489322108e143a9a3359d92c3ee39dc6"
+  },
+  "cache_provenance": {
+    "timed_cache_metadata_sha256": "3ea4d2d186ee8190cf4e2ad8f823ac14c729b86ee618f9274c6ecfa73a3e5bbc",
+    "normalization_sha256": "56bb0bf8387deb740d195c87972d80aaee4f2def3dab2892e61fed40330e6f84",
+    "normalization_metadata_sha256": "50c067883c3e52d6130eb8ed80f2df9d8a29bbc0c0a1dd9ac6a9e7d2847d1e7d",
+    "timed_artifact_hashes_verified": 20,
+    "normalizer_artifact_hashes_verified": 17,
+    "source_feature_hashes_verified": 78,
+    "source_hash_failures": [],
+    "raw_source_metadata_sha256": "c80806f155b246139b6cffba023d9c9b2359f42d38c1c7141db0af9cef8749c6",
+    "raw_source_artifact_hashes_verified": 38,
+    "normalization_train_count": 2722,
+    "valid_count": 647,
+    "train_pair_valid": 2715,
+    "valid_pair_valid": 646,
+    "timing_synchrony": "UNVERIFIED",
+    "source_cache": "D:\\MYL\\JevAffect\\data\\feature_cache\\simsv2_full_macbert_raw_av"
+  },
+  "canonical_valid_id_sha256": "e5d6a12971f2911802b36ce51301948637b09ff3c6b528c64dd0f871af35c917",
+  "author_train_id_count": 2722,
+  "author_valid_id_count": 647,
+  "formal_matrix": {
+    "dataset": "simsv2",
+    "run_count": 12,
+    "complete_run_count": 12,
+    "matrix_complete": true,
+    "smoke_only": false,
+    "test_evaluated": false
+  },
+  "initialization_policy": {
+    "source_policy_verified": true,
+    "same_initial_parameters_across_cases": true,
+    "per_seed_initial_parameter_sha256": {
+      "13": {
+        "static_product": "195152ae3effa18fa05c123474214da7e10a214a02ee806b012b0dd10bafc174",
+        "marginal_variance": "195152ae3effa18fa05c123474214da7e10a214a02ee806b012b0dd10bafc174",
+        "paired_cov": "195152ae3effa18fa05c123474214da7e10a214a02ee806b012b0dd10bafc174",
+        "unpaired_cov": "195152ae3effa18fa05c123474214da7e10a214a02ee806b012b0dd10bafc174"
+      },
+      "42": {
+        "static_product": "564aec6a26172bba1e064d4e88aeda16be3f7fe99c1ec24c3bd997860c0b3487",
+        "marginal_variance": "564aec6a26172bba1e064d4e88aeda16be3f7fe99c1ec24c3bd997860c0b3487",
+        "paired_cov": "564aec6a26172bba1e064d4e88aeda16be3f7fe99c1ec24c3bd997860c0b3487",
+        "unpaired_cov": "564aec6a26172bba1e064d4e88aeda16be3f7fe99c1ec24c3bd997860c0b3487"
+      },
+      "2026": {
+        "static_product": "6c404d3466b999d10b7bed3305521c6d2fc85ff994af16bc136360c42a83d3d0",
+        "marginal_variance": "6c404d3466b999d10b7bed3305521c6d2fc85ff994af16bc136360c42a83d3d0",
+        "paired_cov": "6c404d3466b999d10b7bed3305521c6d2fc85ff994af16bc136360c42a83d3d0",
+        "unpaired_cov": "6c404d3466b999d10b7bed3305521c6d2fc85ff994af16bc136360c42a83d3d0"
+      }
+    },
+    "artifact_limitation": "The run stores no separate initial-weight file; equality is established from the hashed trainer policy and reconstructed module initialization."
+  },
+  "audited_fit_count": 12,
+  "per_fit": [
+    {
+      "case": "marginal_variance",
+      "seed": 13,
+      "complete": true,
+      "selected_epoch": 11,
+      "epochs_run": 23,
+      "early_stopped": true,
+      "loop_seconds": 5.685398200002965,
+      "trainable_parameters": 494101,
+      "parameter_count_from_checkpoint": 494101,
+      "native_metrics": {
+        "count": 647,
+        "MAE": 0.41964706778526306,
+        "Corr": 0.6220748380641947,
+        "Acc2_positive_strict": 0.7650695517774343
+      },
+      "numpy_max_abs_error_vs_saved": 3.057099937642249e-07,
+      "torch_cpu_max_abs_error_vs_saved": 3.5762786865234375e-07,
+      "artifact_sha256": {
+        "best_checkpoint_sha256": "b7c2840155258bc9bb443a519dc1c793bc629214fc64f401a400bce66847c2f5",
+        "last_checkpoint_sha256": "3b4da9a190d8e22f698b9e2770b40263bf15ac95de115b7e027e10cde05e3df5",
+        "predictions_sha256": "014328bcfd7f530511fa8ab1afe0da497f0a1ffff81370a5453c0c940895ce1e",
+        "identity_sha256": "a0da289c41989d14f0d97225165ad2fa920a78fa75e3552edfaf1cebed19e2e0"
+      },
+      "verified_feature_hash_count": 20,
+      "verified_implementation_hash_count": 9,
+      "hash_failures": []
+    },
+    {
+      "case": "marginal_variance",
+      "seed": 42,
+      "complete": true,
+      "selected_epoch": 2,
+      "epochs_run": 14,
+      "early_stopped": true,
+      "loop_seconds": 3.4116229999781353,
+      "trainable_parameters": 494101,
+      "parameter_count_from_checkpoint": 494101,
+      "native_metrics": {
+        "count": 647,
+        "MAE": 0.4114382565021515,
+        "Corr": 0.6373891532766647,
+        "Acc2_positive_strict": 0.7697063369397218
+      },
+      "numpy_max_abs_error_vs_saved": 2.812212944180992e-07,
+      "torch_cpu_max_abs_error_vs_saved": 3.8743019104003906e-07,
+      "artifact_sha256": {
+        "best_checkpoint_sha256": "4a0028c9db5fe972b9a2ffe2fcadaef484c0c97965f254c071c48fa6954dee39",
+        "last_checkpoint_sha256": "081a760755680d2b74f6ec8effec4c97435e08be848b972e08abac8b810af1a7",
+        "predictions_sha256": "6f06114ad3a7b21eb9411855c8c3e486a550773058551065563d2887fb5188f6",
+        "identity_sha256": "c3050666a98001dd78829ab60abc0ca653dfd98cdd5d6a29be74ab5b29a75c13"
+      },
+      "verified_feature_hash_count": 20,
+      "verified_implementation_hash_count": 9,
+      "hash_failures": []
+    },
+    {
+      "case": "marginal_variance",
+      "seed": 2026,
+      "complete": true,
+      "selected_epoch": 5,
+      "epochs_run": 17,
+      "early_stopped": true,
+      "loop_seconds": 4.3389866999859805,
+      "trainable_parameters": 494101,
+      "parameter_count_from_checkpoint": 494101,
+      "native_metrics": {
+        "count": 647,
+        "MAE": 0.4028487205505371,
+        "Corr": 0.6468932066045299,
+        "Acc2_positive_strict": 0.7774343122102009
+      },
+      "numpy_max_abs_error_vs_saved": 2.9049239891332235e-07,
+      "torch_cpu_max_abs_error_vs_saved": 3.5762786865234375e-07,
+      "artifact_sha256": {
+        "best_checkpoint_sha256": "9b7bcc0a9f5a9eb8683de0490743a7cbd6ac2407126dcf7dd63c4578e12909d8",
+        "last_checkpoint_sha256": "9a94ea39af8700561dd328f16480c95c02567e8bf66077be1c64613c63bdcc19",
+        "predictions_sha256": "5da2a85feb87e1027fb24d632d6766ff3b23b9180f3bb87ed59345bae5e6aa62",
+        "identity_sha256": "2ef0333a7800187384245d51a12f2b6a305f44a8e3ec906b7dcacfa09d1bc7db"
+      },
+      "verified_feature_hash_count": 20,
+      "verified_implementation_hash_count": 9,
+      "hash_failures": []
+    },
+    {
+      "case": "paired_cov",
+      "seed": 13,
+      "complete": true,
+      "selected_epoch": 11,
+      "epochs_run": 23,
+      "early_stopped": true,
+      "loop_seconds": 5.327037900002324,
+      "trainable_parameters": 494101,
+      "parameter_count_from_checkpoint": 494101,
+      "native_metrics": {
+        "count": 647,
+        "MAE": 0.41116997599601746,
+        "Corr": 0.64168788523652,
+        "Acc2_positive_strict": 0.7697063369397218
+      },
+      "numpy_max_abs_error_vs_saved": 3.082331520021242e-07,
+      "torch_cpu_max_abs_error_vs_saved": 4.172325134277344e-07,
+      "artifact_sha256": {
+        "best_checkpoint_sha256": "8c4df5794086e4adc26ec29a4bf4392bc26a2ae7639371529d36035a5be36217",
+        "last_checkpoint_sha256": "261a4b080996a13dc1646b2b2e6f0c0496a763f094d29862a1ff2d2dc4fe22ea",
+        "predictions_sha256": "88795119746541c688b4e0a07cbb0a18930a0caea6dad4642654f62605e4f038",
+        "identity_sha256": "cc5d877cea0b651b7daa641a186bbd543dfc8de0ea959f1f38cc949c9820c786"
+      },
+      "verified_feature_hash_count": 20,
+      "verified_implementation_hash_count": 9,
+      "hash_failures": []
+    },
+    {
+      "case": "paired_cov",
+      "seed": 42,
+      "complete": true,
+      "selected_epoch": 3,
+      "epochs_run": 15,
+      "early_stopped": true,
+      "loop_seconds": 3.5286541000095895,
+      "trainable_parameters": 494101,
+      "parameter_count_from_checkpoint": 494101,
+      "native_metrics": {
+        "count": 647,
+        "MAE": 0.4101855754852295,
+        "Corr": 0.6325832992604737,
+        "Acc2_positive_strict": 0.7465224111282844
+      },
+      "numpy_max_abs_error_vs_saved": 2.5609504050727594e-07,
+      "torch_cpu_max_abs_error_vs_saved": 3.427267074584961e-07,
+      "artifact_sha256": {
+        "best_checkpoint_sha256": "2606695d383c934f57c29fe285e75fc263b90ea962314a27db9ea49dc2b998f3",
+        "last_checkpoint_sha256": "8ba750a5d18b64f7bf1fd5f5e58d14fed4c09f06beb6bbf8f7d987b3e8ee9e07",
+        "predictions_sha256": "21c7ac1050bd4e3e081cc1aee541ce633d9f30ec3ef2469a8dc9a72be4786433",
+        "identity_sha256": "bd9f492f6363839931ddbb03ff9003425646d1e6f3b9d72622993f9ad05ec4ae"
+      },
+      "verified_feature_hash_count": 20,
+      "verified_implementation_hash_count": 9,
+      "hash_failures": []
+    },
+    {
+      "case": "paired_cov",
+      "seed": 2026,
+      "complete": true,
+      "selected_epoch": 5,
+      "epochs_run": 17,
+      "early_stopped": true,
+      "loop_seconds": 3.96285720000742,
+      "trainable_parameters": 494101,
+      "parameter_count_from_checkpoint": 494101,
+      "native_metrics": {
+        "count": 647,
+        "MAE": 0.4063635468482971,
+        "Corr": 0.6434141772005505,
+        "Acc2_positive_strict": 0.7712519319938176
+      },
+      "numpy_max_abs_error_vs_saved": 4.6251903995653265e-07,
+      "torch_cpu_max_abs_error_vs_saved": 4.76837158203125e-07,
+      "artifact_sha256": {
+        "best_checkpoint_sha256": "97f77c0d2f5386a137fe4ce9ec6132d8c13af26945bbe07cfbec2b2966967dd0",
+        "last_checkpoint_sha256": "4367e8f5b49ffa34645b3f2fccf3eac7bc9120191343b50a49d7b2a7d0ccdf92",
+        "predictions_sha256": "a20b61214564e857d8aef7069f8d1b004be15fa08322ae3e8efbdf668501b3f6",
+        "identity_sha256": "b6073791cf73c9dd3b3a62a33e372885cb677431391ed1eab2e02fd79e39ae96"
+      },
+      "verified_feature_hash_count": 20,
+      "verified_implementation_hash_count": 9,
+      "hash_failures": []
+    },
+    {
+      "case": "static_product",
+      "seed": 13,
+      "complete": true,
+      "selected_epoch": 6,
+      "epochs_run": 18,
+      "early_stopped": true,
+      "loop_seconds": 4.298183400002017,
+      "trainable_parameters": 494101,
+      "parameter_count_from_checkpoint": 494101,
+      "native_metrics": {
+        "count": 647,
+        "MAE": 0.41892239451408386,
+        "Corr": 0.6231226988312853,
+        "Acc2_positive_strict": 0.7712519319938176
+      },
+      "numpy_max_abs_error_vs_saved": 4.250666408855963e-07,
+      "torch_cpu_max_abs_error_vs_saved": 3.8743019104003906e-07,
+      "artifact_sha256": {
+        "best_checkpoint_sha256": "b50d66ddfb1e029318a02289b4dad985c6298c0637f0bead99df4465c5b5f106",
+        "last_checkpoint_sha256": "19577fd41b6e972efacaba2657b1fe6dbf4b5f210ee4030f12c5486897763a11",
+        "predictions_sha256": "19de15d8e062d06a1c18087893143df300e2aa83640db0ceec03c75450a0b2fd",
+        "identity_sha256": "1ed4747f6cde642ee43852fd27ff0b06d3ed4eaf46d3ed75b782f36d7bcbefb5"
+      },
+      "verified_feature_hash_count": 20,
+      "verified_implementation_hash_count": 9,
+      "hash_failures": []
+    },
+    {
+      "case": "static_product",
+      "seed": 42,
+      "complete": true,
+      "selected_epoch": 3,
+      "epochs_run": 15,
+      "early_stopped": true,
+      "loop_seconds": 3.3766774000032456,
+      "trainable_parameters": 494101,
+      "parameter_count_from_checkpoint": 494101,
+      "native_metrics": {
+        "count": 647,
+        "MAE": 0.40752512216567993,
+        "Corr": 0.633149303375616,
+        "Acc2_positive_strict": 0.7449768160741885
+      },
+      "numpy_max_abs_error_vs_saved": 3.6074308251698994e-07,
+      "torch_cpu_max_abs_error_vs_saved": 4.246830940246582e-07,
+      "artifact_sha256": {
+        "best_checkpoint_sha256": "f6f96a889a203f5b10330e251c89b427f787bc207e79928fa9e6a002a40090ed",
+        "last_checkpoint_sha256": "9bc164b102d45dd849b965e493078ee0dd6694da5f7dbd670029dd270db3cff5",
+        "predictions_sha256": "c45607e0cd92971db29b3ffad508fb40c19fb74eb075f6301e962f9e6fc63f93",
+        "identity_sha256": "8a2102887731d70f13a8da59b71284207cdfa7e0d29fa5b7036ce8b0bb3a190a"
+      },
+      "verified_feature_hash_count": 20,
+      "verified_implementation_hash_count": 9,
+      "hash_failures": []
+    },
+    {
+      "case": "static_product",
+      "seed": 2026,
+      "complete": true,
+      "selected_epoch": 4,
+      "epochs_run": 16,
+      "early_stopped": true,
+      "loop_seconds": 3.3809177000293857,
+      "trainable_parameters": 494101,
+      "parameter_count_from_checkpoint": 494101,
+      "native_metrics": {
+        "count": 647,
+        "MAE": 0.4102356731891632,
+        "Corr": 0.6395074495079988,
+        "Acc2_positive_strict": 0.7619783616692427
+      },
+      "numpy_max_abs_error_vs_saved": 3.825297301696118e-07,
+      "torch_cpu_max_abs_error_vs_saved": 4.76837158203125e-07,
+      "artifact_sha256": {
+        "best_checkpoint_sha256": "d402c3ee601b7776e4fbe0b16c4bac45859660000a364f58d144d7b22ca61e71",
+        "last_checkpoint_sha256": "519e3b3e1428efc970c98608c2d5546cd7e11078c8b3b91c0b8df44370b7ca1a",
+        "predictions_sha256": "6ffebfdc52fff5aff8e205854af1abc289a2400f57b6783429a72f7b52348a53",
+        "identity_sha256": "c59bed38ea8813a46331f368154ebd3a8be022c1ffae01574eb61e6a965819dd"
+      },
+      "verified_feature_hash_count": 20,
+      "verified_implementation_hash_count": 9,
+      "hash_failures": []
+    },
+    {
+      "case": "unpaired_cov",
+      "seed": 13,
+      "complete": true,
+      "selected_epoch": 5,
+      "epochs_run": 17,
+      "early_stopped": true,
+      "loop_seconds": 4.185440000008384,
+      "trainable_parameters": 494101,
+      "parameter_count_from_checkpoint": 494101,
+      "native_metrics": {
+        "count": 647,
+        "MAE": 0.41283369064331055,
+        "Corr": 0.6319707531338794,
+        "Acc2_positive_strict": 0.7789799072642968
+      },
+      "numpy_max_abs_error_vs_saved": 4.1449572196761153e-07,
+      "torch_cpu_max_abs_error_vs_saved": 4.76837158203125e-07,
+      "artifact_sha256": {
+        "best_checkpoint_sha256": "74a4eeed5896eb8511c06037dcd922284d7837615ee961895e69e3d23f7028bd",
+        "last_checkpoint_sha256": "c64bb3960ee981070cc7f303e4de5795109e63ef8d7f852b0008f8d85c95fc16",
+        "predictions_sha256": "ac1e9be82534aa27251078fc5520d7ffe80c67b88e7916348dfdce4b3489492e",
+        "identity_sha256": "8e64affc772b60abe2bd665a7e0147814ad141dc7ff91bf002e32820b0d07db9"
+      },
+      "verified_feature_hash_count": 20,
+      "verified_implementation_hash_count": 9,
+      "hash_failures": []
+    },
+    {
+      "case": "unpaired_cov",
+      "seed": 42,
+      "complete": true,
+      "selected_epoch": 2,
+      "epochs_run": 14,
+      "early_stopped": true,
+      "loop_seconds": 3.32809059999272,
+      "trainable_parameters": 494101,
+      "parameter_count_from_checkpoint": 494101,
+      "native_metrics": {
+        "count": 647,
+        "MAE": 0.4099414348602295,
+        "Corr": 0.6315583021720418,
+        "Acc2_positive_strict": 0.768160741885626
+      },
+      "numpy_max_abs_error_vs_saved": 2.980096196480986e-07,
+      "torch_cpu_max_abs_error_vs_saved": 2.980232238769531e-07,
+      "artifact_sha256": {
+        "best_checkpoint_sha256": "6d42772d19d2a01332353b43b143a619945852a404a03f84d0678e7731dc313d",
+        "last_checkpoint_sha256": "8c9b2baacb9cc34b1aa642916fef3f847820068b528991b319270b49c572159c",
+        "predictions_sha256": "958ee201dfc975bb06a61f9ef58c79a0519903956a84cbbdcfe1c8539c6567d0",
+        "identity_sha256": "6f4cd690cb80d88a89934b91a7b931313de4a3c21d5a0b93776233a02e634b47"
+      },
+      "verified_feature_hash_count": 20,
+      "verified_implementation_hash_count": 9,
+      "hash_failures": []
+    },
+    {
+      "case": "unpaired_cov",
+      "seed": 2026,
+      "complete": true,
+      "selected_epoch": 4,
+      "epochs_run": 16,
+      "early_stopped": true,
+      "loop_seconds": 3.7362316000071587,
+      "trainable_parameters": 494101,
+      "parameter_count_from_checkpoint": 494101,
+      "native_metrics": {
+        "count": 647,
+        "MAE": 0.40905365347862244,
+        "Corr": 0.6404075567309158,
+        "Acc2_positive_strict": 0.758887171561051
+      },
+      "numpy_max_abs_error_vs_saved": 3.2410681954919696e-07,
+      "torch_cpu_max_abs_error_vs_saved": 3.8743019104003906e-07,
+      "artifact_sha256": {
+        "best_checkpoint_sha256": "69a96194f521578db6b17f332adab9eab11f518cc0fdb7320af3f04ceee7c437",
+        "last_checkpoint_sha256": "2c8d7a10245333f87257b1741c879bebd528a0bf11d66687abc597e180d6c465",
+        "predictions_sha256": "b0e7737f8698b5bb76ace2aa7cf4564a8ea7d67c5a0fd764c616ca216d8bc964",
+        "identity_sha256": "4dac5f5077ebc9f7cfe5db0f683a694b5b7a9aeb3663e4ca754cd5152f14bfa8"
+      },
+      "verified_feature_hash_count": 20,
+      "verified_implementation_hash_count": 9,
+      "hash_failures": []
+    }
+  ],
+  "case_seed_metrics": {
+    "static_product": {
+      "13": {
+        "count": 647,
+        "MAE": 0.41892239451408386,
+        "Corr": 0.6231226988312853,
+        "Acc2_positive_strict": 0.7712519319938176
+      },
+      "42": {
+        "count": 647,
+        "MAE": 0.40752512216567993,
+        "Corr": 0.633149303375616,
+        "Acc2_positive_strict": 0.7449768160741885
+      },
+      "2026": {
+        "count": 647,
+        "MAE": 0.4102356731891632,
+        "Corr": 0.6395074495079988,
+        "Acc2_positive_strict": 0.7619783616692427
+      }
+    },
+    "marginal_variance": {
+      "13": {
+        "count": 647,
+        "MAE": 0.41964706778526306,
+        "Corr": 0.6220748380641947,
+        "Acc2_positive_strict": 0.7650695517774343
+      },
+      "42": {
+        "count": 647,
+        "MAE": 0.4114382565021515,
+        "Corr": 0.6373891532766647,
+        "Acc2_positive_strict": 0.7697063369397218
+      },
+      "2026": {
+        "count": 647,
+        "MAE": 0.4028487205505371,
+        "Corr": 0.6468932066045299,
+        "Acc2_positive_strict": 0.7774343122102009
+      }
+    },
+    "paired_cov": {
+      "13": {
+        "count": 647,
+        "MAE": 0.41116997599601746,
+        "Corr": 0.64168788523652,
+        "Acc2_positive_strict": 0.7697063369397218
+      },
+      "42": {
+        "count": 647,
+        "MAE": 0.4101855754852295,
+        "Corr": 0.6325832992604737,
+        "Acc2_positive_strict": 0.7465224111282844
+      },
+      "2026": {
+        "count": 647,
+        "MAE": 0.4063635468482971,
+        "Corr": 0.6434141772005505,
+        "Acc2_positive_strict": 0.7712519319938176
+      }
+    },
+    "unpaired_cov": {
+      "13": {
+        "count": 647,
+        "MAE": 0.41283369064331055,
+        "Corr": 0.6319707531338794,
+        "Acc2_positive_strict": 0.7789799072642968
+      },
+      "42": {
+        "count": 647,
+        "MAE": 0.4099414348602295,
+        "Corr": 0.6315583021720418,
+        "Acc2_positive_strict": 0.768160741885626
+      },
+      "2026": {
+        "count": 647,
+        "MAE": 0.40905365347862244,
+        "Corr": 0.6404075567309158,
+        "Acc2_positive_strict": 0.758887171561051
+      }
+    }
+  },
+  "reference_baselines": {
+    "conditioned_pooled_fusion": {
+      "config_path": "configs/native_simsv2_standardized_fusion.json",
+      "config_sha256": "b0fa66ef441df038933acafb553f3e2b2bb815fa858d4036091c4f4beed4f217",
+      "parameters": 492033,
+      "seeds": {
+        "13": {
+          "model": "conditioned_pooled_fusion",
+          "seed": 13,
+          "config_path": "configs/native_simsv2_standardized_fusion.json",
+          "config_sha256": "b0fa66ef441df038933acafb553f3e2b2bb815fa858d4036091c4f4beed4f217",
+          "result_path": "runs\\native_simsv2_standardized_v1\\early_fusion\\seed_13\\result.json",
+          "identity_sha256": "76d0a5ca835a52794365aed52b870ac83a7e314b63f8e0a793b2be04ff66b189",
+          "checkpoint_sha256": "e14f47e482e76d3b7faabcfc8728813e5d9c46ff3833bc4950012426296ea28e",
+          "predictions_sha256": "4acadaa7465c8b7be65a0c55f89ceb064f87360d617dfbe93168d23d6c13e7ac",
+          "selected_epoch": 5,
+          "epochs_run": 17,
+          "loop_seconds": 2.5404636999883223,
+          "trainable_parameters": 492033,
+          "native_metrics": {
+            "count": 647,
+            "MAE": 0.40805482864379883,
+            "Corr": 0.6424537142522805,
+            "Acc2_positive_strict": 0.7697063369397218
+          },
+          "verified_feature_hash_count": 16,
+          "verified_implementation_hash_count": 3,
+          "hash_failures": []
+        },
+        "42": {
+          "model": "conditioned_pooled_fusion",
+          "seed": 42,
+          "config_path": "configs/native_simsv2_standardized_fusion.json",
+          "config_sha256": "b0fa66ef441df038933acafb553f3e2b2bb815fa858d4036091c4f4beed4f217",
+          "result_path": "runs\\native_simsv2_standardized_v1\\early_fusion\\seed_42\\result.json",
+          "identity_sha256": "94c6566a82377b98232e040248cd76599aa40a8a3b931d0b1ebfece9c34e9fd5",
+          "checkpoint_sha256": "3d30346b22dc740c39ae79aee571e3ae1f25b43d8eadfa3674f1d34eeb445a52",
+          "predictions_sha256": "4e3e615b39fd3f10be51a91e2cfdea9aedc5420ff2d42125571ce9a1764fb273",
+          "selected_epoch": 11,
+          "epochs_run": 23,
+          "loop_seconds": 3.397342399985064,
+          "trainable_parameters": 492033,
+          "native_metrics": {
+            "count": 647,
+            "MAE": 0.4156744182109833,
+            "Corr": 0.6330592747741901,
+            "Acc2_positive_strict": 0.7619783616692427
+          },
+          "verified_feature_hash_count": 16,
+          "verified_implementation_hash_count": 3,
+          "hash_failures": []
+        },
+        "2026": {
+          "model": "conditioned_pooled_fusion",
+          "seed": 2026,
+          "config_path": "configs/native_simsv2_standardized_fusion.json",
+          "config_sha256": "b0fa66ef441df038933acafb553f3e2b2bb815fa858d4036091c4f4beed4f217",
+          "result_path": "runs\\native_simsv2_standardized_v1\\early_fusion\\seed_2026\\result.json",
+          "identity_sha256": "21a7104bd5ea86f8c1f7dbf1d3277a43e6863104e4b9d7a06958bc449266c612",
+          "checkpoint_sha256": "5ec52e840f4514f197cd024a24a093ec364a7b4c6624f2e18477787470d64f45",
+          "predictions_sha256": "160eac0d48c30d0d3e00f923c65d7692fb8b2b63e6a49838d1c0ca4cc63cd378",
+          "selected_epoch": 2,
+          "epochs_run": 14,
+          "loop_seconds": 2.0590403000096558,
+          "trainable_parameters": 492033,
+          "native_metrics": {
+            "count": 647,
+            "MAE": 0.4108436405658722,
+            "Corr": 0.6318144392360184,
+            "Acc2_positive_strict": 0.7727975270479135
+          },
+          "verified_feature_hash_count": 16,
+          "verified_implementation_hash_count": 3,
+          "hash_failures": []
+        }
+      }
+    },
+    "conditioned_sequence_almt": {
+      "config_path": "configs/native_simsv2_sequence_standardized_almt.json",
+      "config_sha256": "5a9b63379a726264fb6bea785f1790216892261cc7167912cffe5999447d92ee",
+      "parameters": 3288577,
+      "seeds": {
+        "13": {
+          "model": "conditioned_sequence_almt",
+          "seed": 13,
+          "config_path": "configs/native_simsv2_sequence_standardized_almt.json",
+          "config_sha256": "5a9b63379a726264fb6bea785f1790216892261cc7167912cffe5999447d92ee",
+          "result_path": "runs\\native_simsv2_sequence_standardized_v1\\almt\\seed_13\\result.json",
+          "identity_sha256": "7704600c8184f7445480b2b5797050a58a80df0faa54b39b0ded634717b007b9",
+          "checkpoint_sha256": "894e41996f360ede2fcfd5b630cbc4b021c3ef4673aaff6bf292aae17651863f",
+          "predictions_sha256": "973d460af11eae66abc6b3e11af05a0ef0ae55b7b13fae02ddf1561c31f23798",
+          "selected_epoch": 11,
+          "epochs_run": 23,
+          "loop_seconds": 94.42547899999772,
+          "trainable_parameters": 3288577,
+          "native_metrics": {
+            "count": 647,
+            "MAE": 0.41619014739990234,
+            "Corr": 0.6058424281487157,
+            "Acc2_positive_strict": 0.749613601236476
+          },
+          "verified_feature_hash_count": 16,
+          "verified_implementation_hash_count": 5,
+          "hash_failures": []
+        },
+        "42": {
+          "model": "conditioned_sequence_almt",
+          "seed": 42,
+          "config_path": "configs/native_simsv2_sequence_standardized_almt.json",
+          "config_sha256": "5a9b63379a726264fb6bea785f1790216892261cc7167912cffe5999447d92ee",
+          "result_path": "runs\\native_simsv2_sequence_standardized_v1\\almt\\seed_42\\result.json",
+          "identity_sha256": "36cb33ba28d13925d66fb7cf79bde6f723bcbeef6a32c896f57dbea8f7453b5a",
+          "checkpoint_sha256": "a550b308ceaae32792ff5e517f112b8b1034f29d28142e7a78d8a9dd75a5649a",
+          "predictions_sha256": "26ef83727761ad30fef554c2a947ba30919093ffd31208c8bf128c11a666badf",
+          "selected_epoch": 21,
+          "epochs_run": 33,
+          "loop_seconds": 133.01783270001033,
+          "trainable_parameters": 3288577,
+          "native_metrics": {
+            "count": 647,
+            "MAE": 0.40335649251937866,
+            "Corr": 0.6288626859963548,
+            "Acc2_positive_strict": 0.732612055641422
+          },
+          "verified_feature_hash_count": 16,
+          "verified_implementation_hash_count": 5,
+          "hash_failures": []
+        },
+        "2026": {
+          "model": "conditioned_sequence_almt",
+          "seed": 2026,
+          "config_path": "configs/native_simsv2_sequence_standardized_almt.json",
+          "config_sha256": "5a9b63379a726264fb6bea785f1790216892261cc7167912cffe5999447d92ee",
+          "result_path": "runs\\native_simsv2_sequence_standardized_v1\\almt\\seed_2026\\result.json",
+          "identity_sha256": "31b9050304309e84ce7fbcb8f311df009d54e726f4aa8f171835d3be1d9bc9ca",
+          "checkpoint_sha256": "d0eb2210e04dd84f8d479b74667abe37ca659f93ea2ecba3822247a85fc99e16",
+          "predictions_sha256": "41f649c0dc028b37512db60cea0acb62badf920b32a829fb993fe10632c61993",
+          "selected_epoch": 21,
+          "epochs_run": 33,
+          "loop_seconds": 135.0104903000065,
+          "trainable_parameters": 3288577,
+          "native_metrics": {
+            "count": 647,
+            "MAE": 0.4064946174621582,
+            "Corr": 0.6124860881707219,
+            "Acc2_positive_strict": 0.7264296754250387
+          },
+          "verified_feature_hash_count": 16,
+          "verified_implementation_hash_count": 5,
+          "hash_failures": []
+        }
+      }
+    }
+  },
+  "compute_budgets": {
+    "timed_moment_models": {
+      "trainable_parameters": 494101,
+      "budget": {
+        "batch_size": 32,
+        "max_epochs": 80,
+        "patience": 12,
+        "learning_rate": 0.0001,
+        "weight_decay": 0.0001
+      },
+      "loop_seconds_by_case_seed": {
+        "static_product": {
+          "13": 4.298183400002017,
+          "42": 3.3766774000032456,
+          "2026": 3.3809177000293857
+        },
+        "marginal_variance": {
+          "13": 5.685398200002965,
+          "42": 3.4116229999781353,
+          "2026": 4.3389866999859805
+        },
+        "paired_cov": {
+          "13": 5.327037900002324,
+          "42": 3.5286541000095895,
+          "2026": 3.96285720000742
+        },
+        "unpaired_cov": {
+          "13": 4.185440000008384,
+          "42": 3.32809059999272,
+          "2026": 3.7362316000071587
+        }
+      }
+    },
+    "conditioned_pooled_fusion": {
+      "trainable_parameters": 492033,
+      "relative_parameter_delta_vs_timed": -0.004185379102653102,
+      "loop_seconds_by_seed": {
+        "13": 2.5404636999883223,
+        "42": 3.397342399985064,
+        "2026": 2.0590403000096558
+      }
+    },
+    "conditioned_sequence_almt": {
+      "trainable_parameters": 3288577,
+      "loop_seconds_by_seed": {
+        "13": 94.42547899999772,
+        "42": 133.01783270001033,
+        "2026": 135.0104903000065
+      }
+    },
+    "paired_cov_checkpoints": {
+      "13": {
+        "selected_epoch": 11,
+        "epochs_run": 23,
+        "loop_seconds": 5.327037900002324
+      },
+      "42": {
+        "selected_epoch": 3,
+        "epochs_run": 15,
+        "loop_seconds": 3.5286541000095895
+      },
+      "2026": {
+        "selected_epoch": 5,
+        "epochs_run": 17,
+        "loop_seconds": 3.96285720000742
+      }
+    }
+  },
+  "source_cluster_bootstrap": {
+    "source_count": 120,
+    "source_names_sha256": "041d04351dd21fe7d96839bd232ffd94c76671eb7fd5b790cc1e0edc43ba45cb",
+    "source_names": {
+      "publication_omitted": true,
+      "original_count": 120
+    },
+    "draws_shared_across_comparisons_and_seeds": true,
+    "candidate": "paired_cov",
+    "delta_definition": "candidate native absolute error minus reference native absolute error",
+    "comparisons": {
+      "static_product": {
+        "13": {
+          "candidate_minus_reference_MAE": -0.007752418518066406,
+          "paired_source_bootstrap_95_ci": [
+            -0.01673550056770208,
+            0.0012165718046138836
+          ],
+          "replicates": 5000,
+          "source_count": 120,
+          "sample_count": 647
+        },
+        "42": {
+          "candidate_minus_reference_MAE": 0.0026604533195495605,
+          "paired_source_bootstrap_95_ci": [
+            -0.003790627443556023,
+            0.009431142880503843
+          ],
+          "replicates": 5000,
+          "source_count": 120,
+          "sample_count": 647
+        },
+        "2026": {
+          "candidate_minus_reference_MAE": -0.003872126340866089,
+          "paired_source_bootstrap_95_ci": [
+            -0.014934053343313566,
+            0.007688421318851986
+          ],
+          "replicates": 5000,
+          "source_count": 120,
+          "sample_count": 647
+        },
+        "pooled": {
+          "candidate_minus_reference_MAE": -0.0029880106449127197,
+          "paired_source_bootstrap_95_ci": [
+            -0.008548132957529727,
+            0.0024129770021214902
+          ],
+          "replicates": 5000,
+          "source_count": 120,
+          "sample_count": 1941
+        },
+        "all_seed_directions_favor_candidate": false,
+        "pooled_CI_upper_below_zero": false
+      },
+      "marginal_variance": {
+        "13": {
+          "candidate_minus_reference_MAE": -0.008477091789245605,
+          "paired_source_bootstrap_95_ci": [
+            -0.0173083493164576,
+            0.00018636211330428566
+          ],
+          "replicates": 5000,
+          "source_count": 120,
+          "sample_count": 647
+        },
+        "42": {
+          "candidate_minus_reference_MAE": -0.001252681016921997,
+          "paired_source_bootstrap_95_ci": [
+            -0.01465260543796077,
+            0.011501040373149383
+          ],
+          "replicates": 5000,
+          "source_count": 120,
+          "sample_count": 647
+        },
+        "2026": {
+          "candidate_minus_reference_MAE": 0.0035148262977600098,
+          "paired_source_bootstrap_95_ci": [
+            -0.008388441814870714,
+            0.015453904843892573
+          ],
+          "replicates": 5000,
+          "source_count": 120,
+          "sample_count": 647
+        },
+        "pooled": {
+          "candidate_minus_reference_MAE": -0.0020716190338134766,
+          "paired_source_bootstrap_95_ci": [
+            -0.009694710654725299,
+            0.005277073584224737
+          ],
+          "replicates": 5000,
+          "source_count": 120,
+          "sample_count": 1941
+        },
+        "all_seed_directions_favor_candidate": false,
+        "pooled_CI_upper_below_zero": false
+      },
+      "unpaired_cov": {
+        "13": {
+          "candidate_minus_reference_MAE": -0.0016637146472930908,
+          "paired_source_bootstrap_95_ci": [
+            -0.014649823134856417,
+            0.011261966182974741
+          ],
+          "replicates": 5000,
+          "source_count": 120,
+          "sample_count": 647
+        },
+        "42": {
+          "candidate_minus_reference_MAE": 0.000244140625,
+          "paired_source_bootstrap_95_ci": [
+            -0.011587787861785052,
+            0.011475979027590783
+          ],
+          "replicates": 5000,
+          "source_count": 120,
+          "sample_count": 647
+        },
+        "2026": {
+          "candidate_minus_reference_MAE": -0.0026901066303253174,
+          "paired_source_bootstrap_95_ci": [
+            -0.01286508712305883,
+            0.007547498804228192
+          ],
+          "replicates": 5000,
+          "source_count": 120,
+          "sample_count": 647
+        },
+        "pooled": {
+          "candidate_minus_reference_MAE": -0.0013698935508728027,
+          "paired_source_bootstrap_95_ci": [
+            -0.00927067084854077,
+            0.006327809517904886
+          ],
+          "replicates": 5000,
+          "source_count": 120,
+          "sample_count": 1941
+        },
+        "all_seed_directions_favor_candidate": false,
+        "pooled_CI_upper_below_zero": false
+      },
+      "conditioned_pooled_fusion": {
+        "13": {
+          "candidate_minus_reference_MAE": 0.003115147352218628,
+          "paired_source_bootstrap_95_ci": [
+            -0.011201446733880738,
+            0.01698370604918618
+          ],
+          "replicates": 5000,
+          "source_count": 120,
+          "sample_count": 647
+        },
+        "42": {
+          "candidate_minus_reference_MAE": -0.005488842725753784,
+          "paired_source_bootstrap_95_ci": [
+            -0.019886080647034964,
+            0.008828354787006316
+          ],
+          "replicates": 5000,
+          "source_count": 120,
+          "sample_count": 647
+        },
+        "2026": {
+          "candidate_minus_reference_MAE": -0.004480093717575073,
+          "paired_source_bootstrap_95_ci": [
+            -0.02338677661935978,
+            0.01444378841669734
+          ],
+          "replicates": 5000,
+          "source_count": 120,
+          "sample_count": 647
+        },
+        "pooled": {
+          "candidate_minus_reference_MAE": -0.0022845864295959473,
+          "paired_source_bootstrap_95_ci": [
+            -0.011529340956784085,
+            0.006355454522969503
+          ],
+          "replicates": 5000,
+          "source_count": 120,
+          "sample_count": 1941
+        },
+        "all_seed_directions_favor_candidate": false,
+        "pooled_CI_upper_below_zero": false
+      },
+      "conditioned_sequence_almt": {
+        "13": {
+          "candidate_minus_reference_MAE": -0.005020171403884888,
+          "paired_source_bootstrap_95_ci": [
+            -0.026374744426658554,
+            0.016324526901129684
+          ],
+          "replicates": 5000,
+          "source_count": 120,
+          "sample_count": 647
+        },
+        "42": {
+          "candidate_minus_reference_MAE": 0.00682908296585083,
+          "paired_source_bootstrap_95_ci": [
+            -0.015101741207545835,
+            0.0299821845304979
+          ],
+          "replicates": 5000,
+          "source_count": 120,
+          "sample_count": 647
+        },
+        "2026": {
+          "candidate_minus_reference_MAE": -0.00013107061386108398,
+          "paired_source_bootstrap_95_ci": [
+            -0.02310585269621353,
+            0.023094466550638335
+          ],
+          "replicates": 5000,
+          "source_count": 120,
+          "sample_count": 647
+        },
+        "pooled": {
+          "candidate_minus_reference_MAE": 0.0005593001842498779,
+          "paired_source_bootstrap_95_ci": [
+            -0.017469546445950494,
+            0.0181117458700458
+          ],
+          "replicates": 5000,
+          "source_count": 120,
+          "sample_count": 1941
+        },
+        "all_seed_directions_favor_candidate": false,
+        "pooled_CI_upper_below_zero": false
+      }
+    }
+  },
+  "paired_cov_inference_interventions": {
+    "common_permutation": {
+      "operation": "cyclically roll A and V four-row grids together by one row; globals fixed",
+      "max_abs_output_change_by_seed": {
+        "13": 3.082331520021242e-07,
+        "42": 2.5609504050727594e-07,
+        "2026": 4.6251903995653265e-07
+      },
+      "tolerance": 1e-05
+    },
+    "vision_roll_1": {
+      "operation": "cyclically roll only the paired checkpoint's V grid by one row at inference; globals and A grid fixed",
+      "metrics_and_source_intervals_by_seed": {
+        "13": {
+          "baseline_native_metrics": {
+            "count": 647,
+            "MAE": 0.41116997599601746,
+            "Corr": 0.64168788523652,
+            "Acc2_positive_strict": 0.7697063369397218
+          },
+          "vision_roll_1_native_metrics": {
+            "count": 647,
+            "MAE": 0.41396382451057434,
+            "Corr": 0.6357521023280767,
+            "Acc2_positive_strict": 0.7743431221020093
+          },
+          "native_MAE_increase": 0.0027938485145568848,
+          "paired_source_bootstrap_95_ci_for_MAE_increase": [
+            -0.004139217124233945,
+            0.009501576271217975
+          ],
+          "source_count": 120
+        },
+        "42": {
+          "baseline_native_metrics": {
+            "count": 647,
+            "MAE": 0.4101855754852295,
+            "Corr": 0.6325832992604737,
+            "Acc2_positive_strict": 0.7465224111282844
+          },
+          "vision_roll_1_native_metrics": {
+            "count": 647,
+            "MAE": 0.40974658727645874,
+            "Corr": 0.6341804869151093,
+            "Acc2_positive_strict": 0.7480680061823802
+          },
+          "native_MAE_increase": -0.00043898820877075195,
+          "paired_source_bootstrap_95_ci_for_MAE_increase": [
+            -0.0016995488546793127,
+            0.0008281838122560086
+          ],
+          "source_count": 120
+        },
+        "2026": {
+          "baseline_native_metrics": {
+            "count": 647,
+            "MAE": 0.4063635468482971,
+            "Corr": 0.6434141772005505,
+            "Acc2_positive_strict": 0.7712519319938176
+          },
+          "vision_roll_1_native_metrics": {
+            "count": 647,
+            "MAE": 0.4083043932914734,
+            "Corr": 0.6375523557031343,
+            "Acc2_positive_strict": 0.7604327666151468
+          },
+          "native_MAE_increase": 0.0019408464431762695,
+          "paired_source_bootstrap_95_ci_for_MAE_increase": [
+            -0.001339471012797233,
+            0.00546457195723625
+          ],
+          "source_count": 120
+        }
+      },
+      "per_sample_outputs": {
+        "13": {
+          "publication_omitted": true,
+          "original_count": 647
+        },
+        "42": {
+          "publication_omitted": true,
+          "original_count": 647
+        },
+        "2026": {
+          "publication_omitted": true,
+          "original_count": 647
+        }
+      }
+    }
+  },
+  "promotion_gate": {
+    "passed": false,
+    "checks": [
+      {
+        "name": "paired_cov vs static_product: lower MAE in all seeds and pooled source-CI upper below zero",
+        "passed": false,
+        "detail": {
+          "candidate_minus_reference_MAE_by_seed": {
+            "13": -0.007752418518066406,
+            "42": 0.0026604533195495605,
+            "2026": -0.003872126340866089
+          },
+          "pooled_three_seed_source_bootstrap_95_ci": [
+            -0.008548132957529727,
+            0.0024129770021214902
+          ],
+          "all_seed_directions_favor_candidate": false,
+          "pooled_CI_upper_below_zero": false
+        }
+      },
+      {
+        "name": "paired_cov vs marginal_variance: lower MAE in all seeds and pooled source-CI upper below zero",
+        "passed": false,
+        "detail": {
+          "candidate_minus_reference_MAE_by_seed": {
+            "13": -0.008477091789245605,
+            "42": -0.001252681016921997,
+            "2026": 0.0035148262977600098
+          },
+          "pooled_three_seed_source_bootstrap_95_ci": [
+            -0.009694710654725299,
+            0.005277073584224737
+          ],
+          "all_seed_directions_favor_candidate": false,
+          "pooled_CI_upper_below_zero": false
+        }
+      },
+      {
+        "name": "paired_cov vs unpaired_cov: lower MAE in all seeds and pooled source-CI upper below zero",
+        "passed": false,
+        "detail": {
+          "candidate_minus_reference_MAE_by_seed": {
+            "13": -0.0016637146472930908,
+            "42": 0.000244140625,
+            "2026": -0.0026901066303253174
+          },
+          "pooled_three_seed_source_bootstrap_95_ci": [
+            -0.00927067084854077,
+            0.006327809517904886
+          ],
+          "all_seed_directions_favor_candidate": false,
+          "pooled_CI_upper_below_zero": false
+        }
+      },
+      {
+        "name": "paired_cov vs conditioned_pooled_fusion: lower MAE in all seeds and pooled source-CI upper below zero",
+        "passed": false,
+        "detail": {
+          "candidate_minus_reference_MAE_by_seed": {
+            "13": 0.003115147352218628,
+            "42": -0.005488842725753784,
+            "2026": -0.004480093717575073
+          },
+          "pooled_three_seed_source_bootstrap_95_ci": [
+            -0.011529340956784085,
+            0.006355454522969503
+          ],
+          "all_seed_directions_favor_candidate": false,
+          "pooled_CI_upper_below_zero": false
+        }
+      },
+      {
+        "name": "paired_cov vs conditioned_sequence_almt: lower MAE in all seeds and pooled source-CI upper below zero",
+        "passed": false,
+        "detail": {
+          "candidate_minus_reference_MAE_by_seed": {
+            "13": -0.005020171403884888,
+            "42": 0.00682908296585083,
+            "2026": -0.00013107061386108398
+          },
+          "pooled_three_seed_source_bootstrap_95_ci": [
+            -0.017469546445950494,
+            0.0181117458700458
+          ],
+          "all_seed_directions_favor_candidate": false,
+          "pooled_CI_upper_below_zero": false
+        }
+      },
+      {
+        "name": "paired_cov seed 13: inference V roll worsens native MAE with positive source-CI lower bound",
+        "passed": false,
+        "detail": {
+          "native_MAE_increase": 0.0027938485145568848,
+          "paired_source_bootstrap_95_ci": [
+            -0.004139217124233945,
+            0.009501576271217975
+          ]
+        }
+      },
+      {
+        "name": "paired_cov seed 42: inference V roll worsens native MAE with positive source-CI lower bound",
+        "passed": false,
+        "detail": {
+          "native_MAE_increase": -0.00043898820877075195,
+          "paired_source_bootstrap_95_ci": [
+            -0.0016995488546793127,
+            0.0008281838122560086
+          ]
+        }
+      },
+      {
+        "name": "paired_cov seed 2026: inference V roll worsens native MAE with positive source-CI lower bound",
+        "passed": false,
+        "detail": {
+          "native_MAE_increase": 0.0019408464431762695,
+          "paired_source_bootstrap_95_ci": [
+            -0.001339471012797233,
+            0.00546457195723625
+          ]
+        }
+      },
+      {
+        "name": "common paired permutation preserves checkpoint outputs",
+        "passed": true,
+        "detail": {
+          "max_abs_output_change_by_seed": {
+            "13": 3.082331520021242e-07,
+            "42": 2.5609504050727594e-07,
+            "2026": 4.6251903995653265e-07
+          },
+          "tolerance": 1e-05
+        }
+      }
+    ],
+    "interpretation": "Conditional VALID development gate; it does not establish originality, physical synchrony, or final-test performance."
+  },
+  "recommendation": "retain the registered negative/conditional result and stop this covariance study",
+  "audit_notes": [
+    "All numeric forward replay and intervention outputs were computed on CPU; the independent model formula uses NumPy float64 and exact erf GELU.",
+    "Stored A/V grid anchors preserve the registered decoder-time interpolation convention; corpus physical synchrony remains UNVERIFIED.",
+    "Validation source intervals are conditional on already-selected models and do not adjust for repeated VALID use.",
+    "The paired covariance operator is an established diagonal projected cross-moment; this audit makes no originality claim."
+  ],
+  "provenance_coverage": {
+    "verified_file_hashes_total_cached": 175,
+    "hash_manifest_failures": [],
+    "verified_all_candidate_source_inputs": true,
+    "formal_fits": 12,
+    "audited_reference_runs": 6
+  },
+  "checks_passed": 326,
+  "checks_failed": 0,
+  "publication_redaction": {
+    "full_local_report_sha256": "820b776d075862dc664bafa537fa823429dcf581f17a7b7c200713a52973bd5e",
+    "removed_path_count": 4,
+    "removed_paths": [
+      "/source_cluster_bootstrap/source_names",
+      "/paired_cov_inference_interventions/vision_roll_1/per_sample_outputs/13",
+      "/paired_cov_inference_interventions/vision_roll_1/per_sample_outputs/42",
+      "/paired_cov_inference_interventions/vision_roll_1/per_sample_outputs/2026"
+    ],
+    "remaining_removed_paths_list_truncated": false,
+    "reason": "Exclude per-sample dataset records, long raw arrays and response/download capabilities; retain aggregate research evidence."
+  }
+}

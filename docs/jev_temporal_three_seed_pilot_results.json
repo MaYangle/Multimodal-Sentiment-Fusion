@@ -1,0 +1,47 @@
+{
+  "scope": "biased339train/43valid real-video prefix pilot; not a full-cohort benchmark",
+  "model": "mask-aware Jev-inspired temporal candidate, utility OOF supervision NOT applied",
+  "test_scored": false,
+  "seeds": [
+    {
+      "seed": 13,
+      "selected_epoch": 10,
+      "epochs": 18,
+      "accuracy": 0.4418604651162791,
+      "macro_f1": 0.36787301587301585,
+      "nll": 2.761644805668163,
+      "ece15": 0.31648652277612666,
+      "train_valid_seconds": 9.816015599986713,
+      "peak_gpu_bytes": 187492352,
+      "predictions_sha256": "fc160830c3ab8f7ba77caa091741c0ce359addc78b0892d7d49f0a283f1d5559"
+    },
+    {
+      "seed": 42,
+      "selected_epoch": 9,
+      "epochs": 17,
+      "accuracy": 0.4186046511627907,
+      "macro_f1": 0.36142428142428146,
+      "nll": 2.9865589666386354,
+      "ece15": 0.41118701416761894,
+      "train_valid_seconds": 10.194037300003401,
+      "peak_gpu_bytes": 187492352,
+      "predictions_sha256": "b84445d3b691eb4c1ed54ed0c82157b3bab66fc000233e70ab27fa729d70818c"
+    },
+    {
+      "seed": 2026,
+      "selected_epoch": 8,
+      "epochs": 16,
+      "accuracy": 0.46511627906976744,
+      "macro_f1": 0.3265512265512266,
+      "nll": 2.18219053653359,
+      "ece15": 0.31607046111801274,
+      "train_valid_seconds": 9.165930900002422,
+      "peak_gpu_bytes": 187492352,
+      "predictions_sha256": "f81e096b356165672d6389d32b08ac170ac9180e3b1c1aed5b7740bb6a236b4b"
+    }
+  ],
+  "accuracy_mean": 0.441860465116279,
+  "accuracy_sample_sd": 0.023255813953488358,
+  "macro_f1_mean": 0.3519495079495079,
+  "macro_f1_sample_sd": 0.022230633537694958
+}

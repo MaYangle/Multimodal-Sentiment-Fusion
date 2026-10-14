@@ -1,0 +1,337 @@
+{
+  "scope": "official validation error analysis; not independent test",
+  "test_evaluated": false,
+  "csv_sha256": "be7e482640e7ee24d2070033e1e2aef61ce183199286a8a18b0d6247556bf150",
+  "groups": {
+    "all": {
+      "count": 647,
+      "definition": "all"
+    },
+    "opposite_sign_modalities": {
+      "count": 117,
+      "definition": "opposite_sign_modalities"
+    },
+    "no_opposite_sign": {
+      "count": 530,
+      "definition": "no_opposite_sign"
+    },
+    "weak_sentiment": {
+      "count": 236,
+      "definition": "weak_sentiment"
+    },
+    "strong_sentiment": {
+      "count": 281,
+      "definition": "strong_sentiment"
+    },
+    "exact_neutral": {
+      "count": 92,
+      "definition": "exact_neutral"
+    }
+  },
+  "models": {
+    "text": {
+      "group_errors": {
+        "all": {
+          "MAE_mean": 0.4373090148085343,
+          "MAE_seed_sd": 0.00243508753572663
+        },
+        "opposite_sign_modalities": {
+          "MAE_mean": 0.5056059327602727,
+          "MAE_seed_sd": 0.008821298403253122
+        },
+        "no_opposite_sign": {
+          "MAE_mean": 0.4222321480154148,
+          "MAE_seed_sd": 0.0038921532068599547
+        },
+        "weak_sentiment": {
+          "MAE_mean": 0.3256693601666155,
+          "MAE_seed_sd": 0.007460580459930888
+        },
+        "strong_sentiment": {
+          "MAE_mean": 0.5441250007078139,
+          "MAE_seed_sd": 0.014360990686635348
+        },
+        "exact_neutral": {
+          "MAE_mean": 0.3143846542250527,
+          "MAE_seed_sd": 0.0059662516746165125
+        }
+      },
+      "error_vs_label_spread_pearson": 0.22009720786040465,
+      "worst_validation_ids": [
+        {
+          "id": "video_0053/0011",
+          "target": -1.0,
+          "mean_prediction": 0.8707937399546305,
+          "MAE": 1.8707937399546306,
+          "annotation_spread": 1.6
+        },
+        {
+          "id": "video_0002/0023",
+          "target": -0.6,
+          "mean_prediction": 0.8706674575805664,
+          "MAE": 1.4706674575805667,
+          "annotation_spread": 1.8
+        },
+        {
+          "id": "video_0041/0016",
+          "target": 0.6,
+          "mean_prediction": -0.8456723888715109,
+          "MAE": 1.445672388871511,
+          "annotation_spread": 0.8
+        },
+        {
+          "id": "video_0006/0017",
+          "target": 1.0,
+          "mean_prediction": -0.41952117284138996,
+          "MAE": 1.41952117284139,
+          "annotation_spread": 0.8
+        },
+        {
+          "id": "video_0024/0015",
+          "target": -1.0,
+          "mean_prediction": 0.40813349684079486,
+          "MAE": 1.4081334968407948,
+          "annotation_spread": 0.4
+        },
+        {
+          "id": "video_0023/0048",
+          "target": 1.0,
+          "mean_prediction": -0.3899817367394765,
+          "MAE": 1.3899817367394764,
+          "annotation_spread": 0.19999999999999996
+        },
+        {
+          "id": "video_0049/0013",
+          "target": 1.0,
+          "mean_prediction": -0.38248802224795025,
+          "MAE": 1.3824880222479503,
+          "annotation_spread": 0.19999999999999996
+        },
+        {
+          "id": "video_0008/0006",
+          "target": 1.0,
+          "mean_prediction": -0.3759864370028178,
+          "MAE": 1.3759864370028179,
+          "annotation_spread": 1.0
+        },
+        {
+          "id": "video_0047/0081",
+          "target": 0.6,
+          "mean_prediction": -0.7467454870541891,
+          "MAE": 1.3467454870541893,
+          "annotation_spread": 1.0
+        },
+        {
+          "id": "video_0055/0025",
+          "target": 1.0,
+          "mean_prediction": -0.3415060043334961,
+          "MAE": 1.341506004333496,
+          "annotation_spread": 0.6
+        }
+      ]
+    },
+    "early_fusion": {
+      "group_errors": {
+        "all": {
+          "MAE_mean": 0.4220698002153899,
+          "MAE_seed_sd": 0.0007359015239687003
+        },
+        "opposite_sign_modalities": {
+          "MAE_mean": 0.47183986728496186,
+          "MAE_seed_sd": 0.008183234541202924
+        },
+        "no_opposite_sign": {
+          "MAE_mean": 0.4110828231453146,
+          "MAE_seed_sd": 0.00261705717794839
+        },
+        "weak_sentiment": {
+          "MAE_mean": 0.3288276401511525,
+          "MAE_seed_sd": 0.010345780494555782
+        },
+        "strong_sentiment": {
+          "MAE_mean": 0.506814742034847,
+          "MAE_seed_sd": 0.009072144355965667
+        },
+        "exact_neutral": {
+          "MAE_mean": 0.3039332941390466,
+          "MAE_seed_sd": 0.01336464863188722
+        }
+      },
+      "error_vs_label_spread_pearson": 0.1767886510908017,
+      "worst_validation_ids": [
+        {
+          "id": "video_0053/0011",
+          "target": -1.0,
+          "mean_prediction": 0.9671193361282349,
+          "MAE": 1.9671193361282349,
+          "annotation_spread": 1.6
+        },
+        {
+          "id": "video_0056/0037",
+          "target": -1.0,
+          "mean_prediction": 0.5458953976631165,
+          "MAE": 1.5458953976631165,
+          "annotation_spread": 1.2
+        },
+        {
+          "id": "video_0002/0023",
+          "target": -0.6,
+          "mean_prediction": 0.8482186396916708,
+          "MAE": 1.448218639691671,
+          "annotation_spread": 1.8
+        },
+        {
+          "id": "video_0027/0014",
+          "target": 0.6,
+          "mean_prediction": -0.8281897306442261,
+          "MAE": 1.4281897306442264,
+          "annotation_spread": 0.4
+        },
+        {
+          "id": "video_0055/0025",
+          "target": 1.0,
+          "mean_prediction": -0.42382944623629254,
+          "MAE": 1.4238294462362926,
+          "annotation_spread": 0.6
+        },
+        {
+          "id": "video_0029/0026",
+          "target": 1.0,
+          "mean_prediction": -0.389327476421992,
+          "MAE": 1.389327476421992,
+          "annotation_spread": 0.6
+        },
+        {
+          "id": "aqgy4_0018/00006",
+          "target": -0.8,
+          "mean_prediction": 0.5542741020520529,
+          "MAE": 1.354274102052053,
+          "annotation_spread": 0.20000000000000007
+        },
+        {
+          "id": "video_0027/0002",
+          "target": 0.6,
+          "mean_prediction": -0.7334161400794983,
+          "MAE": 1.3334161400794986,
+          "annotation_spread": 1.8
+        },
+        {
+          "id": "video_0024/0015",
+          "target": -1.0,
+          "mean_prediction": 0.3042473594347636,
+          "MAE": 1.3042473594347637,
+          "annotation_spread": 0.4
+        },
+        {
+          "id": "video_0014/0032",
+          "target": -1.0,
+          "mean_prediction": 0.30001771946748096,
+          "MAE": 1.300017719467481,
+          "annotation_spread": 0.8
+        }
+      ]
+    },
+    "almt": {
+      "group_errors": {
+        "all": {
+          "MAE_mean": 0.42708629838163137,
+          "MAE_seed_sd": 0.0065464983067738585
+        },
+        "opposite_sign_modalities": {
+          "MAE_mean": 0.5650679222426174,
+          "MAE_seed_sd": 0.02040085048469142
+        },
+        "no_opposite_sign": {
+          "MAE_mean": 0.39662620405760246,
+          "MAE_seed_sd": 0.011592916895695119
+        },
+        "weak_sentiment": {
+          "MAE_mean": 0.4237668337612834,
+          "MAE_seed_sd": 0.020491999311166405
+        },
+        "strong_sentiment": {
+          "MAE_mean": 0.453406313045474,
+          "MAE_seed_sd": 0.03309345635376581
+        },
+        "exact_neutral": {
+          "MAE_mean": 0.44253697259726166,
+          "MAE_seed_sd": 0.02409534930894596
+        }
+      },
+      "error_vs_label_spread_pearson": 0.27142868176335366,
+      "worst_validation_ids": [
+        {
+          "id": "video_0053/0011",
+          "target": -1.0,
+          "mean_prediction": 0.8096539576848348,
+          "MAE": 1.8096539576848347,
+          "annotation_spread": 1.6
+        },
+        {
+          "id": "video_0055/0025",
+          "target": 1.0,
+          "mean_prediction": -0.6852262119452158,
+          "MAE": 1.685226211945216,
+          "annotation_spread": 0.6
+        },
+        {
+          "id": "video_0014/0032",
+          "target": -1.0,
+          "mean_prediction": 0.6641364693641663,
+          "MAE": 1.6641364693641663,
+          "annotation_spread": 0.8
+        },
+        {
+          "id": "aqgy4_0018/00006",
+          "target": -0.8,
+          "mean_prediction": 0.8329306840896606,
+          "MAE": 1.6329306840896607,
+          "annotation_spread": 0.20000000000000007
+        },
+        {
+          "id": "video_0041/0030",
+          "target": -1.0,
+          "mean_prediction": 0.6198647717634836,
+          "MAE": 1.6198647717634838,
+          "annotation_spread": 1.0
+        },
+        {
+          "id": "video_0024/0069",
+          "target": 0.6,
+          "mean_prediction": -0.9927671551704407,
+          "MAE": 1.592767155170441,
+          "annotation_spread": 0.8
+        },
+        {
+          "id": "video_0014/0031",
+          "target": -1.0,
+          "mean_prediction": 0.5911151667435964,
+          "MAE": 1.5911151667435963,
+          "annotation_spread": 1.6
+        },
+        {
+          "id": "video_0024/0015",
+          "target": -1.0,
+          "mean_prediction": 0.5247475703557333,
+          "MAE": 1.5247475703557332,
+          "annotation_spread": 0.4
+        },
+        {
+          "id": "video_0033/0002",
+          "target": 1.0,
+          "mean_prediction": -0.5132784843444824,
+          "MAE": 1.5132784843444824,
+          "annotation_spread": 1.0
+        },
+        {
+          "id": "video_0027/0002",
+          "target": 0.6,
+          "mean_prediction": -0.9105437397956848,
+          "MAE": 1.5105437397956851,
+          "annotation_spread": 1.8
+        }
+      ]
+    }
+  },
+  "interpretation_limit": "Unimodal labels are analysis targets, never model inputs. Correlation with disagreement does not establish modality reliability, causal conflict or novelty. Validation has already been used for checkpoint selection."
+}

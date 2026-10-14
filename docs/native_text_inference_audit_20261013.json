@@ -1,0 +1,9 @@
+{
+  "scope": "two label-free official VALID text records, native top4 CPU inference vs saved GPU output",
+  "count": 2,
+  "maximum_prediction_difference": 1.0728836059570312e-06,
+  "predictions_sha256": "26618b731950ed3947774e733173ee379e17fbb2592ed110c1d1a9505717b03c",
+  "checkpoint_sha256": "d7c443131ed493275d57be52a8e7bf9cf55cfdd352772f8a96fa694515f6cdef",
+  "test_evaluated": false,
+  "passed": true
+}

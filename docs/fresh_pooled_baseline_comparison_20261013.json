@@ -1,0 +1,57 @@
+{
+  "scope": "six full pooled native MOSEI baseline retrainings in isolated source/environment; ALMT formal reproduction still running",
+  "results": [
+    {
+      "model": "text",
+      "seed": 13,
+      "VALID_count": 1869,
+      "max_prediction_difference": 0.0,
+      "native_metrics_exactly_equal": true,
+      "selection_budget_equal": true
+    },
+    {
+      "model": "text",
+      "seed": 42,
+      "VALID_count": 1869,
+      "max_prediction_difference": 0.0,
+      "native_metrics_exactly_equal": true,
+      "selection_budget_equal": true
+    },
+    {
+      "model": "text",
+      "seed": 2026,
+      "VALID_count": 1869,
+      "max_prediction_difference": 0.0,
+      "native_metrics_exactly_equal": true,
+      "selection_budget_equal": true
+    },
+    {
+      "model": "early_fusion",
+      "seed": 13,
+      "VALID_count": 1869,
+      "max_prediction_difference": 0.0,
+      "native_metrics_exactly_equal": true,
+      "selection_budget_equal": true
+    },
+    {
+      "model": "early_fusion",
+      "seed": 42,
+      "VALID_count": 1869,
+      "max_prediction_difference": 0.0,
+      "native_metrics_exactly_equal": true,
+      "selection_budget_equal": true
+    },
+    {
+      "model": "early_fusion",
+      "seed": 2026,
+      "VALID_count": 1869,
+      "max_prediction_difference": 0.0,
+      "native_metrics_exactly_equal": true,
+      "selection_budget_equal": true
+    }
+  ],
+  "all_six_passed": true,
+  "full_nine_suite_complete": false,
+  "test_evaluated": false,
+  "fresh_suite_partial_sha256_at_observation": "ccccd2ad4fa2557ba72ffd7717199f848f3c11d4c4e1bcefb8fcfea762e9be3d"
+}

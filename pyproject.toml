@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jevaffect"
+version = "0.1.0.dev0"
+description = "Native multimodal sentiment fusion research with reproducible controlled experiments"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3"]
+
+[project.optional-dependencies]
+train = ["torch>=2.7,<3", "einops>=0.8,<1"]
+data = ["gdown>=5,<7", "kaggle>=1.7,<3"]
+encoders = ["transformers==4.51.3", "imageio-ffmpeg==0.6.0", "pillow==11.3.0"]
+verify = ["requests>=2.32,<3", "scikit-learn>=1.5,<2"]
+uncertainty = ["scipy>=1.11,<2"]
+
+[tool.setuptools.packages.find]
+include = ["jevaffect*", "vendor*"]

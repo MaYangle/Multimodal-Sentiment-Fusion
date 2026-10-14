@@ -1,0 +1,13 @@
+{
+  "competition_submission": false,
+  "elapsed_seconds": 217.51704015299993,
+  "error": "download_official_gdrive_pickle_with_gdown_6.4.2 exited with code 1 (see /kaggle/working/jevaffect-bcmlf-results/logs/download_official_pickle.log)",
+  "error_type": "CloudPilotError",
+  "source_pickle_all_official_splits_read_for_schema_and_cache": false,
+  "stage": "official_meta_csv",
+  "stage1_recovery_artifacts": {},
+  "status": "failed",
+  "test_scored": false,
+  "test_used_for_training_or_validation": false,
+  "traceback": "Traceback (most recent call last):\n  File \"/kaggle/working/jevaffect-bcmlf-pilot/work/bcmlf_cloud_impl/cloud_runner.py\", line 764, in run_cloud_pilot\n    source_provenance = download_google_drive_source(\n        source_pickle,\n    ...<4 lines>...\n        deadline_monotonic=overall_deadline,\n    )\n  File \"/kaggle/working/jevaffect-bcmlf-pilot/work/bcmlf_cloud_impl/cloud_runner.py\", line 325, in download_google_drive_source\n    _run_command(\n    ~~~~~~~~~~~~^\n        \"download_official_gdrive_pickle_with_gdown_\" + GDOWN_VERSION,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n        stages_path=stages_path,\n        ^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/kaggle/working/jevaffect-bcmlf-pilot/work/bcmlf_cloud_impl/cloud_runner.py\", line 403, in _run_command\n    raise CloudPilotError(\"{} exited with code {} (see {})\".format(name, result.returncode, log_path))\nwork.bcmlf_cloud_impl.cloud_runner.CloudPilotError: download_official_gdrive_pickle_with_gdown_6.4.2 exited with code 1 (see /kaggle/working/jevaffect-bcmlf-results/logs/download_official_pickle.log)\n"
+}

@@ -1,0 +1,84 @@
+{
+  "references": [
+    {
+      "dataset": "simsv2",
+      "repo": "thuiar/ch-sims-v2",
+      "revision": "6eb09e5e9d17355cec436c59f4d3fdb41f3b5891",
+      "source_url": "https://raw.githubusercontent.com/thuiar/ch-sims-v2/6eb09e5e9d17355cec436c59f4d3fdb41f3b5891/utils/metricsTop.py",
+      "source_sha256": "544d0763040fb1083486286dfba7e36a70afb8cff9aa475719b0a1b831a4831f",
+      "cases": [
+        {
+          "dtype": "<class 'numpy.float32'>",
+          "count": 200,
+          "metrics_checked": [
+            "Mult_acc_2",
+            "Mult_acc_2_weak",
+            "Mult_acc_3",
+            "Mult_acc_5",
+            "F1_score",
+            "MAE",
+            "Corr",
+            "R_squre"
+          ],
+          "passed": true
+        },
+        {
+          "dtype": "<class 'numpy.float64'>",
+          "count": 200,
+          "metrics_checked": [
+            "Mult_acc_2",
+            "Mult_acc_2_weak",
+            "Mult_acc_3",
+            "Mult_acc_5",
+            "F1_score",
+            "MAE",
+            "Corr",
+            "R_squre"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "dataset": "mosei",
+      "repo": "thuiar/MMSA",
+      "revision": "a94e65d07fa1ae0d44e552390074b29b0898edfd",
+      "source_url": "https://raw.githubusercontent.com/thuiar/MMSA/a94e65d07fa1ae0d44e552390074b29b0898edfd/src/MMSA/utils/metricsTop.py",
+      "source_sha256": "5d6ce6d8a6442a94d280e77da6641edf13b097b9015881173e9a3b9a1eb4ac94",
+      "cases": [
+        {
+          "dtype": "<class 'numpy.float32'>",
+          "count": 200,
+          "metrics_checked": [
+            "Has0_acc_2",
+            "Has0_F1_score",
+            "Non0_acc_2",
+            "Non0_F1_score",
+            "Mult_acc_5",
+            "Mult_acc_7",
+            "MAE",
+            "Corr"
+          ],
+          "passed": true
+        },
+        {
+          "dtype": "<class 'numpy.float64'>",
+          "count": 200,
+          "metrics_checked": [
+            "Has0_acc_2",
+            "Has0_F1_score",
+            "Non0_acc_2",
+            "Non0_F1_score",
+            "Mult_acc_5",
+            "Mult_acc_7",
+            "MAE",
+            "Corr"
+          ],
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "passed": true,
+  "test_dataset_scored": false
+}

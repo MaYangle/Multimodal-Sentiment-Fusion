@@ -1,0 +1,17 @@
+# CMC source and protocol adaptation
+
+This port is based on the local author checkout `D:/MYL/JevAffect/work/CMC`, repository `https://github.com/gw-zhong/CMC`, commit `c695f719f9cd0136e52dc2f7a9e75a40aabd37ad`. The author repository's `LICENSE` is MIT (copyright Guowei Zhong, 2025); the original paper is [Calibrating Multimodal Consensus for Emotion Recognition](https://arxiv.org/abs/2510.20256). This port retains the original attribution and does not bundle data or model weights.
+
+The source architecture was read from `src/models.py`: three modality projections and Transformer encoders; normalized modality vectors; PFM's cosine-similarity softmax over the three vectors; MCR's learned sparse top-k router; and three expert residual heads mixed by router weights. `CMCClassifier` keeps those operations and changes each output head from three logits to five.
+
+The pseudo-supervision implementation follows `src/train_pseudo_pretrain.py`: each T/A/V pseudo bank starts from the multimodal class label, each modality prediction generates the nearest one-hot “reverse” label and source distance-based interpolation, then per-modality momentum updates the stored distribution. CE trains each modality against the current pseudo-label argmax. The source `models.SupConLoss` also remains, using the source SIMS polarity grouping; the five-class grouping treats WPOS/SPOS as positive. The fusion stage mirrors `src/train_run.py`: main-label CE, three pseudo-branch CEs, and SupCon on the three normalized modality representations. `transfer_unimodal_to_cmc` mirrors `src/utils.py::transfer_models` by mapping source `proj1/proj2/out_layer` heads into each CMC expert and copying the compatible modality encoder state.
+
+Important findings and explicit adaptations:
+
+- The author `--is_pseudo` path does not train against ground-truth unimodal T/A/V labels. Although the legacy loader reads those labels for evaluation, the pseudo training objective seeds from `M` and uses generated pseudo labels. This adapter deliberately exposes no T/A/V ground-truth fields.
+- The source maps continuous scores into three categories before CrossEntropy. In this project the target is the authoritative five-class `labels.npy`; the original continuous `raw_labels.npy` stays available for provenance. There is no MSE/L1 regression auxiliary in the inspected `--is_pseudo` pretraining or fusion code, so this port does not invent one.
+- Source SIMS SupCon groups three classes by `label > 1`. This five-class adaptation keeps that binary polarity objective as `class_index > 2` for SNEG/WNEG/NEUT versus WPOS/SPOS. It is a protocol adaptation, not an exact five-class result from the paper.
+- The source hard-codes BERT paths and directly constructs `BertModel`. This port accepts a supplied local BERT model for `text_bert.npy` token triplets; it does not download weights. When only already-contextual text features exist, an explicit identity adapter is available only with BERT fine-tuning disabled.
+- The source epoch loop evaluates and scores test every epoch, and its SIMS tuning script selects using test metrics. This port's cache loader asks only for train and valid; validation checkpoints use main five-class accuracy/NLL; there is no test evaluation path.
+
+The source training path uses `CrossEntropyLoss` and `SupConLoss`; its M/A/T/V targets are three-class bins derived from continuous values. Published two-class scores and this five-class adaptation are not directly comparable. See `configs/cmc_simsv2_5class_pseudo.json` for the pinned adaptation policy.

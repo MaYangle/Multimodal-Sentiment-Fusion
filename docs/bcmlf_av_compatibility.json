@@ -1,0 +1,14 @@
+{
+  "purpose": "synthetic actual-config compatibility test only; not sentiment experiment",
+  "bienc_output_shape": [
+    2,
+    1
+  ],
+  "downstream_av_shape": [
+    2,
+    55,
+    30
+  ],
+  "all_finite": true,
+  "parameters": 92745
+}

@@ -1,0 +1,136 @@
+{
+  "original_suite_sha256": "f3c99470f628f85969913e135275b9b4382b50f137b6a27d34923ecff0c680e5",
+  "reproduction_suite_sha256": "61c433f1d0f08bfa7307265b93d5797742b6a0d0ea67597f000fb87abf74087c",
+  "verified_runs": 21,
+  "evidence": [
+    {
+      "case": "direct_hit",
+      "seed": 13,
+      "all_647_prediction_records_exact": true,
+      "selected_parameters_objectives_metrics_and_budget_exact": true
+    },
+    {
+      "case": "direct_hit",
+      "seed": 42,
+      "all_647_prediction_records_exact": true,
+      "selected_parameters_objectives_metrics_and_budget_exact": true
+    },
+    {
+      "case": "direct_hit",
+      "seed": 2026,
+      "all_647_prediction_records_exact": true,
+      "selected_parameters_objectives_metrics_and_budget_exact": true
+    },
+    {
+      "case": "disagreement",
+      "seed": 13,
+      "all_647_prediction_records_exact": true,
+      "selected_parameters_objectives_metrics_and_budget_exact": true
+    },
+    {
+      "case": "disagreement",
+      "seed": 42,
+      "all_647_prediction_records_exact": true,
+      "selected_parameters_objectives_metrics_and_budget_exact": true
+    },
+    {
+      "case": "disagreement",
+      "seed": 2026,
+      "all_647_prediction_records_exact": true,
+      "selected_parameters_objectives_metrics_and_budget_exact": true
+    },
+    {
+      "case": "global",
+      "seed": 13,
+      "all_647_prediction_records_exact": true,
+      "selected_parameters_objectives_metrics_and_budget_exact": true
+    },
+    {
+      "case": "global",
+      "seed": 42,
+      "all_647_prediction_records_exact": true,
+      "selected_parameters_objectives_metrics_and_budget_exact": true
+    },
+    {
+      "case": "global",
+      "seed": 2026,
+      "all_647_prediction_records_exact": true,
+      "selected_parameters_objectives_metrics_and_budget_exact": true
+    },
+    {
+      "case": "mdn",
+      "seed": 13,
+      "all_647_prediction_records_exact": true,
+      "selected_parameters_objectives_metrics_and_budget_exact": true
+    },
+    {
+      "case": "mdn",
+      "seed": 42,
+      "all_647_prediction_records_exact": true,
+      "selected_parameters_objectives_metrics_and_budget_exact": true
+    },
+    {
+      "case": "mdn",
+      "seed": 2026,
+      "all_647_prediction_records_exact": true,
+      "selected_parameters_objectives_metrics_and_budget_exact": true
+    },
+    {
+      "case": "mixture",
+      "seed": 13,
+      "all_647_prediction_records_exact": true,
+      "selected_parameters_objectives_metrics_and_budget_exact": true
+    },
+    {
+      "case": "mixture",
+      "seed": 42,
+      "all_647_prediction_records_exact": true,
+      "selected_parameters_objectives_metrics_and_budget_exact": true
+    },
+    {
+      "case": "mixture",
+      "seed": 2026,
+      "all_647_prediction_records_exact": true,
+      "selected_parameters_objectives_metrics_and_budget_exact": true
+    },
+    {
+      "case": "scale",
+      "seed": 13,
+      "all_647_prediction_records_exact": true,
+      "selected_parameters_objectives_metrics_and_budget_exact": true
+    },
+    {
+      "case": "scale",
+      "seed": 42,
+      "all_647_prediction_records_exact": true,
+      "selected_parameters_objectives_metrics_and_budget_exact": true
+    },
+    {
+      "case": "scale",
+      "seed": 2026,
+      "all_647_prediction_records_exact": true,
+      "selected_parameters_objectives_metrics_and_budget_exact": true
+    },
+    {
+      "case": "views",
+      "seed": 13,
+      "all_647_prediction_records_exact": true,
+      "selected_parameters_objectives_metrics_and_budget_exact": true
+    },
+    {
+      "case": "views",
+      "seed": 42,
+      "all_647_prediction_records_exact": true,
+      "selected_parameters_objectives_metrics_and_budget_exact": true
+    },
+    {
+      "case": "views",
+      "seed": 2026,
+      "all_647_prediction_records_exact": true,
+      "selected_parameters_objectives_metrics_and_budget_exact": true
+    }
+  ],
+  "passed": true,
+  "test_evaluated": false,
+  "scope": "Calibration full retraining only; reused audited OOF tables, no point-teacher/encoder re-extraction claim"
+}

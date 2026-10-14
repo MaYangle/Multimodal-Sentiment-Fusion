@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "status": "ERROR",
+  "training_started": false,
+  "cause": "Google Drive file ID in cloud runner had an erroneous trailing 3",
+  "correction": "Use source-verified 13JdO6GbPHOGZ8yLBFUrNR8c2FvHN-E_O",
+  "misleading_old_failure_field": "source_pickle_all_official_splits_read_for_schema_and_cache=true was unconditional; no pickle was downloaded or read in v1",
+  "expected_bytes": 3620390413,
+  "retry_reason": "identified implementation error fixed, not an unchanged network retry"
+}

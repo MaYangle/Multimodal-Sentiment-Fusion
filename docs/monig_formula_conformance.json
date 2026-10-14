@@ -1,0 +1,11 @@
+{
+  "publisher_revision": "2be09edc0893e97e80eb6a6db18c2f70977b1734",
+  "utility_source_sha256": "c5c8fc6ccb9f8152181f0bbaa6124cc6b052400b064902b1ef2bc14b7bdd982f",
+  "fused_max_abs_difference": 1.7763568394002505e-15,
+  "loss_abs_difference": 6.661338147750939e-16,
+  "samples": 17,
+  "experts": 4,
+  "dtype": "float64",
+  "passed": true,
+  "test_dataset_used": false
+}

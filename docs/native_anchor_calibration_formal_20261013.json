@@ -1,0 +1,2436 @@
+{
+  "results": [
+    {
+      "root": "runs\\native_anchor_calibration_v1\\formal\\global\\seed_13",
+      "case": "global",
+      "seed": 13,
+      "complete": true,
+      "smoke_only": false,
+      "parameters": 1,
+      "optimizer_calls": 13,
+      "loop_seconds": 0.06851050000113901,
+      "valid": {
+        "native": {
+          "count": 647,
+          "MAE": 0.4213218092918396,
+          "Corr": 0.6178539254940718,
+          "Mult_acc_2": 0.7712519319938176,
+          "F1_score": 0.7730359473531447,
+          "weak_count": 236,
+          "Mult_acc_2_weak": 0.635593220338983,
+          "Mult_acc_3": 0.6630602782071098,
+          "Mult_acc_5": 0.3693972179289026,
+          "R_squre": 0.37337293599616084
+        },
+        "hit_count": 109,
+        "count": 647,
+        "hit_Brier": 0.12490550443329647,
+        "hit_log_score": 0.4140441112803355,
+        "hit_ECE15": 0.00697420559503791,
+        "risk_AURC": 0.43469377795537323,
+        "reliability": [
+          {
+            "bin": 2,
+            "count": 602,
+            "mean_probability": 0.1380712873511467,
+            "observed_hit_rate": 0.1345514950166113
+          },
+          {
+            "bin": 8,
+            "count": 45,
+            "mean_probability": 0.5690356436755732,
+            "observed_hit_rate": 0.6222222222222222
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.3901074167054433,
+          "0.25": 0.45026960879288336,
+          "0.5": 0.453619796782732,
+          "0.75": 0.44253942420238573,
+          "1.0": 0.4213218042710465
+        },
+        "bin_log_score": 1.373521005317532,
+        "bin_Brier": 0.7033950845549651,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.5394126738794436,
+            "mean_width": 0.741032234516654
+          },
+          "0.8": {
+            "coverage": 0.8639876352395672,
+            "mean_width": 1.3497869543526841
+          },
+          "0.9": {
+            "coverage": 0.9536321483771252,
+            "mean_width": 1.6460186694835144
+          },
+          "0.95": {
+            "coverage": 0.98145285935085,
+            "mean_width": 1.837442770028525
+          }
+        }
+      },
+      "scale": 0.35981876941441243,
+      "predictions_sha256": "3d78c9247381ed341e98106540d63ac28387038bfd18f7d9a5f9fa69d22ea470",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\formal\\global\\seed_42",
+      "case": "global",
+      "seed": 42,
+      "complete": true,
+      "smoke_only": false,
+      "parameters": 1,
+      "optimizer_calls": 12,
+      "loop_seconds": 0.05650789999344852,
+      "valid": {
+        "native": {
+          "count": 647,
+          "MAE": 0.4227929711341858,
+          "Corr": 0.6226827896028514,
+          "Mult_acc_2": 0.7712519319938176,
+          "F1_score": 0.7710261041545895,
+          "weak_count": 236,
+          "Mult_acc_2_weak": 0.6483050847457628,
+          "Mult_acc_3": 0.6491499227202473,
+          "Mult_acc_5": 0.3693972179289026,
+          "R_squre": 0.3762751994105855
+        },
+        "hit_count": 98,
+        "count": 647,
+        "hit_Brier": 0.11272215171445088,
+        "hit_log_score": 0.3830451835123056,
+        "hit_ECE15": 0.0247159488335977,
+        "risk_AURC": 0.41702987533954644,
+        "reliability": [
+          {
+            "bin": 2,
+            "count": 599,
+            "mean_probability": 0.1391151632962395,
+            "observed_hit_rate": 0.11519198664440734
+          },
+          {
+            "bin": 8,
+            "count": 48,
+            "mean_probability": 0.5695575816481196,
+            "observed_hit_rate": 0.6041666666666666
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.3299652655537312,
+          "0.25": 0.43758456763110043,
+          "0.5": 0.44781844069560367,
+          "0.75": 0.43905410662661365,
+          "1.0": 0.4227929783371814
+        },
+        "bin_log_score": 1.3730678278673747,
+        "bin_Brier": 0.7028861463027307,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.517774343122102,
+            "mean_width": 0.7315974811724756
+          },
+          "0.8": {
+            "coverage": 0.8578052550231839,
+            "mean_width": 1.3301275770922738
+          },
+          "0.9": {
+            "coverage": 0.9474497681607419,
+            "mean_width": 1.6269827581483558
+          },
+          "0.95": {
+            "coverage": 0.9829984544049459,
+            "mean_width": 1.821523520795206
+          }
+        }
+      },
+      "scale": 0.3570837732629366,
+      "predictions_sha256": "487131bfe97aa89c76f5d8734bfbf3732a6e4469b924c3aedb0967948eb201c8",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\formal\\global\\seed_2026",
+      "case": "global",
+      "seed": 2026,
+      "complete": true,
+      "smoke_only": false,
+      "parameters": 1,
+      "optimizer_calls": 12,
+      "loop_seconds": 0.056618800008436665,
+      "valid": {
+        "native": {
+          "count": 647,
+          "MAE": 0.4220946133136749,
+          "Corr": 0.6296885511250866,
+          "Mult_acc_2": 0.7712519319938176,
+          "F1_score": 0.774127341076068,
+          "weak_count": 236,
+          "Mult_acc_2_weak": 0.6483050847457628,
+          "Mult_acc_3": 0.6460587326120556,
+          "Mult_acc_5": 0.35239567233384855,
+          "R_squre": 0.3901866534290691
+        },
+        "hit_count": 106,
+        "count": 647,
+        "hit_Brier": 0.13014651466894828,
+        "hit_log_score": 0.42734577958669673,
+        "hit_ECE15": 0.0034371503766307335,
+        "risk_AURC": 0.4454443105558319,
+        "reliability": [
+          {
+            "bin": 2,
+            "count": 612,
+            "mean_probability": 0.14344182288699733,
+            "observed_hit_rate": 0.1437908496732026
+          },
+          {
+            "bin": 8,
+            "count": 35,
+            "mean_probability": 0.5717209114434988,
+            "observed_hit_rate": 0.5142857142857142
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.4476398353393261,
+          "0.25": 0.4801556036612134,
+          "0.5": 0.45684604439884424,
+          "0.75": 0.44217389425715053,
+          "1.0": 0.42209463210134457
+        },
+        "bin_log_score": 1.3743392325226782,
+        "bin_Brier": 0.7082053771965184,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.5115919629057187,
+            "mean_width": 0.7219138873335853
+          },
+          "0.8": {
+            "coverage": 0.8500772797527048,
+            "mean_width": 1.3204671766424372
+          },
+          "0.9": {
+            "coverage": 0.9443585780525502,
+            "mean_width": 1.6221018118078092
+          },
+          "0.95": {
+            "coverage": 0.9845440494590417,
+            "mean_width": 1.8181311331521852
+          }
+        }
+      },
+      "scale": 0.34616941505925336,
+      "predictions_sha256": "ee767b186efe60650772a528284b491223088812c48c08259ebe3a6669ae775a",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\formal\\scale\\seed_13",
+      "case": "scale",
+      "seed": 13,
+      "complete": true,
+      "smoke_only": false,
+      "best_epoch": 1,
+      "epochs_executed": 13,
+      "optimizer_updates": 494,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 61537,
+      "loop_seconds": 0.9795849000074668,
+      "valid": {
+        "native": {
+          "count": 647,
+          "MAE": 0.4213218092918396,
+          "Corr": 0.6178539254940718,
+          "Mult_acc_2": 0.7712519319938176,
+          "F1_score": 0.7730359473531447,
+          "weak_count": 236,
+          "Mult_acc_2_weak": 0.635593220338983,
+          "Mult_acc_3": 0.6630602782071098,
+          "Mult_acc_5": 0.3693972179289026,
+          "R_squre": 0.37337293599616084
+        },
+        "hit_count": 109,
+        "count": 647,
+        "hit_Brier": 0.12344235089779673,
+        "hit_log_score": 0.40428438978332787,
+        "hit_ECE15": 0.022307436924199557,
+        "risk_AURC": 0.3599455600549111,
+        "reliability": [
+          {
+            "bin": 0,
+            "count": 66,
+            "mean_probability": 0.05219216471741468,
+            "observed_hit_rate": 0.015151515151515152
+          },
+          {
+            "bin": 1,
+            "count": 261,
+            "mean_probability": 0.1033052561563055,
+            "observed_hit_rate": 0.1111111111111111
+          },
+          {
+            "bin": 2,
+            "count": 216,
+            "mean_probability": 0.15919566612456126,
+            "observed_hit_rate": 0.1712962962962963
+          },
+          {
+            "bin": 3,
+            "count": 48,
+            "mean_probability": 0.22695606931927606,
+            "observed_hit_rate": 0.22916666666666666
+          },
+          {
+            "bin": 4,
+            "count": 10,
+            "mean_probability": 0.29348613587687816,
+            "observed_hit_rate": 0.3
+          },
+          {
+            "bin": 5,
+            "count": 1,
+            "mean_probability": 0.33665384565784784,
+            "observed_hit_rate": 0.0
+          },
+          {
+            "bin": 7,
+            "count": 16,
+            "mean_probability": 0.5264420995395707,
+            "observed_hit_rate": 0.8125
+          },
+          {
+            "bin": 8,
+            "count": 26,
+            "mean_probability": 0.5614321539860073,
+            "observed_hit_rate": 0.5769230769230769
+          },
+          {
+            "bin": 9,
+            "count": 3,
+            "mean_probability": 0.6165243316714061,
+            "observed_hit_rate": 0.0
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.3015317266377119,
+          "0.25": 0.34074829058882633,
+          "0.5": 0.3578539558076932,
+          "0.75": 0.3772955318307312,
+          "1.0": 0.4213218042710465
+        },
+        "bin_log_score": 1.3443969562819769,
+        "bin_Brier": 0.6865624658838819,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.6228748068006182,
+            "mean_width": 0.893083153813458
+          },
+          "0.8": {
+            "coverage": 0.8964451313755796,
+            "mean_width": 1.4797011916064011
+          },
+          "0.9": {
+            "coverage": 0.9536321483771252,
+            "mean_width": 1.7023518201038221
+          },
+          "0.95": {
+            "coverage": 0.990726429675425,
+            "mean_width": 1.833272468188551
+          }
+        }
+      },
+      "checkpoint_sha256": "4c7c1c0df83b52386edc14691bbd53a5d93463cccacfcf8a46ee65c1891c27e8",
+      "predictions_sha256": "173fe06c91d937e38230ba4ea9721f5b5b57356016c8dc8cdf6762eb89e8e1e6",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\formal\\scale\\seed_42",
+      "case": "scale",
+      "seed": 42,
+      "complete": true,
+      "smoke_only": false,
+      "best_epoch": 1,
+      "epochs_executed": 13,
+      "optimizer_updates": 494,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 61537,
+      "loop_seconds": 0.9198402000038186,
+      "valid": {
+        "native": {
+          "count": 647,
+          "MAE": 0.4227929711341858,
+          "Corr": 0.6226827896028514,
+          "Mult_acc_2": 0.7712519319938176,
+          "F1_score": 0.7710261041545895,
+          "weak_count": 236,
+          "Mult_acc_2_weak": 0.6483050847457628,
+          "Mult_acc_3": 0.6491499227202473,
+          "Mult_acc_5": 0.3693972179289026,
+          "R_squre": 0.3762751994105855
+        },
+        "hit_count": 98,
+        "count": 647,
+        "hit_Brier": 0.11418346325493603,
+        "hit_log_score": 0.38321671240530797,
+        "hit_ECE15": 0.05068422811788641,
+        "risk_AURC": 0.3535723638417507,
+        "reliability": [
+          {
+            "bin": 0,
+            "count": 68,
+            "mean_probability": 0.04889656332420235,
+            "observed_hit_rate": 0.029411764705882353
+          },
+          {
+            "bin": 1,
+            "count": 239,
+            "mean_probability": 0.10457977806125267,
+            "observed_hit_rate": 0.12133891213389121
+          },
+          {
+            "bin": 2,
+            "count": 190,
+            "mean_probability": 0.16364929999831762,
+            "observed_hit_rate": 0.09473684210526316
+          },
+          {
+            "bin": 3,
+            "count": 77,
+            "mean_probability": 0.22704049328960005,
+            "observed_hit_rate": 0.18181818181818182
+          },
+          {
+            "bin": 4,
+            "count": 14,
+            "mean_probability": 0.2795062790640009,
+            "observed_hit_rate": 0.2857142857142857
+          },
+          {
+            "bin": 5,
+            "count": 7,
+            "mean_probability": 0.37337126324439845,
+            "observed_hit_rate": 0.14285714285714285
+          },
+          {
+            "bin": 6,
+            "count": 2,
+            "mean_probability": 0.4210270557316661,
+            "observed_hit_rate": 0.0
+          },
+          {
+            "bin": 7,
+            "count": 11,
+            "mean_probability": 0.5185609129430497,
+            "observed_hit_rate": 1.0
+          },
+          {
+            "bin": 8,
+            "count": 34,
+            "mean_probability": 0.5565149942503188,
+            "observed_hit_rate": 0.5294117647058824
+          },
+          {
+            "bin": 9,
+            "count": 5,
+            "mean_probability": 0.6253812900942365,
+            "observed_hit_rate": 0.2
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.24699596831431755,
+          "0.25": 0.3381923243725373,
+          "0.5": 0.37115976176466103,
+          "0.75": 0.3913582438534057,
+          "1.0": 0.4227929783371814
+        },
+        "bin_log_score": 1.352207580668085,
+        "bin_Brier": 0.6893794782739506,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.5857805255023184,
+            "mean_width": 0.8589497835249271
+          },
+          "0.8": {
+            "coverage": 0.8686244204018547,
+            "mean_width": 1.4123274102936798
+          },
+          "0.9": {
+            "coverage": 0.9428129829984544,
+            "mean_width": 1.640220531450201
+          },
+          "0.95": {
+            "coverage": 0.9721792890262752,
+            "mean_width": 1.7811619291277352
+          }
+        }
+      },
+      "checkpoint_sha256": "0aaeb4ccb0bdd3b0a28d685178f52e956c3ec35ba94e5f8afb70c687c9bcb109",
+      "predictions_sha256": "db415917896fc67880077208c24411a62a94874cc360813399c1a265c1494be6",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\formal\\scale\\seed_2026",
+      "case": "scale",
+      "seed": 2026,
+      "complete": true,
+      "smoke_only": false,
+      "best_epoch": 1,
+      "epochs_executed": 13,
+      "optimizer_updates": 494,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 61537,
+      "loop_seconds": 0.914697799977148,
+      "valid": {
+        "native": {
+          "count": 647,
+          "MAE": 0.4220946133136749,
+          "Corr": 0.6296885511250866,
+          "Mult_acc_2": 0.7712519319938176,
+          "F1_score": 0.774127341076068,
+          "weak_count": 236,
+          "Mult_acc_2_weak": 0.6483050847457628,
+          "Mult_acc_3": 0.6460587326120556,
+          "Mult_acc_5": 0.35239567233384855,
+          "R_squre": 0.3901866534290691
+        },
+        "hit_count": 106,
+        "count": 647,
+        "hit_Brier": 0.12976046925501994,
+        "hit_log_score": 0.41960239079416123,
+        "hit_ECE15": 0.04945930793630204,
+        "risk_AURC": 0.3688878293143408,
+        "reliability": [
+          {
+            "bin": 0,
+            "count": 74,
+            "mean_probability": 0.04874208521565374,
+            "observed_hit_rate": 0.013513513513513514
+          },
+          {
+            "bin": 1,
+            "count": 222,
+            "mean_probability": 0.10162744812925811,
+            "observed_hit_rate": 0.14864864864864866
+          },
+          {
+            "bin": 2,
+            "count": 196,
+            "mean_probability": 0.16353920719091156,
+            "observed_hit_rate": 0.15306122448979592
+          },
+          {
+            "bin": 3,
+            "count": 77,
+            "mean_probability": 0.23165337377776718,
+            "observed_hit_rate": 0.19480519480519481
+          },
+          {
+            "bin": 4,
+            "count": 31,
+            "mean_probability": 0.2941854978628069,
+            "observed_hit_rate": 0.16129032258064516
+          },
+          {
+            "bin": 5,
+            "count": 7,
+            "mean_probability": 0.3646641471719229,
+            "observed_hit_rate": 0.2857142857142857
+          },
+          {
+            "bin": 6,
+            "count": 4,
+            "mean_probability": 0.42720877853553607,
+            "observed_hit_rate": 0.5
+          },
+          {
+            "bin": 7,
+            "count": 9,
+            "mean_probability": 0.5233588616860604,
+            "observed_hit_rate": 0.8888888888888888
+          },
+          {
+            "bin": 8,
+            "count": 20,
+            "mean_probability": 0.5726762351924006,
+            "observed_hit_rate": 0.45
+          },
+          {
+            "bin": 9,
+            "count": 6,
+            "mean_probability": 0.6146258457893893,
+            "observed_hit_rate": 0.16666666666666666
+          },
+          {
+            "bin": 10,
+            "count": 1,
+            "mean_probability": 0.6689426499994687,
+            "observed_hit_rate": 0.0
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.3056119101551863,
+          "0.25": 0.33321888947192535,
+          "0.5": 0.35593657726766886,
+          "0.75": 0.38033421700168785,
+          "1.0": 0.42209463210134457
+        },
+        "bin_log_score": 1.3560212533611906,
+        "bin_Brier": 0.6903755013929957,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.58887171561051,
+            "mean_width": 0.8658856561801385
+          },
+          "0.8": {
+            "coverage": 0.8593508500772797,
+            "mean_width": 1.3948489637281034
+          },
+          "0.9": {
+            "coverage": 0.9366306027820711,
+            "mean_width": 1.610741055643025
+          },
+          "0.95": {
+            "coverage": 0.9659969088098919,
+            "mean_width": 1.7478174630793977
+          }
+        }
+      },
+      "checkpoint_sha256": "bc3b8b495656ee1c8713ad2880def3bc48a521f0c4b5caf420e7b215bdb0bf6f",
+      "predictions_sha256": "829c0f793cbc8988e92f2b6a47bf3c6318939d476fbb79daaaff0ab0afbbc678",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\formal\\mixture\\seed_13",
+      "case": "mixture",
+      "seed": 13,
+      "complete": true,
+      "smoke_only": false,
+      "best_epoch": 1,
+      "epochs_executed": 13,
+      "optimizer_updates": 494,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 61570,
+      "loop_seconds": 0.9909306000045035,
+      "valid": {
+        "native": {
+          "count": 647,
+          "MAE": 0.4213218092918396,
+          "Corr": 0.6178539254940718,
+          "Mult_acc_2": 0.7712519319938176,
+          "F1_score": 0.7730359473531447,
+          "weak_count": 236,
+          "Mult_acc_2_weak": 0.635593220338983,
+          "Mult_acc_3": 0.6630602782071098,
+          "Mult_acc_5": 0.3693972179289026,
+          "R_squre": 0.37337293599616084
+        },
+        "hit_count": 109,
+        "count": 647,
+        "hit_Brier": 0.12246642618341382,
+        "hit_log_score": 0.40032828324579317,
+        "hit_ECE15": 0.030475315451733712,
+        "risk_AURC": 0.36609251367454465,
+        "reliability": [
+          {
+            "bin": 0,
+            "count": 85,
+            "mean_probability": 0.05205968176659788,
+            "observed_hit_rate": 0.023529411764705882
+          },
+          {
+            "bin": 1,
+            "count": 256,
+            "mean_probability": 0.10365190869594373,
+            "observed_hit_rate": 0.1171875
+          },
+          {
+            "bin": 2,
+            "count": 192,
+            "mean_probability": 0.1623675531340947,
+            "observed_hit_rate": 0.15104166666666666
+          },
+          {
+            "bin": 3,
+            "count": 56,
+            "mean_probability": 0.2305697170701583,
+            "observed_hit_rate": 0.30357142857142855
+          },
+          {
+            "bin": 4,
+            "count": 11,
+            "mean_probability": 0.30528871549117587,
+            "observed_hit_rate": 0.18181818181818182
+          },
+          {
+            "bin": 5,
+            "count": 2,
+            "mean_probability": 0.3691897030385612,
+            "observed_hit_rate": 0.5
+          },
+          {
+            "bin": 7,
+            "count": 16,
+            "mean_probability": 0.5225305944452363,
+            "observed_hit_rate": 0.8125
+          },
+          {
+            "bin": 8,
+            "count": 27,
+            "mean_probability": 0.5564653349243023,
+            "observed_hit_rate": 0.5555555555555556
+          },
+          {
+            "bin": 9,
+            "count": 2,
+            "mean_probability": 0.6404038656484886,
+            "observed_hit_rate": 0.0
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.32334756220762545,
+          "0.25": 0.3428626803014381,
+          "0.5": 0.374806680670583,
+          "0.75": 0.38308931170453014,
+          "1.0": 0.4213218042710465
+        },
+        "bin_log_score": 1.326558123054749,
+        "bin_Brier": 0.681185807681182,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.6321483771251932,
+            "mean_width": 0.8876245467689644
+          },
+          "0.8": {
+            "coverage": 0.8948995363214838,
+            "mean_width": 1.460388699087972
+          },
+          "0.9": {
+            "coverage": 0.9598145285935085,
+            "mean_width": 1.6854631406243037
+          },
+          "0.95": {
+            "coverage": 0.9876352395672334,
+            "mean_width": 1.818391114282891
+          }
+        }
+      },
+      "checkpoint_sha256": "7cd029199887137cbc937e182a1b3bb85ce1fa72ff225e32b53f63c70a7aab11",
+      "predictions_sha256": "77db6f8b0f83def59c1e7dd58bb9a6a7e990c46691387bd1ed86a18e9ee037ff",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\formal\\mixture\\seed_42",
+      "case": "mixture",
+      "seed": 42,
+      "complete": true,
+      "smoke_only": false,
+      "best_epoch": 1,
+      "epochs_executed": 13,
+      "optimizer_updates": 494,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 61570,
+      "loop_seconds": 1.0027289999852655,
+      "valid": {
+        "native": {
+          "count": 647,
+          "MAE": 0.4227929711341858,
+          "Corr": 0.6226827896028514,
+          "Mult_acc_2": 0.7712519319938176,
+          "F1_score": 0.7710261041545895,
+          "weak_count": 236,
+          "Mult_acc_2_weak": 0.6483050847457628,
+          "Mult_acc_3": 0.6491499227202473,
+          "Mult_acc_5": 0.3693972179289026,
+          "R_squre": 0.3762751994105855
+        },
+        "hit_count": 98,
+        "count": 647,
+        "hit_Brier": 0.1139997191312615,
+        "hit_log_score": 0.38242017078441576,
+        "hit_ECE15": 0.053891979240527764,
+        "risk_AURC": 0.3562547624169022,
+        "reliability": [
+          {
+            "bin": 0,
+            "count": 88,
+            "mean_probability": 0.04853410356579871,
+            "observed_hit_rate": 0.045454545454545456
+          },
+          {
+            "bin": 1,
+            "count": 242,
+            "mean_probability": 0.10258410119985686,
+            "observed_hit_rate": 0.128099173553719
+          },
+          {
+            "bin": 2,
+            "count": 168,
+            "mean_probability": 0.16275692327138555,
+            "observed_hit_rate": 0.07738095238095238
+          },
+          {
+            "bin": 3,
+            "count": 74,
+            "mean_probability": 0.22590155616835852,
+            "observed_hit_rate": 0.21621621621621623
+          },
+          {
+            "bin": 4,
+            "count": 19,
+            "mean_probability": 0.2846988291816571,
+            "observed_hit_rate": 0.21052631578947367
+          },
+          {
+            "bin": 5,
+            "count": 5,
+            "mean_probability": 0.36290210302819353,
+            "observed_hit_rate": 0.0
+          },
+          {
+            "bin": 7,
+            "count": 17,
+            "mean_probability": 0.5180157623016443,
+            "observed_hit_rate": 0.8823529411764706
+          },
+          {
+            "bin": 8,
+            "count": 33,
+            "mean_probability": 0.5549213578619555,
+            "observed_hit_rate": 0.45454545454545453
+          },
+          {
+            "bin": 9,
+            "count": 1,
+            "mean_probability": 0.6326585592362038,
+            "observed_hit_rate": 0.0
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.24464803899709994,
+          "0.25": 0.32442608335411843,
+          "0.5": 0.37102044634750964,
+          "0.75": 0.3997965673743575,
+          "1.0": 0.4227929783371814
+        },
+        "bin_log_score": 1.323426989084252,
+        "bin_Brier": 0.6792061026665528,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.6136012364760433,
+            "mean_width": 0.8771701412596689
+          },
+          "0.8": {
+            "coverage": 0.8856259659969088,
+            "mean_width": 1.4196691680516504
+          },
+          "0.9": {
+            "coverage": 0.9443585780525502,
+            "mean_width": 1.6404275419686827
+          },
+          "0.95": {
+            "coverage": 0.9768160741885626,
+            "mean_width": 1.777904802225669
+          }
+        }
+      },
+      "checkpoint_sha256": "7bf279a21c017a4870039720c635294bec66b5059b55f3f0235f8ce30ed9faf5",
+      "predictions_sha256": "1d59ec66c17143c8a894ae530cedd12045e4cf4cedbb41081beea7db3a3b3f6f",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\formal\\mixture\\seed_2026",
+      "case": "mixture",
+      "seed": 2026,
+      "complete": true,
+      "smoke_only": false,
+      "best_epoch": 2,
+      "epochs_executed": 14,
+      "optimizer_updates": 532,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 61570,
+      "loop_seconds": 1.0798376999882748,
+      "valid": {
+        "native": {
+          "count": 647,
+          "MAE": 0.4220946133136749,
+          "Corr": 0.6296885511250866,
+          "Mult_acc_2": 0.7712519319938176,
+          "F1_score": 0.774127341076068,
+          "weak_count": 236,
+          "Mult_acc_2_weak": 0.6483050847457628,
+          "Mult_acc_3": 0.6460587326120556,
+          "Mult_acc_5": 0.35239567233384855,
+          "R_squre": 0.3901866534290691
+        },
+        "hit_count": 106,
+        "count": 647,
+        "hit_Brier": 0.12955410764110006,
+        "hit_log_score": 0.41894283905347435,
+        "hit_ECE15": 0.03220509221240067,
+        "risk_AURC": 0.36856750921547515,
+        "reliability": [
+          {
+            "bin": 0,
+            "count": 83,
+            "mean_probability": 0.04828801428345154,
+            "observed_hit_rate": 0.04819277108433735
+          },
+          {
+            "bin": 1,
+            "count": 205,
+            "mean_probability": 0.10311881913803768,
+            "observed_hit_rate": 0.1073170731707317
+          },
+          {
+            "bin": 2,
+            "count": 160,
+            "mean_probability": 0.16374348846282033,
+            "observed_hit_rate": 0.1625
+          },
+          {
+            "bin": 3,
+            "count": 78,
+            "mean_probability": 0.22825086252587234,
+            "observed_hit_rate": 0.1794871794871795
+          },
+          {
+            "bin": 4,
+            "count": 49,
+            "mean_probability": 0.295751712967244,
+            "observed_hit_rate": 0.24489795918367346
+          },
+          {
+            "bin": 5,
+            "count": 21,
+            "mean_probability": 0.36605480035527393,
+            "observed_hit_rate": 0.14285714285714285
+          },
+          {
+            "bin": 6,
+            "count": 7,
+            "mean_probability": 0.4262329945644238,
+            "observed_hit_rate": 0.42857142857142855
+          },
+          {
+            "bin": 7,
+            "count": 14,
+            "mean_probability": 0.5103089997372389,
+            "observed_hit_rate": 0.5714285714285714
+          },
+          {
+            "bin": 8,
+            "count": 21,
+            "mean_probability": 0.5628940061558521,
+            "observed_hit_rate": 0.6666666666666666
+          },
+          {
+            "bin": 9,
+            "count": 7,
+            "mean_probability": 0.621334309542768,
+            "observed_hit_rate": 0.0
+          },
+          {
+            "bin": 10,
+            "count": 2,
+            "mean_probability": 0.6930140730076535,
+            "observed_hit_rate": 0.0
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.29522684474404043,
+          "0.25": 0.3402218490976978,
+          "0.5": 0.3608959033556374,
+          "0.75": 0.3877431405899824,
+          "1.0": 0.42209463210134457
+        },
+        "bin_log_score": 1.328231894146173,
+        "bin_Brier": 0.6800642512913718,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.5641421947449768,
+            "mean_width": 0.8293109915352704
+          },
+          "0.8": {
+            "coverage": 0.8423493044822257,
+            "mean_width": 1.3182280636086205
+          },
+          "0.9": {
+            "coverage": 0.919629057187017,
+            "mean_width": 1.5254820917811018
+          },
+          "0.95": {
+            "coverage": 0.9582689335394127,
+            "mean_width": 1.6676553269314711
+          }
+        }
+      },
+      "checkpoint_sha256": "77cf2f389cda2ab3883f1d33c3dc621ad39781eccad29706ea5bf8f55a77211e",
+      "predictions_sha256": "7d7892f85bb0dd8c04fd3edd3d382565ab82b665f0302ab78929a62455a60510",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\formal\\views\\seed_13",
+      "case": "views",
+      "seed": 13,
+      "complete": true,
+      "smoke_only": false,
+      "best_epoch": 1,
+      "epochs_executed": 13,
+      "optimizer_updates": 494,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 61576,
+      "loop_seconds": 1.0114788999926532,
+      "valid": {
+        "native": {
+          "count": 647,
+          "MAE": 0.4213218092918396,
+          "Corr": 0.6178539254940718,
+          "Mult_acc_2": 0.7712519319938176,
+          "F1_score": 0.7730359473531447,
+          "weak_count": 236,
+          "Mult_acc_2_weak": 0.635593220338983,
+          "Mult_acc_3": 0.6630602782071098,
+          "Mult_acc_5": 0.3693972179289026,
+          "R_squre": 0.37337293599616084
+        },
+        "hit_count": 109,
+        "count": 647,
+        "hit_Brier": 0.12252427499781539,
+        "hit_log_score": 0.40060857385623,
+        "hit_ECE15": 0.034493988525898626,
+        "risk_AURC": 0.3651847354180733,
+        "reliability": [
+          {
+            "bin": 0,
+            "count": 89,
+            "mean_probability": 0.05221806908344353,
+            "observed_hit_rate": 0.0449438202247191
+          },
+          {
+            "bin": 1,
+            "count": 252,
+            "mean_probability": 0.10356926464562297,
+            "observed_hit_rate": 0.11507936507936507
+          },
+          {
+            "bin": 2,
+            "count": 187,
+            "mean_probability": 0.16114857667894258,
+            "observed_hit_rate": 0.13903743315508021
+          },
+          {
+            "bin": 3,
+            "count": 59,
+            "mean_probability": 0.2272342314231882,
+            "observed_hit_rate": 0.3220338983050847
+          },
+          {
+            "bin": 4,
+            "count": 13,
+            "mean_probability": 0.3004647628262548,
+            "observed_hit_rate": 0.15384615384615385
+          },
+          {
+            "bin": 5,
+            "count": 2,
+            "mean_probability": 0.369486826120122,
+            "observed_hit_rate": 0.5
+          },
+          {
+            "bin": 7,
+            "count": 17,
+            "mean_probability": 0.5229582694641018,
+            "observed_hit_rate": 0.8235294117647058
+          },
+          {
+            "bin": 8,
+            "count": 26,
+            "mean_probability": 0.5570778450379046,
+            "observed_hit_rate": 0.5384615384615384
+          },
+          {
+            "bin": 9,
+            "count": 2,
+            "mean_probability": 0.6404456394679552,
+            "observed_hit_rate": 0.0
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.3159304755238386,
+          "0.25": 0.33919386025288223,
+          "0.5": 0.37340325357415427,
+          "0.75": 0.3869701718122012,
+          "1.0": 0.4213218042710465
+        },
+        "bin_log_score": 1.3277576635236565,
+        "bin_Brier": 0.6814230782068403,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.6321483771251932,
+            "mean_width": 0.8883766778327514
+          },
+          "0.8": {
+            "coverage": 0.8902627511591963,
+            "mean_width": 1.4583375889510855
+          },
+          "0.9": {
+            "coverage": 0.955177743431221,
+            "mean_width": 1.6839697669336364
+          },
+          "0.95": {
+            "coverage": 0.9876352395672334,
+            "mean_width": 1.8177121231241524
+          }
+        }
+      },
+      "checkpoint_sha256": "97efed7e1879e2d3b4acd4767f6ff5ce8d455b15de35bdfc3c95b8c08cb88459",
+      "predictions_sha256": "f6ac5e0d6641bc79ef260336dd84defaac7aa541e86e462ebdf55dd5677208ac",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\formal\\views\\seed_42",
+      "case": "views",
+      "seed": 42,
+      "complete": true,
+      "smoke_only": false,
+      "best_epoch": 1,
+      "epochs_executed": 13,
+      "optimizer_updates": 494,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 61576,
+      "loop_seconds": 0.9972768999723485,
+      "valid": {
+        "native": {
+          "count": 647,
+          "MAE": 0.4227929711341858,
+          "Corr": 0.6226827896028514,
+          "Mult_acc_2": 0.7712519319938176,
+          "F1_score": 0.7710261041545895,
+          "weak_count": 236,
+          "Mult_acc_2_weak": 0.6483050847457628,
+          "Mult_acc_3": 0.6491499227202473,
+          "Mult_acc_5": 0.3693972179289026,
+          "R_squre": 0.3762751994105855
+        },
+        "hit_count": 98,
+        "count": 647,
+        "hit_Brier": 0.11412084151100542,
+        "hit_log_score": 0.3826139922162243,
+        "hit_ECE15": 0.05577653028654147,
+        "risk_AURC": 0.3559075173091112,
+        "reliability": [
+          {
+            "bin": 0,
+            "count": 85,
+            "mean_probability": 0.04810019236653384,
+            "observed_hit_rate": 0.047058823529411764
+          },
+          {
+            "bin": 1,
+            "count": 245,
+            "mean_probability": 0.1024914036110526,
+            "observed_hit_rate": 0.12653061224489795
+          },
+          {
+            "bin": 2,
+            "count": 173,
+            "mean_probability": 0.16357085887361578,
+            "observed_hit_rate": 0.08670520231213873
+          },
+          {
+            "bin": 3,
+            "count": 71,
+            "mean_probability": 0.22711806599056752,
+            "observed_hit_rate": 0.19718309859154928
+          },
+          {
+            "bin": 4,
+            "count": 17,
+            "mean_probability": 0.2871301624359732,
+            "observed_hit_rate": 0.23529411764705882
+          },
+          {
+            "bin": 5,
+            "count": 5,
+            "mean_probability": 0.36182628159073227,
+            "observed_hit_rate": 0.0
+          },
+          {
+            "bin": 6,
+            "count": 1,
+            "mean_probability": 0.46589153689900187,
+            "observed_hit_rate": 0.0
+          },
+          {
+            "bin": 7,
+            "count": 17,
+            "mean_probability": 0.5216811725930652,
+            "observed_hit_rate": 0.9411764705882353
+          },
+          {
+            "bin": 8,
+            "count": 32,
+            "mean_probability": 0.5552333532952178,
+            "observed_hit_rate": 0.4375
+          },
+          {
+            "bin": 9,
+            "count": 1,
+            "mean_probability": 0.6310282808499487,
+            "observed_hit_rate": 0.0
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.2490221313559092,
+          "0.25": 0.32357275055974355,
+          "0.5": 0.3706153465986804,
+          "0.75": 0.3985977835508654,
+          "1.0": 0.4227929783371814
+        },
+        "bin_log_score": 1.3243070305744524,
+        "bin_Brier": 0.6795880955541593,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.6105100463678517,
+            "mean_width": 0.8784110781502046
+          },
+          "0.8": {
+            "coverage": 0.8856259659969088,
+            "mean_width": 1.4178113688191671
+          },
+          "0.9": {
+            "coverage": 0.9459041731066461,
+            "mean_width": 1.637699402137772
+          },
+          "0.95": {
+            "coverage": 0.9768160741885626,
+            "mean_width": 1.7746470248949162
+          }
+        }
+      },
+      "checkpoint_sha256": "28e3b9753df05647eaf24fcff0b122293428afd9e1799f7bbf5a89a076cc6727",
+      "predictions_sha256": "b09c1c5888901a96df614bba882a759d52580beafeab10b298d534245238ab9b",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\formal\\views\\seed_2026",
+      "case": "views",
+      "seed": 2026,
+      "complete": true,
+      "smoke_only": false,
+      "best_epoch": 2,
+      "epochs_executed": 14,
+      "optimizer_updates": 532,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 61576,
+      "loop_seconds": 1.069170499991742,
+      "valid": {
+        "native": {
+          "count": 647,
+          "MAE": 0.4220946133136749,
+          "Corr": 0.6296885511250866,
+          "Mult_acc_2": 0.7712519319938176,
+          "F1_score": 0.774127341076068,
+          "weak_count": 236,
+          "Mult_acc_2_weak": 0.6483050847457628,
+          "Mult_acc_3": 0.6460587326120556,
+          "Mult_acc_5": 0.35239567233384855,
+          "R_squre": 0.3901866534290691
+        },
+        "hit_count": 106,
+        "count": 647,
+        "hit_Brier": 0.12962208592842925,
+        "hit_log_score": 0.4191499207828439,
+        "hit_ECE15": 0.03576193487310637,
+        "risk_AURC": 0.3683078573052765,
+        "reliability": [
+          {
+            "bin": 0,
+            "count": 80,
+            "mean_probability": 0.047585452999267176,
+            "observed_hit_rate": 0.0375
+          },
+          {
+            "bin": 1,
+            "count": 206,
+            "mean_probability": 0.10213950430446249,
+            "observed_hit_rate": 0.11165048543689321
+          },
+          {
+            "bin": 2,
+            "count": 160,
+            "mean_probability": 0.16285817423554824,
+            "observed_hit_rate": 0.15
+          },
+          {
+            "bin": 3,
+            "count": 83,
+            "mean_probability": 0.22977048229808783,
+            "observed_hit_rate": 0.21686746987951808
+          },
+          {
+            "bin": 4,
+            "count": 46,
+            "mean_probability": 0.29660343461645133,
+            "observed_hit_rate": 0.21739130434782608
+          },
+          {
+            "bin": 5,
+            "count": 21,
+            "mean_probability": 0.3693962883365379,
+            "observed_hit_rate": 0.14285714285714285
+          },
+          {
+            "bin": 6,
+            "count": 7,
+            "mean_probability": 0.4249454995626293,
+            "observed_hit_rate": 0.42857142857142855
+          },
+          {
+            "bin": 7,
+            "count": 14,
+            "mean_probability": 0.5077009293893607,
+            "observed_hit_rate": 0.6428571428571429
+          },
+          {
+            "bin": 8,
+            "count": 21,
+            "mean_probability": 0.5611509606188982,
+            "observed_hit_rate": 0.6190476190476191
+          },
+          {
+            "bin": 9,
+            "count": 7,
+            "mean_probability": 0.6178804284760365,
+            "observed_hit_rate": 0.0
+          },
+          {
+            "bin": 10,
+            "count": 2,
+            "mean_probability": 0.6919871179393562,
+            "observed_hit_rate": 0.0
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.3025421640620782,
+          "0.25": 0.33592659260295793,
+          "0.5": 0.3628219892788265,
+          "0.75": 0.38847546545413053,
+          "1.0": 0.42209463210134457
+        },
+        "bin_log_score": 1.3291912240445138,
+        "bin_Brier": 0.680032399430332,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.5641421947449768,
+            "mean_width": 0.8296986717478201
+          },
+          "0.8": {
+            "coverage": 0.8438948995363215,
+            "mean_width": 1.3176057862897932
+          },
+          "0.9": {
+            "coverage": 0.919629057187017,
+            "mean_width": 1.5246063637990082
+          },
+          "0.95": {
+            "coverage": 0.955177743431221,
+            "mean_width": 1.6665252321983086
+          }
+        }
+      },
+      "checkpoint_sha256": "11c74509791eacd1960d260dedeafd9141c31f66dbab91f5e7fcc100aa624ca6",
+      "predictions_sha256": "1134e66166c3cac947621ece181ee0a2ec349f6bfdc5d7ab79778bb97243bb32",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\formal\\disagreement\\seed_13",
+      "case": "disagreement",
+      "seed": 13,
+      "complete": true,
+      "smoke_only": false,
+      "best_epoch": 1,
+      "epochs_executed": 13,
+      "optimizer_updates": 494,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 61576,
+      "loop_seconds": 0.9992622999561718,
+      "valid": {
+        "native": {
+          "count": 647,
+          "MAE": 0.4213218092918396,
+          "Corr": 0.6178539254940718,
+          "Mult_acc_2": 0.7712519319938176,
+          "F1_score": 0.7730359473531447,
+          "weak_count": 236,
+          "Mult_acc_2_weak": 0.635593220338983,
+          "Mult_acc_3": 0.6630602782071098,
+          "Mult_acc_5": 0.3693972179289026,
+          "R_squre": 0.37337293599616084
+        },
+        "hit_count": 109,
+        "count": 647,
+        "hit_Brier": 0.12240283915565231,
+        "hit_log_score": 0.40024837354787307,
+        "hit_ECE15": 0.03293161140850869,
+        "risk_AURC": 0.36570651457212017,
+        "reliability": [
+          {
+            "bin": 0,
+            "count": 88,
+            "mean_probability": 0.052153332760209975,
+            "observed_hit_rate": 0.03409090909090909
+          },
+          {
+            "bin": 1,
+            "count": 256,
+            "mean_probability": 0.1039973597287438,
+            "observed_hit_rate": 0.12109375
+          },
+          {
+            "bin": 2,
+            "count": 185,
+            "mean_probability": 0.16214150545434788,
+            "observed_hit_rate": 0.14054054054054055
+          },
+          {
+            "bin": 3,
+            "count": 59,
+            "mean_probability": 0.22745280079231978,
+            "observed_hit_rate": 0.288135593220339
+          },
+          {
+            "bin": 4,
+            "count": 12,
+            "mean_probability": 0.30241534933277076,
+            "observed_hit_rate": 0.25
+          },
+          {
+            "bin": 5,
+            "count": 2,
+            "mean_probability": 0.37185443623808945,
+            "observed_hit_rate": 0.5
+          },
+          {
+            "bin": 7,
+            "count": 17,
+            "mean_probability": 0.5230930863259644,
+            "observed_hit_rate": 0.8235294117647058
+          },
+          {
+            "bin": 8,
+            "count": 26,
+            "mean_probability": 0.5573794343505523,
+            "observed_hit_rate": 0.5384615384615384
+          },
+          {
+            "bin": 9,
+            "count": 2,
+            "mean_probability": 0.6397809907837677,
+            "observed_hit_rate": 0.0
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.32324829439704234,
+          "0.25": 0.34291049168893584,
+          "0.5": 0.3728854237124324,
+          "0.75": 0.3861972966572507,
+          "1.0": 0.4213218042710465
+        },
+        "bin_log_score": 1.3267690919725639,
+        "bin_Brier": 0.6812723902181278,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.6321483771251932,
+            "mean_width": 0.8875206300175417
+          },
+          "0.8": {
+            "coverage": 0.893353941267388,
+            "mean_width": 1.4590890058474724
+          },
+          "0.9": {
+            "coverage": 0.9598145285935085,
+            "mean_width": 1.684599771836414
+          },
+          "0.95": {
+            "coverage": 0.9860896445131375,
+            "mean_width": 1.8184137829888272
+          }
+        }
+      },
+      "checkpoint_sha256": "d882268814dd2e3a3242e5b1603df965d50565d922359b4b6c2ea17d3f5b2ad5",
+      "predictions_sha256": "84f4d6a56daa271312211f81dd953d78121b675e0f8329ce6268a84da00d0c1a",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\formal\\disagreement\\seed_42",
+      "case": "disagreement",
+      "seed": 42,
+      "complete": true,
+      "smoke_only": false,
+      "best_epoch": 1,
+      "epochs_executed": 13,
+      "optimizer_updates": 494,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 61576,
+      "loop_seconds": 0.9980517000367399,
+      "valid": {
+        "native": {
+          "count": 647,
+          "MAE": 0.4227929711341858,
+          "Corr": 0.6226827896028514,
+          "Mult_acc_2": 0.7712519319938176,
+          "F1_score": 0.7710261041545895,
+          "weak_count": 236,
+          "Mult_acc_2_weak": 0.6483050847457628,
+          "Mult_acc_3": 0.6491499227202473,
+          "Mult_acc_5": 0.3693972179289026,
+          "R_squre": 0.3762751994105855
+        },
+        "hit_count": 98,
+        "count": 647,
+        "hit_Brier": 0.1137864149290498,
+        "hit_log_score": 0.38181941269367164,
+        "hit_ECE15": 0.0518861852496097,
+        "risk_AURC": 0.3550073875508193,
+        "reliability": [
+          {
+            "bin": 0,
+            "count": 89,
+            "mean_probability": 0.04866419166950578,
+            "observed_hit_rate": 0.0449438202247191
+          },
+          {
+            "bin": 1,
+            "count": 243,
+            "mean_probability": 0.10307259599322786,
+            "observed_hit_rate": 0.12757201646090535
+          },
+          {
+            "bin": 2,
+            "count": 168,
+            "mean_probability": 0.16342298601925367,
+            "observed_hit_rate": 0.09523809523809523
+          },
+          {
+            "bin": 3,
+            "count": 73,
+            "mean_probability": 0.22801975015824102,
+            "observed_hit_rate": 0.1643835616438356
+          },
+          {
+            "bin": 4,
+            "count": 19,
+            "mean_probability": 0.2896071756955888,
+            "observed_hit_rate": 0.2631578947368421
+          },
+          {
+            "bin": 5,
+            "count": 4,
+            "mean_probability": 0.36805806966041504,
+            "observed_hit_rate": 0.0
+          },
+          {
+            "bin": 7,
+            "count": 16,
+            "mean_probability": 0.5171963000162457,
+            "observed_hit_rate": 0.875
+          },
+          {
+            "bin": 8,
+            "count": 34,
+            "mean_probability": 0.5544809925328132,
+            "observed_hit_rate": 0.47058823529411764
+          },
+          {
+            "bin": 9,
+            "count": 1,
+            "mean_probability": 0.6334046487660551,
+            "observed_hit_rate": 0.0
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.24464803899709994,
+          "0.25": 0.325678778766298,
+          "0.5": 0.36886314094572525,
+          "0.75": 0.3999409883248585,
+          "1.0": 0.4227929783371814
+        },
+        "bin_log_score": 1.3241140720059974,
+        "bin_Brier": 0.6793533248540268,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.60741885625966,
+            "mean_width": 0.8764778939544713
+          },
+          "0.8": {
+            "coverage": 0.8871715610510046,
+            "mean_width": 1.4173098647765046
+          },
+          "0.9": {
+            "coverage": 0.9443585780525502,
+            "mean_width": 1.6382154875164086
+          },
+          "0.95": {
+            "coverage": 0.9768160741885626,
+            "mean_width": 1.7759807477648517
+          }
+        }
+      },
+      "checkpoint_sha256": "076a9102cbf0c7be6967d9b0e7812b7a859e7b76ac6e579261db91c9ed7b5be0",
+      "predictions_sha256": "cc266708abbe17e57c54065a751d5773fc0f7599f759a689419d75af17d2293f",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\formal\\disagreement\\seed_2026",
+      "case": "disagreement",
+      "seed": 2026,
+      "complete": true,
+      "smoke_only": false,
+      "best_epoch": 2,
+      "epochs_executed": 14,
+      "optimizer_updates": 532,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 61576,
+      "loop_seconds": 1.070549600000959,
+      "valid": {
+        "native": {
+          "count": 647,
+          "MAE": 0.4220946133136749,
+          "Corr": 0.6296885511250866,
+          "Mult_acc_2": 0.7712519319938176,
+          "F1_score": 0.774127341076068,
+          "weak_count": 236,
+          "Mult_acc_2_weak": 0.6483050847457628,
+          "Mult_acc_3": 0.6460587326120556,
+          "Mult_acc_5": 0.35239567233384855,
+          "R_squre": 0.3901866534290691
+        },
+        "hit_count": 106,
+        "count": 647,
+        "hit_Brier": 0.12952946899135062,
+        "hit_log_score": 0.4187411406661592,
+        "hit_ECE15": 0.03548122396904413,
+        "risk_AURC": 0.36765195846454923,
+        "reliability": [
+          {
+            "bin": 0,
+            "count": 83,
+            "mean_probability": 0.04813639040391427,
+            "observed_hit_rate": 0.03614457831325301
+          },
+          {
+            "bin": 1,
+            "count": 202,
+            "mean_probability": 0.1022619146391934,
+            "observed_hit_rate": 0.11386138613861387
+          },
+          {
+            "bin": 2,
+            "count": 161,
+            "mean_probability": 0.16269798898767907,
+            "observed_hit_rate": 0.15527950310559005
+          },
+          {
+            "bin": 3,
+            "count": 84,
+            "mean_probability": 0.2305162777771877,
+            "observed_hit_rate": 0.20238095238095238
+          },
+          {
+            "bin": 4,
+            "count": 45,
+            "mean_probability": 0.2960339543478776,
+            "observed_hit_rate": 0.2222222222222222
+          },
+          {
+            "bin": 5,
+            "count": 21,
+            "mean_probability": 0.3710775028241761,
+            "observed_hit_rate": 0.14285714285714285
+          },
+          {
+            "bin": 6,
+            "count": 6,
+            "mean_probability": 0.4280638333851459,
+            "observed_hit_rate": 0.5
+          },
+          {
+            "bin": 7,
+            "count": 15,
+            "mean_probability": 0.5070262398793587,
+            "observed_hit_rate": 0.5333333333333333
+          },
+          {
+            "bin": 8,
+            "count": 20,
+            "mean_probability": 0.5616060415556299,
+            "observed_hit_rate": 0.65
+          },
+          {
+            "bin": 9,
+            "count": 8,
+            "mean_probability": 0.6184967556522187,
+            "observed_hit_rate": 0.125
+          },
+          {
+            "bin": 10,
+            "count": 2,
+            "mean_probability": 0.7019812903487744,
+            "observed_hit_rate": 0.0
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.29522684474404043,
+          "0.25": 0.3350209788545782,
+          "0.5": 0.3659466389267717,
+          "0.75": 0.38868179895106414,
+          "1.0": 0.42209463210134457
+        },
+        "bin_log_score": 1.3285893418907753,
+        "bin_Brier": 0.680309673594895,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.5625965996908809,
+            "mean_width": 0.8292767335839516
+          },
+          "0.8": {
+            "coverage": 0.8438948995363215,
+            "mean_width": 1.3169223083840285
+          },
+          "0.9": {
+            "coverage": 0.9180834621329211,
+            "mean_width": 1.524873992735746
+          },
+          "0.95": {
+            "coverage": 0.9582689335394127,
+            "mean_width": 1.6676398708081746
+          }
+        }
+      },
+      "checkpoint_sha256": "5855f6e6230bf75748eaa345cec5caa41a1c028a561ba603d135750fda20e855",
+      "predictions_sha256": "a5e32f34abbdb0aab5a58f807466baa9ccbe8266885cd00770887a11f1f8ec57",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\formal\\direct_hit\\seed_13",
+      "case": "direct_hit",
+      "seed": 13,
+      "complete": true,
+      "smoke_only": false,
+      "best_epoch": 1,
+      "epochs_executed": 13,
+      "optimizer_updates": 494,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 61543,
+      "loop_seconds": 0.5770519000361674,
+      "valid": {
+        "native": {
+          "count": 647,
+          "MAE": 0.4213218092918396,
+          "Corr": 0.6178539254940718,
+          "Mult_acc_2": 0.7712519319938176,
+          "F1_score": 0.7730359473531447,
+          "weak_count": 236,
+          "Mult_acc_2_weak": 0.635593220338983,
+          "Mult_acc_3": 0.6630602782071098,
+          "Mult_acc_5": 0.3693972179289026,
+          "R_squre": 0.37337293599616084
+        },
+        "hit_count": 109,
+        "count": 647,
+        "hit_Brier": 0.14873086434509905,
+        "hit_log_score": 0.4958973412006847,
+        "hit_ECE15": 0.08033757250168731,
+        "risk_AURC": 0.39445056416041446,
+        "reliability": [
+          {
+            "bin": 0,
+            "count": 149,
+            "mean_probability": 0.044551043358675185,
+            "observed_hit_rate": 0.12751677852348994
+          },
+          {
+            "bin": 1,
+            "count": 262,
+            "mean_probability": 0.09929945811856794,
+            "observed_hit_rate": 0.20610687022900764
+          },
+          {
+            "bin": 2,
+            "count": 143,
+            "mean_probability": 0.1635632977619038,
+            "observed_hit_rate": 0.16783216783216784
+          },
+          {
+            "bin": 3,
+            "count": 69,
+            "mean_probability": 0.22608848240064539,
+            "observed_hit_rate": 0.17391304347826086
+          },
+          {
+            "bin": 4,
+            "count": 20,
+            "mean_probability": 0.2992646336555481,
+            "observed_hit_rate": 0.0
+          },
+          {
+            "bin": 5,
+            "count": 3,
+            "mean_probability": 0.34551090995470685,
+            "observed_hit_rate": 0.0
+          },
+          {
+            "bin": 6,
+            "count": 1,
+            "mean_probability": 0.4005937874317169,
+            "observed_hit_rate": 0.0
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.40361486919797385,
+          "0.25": 0.3856106984578533,
+          "0.5": 0.38279223643289306,
+          "0.75": 0.3972058945523245,
+          "1.0": 0.4213218042710465
+        }
+      },
+      "checkpoint_sha256": "bfd0cc4f58cd24d4e33ea98f9066808485bae457c79cee4ed09bc75e66c81d95",
+      "predictions_sha256": "c0578a444c68dc78d44a9ac16b891d41fc21d8b380aad6c3dabada55cefda095",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\formal\\direct_hit\\seed_42",
+      "case": "direct_hit",
+      "seed": 42,
+      "complete": true,
+      "smoke_only": false,
+      "best_epoch": 1,
+      "epochs_executed": 13,
+      "optimizer_updates": 494,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 61543,
+      "loop_seconds": 0.5767136000358732,
+      "valid": {
+        "native": {
+          "count": 647,
+          "MAE": 0.4227929711341858,
+          "Corr": 0.6226827896028514,
+          "Mult_acc_2": 0.7712519319938176,
+          "F1_score": 0.7710261041545895,
+          "weak_count": 236,
+          "Mult_acc_2_weak": 0.6483050847457628,
+          "Mult_acc_3": 0.6491499227202473,
+          "Mult_acc_5": 0.3693972179289026,
+          "R_squre": 0.3762751994105855
+        },
+        "hit_count": 98,
+        "count": 647,
+        "hit_Brier": 0.12997668882543834,
+        "hit_log_score": 0.4305619697089749,
+        "hit_ECE15": 0.04373888091588684,
+        "risk_AURC": 0.3934608324228373,
+        "reliability": [
+          {
+            "bin": 0,
+            "count": 36,
+            "mean_probability": 0.05307953587422768,
+            "observed_hit_rate": 0.0
+          },
+          {
+            "bin": 1,
+            "count": 270,
+            "mean_probability": 0.10213869327196369,
+            "observed_hit_rate": 0.15925925925925927
+          },
+          {
+            "bin": 2,
+            "count": 220,
+            "mean_probability": 0.16375521367246454,
+            "observed_hit_rate": 0.15454545454545454
+          },
+          {
+            "bin": 3,
+            "count": 82,
+            "mean_probability": 0.22375357205547938,
+            "observed_hit_rate": 0.14634146341463414
+          },
+          {
+            "bin": 4,
+            "count": 36,
+            "mean_probability": 0.29228125429815716,
+            "observed_hit_rate": 0.2222222222222222
+          },
+          {
+            "bin": 5,
+            "count": 3,
+            "mean_probability": 0.356524924437205,
+            "observed_hit_rate": 0.3333333333333333
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.41967278466774866,
+          "0.25": 0.3931298132203979,
+          "0.5": 0.3853404978405178,
+          "0.75": 0.40548510122047776,
+          "1.0": 0.4227929783371814
+        }
+      },
+      "checkpoint_sha256": "83750b96c6101f1ee3d1ac3d11d7daa13a00b8499eccad55f34d13a6c0455898",
+      "predictions_sha256": "b9369354cca2ac30f1fc92b90f2ab6354edbff399d7adb4f285082e43534a346",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\formal\\direct_hit\\seed_2026",
+      "case": "direct_hit",
+      "seed": 2026,
+      "complete": true,
+      "smoke_only": false,
+      "best_epoch": 1,
+      "epochs_executed": 13,
+      "optimizer_updates": 494,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 61543,
+      "loop_seconds": 0.5830667999980506,
+      "valid": {
+        "native": {
+          "count": 647,
+          "MAE": 0.4220946133136749,
+          "Corr": 0.6296885511250866,
+          "Mult_acc_2": 0.7712519319938176,
+          "F1_score": 0.774127341076068,
+          "weak_count": 236,
+          "Mult_acc_2_weak": 0.6483050847457628,
+          "Mult_acc_3": 0.6460587326120556,
+          "Mult_acc_5": 0.35239567233384855,
+          "R_squre": 0.3901866534290691
+        },
+        "hit_count": 106,
+        "count": 647,
+        "hit_Brier": 0.14011663951443337,
+        "hit_log_score": 0.45998943778388685,
+        "hit_ECE15": 0.04104142919919774,
+        "risk_AURC": 0.4134203239750938,
+        "reliability": [
+          {
+            "bin": 0,
+            "count": 51,
+            "mean_probability": 0.04883610610576237,
+            "observed_hit_rate": 0.1568627450980392
+          },
+          {
+            "bin": 1,
+            "count": 255,
+            "mean_probability": 0.10170101947059819,
+            "observed_hit_rate": 0.1568627450980392
+          },
+          {
+            "bin": 2,
+            "count": 233,
+            "mean_probability": 0.16293722774849428,
+            "observed_hit_rate": 0.15450643776824036
+          },
+          {
+            "bin": 3,
+            "count": 82,
+            "mean_probability": 0.22679899233143505,
+            "observed_hit_rate": 0.2073170731707317
+          },
+          {
+            "bin": 4,
+            "count": 16,
+            "mean_probability": 0.29274170845746994,
+            "observed_hit_rate": 0.25
+          },
+          {
+            "bin": 5,
+            "count": 8,
+            "mean_probability": 0.3610643669962883,
+            "observed_hit_rate": 0.125
+          },
+          {
+            "bin": 6,
+            "count": 2,
+            "mean_probability": 0.42196618020534515,
+            "observed_hit_rate": 0.0
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.4078369507422814,
+          "0.25": 0.3959199623377235,
+          "0.5": 0.39281107105866625,
+          "0.75": 0.4038568569324267,
+          "1.0": 0.42209463210134457
+        }
+      },
+      "checkpoint_sha256": "7ddf25741f70e62675c95244bafe86992799397a7582bc20c04ae880db41b589",
+      "predictions_sha256": "f6f2c44ec0da768daf374771901a1c90117a5e49b254705a9a4810f7e9e7ea38",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\formal\\mdn\\seed_13",
+      "case": "mdn",
+      "seed": 13,
+      "complete": true,
+      "smoke_only": false,
+      "best_epoch": 3,
+      "epochs_executed": 15,
+      "optimizer_updates": 570,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 62032,
+      "loop_seconds": 1.0293595000257483,
+      "valid": {
+        "native": {
+          "count": 647,
+          "MAE": 0.4213218092918396,
+          "Corr": 0.6178539254940718,
+          "Mult_acc_2": 0.7712519319938176,
+          "F1_score": 0.7730359473531447,
+          "weak_count": 236,
+          "Mult_acc_2_weak": 0.635593220338983,
+          "Mult_acc_3": 0.6630602782071098,
+          "Mult_acc_5": 0.3693972179289026,
+          "R_squre": 0.37337293599616084
+        },
+        "hit_count": 109,
+        "count": 647,
+        "hit_Brier": 0.12191301629598177,
+        "hit_log_score": 0.4217366572058839,
+        "hit_ECE15": 0.04906169106032222,
+        "risk_AURC": 0.35511323119621324,
+        "reliability": [
+          {
+            "bin": 0,
+            "count": 180,
+            "mean_probability": 0.03853622174871114,
+            "observed_hit_rate": 0.08333333333333333
+          },
+          {
+            "bin": 1,
+            "count": 235,
+            "mean_probability": 0.0992612790338397,
+            "observed_hit_rate": 0.13617021276595745
+          },
+          {
+            "bin": 2,
+            "count": 103,
+            "mean_probability": 0.15970463507229707,
+            "observed_hit_rate": 0.13592233009708737
+          },
+          {
+            "bin": 3,
+            "count": 53,
+            "mean_probability": 0.22643973404028322,
+            "observed_hit_rate": 0.18867924528301888
+          },
+          {
+            "bin": 4,
+            "count": 19,
+            "mean_probability": 0.29738201435868317,
+            "observed_hit_rate": 0.3684210526315789
+          },
+          {
+            "bin": 5,
+            "count": 9,
+            "mean_probability": 0.3735841761276047,
+            "observed_hit_rate": 0.2222222222222222
+          },
+          {
+            "bin": 6,
+            "count": 5,
+            "mean_probability": 0.434349082529098,
+            "observed_hit_rate": 0.2
+          },
+          {
+            "bin": 7,
+            "count": 10,
+            "mean_probability": 0.49874835788459987,
+            "observed_hit_rate": 0.5
+          },
+          {
+            "bin": 8,
+            "count": 4,
+            "mean_probability": 0.554422825618949,
+            "observed_hit_rate": 0.25
+          },
+          {
+            "bin": 9,
+            "count": 2,
+            "mean_probability": 0.6316978714293635,
+            "observed_hit_rate": 0.5
+          },
+          {
+            "bin": 10,
+            "count": 4,
+            "mean_probability": 0.6944982044466341,
+            "observed_hit_rate": 0.5
+          },
+          {
+            "bin": 11,
+            "count": 6,
+            "mean_probability": 0.7731229404884181,
+            "observed_hit_rate": 0.8333333333333334
+          },
+          {
+            "bin": 12,
+            "count": 8,
+            "mean_probability": 0.8293502800252235,
+            "observed_hit_rate": 1.0
+          },
+          {
+            "bin": 13,
+            "count": 5,
+            "mean_probability": 0.8923192654254727,
+            "observed_hit_rate": 0.4
+          },
+          {
+            "bin": 14,
+            "count": 4,
+            "mean_probability": 0.94711154152047,
+            "observed_hit_rate": 1.0
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.2619550958275795,
+          "0.25": 0.3373121750069621,
+          "0.5": 0.3663229863791738,
+          "0.75": 0.39560054714787646,
+          "1.0": 0.4213218042710465
+        },
+        "bin_log_score": 1.2924624448459812,
+        "bin_Brier": 0.652422776558721,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.5610510046367851,
+            "mean_width": 0.5829113329843885
+          },
+          "0.8": {
+            "coverage": 0.8176197836166924,
+            "mean_width": 1.0645578751198241
+          },
+          "0.9": {
+            "coverage": 0.910355486862442,
+            "mean_width": 1.3278647980358322
+          },
+          "0.95": {
+            "coverage": 0.9613601236476044,
+            "mean_width": 1.5204281710791163
+          }
+        }
+      },
+      "checkpoint_sha256": "6a87fa4393e3ceac6c62fb8a9455495eb09e26f37985115ed92063e07d955430",
+      "predictions_sha256": "7013842c567afa3587bcc7fc77745180dd5239e9c29e71fced2ca88c0995b437",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\formal\\mdn\\seed_42",
+      "case": "mdn",
+      "seed": 42,
+      "complete": true,
+      "smoke_only": false,
+      "best_epoch": 3,
+      "epochs_executed": 15,
+      "optimizer_updates": 570,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 62032,
+      "loop_seconds": 1.0387048000266077,
+      "valid": {
+        "native": {
+          "count": 647,
+          "MAE": 0.4227929711341858,
+          "Corr": 0.6226827896028514,
+          "Mult_acc_2": 0.7712519319938176,
+          "F1_score": 0.7710261041545895,
+          "weak_count": 236,
+          "Mult_acc_2_weak": 0.6483050847457628,
+          "Mult_acc_3": 0.6491499227202473,
+          "Mult_acc_5": 0.3693972179289026,
+          "R_squre": 0.3762751994105855
+        },
+        "hit_count": 98,
+        "count": 647,
+        "hit_Brier": 0.11556425309454404,
+        "hit_log_score": 0.3963099203012045,
+        "hit_ECE15": 0.05175865691681244,
+        "risk_AURC": 0.3512875272135629,
+        "reliability": [
+          {
+            "bin": 0,
+            "count": 184,
+            "mean_probability": 0.03930436281485063,
+            "observed_hit_rate": 0.08152173913043478
+          },
+          {
+            "bin": 1,
+            "count": 237,
+            "mean_probability": 0.09591921676840552,
+            "observed_hit_rate": 0.10970464135021098
+          },
+          {
+            "bin": 2,
+            "count": 101,
+            "mean_probability": 0.1628234871034592,
+            "observed_hit_rate": 0.15841584158415842
+          },
+          {
+            "bin": 3,
+            "count": 36,
+            "mean_probability": 0.22808699046318173,
+            "observed_hit_rate": 0.1388888888888889
+          },
+          {
+            "bin": 4,
+            "count": 15,
+            "mean_probability": 0.2950217218855068,
+            "observed_hit_rate": 0.13333333333333333
+          },
+          {
+            "bin": 5,
+            "count": 6,
+            "mean_probability": 0.3697164637407499,
+            "observed_hit_rate": 0.0
+          },
+          {
+            "bin": 6,
+            "count": 7,
+            "mean_probability": 0.42922631439930076,
+            "observed_hit_rate": 0.2857142857142857
+          },
+          {
+            "bin": 7,
+            "count": 12,
+            "mean_probability": 0.4989373557073369,
+            "observed_hit_rate": 0.25
+          },
+          {
+            "bin": 8,
+            "count": 6,
+            "mean_probability": 0.5779601343027964,
+            "observed_hit_rate": 0.5
+          },
+          {
+            "bin": 9,
+            "count": 5,
+            "mean_probability": 0.6318566751035909,
+            "observed_hit_rate": 0.2
+          },
+          {
+            "bin": 10,
+            "count": 7,
+            "mean_probability": 0.693590912610869,
+            "observed_hit_rate": 0.42857142857142855
+          },
+          {
+            "bin": 11,
+            "count": 7,
+            "mean_probability": 0.7631843417343498,
+            "observed_hit_rate": 0.42857142857142855
+          },
+          {
+            "bin": 12,
+            "count": 7,
+            "mean_probability": 0.8305326139628004,
+            "observed_hit_rate": 0.5714285714285714
+          },
+          {
+            "bin": 13,
+            "count": 8,
+            "mean_probability": 0.8977047393538935,
+            "observed_hit_rate": 0.75
+          },
+          {
+            "bin": 14,
+            "count": 9,
+            "mean_probability": 0.962098883470435,
+            "observed_hit_rate": 1.0
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.26151398735550735,
+          "0.25": 0.34441553288495835,
+          "0.5": 0.36633273084176543,
+          "0.75": 0.3980289476505891,
+          "1.0": 0.4227929783371814
+        },
+        "bin_log_score": 1.330321367286553,
+        "bin_Brier": 0.6650140045898453,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.5687789799072643,
+            "mean_width": 0.5855787438704286
+          },
+          "0.8": {
+            "coverage": 0.8222565687789799,
+            "mean_width": 1.0688198692689472
+          },
+          "0.9": {
+            "coverage": 0.9010819165378671,
+            "mean_width": 1.32879714625615
+          },
+          "0.95": {
+            "coverage": 0.9536321483771252,
+            "mean_width": 1.5336206082057042
+          }
+        }
+      },
+      "checkpoint_sha256": "7bbb4e163e5c96652604e656d424726685fb51b6627ec74ef6f39ca63fd66334",
+      "predictions_sha256": "e30a9a9a30ac26effe815a67dfbf9fd2f793731433de0e8bd23e36dc7dba270f",
+      "test_evaluated": false
+    },
+    {
+      "root": "runs\\native_anchor_calibration_v1\\formal\\mdn\\seed_2026",
+      "case": "mdn",
+      "seed": 2026,
+      "complete": true,
+      "smoke_only": false,
+      "best_epoch": 2,
+      "epochs_executed": 14,
+      "optimizer_updates": 532,
+      "parameters": 62071,
+      "first_batch_active_gradient_parameters": 62032,
+      "loop_seconds": 0.9824675999698229,
+      "valid": {
+        "native": {
+          "count": 647,
+          "MAE": 0.4220946133136749,
+          "Corr": 0.6296885511250866,
+          "Mult_acc_2": 0.7712519319938176,
+          "F1_score": 0.774127341076068,
+          "weak_count": 236,
+          "Mult_acc_2_weak": 0.6483050847457628,
+          "Mult_acc_3": 0.6460587326120556,
+          "Mult_acc_5": 0.35239567233384855,
+          "R_squre": 0.3901866534290691
+        },
+        "hit_count": 106,
+        "count": 647,
+        "hit_Brier": 0.13026154603083215,
+        "hit_log_score": 0.43918908535758444,
+        "hit_ECE15": 0.062000103545456826,
+        "risk_AURC": 0.34979644244519303,
+        "reliability": [
+          {
+            "bin": 0,
+            "count": 148,
+            "mean_probability": 0.04052886560454441,
+            "observed_hit_rate": 0.12162162162162163
+          },
+          {
+            "bin": 1,
+            "count": 287,
+            "mean_probability": 0.09844279177880884,
+            "observed_hit_rate": 0.13588850174216027
+          },
+          {
+            "bin": 2,
+            "count": 100,
+            "mean_probability": 0.1610101570790092,
+            "observed_hit_rate": 0.14
+          },
+          {
+            "bin": 3,
+            "count": 48,
+            "mean_probability": 0.2275562860772118,
+            "observed_hit_rate": 0.125
+          },
+          {
+            "bin": 4,
+            "count": 22,
+            "mean_probability": 0.29688222768219535,
+            "observed_hit_rate": 0.36363636363636365
+          },
+          {
+            "bin": 5,
+            "count": 8,
+            "mean_probability": 0.36187845699570875,
+            "observed_hit_rate": 0.125
+          },
+          {
+            "bin": 6,
+            "count": 3,
+            "mean_probability": 0.42537050024215856,
+            "observed_hit_rate": 1.0
+          },
+          {
+            "bin": 7,
+            "count": 4,
+            "mean_probability": 0.5101830567363288,
+            "observed_hit_rate": 0.5
+          },
+          {
+            "bin": 8,
+            "count": 5,
+            "mean_probability": 0.5571865317123399,
+            "observed_hit_rate": 0.6
+          },
+          {
+            "bin": 9,
+            "count": 4,
+            "mean_probability": 0.6469101429801234,
+            "observed_hit_rate": 0.0
+          },
+          {
+            "bin": 10,
+            "count": 8,
+            "mean_probability": 0.7042530030467241,
+            "observed_hit_rate": 0.625
+          },
+          {
+            "bin": 11,
+            "count": 4,
+            "mean_probability": 0.7701295470707132,
+            "observed_hit_rate": 0.75
+          },
+          {
+            "bin": 12,
+            "count": 3,
+            "mean_probability": 0.8216870442322902,
+            "observed_hit_rate": 0.3333333333333333
+          },
+          {
+            "bin": 13,
+            "count": 1,
+            "mean_probability": 0.8823677639800152,
+            "observed_hit_rate": 1.0
+          },
+          {
+            "bin": 14,
+            "count": 2,
+            "mean_probability": 0.9427399818071577,
+            "observed_hit_rate": 1.0
+          }
+        ],
+        "risk_at_coverage": {
+          "0.1": 0.2690893193277029,
+          "0.25": 0.3249945770489213,
+          "0.5": 0.3619148547151758,
+          "0.75": 0.39282173155174577,
+          "1.0": 0.42209463210134457
+        },
+        "bin_log_score": 1.306170784296706,
+        "bin_Brier": 0.6655258930419468,
+        "intervals": {
+          "0.5": {
+            "coverage": 0.5811437403400309,
+            "mean_width": 0.6944652451077549
+          },
+          "0.8": {
+            "coverage": 0.8686244204018547,
+            "mean_width": 1.292928682038191
+          },
+          "0.9": {
+            "coverage": 0.9520865533230294,
+            "mean_width": 1.5868140159863227
+          },
+          "0.95": {
+            "coverage": 0.9783616692426584,
+            "mean_width": 1.7618741398899644
+          }
+        }
+      },
+      "checkpoint_sha256": "4a2c25c4121642b9df383bfbb27902ee01fde1ab73a9e237f96bca8fbde57844",
+      "predictions_sha256": "862f62fb9837d4ae0d3b10346c9e6f14a831ceb3e0bfb4f2155dde18d5da8843",
+      "test_evaluated": false
+    }
+  ],
+  "suite_complete": true,
+  "smoke_only": false
+}

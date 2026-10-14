@@ -1,0 +1,32 @@
+{
+  "scope": "real training clips decoded audio to pretrained WavLM temporal features; no trained sentiment prediction",
+  "model_sha256": "3bb273a6ace99408b50cfc81afdbb7ef2de02da2eab0234e18db608ce692fe51",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "torch": "2.11.0+cu128",
+  "results": [
+    {
+      "clip": "0001",
+      "video_sha256": "e167e091b9a5b5a098dac8d8428b64ce538ddf92f81bca249adc812f2a53b5b3",
+      "waveform_samples": 20480,
+      "shape": [
+        1,
+        63,
+        768
+      ],
+      "seconds": 0.4757884999999078,
+      "finite": true
+    },
+    {
+      "clip": "0002",
+      "video_sha256": "10328d564e355cd599bd07471f1b9f9f43b8803b93cbfdb3b6384e599494a05c",
+      "waveform_samples": 34133,
+      "shape": [
+        1,
+        106,
+        768
+      ],
+      "seconds": 0.018510400001105154,
+      "finite": true
+    }
+  ]
+}

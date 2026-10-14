@@ -1,0 +1,56 @@
+{
+  "time_utc": "2026-10-12T16:59:46.886493+00:00",
+  "scope": "CPU feature inference vs saved GPU VALID predictions",
+  "test_evaluated": false,
+  "results": [
+    {
+      "name": "simsv2_early_fusion",
+      "count": 2,
+      "max_absolute_prediction_difference": 1.7881393432617188e-07,
+      "checkpoint_sha256": "a2e45f372d7bb9c463e6a7867e15764da8a8769db34131f35b7eadc2ca395966",
+      "inference_predictions_sha256": "a3dae7f8ab00d799f43964dc78d3b99f0452b94588b88c64e6073e8f9d416574",
+      "reference_predictions_sha256": "1685265ff7be74f2779c93c4fc1eab3780d35a29e98ad6d6489666ce680b2eb4"
+    },
+    {
+      "name": "simsv2_almt",
+      "count": 2,
+      "max_absolute_prediction_difference": 1.7881393432617188e-07,
+      "checkpoint_sha256": "6855eacce2b432ad902862477157f443c53d7b45a654a688fafbc490a94b891f",
+      "inference_predictions_sha256": "3afbba026485cba6322b967f16fa113afc3cbc6957b214a6630bd1c5cb616dd9",
+      "reference_predictions_sha256": "9bb2a6a2b404511e5db95664042bad6c203ac060f8c89252a1f93c35ca052e5a"
+    },
+    {
+      "name": "simsv2_joint_dynamic",
+      "count": 2,
+      "max_absolute_prediction_difference": 1.1920928955078125e-07,
+      "checkpoint_sha256": "8977077a712454f4a9e8eb6db1d8cf206024102e5d1d2f2f2158788d639687e7",
+      "inference_predictions_sha256": "ceee5a89c15697dbf759eb5804db94305c26ad8794aab248b0458cc945bac7a8",
+      "reference_predictions_sha256": "52ec31d4a36f1f1e72e3507c80d47a09cd76f995f3229c65e5c70bbda392044b"
+    },
+    {
+      "name": "mosei_early_fusion",
+      "count": 2,
+      "max_absolute_prediction_difference": 1.7881393432617188e-07,
+      "checkpoint_sha256": "90b2215fc6877e85403ab3ba7efcebdab4730c52bdb1e2cb9f49cc79ee5d9099",
+      "inference_predictions_sha256": "67d439145d98ea9e78db1ab1b8e19aa181fd5f2c8436a257e61fdbce4b603630",
+      "reference_predictions_sha256": "bb32a369e7c63eda7a2dba72037caf398ad9363b4ec3b22a08db2e2b4c65fa84"
+    },
+    {
+      "name": "mosei_almt",
+      "count": 2,
+      "max_absolute_prediction_difference": 1.1920928955078125e-07,
+      "checkpoint_sha256": "c8bbba77564a07af03ce97147632584970658ecd3f160f2abbb2518bf0106bca",
+      "inference_predictions_sha256": "c14bf9d3ed44096b2185b2b573d3d4c957cec32fa42880cb540d91be9530b07d",
+      "reference_predictions_sha256": "bef215e9d7faac03ac6a6785387e7adf6b0e8bbd2ea98cb56867a08b0047e9f8"
+    },
+    {
+      "name": "simsv2_reference_sum1",
+      "count": 2,
+      "max_absolute_prediction_difference": 5.960464477539063e-08,
+      "checkpoint_sha256": "8e253bbd6410a76c2787d1c82e012519cd675f30a2a0944692b695a6623445d0",
+      "inference_predictions_sha256": "42e7da79c24f9301c21e02e849c21afe634d6dec63d7fff08e05273643dd6c33",
+      "reference_predictions_sha256": "8e1b596e4e7a2826355e7a03d06a0b6ce1f7e79742ce6ae7c6307087a7ab34e1"
+    }
+  ],
+  "all_passed": true
+}

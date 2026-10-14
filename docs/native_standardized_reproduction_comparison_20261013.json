@@ -1,0 +1,57 @@
+{
+  "reference_suite_sha256": "3a62dff8fe3f7013fea81a41a3ccff9daa76a2d7460a2765d73150d3669192a9",
+  "reproduced_suite_sha256": "128640c584d024cfdcf9c179d0aae8f180f7f65e7c6a0a98ca58474fe7d3f74b",
+  "evidence": [
+    {
+      "model": "early_fusion",
+      "seed": 13,
+      "647_prediction_records_and_metrics_exact": true,
+      "parameters_and_history_exact": true,
+      "epochs": 17,
+      "updates": 1462
+    },
+    {
+      "model": "early_fusion",
+      "seed": 42,
+      "647_prediction_records_and_metrics_exact": true,
+      "parameters_and_history_exact": true,
+      "epochs": 23,
+      "updates": 1978
+    },
+    {
+      "model": "early_fusion",
+      "seed": 2026,
+      "647_prediction_records_and_metrics_exact": true,
+      "parameters_and_history_exact": true,
+      "epochs": 14,
+      "updates": 1204
+    },
+    {
+      "model": "text",
+      "seed": 13,
+      "647_prediction_records_and_metrics_exact": true,
+      "parameters_and_history_exact": true,
+      "epochs": 14,
+      "updates": 1204
+    },
+    {
+      "model": "text",
+      "seed": 42,
+      "647_prediction_records_and_metrics_exact": true,
+      "parameters_and_history_exact": true,
+      "epochs": 14,
+      "updates": 1204
+    },
+    {
+      "model": "text",
+      "seed": 2026,
+      "647_prediction_records_and_metrics_exact": true,
+      "parameters_and_history_exact": true,
+      "epochs": 15,
+      "updates": 1290
+    }
+  ],
+  "passed": true,
+  "test_evaluated": false,
+  "scope": "Six official CH pooled-point full retrainings and cache-byte verification; not encoder/original-method/final-test reproduction"
+}

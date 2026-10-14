@@ -1,0 +1,171 @@
+{
+  "stage": "CH-SIMS AnchorCDF native point/view source-CV teachers",
+  "dataset": "simsv2",
+  "root": "runs\\native_source_text_capacity_v1",
+  "author_csv": "data\\author\\simsv2\\meta.csv",
+  "author_csv_sha256": "be7e482640e7ee24d2070033e1e2aef61ce183199286a8a18b0d6247556bf150",
+  "pinned_source_csv_sha256": "be7e482640e7ee24d2070033e1e2aef61ce183199286a8a18b0d6247556bf150",
+  "ids": {
+    "publication_omitted": true,
+    "original_count": 2722
+  },
+  "train_ids": {
+    "publication_omitted": true,
+    "original_count": 2722
+  },
+  "train_feature_hashes": {
+    "data\\feature_cache\\simsv2_full_macbert_raw_av\\metadata.json": "c80806f155b246139b6cffba023d9c9b2359f42d38c1c7141db0af9cef8749c6",
+    "D:\\MYL\\JevAffect\\data\\feature_cache\\simsv2_full_macbert_raw_av\\splits\\train\\ids.json": "f971fce772d47758814fdba1f3eb08598d29e50fdca6ecea8dbfa0ef28ba4e83",
+    "splits/train/text.npy": "f219d9ae36c10dbf585696b21516ed82d1b18e5318232692658553e760ce8792",
+    "splits/train/text_lengths.npy": "db7f12ef707e7bbebd1daca39091af2f297edeab16134176ecccc74970bd2c92",
+    "splits/train/audio.npy": "0b5fea655d84264cba5f906908ccb823cc9f34e019053ca8c1c25eedf5dd3205",
+    "splits/train/audio_lengths.npy": "d0375c0044f4010a9f6137a0eeb47df93ec82a0a2ae0c02b2c6e76043743ccf7",
+    "splits/train/vision.npy": "1beb4c21693778cbbfa12e55ef4e36963a246e1f5560ab73cdea5116f3e90a4c",
+    "splits/train/vision_lengths.npy": "b29b4109712a7154dcc351b3fddc7c32eab12b2ad5e75c5e8da5f26fa434212a"
+  },
+  "valid_feature_hashes": {},
+  "views": {
+    "fusion": [
+      "text",
+      "audio",
+      "vision"
+    ],
+    "text": [
+      "text"
+    ],
+    "audio": [
+      "audio"
+    ],
+    "vision": [
+      "vision"
+    ]
+  },
+  "seeds": [
+    13,
+    42,
+    2026
+  ],
+  "selected_views": [
+    "text"
+  ],
+  "selected_folds": [
+    2
+  ],
+  "smoke_groups": null,
+  "fixture_smoke": false,
+  "fold_splits": {
+    "fold": {
+      "fold": "full",
+      "selection_seed": 20261013,
+      "inner_fraction": 0.1,
+      "fit_sources": {
+        "publication_omitted": true,
+        "original_count": 116
+      },
+      "select_sources": [
+        "aqgy3_0003",
+        "aqgy3_0005",
+        "aqgy4_0018",
+        "aqgy5_0001",
+        "aqgy5_0012",
+        "aqgy5_0017",
+        "aqgy5_0020",
+        "aqgy5_0031",
+        "csbgs2_0003",
+        "video_0002",
+        "video_0024",
+        "video_0039",
+        "video_0053"
+      ],
+      "fit_ids": {
+        "publication_omitted": true,
+        "original_count": 2395
+      },
+      "select_ids": {
+        "publication_omitted": true,
+        "original_count": 327
+      }
+    },
+    "fold_manifest": {
+      "scope": "official TRAIN only; inner selection is not official validation",
+      "seed": 20261012,
+      "inner_fraction": 0.1,
+      "source_count": 129,
+      "folds": [
+        {
+          "fold": 0,
+          "fit_ids": {
+            "publication_omitted": true,
+            "original_count": 1641
+          },
+          "select_ids": {
+            "publication_omitted": true,
+            "original_count": 192
+          },
+          "oof_ids": {
+            "publication_omitted": true,
+            "original_count": 889
+          }
+        },
+        {
+          "fold": 1,
+          "fit_ids": {
+            "publication_omitted": true,
+            "original_count": 1589
+          },
+          "select_ids": {
+            "publication_omitted": true,
+            "original_count": 195
+          },
+          "oof_ids": {
+            "publication_omitted": true,
+            "original_count": 938
+          }
+        },
+        {
+          "fold": 2,
+          "fit_ids": {
+            "publication_omitted": true,
+            "original_count": 1676
+          },
+          "select_ids": {
+            "publication_omitted": true,
+            "original_count": 151
+          },
+          "oof_ids": {
+            "publication_omitted": true,
+            "original_count": 895
+          }
+        }
+      ]
+    }
+  },
+  "has_full": false,
+  "full_teacher_scope": "one fixed TRAIN source selection split per seed/view; full TRAIN predictions and optional feature-only VALID predictions",
+  "full_teacher_role": "Auxiliary view forecasts for disagreement features; the separately frozen strongest official fusion predictions remain the point anchor.",
+  "official_validation_labels_parsed": false,
+  "test_evaluated": false,
+  "source_transfer_limit": "The calibration inner holdout reuses this TRAIN OOF table, but point teachers in other folds may have trained on those heldout sources. This does not establish honest full-pipeline source transfer; nested outer source evaluation must rebuild point/view OOF and calibration before promotion.",
+  "publication_redaction": {
+    "full_local_report_sha256": "f3757168ea9e595317eccfc723879f008f4039ed32ffe4ed1125f2f767f27a9c",
+    "removed_path_count": 14,
+    "removed_paths": [
+      "/ids",
+      "/train_ids",
+      "/fold_splits/fold/fit_sources",
+      "/fold_splits/fold/fit_ids",
+      "/fold_splits/fold/select_ids",
+      "/fold_splits/fold_manifest/folds/0/fit_ids",
+      "/fold_splits/fold_manifest/folds/0/select_ids",
+      "/fold_splits/fold_manifest/folds/0/oof_ids",
+      "/fold_splits/fold_manifest/folds/1/fit_ids",
+      "/fold_splits/fold_manifest/folds/1/select_ids",
+      "/fold_splits/fold_manifest/folds/1/oof_ids",
+      "/fold_splits/fold_manifest/folds/2/fit_ids",
+      "/fold_splits/fold_manifest/folds/2/select_ids",
+      "/fold_splits/fold_manifest/folds/2/oof_ids"
+    ],
+    "remaining_removed_paths_list_truncated": false,
+    "reason": "Exclude per-sample dataset records, long raw arrays and response/download capabilities; retain aggregate research evidence."
+  }
+}

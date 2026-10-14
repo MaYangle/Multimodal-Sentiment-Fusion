@@ -1,0 +1,76 @@
+{
+  "port_metadata": {
+    "port_version": "simsv2-bienc-pretrain-v1",
+    "source_repo": "https://github.com/sunyulin0421/BC-MLF",
+    "source_commit": "428b973be580fd3cf09dd51bb61c448f2a26b2c9",
+    "purpose": "Train the AV_Enc initialization required by the BC-MLF MSALM config.",
+    "official_dataset": "CH-SIMS v2.0",
+    "legacy_loader_alias": "sims",
+    "path_resolver": "vendor.bcmlf.adapters.config_paths.resolve_bcmlf_paths",
+    "target": "raw numeric regression label; this stage is not five-class CE"
+  },
+  "datasetCommonParams": {
+    "dataset_root_dir": "${BCMLF_DATA_ROOT}",
+    "sims": {
+      "unaligned": {
+        "featurePath": "simsv2/Processed/unaligned_39.pkl",
+        "seq_lens": [39, 400, 55],
+        "feature_dims": [768, 33, 709],
+        "train_samples": 2722,
+        "num_classes": 5,
+        "language": "cn",
+        "KeyEval": "Loss",
+        "missing_rate": [0, 0, 0],
+        "missing_seed": [1111, 1111, 1111]
+      }
+    }
+  },
+  "bienc": {
+    "commonParams": {
+      "need_data_aligned": false,
+      "need_model_aligned": false,
+      "early_stop": 8,
+      "use_bert": false,
+      "use_bert_finetune": false,
+      "attn_mask": true,
+      "update_epochs": 4
+    },
+    "datasetParams": {
+      "sims": {
+        "hfPath": "simsv2/Processed/mms2s",
+        "fs2": false,
+        "max_token_len": 39,
+        "gpt": {
+          "mm_dropout": 0.1,
+          "mm_layer": [3, 5, 7, 9, 11],
+          "layer_dropout": 0.2,
+          "dense": true,
+          "tie_ffn": true
+        },
+        "av_enc": {
+          "d_enc": 30,
+          "n_embd": 30,
+          "n_head": 6,
+          "nlevels": 3,
+          "d_enc_out": 30,
+          "maxlen": 39,
+          "p_mask": 0.15,
+          "enc_attn_dropout": 0.1,
+          "enc_res_dropout": 0.1,
+          "enc_dropout": 0.1,
+          "use_softperm": true,
+          "p_perm": 0.2,
+          "mask_perm_ratio": 0.5,
+          "tf_fusion": false,
+          "use_ln": false,
+          "use_bn": true
+        },
+        "batch_size": 32,
+        "learning_rate": 0.0005,
+        "grad_clip": 1,
+        "patience": 10,
+        "weight_decay": 0.001
+      }
+    }
+  }
+}

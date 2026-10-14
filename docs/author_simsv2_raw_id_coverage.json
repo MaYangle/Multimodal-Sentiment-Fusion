@@ -1,0 +1,11 @@
+{
+  "author_media_files": 6245,
+  "csv_rows": 4403,
+  "exact_id_matches": {
+    "train": 2722,
+    "valid": 647,
+    "test": 1034
+  },
+  "first_unmatched_csv_ids": [],
+  "test_labels_parsed": false
+}

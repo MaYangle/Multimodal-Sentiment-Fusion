@@ -1,0 +1,635 @@
+{
+  "scope": "official train/validation only, pretrained text pooling diagnostic; no test scoring",
+  "primary_selection": "best validation accuracy unchanged",
+  "conditions": [
+    {
+      "dataset": "simsv2",
+      "pooling": "cls",
+      "runs": [
+        {
+          "seed": 13,
+          "accuracy": 0.38794435857805254,
+          "macro_f1": 0.31416558952162665,
+          "per_class": [
+            {
+              "class_index": 0,
+              "class_name": "SNEG",
+              "precision": 0.4533898305084746,
+              "recall": 0.5879120879120879,
+              "f1": 0.5119617224880383,
+              "support": 182
+            },
+            {
+              "class_index": 1,
+              "class_name": "WNEG",
+              "precision": 0.3668639053254438,
+              "recall": 0.43356643356643354,
+              "f1": 0.3974358974358974,
+              "support": 143
+            },
+            {
+              "class_index": 2,
+              "class_name": "NEUT",
+              "precision": 0.3157894736842105,
+              "recall": 0.06521739130434782,
+              "f1": 0.10810810810810811,
+              "support": 92
+            },
+            {
+              "class_index": 3,
+              "class_name": "WPOS",
+              "precision": 0.3489583333333333,
+              "recall": 0.5114503816793893,
+              "f1": 0.41486068111455104,
+              "support": 131
+            },
+            {
+              "class_index": 4,
+              "class_name": "SPOS",
+              "precision": 0.2903225806451613,
+              "recall": 0.09090909090909091,
+              "f1": 0.13846153846153847,
+              "support": 99
+            }
+          ],
+          "epochs": 15,
+          "predictions_sha256": "c63b52e157d62c89ac0e97c3a30e77dbc1cfcf8eead409e49b540ecc0ad001c2"
+        },
+        {
+          "seed": 42,
+          "accuracy": 0.3910355486862442,
+          "macro_f1": 0.34779158264653925,
+          "per_class": [
+            {
+              "class_index": 0,
+              "class_name": "SNEG",
+              "precision": 0.44921875,
+              "recall": 0.6318681318681318,
+              "f1": 0.5251141552511416,
+              "support": 182
+            },
+            {
+              "class_index": 1,
+              "class_name": "WNEG",
+              "precision": 0.4246575342465753,
+              "recall": 0.21678321678321677,
+              "f1": 0.287037037037037,
+              "support": 143
+            },
+            {
+              "class_index": 2,
+              "class_name": "NEUT",
+              "precision": 0.288135593220339,
+              "recall": 0.18478260869565216,
+              "f1": 0.22516556291390727,
+              "support": 92
+            },
+            {
+              "class_index": 3,
+              "class_name": "WPOS",
+              "precision": 0.34574468085106386,
+              "recall": 0.4961832061068702,
+              "f1": 0.40752351097178685,
+              "support": 131
+            },
+            {
+              "class_index": 4,
+              "class_name": "SPOS",
+              "precision": 0.352112676056338,
+              "recall": 0.25252525252525254,
+              "f1": 0.29411764705882354,
+              "support": 99
+            }
+          ],
+          "epochs": 15,
+          "predictions_sha256": "e897051446dffb299866701dbd1ca758ffdf8c7729194aa5d42e1e9870437587"
+        },
+        {
+          "seed": 2026,
+          "accuracy": 0.3956723338485317,
+          "macro_f1": 0.3525491239464257,
+          "per_class": [
+            {
+              "class_index": 0,
+              "class_name": "SNEG",
+              "precision": 0.4541284403669725,
+              "recall": 0.5439560439560439,
+              "f1": 0.495,
+              "support": 182
+            },
+            {
+              "class_index": 1,
+              "class_name": "WNEG",
+              "precision": 0.36879432624113473,
+              "recall": 0.36363636363636365,
+              "f1": 0.36619718309859156,
+              "support": 143
+            },
+            {
+              "class_index": 2,
+              "class_name": "NEUT",
+              "precision": 0.25925925925925924,
+              "recall": 0.07608695652173914,
+              "f1": 0.11764705882352942,
+              "support": 92
+            },
+            {
+              "class_index": 3,
+              "class_name": "WPOS",
+              "precision": 0.38650306748466257,
+              "recall": 0.48091603053435117,
+              "f1": 0.42857142857142855,
+              "support": 131
+            },
+            {
+              "class_index": 4,
+              "class_name": "SPOS",
+              "precision": 0.35714285714285715,
+              "recall": 0.35353535353535354,
+              "f1": 0.3553299492385787,
+              "support": 99
+            }
+          ],
+          "epochs": 14,
+          "predictions_sha256": "ddacada7eda2f94a5a17d8e5c1b50f8f20590a9606e1d3718dbcdcbb1b08d4bd"
+        }
+      ],
+      "accuracy_mean": 0.39155074703760945,
+      "accuracy_sample_sd": 0.003889662254132279,
+      "macro_f1_mean": 0.33816876537153046,
+      "macro_f1_sample_sd": 0.02092302291654071
+    },
+    {
+      "dataset": "simsv2",
+      "pooling": "masked_mean",
+      "runs": [
+        {
+          "seed": 13,
+          "accuracy": 0.38794435857805254,
+          "macro_f1": 0.33426547333419154,
+          "per_class": [
+            {
+              "class_index": 0,
+              "class_name": "SNEG",
+              "precision": 0.4864864864864865,
+              "recall": 0.4945054945054945,
+              "f1": 0.4904632152588556,
+              "support": 182
+            },
+            {
+              "class_index": 1,
+              "class_name": "WNEG",
+              "precision": 0.39855072463768115,
+              "recall": 0.38461538461538464,
+              "f1": 0.3914590747330961,
+              "support": 143
+            },
+            {
+              "class_index": 2,
+              "class_name": "NEUT",
+              "precision": 0.43333333333333335,
+              "recall": 0.14130434782608695,
+              "f1": 0.21311475409836064,
+              "support": 92
+            },
+            {
+              "class_index": 3,
+              "class_name": "WPOS",
+              "precision": 0.30855018587360594,
+              "recall": 0.6335877862595419,
+              "f1": 0.415,
+              "support": 131
+            },
+            {
+              "class_index": 4,
+              "class_name": "SPOS",
+              "precision": 0.4,
+              "recall": 0.10101010101010101,
+              "f1": 0.16129032258064518,
+              "support": 99
+            }
+          ],
+          "epochs": 14,
+          "predictions_sha256": "510b6343b08421287197432e38280fbdecddc1463b6f3c4059aee16a521d38a5"
+        },
+        {
+          "seed": 42,
+          "accuracy": 0.3972179289026275,
+          "macro_f1": 0.3517500648002126,
+          "per_class": [
+            {
+              "class_index": 0,
+              "class_name": "SNEG",
+              "precision": 0.4409448818897638,
+              "recall": 0.6153846153846154,
+              "f1": 0.5137614678899082,
+              "support": 182
+            },
+            {
+              "class_index": 1,
+              "class_name": "WNEG",
+              "precision": 0.41509433962264153,
+              "recall": 0.3076923076923077,
+              "f1": 0.3534136546184739,
+              "support": 143
+            },
+            {
+              "class_index": 2,
+              "class_name": "NEUT",
+              "precision": 0.35135135135135137,
+              "recall": 0.14130434782608695,
+              "f1": 0.20155038759689922,
+              "support": 92
+            },
+            {
+              "class_index": 3,
+              "class_name": "WPOS",
+              "precision": 0.3402061855670103,
+              "recall": 0.5038167938931297,
+              "f1": 0.40615384615384614,
+              "support": 131
+            },
+            {
+              "class_index": 4,
+              "class_name": "SPOS",
+              "precision": 0.39285714285714285,
+              "recall": 0.2222222222222222,
+              "f1": 0.28387096774193543,
+              "support": 99
+            }
+          ],
+          "epochs": 14,
+          "predictions_sha256": "749e0efe525d4132ab959b08d76a104aabefa047a763f671dea52722a9069527"
+        },
+        {
+          "seed": 2026,
+          "accuracy": 0.3941267387944359,
+          "macro_f1": 0.32175991681903077,
+          "per_class": [
+            {
+              "class_index": 0,
+              "class_name": "SNEG",
+              "precision": 0.47058823529411764,
+              "recall": 0.6153846153846154,
+              "f1": 0.5333333333333333,
+              "support": 182
+            },
+            {
+              "class_index": 1,
+              "class_name": "WNEG",
+              "precision": 0.38848920863309355,
+              "recall": 0.3776223776223776,
+              "f1": 0.3829787234042553,
+              "support": 143
+            },
+            {
+              "class_index": 2,
+              "class_name": "NEUT",
+              "precision": 0.3333333333333333,
+              "recall": 0.09782608695652174,
+              "f1": 0.1512605042016807,
+              "support": 92
+            },
+            {
+              "class_index": 3,
+              "class_name": "WPOS",
+              "precision": 0.32142857142857145,
+              "recall": 0.549618320610687,
+              "f1": 0.4056338028169015,
+              "support": 131
+            },
+            {
+              "class_index": 4,
+              "class_name": "SPOS",
+              "precision": 0.42105263157894735,
+              "recall": 0.08080808080808081,
+              "f1": 0.13559322033898308,
+              "support": 99
+            }
+          ],
+          "epochs": 12,
+          "predictions_sha256": "1a464e0fb46d6924b5d0f8f660e7e5ea8d4b11cc98cc211dd6e6ed77906e4bd2"
+        }
+      ],
+      "accuracy_mean": 0.3930963420917053,
+      "accuracy_sample_sd": 0.004721870886095677,
+      "macro_f1_mean": 0.335925151651145,
+      "macro_f1_sample_sd": 0.015063802410750086
+    },
+    {
+      "dataset": "mosei_author",
+      "pooling": "cls",
+      "runs": [
+        {
+          "seed": 13,
+          "accuracy": 0.5392838054516301,
+          "macro_f1": 0.39686149425789746,
+          "per_class": [
+            {
+              "class_index": 0,
+              "class_name": "SNEG",
+              "precision": 0.3472222222222222,
+              "recall": 0.3246753246753247,
+              "f1": 0.33557046979865773,
+              "support": 77
+            },
+            {
+              "class_index": 1,
+              "class_name": "WNEG",
+              "precision": 0.48360655737704916,
+              "recall": 0.3920265780730897,
+              "f1": 0.43302752293577984,
+              "support": 301
+            },
+            {
+              "class_index": 2,
+              "class_name": "NEUT",
+              "precision": 0.5853658536585366,
+              "recall": 0.7211538461538461,
+              "f1": 0.6462035541195477,
+              "support": 832
+            },
+            {
+              "class_index": 3,
+              "class_name": "WPOS",
+              "precision": 0.5067961165048543,
+              "recall": 0.47454545454545455,
+              "f1": 0.49014084507042255,
+              "support": 550
+            },
+            {
+              "class_index": 4,
+              "class_name": "SPOS",
+              "precision": 0.3333333333333333,
+              "recall": 0.04504504504504504,
+              "f1": 0.07936507936507936,
+              "support": 111
+            }
+          ],
+          "epochs": 16,
+          "predictions_sha256": "a033cb6c5510b4df4c1bc5372f28564b507b8e6291cc9d8d36bfcf494c2f7b15"
+        },
+        {
+          "seed": 42,
+          "accuracy": 0.5339390700160342,
+          "macro_f1": 0.3899919515625968,
+          "per_class": [
+            {
+              "class_index": 0,
+              "class_name": "SNEG",
+              "precision": 0.36923076923076925,
+              "recall": 0.3116883116883117,
+              "f1": 0.3380281690140845,
+              "support": 77
+            },
+            {
+              "class_index": 1,
+              "class_name": "WNEG",
+              "precision": 0.5260416666666666,
+              "recall": 0.33554817275747506,
+              "f1": 0.40973630831643,
+              "support": 301
+            },
+            {
+              "class_index": 2,
+              "class_name": "NEUT",
+              "precision": 0.5772681954137587,
+              "recall": 0.6959134615384616,
+              "f1": 0.6310626702997275,
+              "support": 832
+            },
+            {
+              "class_index": 3,
+              "class_name": "WPOS",
+              "precision": 0.4957410562180579,
+              "recall": 0.5290909090909091,
+              "f1": 0.5118733509234829,
+              "support": 550
+            },
+            {
+              "class_index": 4,
+              "class_name": "SPOS",
+              "precision": 0.16666666666666666,
+              "recall": 0.036036036036036036,
+              "f1": 0.05925925925925926,
+              "support": 111
+            }
+          ],
+          "epochs": 17,
+          "predictions_sha256": "1397899cd92fa5aed917e547bf375c11e095b7f5dd0eb2605491f6429bf912b1"
+        },
+        {
+          "seed": 2026,
+          "accuracy": 0.5307322287546766,
+          "macro_f1": 0.37405672227547443,
+          "per_class": [
+            {
+              "class_index": 0,
+              "class_name": "SNEG",
+              "precision": 0.3333333333333333,
+              "recall": 0.15584415584415584,
+              "f1": 0.21238938053097345,
+              "support": 77
+            },
+            {
+              "class_index": 1,
+              "class_name": "WNEG",
+              "precision": 0.45180722891566266,
+              "recall": 0.4983388704318937,
+              "f1": 0.47393364928909953,
+              "support": 301
+            },
+            {
+              "class_index": 2,
+              "class_name": "NEUT",
+              "precision": 0.5995423340961098,
+              "recall": 0.6298076923076923,
+              "f1": 0.6143024618991795,
+              "support": 832
+            },
+            {
+              "class_index": 3,
+              "class_name": "WPOS",
+              "precision": 0.49032258064516127,
+              "recall": 0.5527272727272727,
+              "f1": 0.5196581196581197,
+              "support": 550
+            },
+            {
+              "class_index": 4,
+              "class_name": "SPOS",
+              "precision": 0.3333333333333333,
+              "recall": 0.02702702702702703,
+              "f1": 0.05,
+              "support": 111
+            }
+          ],
+          "epochs": 14,
+          "predictions_sha256": "f34f6446a52fccec8ef0ef54d1c8bd395e58d48a251d893bcebe041210534566"
+        }
+      ],
+      "accuracy_mean": 0.534651701407447,
+      "accuracy_sample_sd": 0.004320098219484101,
+      "macro_f1_mean": 0.3869700560319896,
+      "macro_f1_sample_sd": 0.011698858736689004
+    },
+    {
+      "dataset": "mosei_author",
+      "pooling": "masked_mean",
+      "runs": [
+        {
+          "seed": 13,
+          "accuracy": 0.5376803848209514,
+          "macro_f1": 0.37710777401657813,
+          "per_class": [
+            {
+              "class_index": 0,
+              "class_name": "SNEG",
+              "precision": 0.24691358024691357,
+              "recall": 0.2597402597402597,
+              "f1": 0.2531645569620253,
+              "support": 77
+            },
+            {
+              "class_index": 1,
+              "class_name": "WNEG",
+              "precision": 0.4744186046511628,
+              "recall": 0.3388704318936877,
+              "f1": 0.39534883720930236,
+              "support": 301
+            },
+            {
+              "class_index": 2,
+              "class_name": "NEUT",
+              "precision": 0.5954356846473029,
+              "recall": 0.6899038461538461,
+              "f1": 0.6391982182628062,
+              "support": 832
+            },
+            {
+              "class_index": 3,
+              "class_name": "WPOS",
+              "precision": 0.5091514143094842,
+              "recall": 0.5563636363636364,
+              "f1": 0.5317115551694179,
+              "support": 550
+            },
+            {
+              "class_index": 4,
+              "class_name": "SPOS",
+              "precision": 0.4,
+              "recall": 0.036036036036036036,
+              "f1": 0.06611570247933883,
+              "support": 111
+            }
+          ],
+          "epochs": 13,
+          "predictions_sha256": "3c7dd60eb6c19d9c530af42167b9518aefee109fa4a842a71d2184e8c1edfd09"
+        },
+        {
+          "seed": 42,
+          "accuracy": 0.5424906467129877,
+          "macro_f1": 0.3707759073555215,
+          "per_class": [
+            {
+              "class_index": 0,
+              "class_name": "SNEG",
+              "precision": 0.35294117647058826,
+              "recall": 0.07792207792207792,
+              "f1": 0.1276595744680851,
+              "support": 77
+            },
+            {
+              "class_index": 1,
+              "class_name": "WNEG",
+              "precision": 0.46534653465346537,
+              "recall": 0.4684385382059801,
+              "f1": 0.4668874172185431,
+              "support": 301
+            },
+            {
+              "class_index": 2,
+              "class_name": "NEUT",
+              "precision": 0.5928853754940712,
+              "recall": 0.7211538461538461,
+              "f1": 0.6507592190889371,
+              "support": 832
+            },
+            {
+              "class_index": 3,
+              "class_name": "WPOS",
+              "precision": 0.5009633911368016,
+              "recall": 0.4727272727272727,
+              "f1": 0.48643592142188957,
+              "support": 550
+            },
+            {
+              "class_index": 4,
+              "class_name": "SPOS",
+              "precision": 0.4,
+              "recall": 0.07207207207207207,
+              "f1": 0.12213740458015267,
+              "support": 111
+            }
+          ],
+          "epochs": 14,
+          "predictions_sha256": "1ca4192e4ef6e1a0843a88e2ac1b29a67a41bb64fe5ab335e4fad7edc7ca6b20"
+        },
+        {
+          "seed": 2026,
+          "accuracy": 0.5371459112773918,
+          "macro_f1": 0.3448841748628117,
+          "per_class": [
+            {
+              "class_index": 0,
+              "class_name": "SNEG",
+              "precision": 0.375,
+              "recall": 0.07792207792207792,
+              "f1": 0.12903225806451613,
+              "support": 77
+            },
+            {
+              "class_index": 1,
+              "class_name": "WNEG",
+              "precision": 0.44635193133047213,
+              "recall": 0.34551495016611294,
+              "f1": 0.3895131086142322,
+              "support": 301
+            },
+            {
+              "class_index": 2,
+              "class_name": "NEUT",
+              "precision": 0.5633802816901409,
+              "recall": 0.7692307692307693,
+              "f1": 0.6504065040650407,
+              "support": 832
+            },
+            {
+              "class_index": 3,
+              "class_name": "WPOS",
+              "precision": 0.5262054507337526,
+              "recall": 0.45636363636363636,
+              "f1": 0.48880233690360275,
+              "support": 550
+            },
+            {
+              "class_index": 4,
+              "class_name": "SPOS",
+              "precision": 0.4444444444444444,
+              "recall": 0.036036036036036036,
+              "f1": 0.06666666666666667,
+              "support": 111
+            }
+          ],
+          "epochs": 12,
+          "predictions_sha256": "58dae3948206741291a31e18267abdea5e11eafe59408cf709723ff02505df3d"
+        }
+      ],
+      "accuracy_mean": 0.5391056476037769,
+      "accuracy_sample_sd": 0.0029436507468124794,
+      "macro_f1_mean": 0.3642559520783038,
+      "macro_f1_sample_sd": 0.017072564195759928
+    }
+  ],
+  "interpretation": "Pooling produces only small validation changes. It is not a novel mechanism or evidence of multimodal benefit; retain both controls in tuning history."
+}

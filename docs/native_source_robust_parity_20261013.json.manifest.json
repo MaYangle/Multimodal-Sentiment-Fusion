@@ -1,0 +1,132 @@
+{
+  "ids": {
+    "publication_omitted": true,
+    "original_count": 2722
+  },
+  "source_csv_sha256": "be7e482640e7ee24d2070033e1e2aef61ce183199286a8a18b0d6247556bf150",
+  "feature_hashes": {
+    "data\\feature_cache\\simsv2_full_macbert_raw_av\\metadata.json": "c80806f155b246139b6cffba023d9c9b2359f42d38c1c7141db0af9cef8749c6",
+    "D:\\MYL\\JevAffect\\data\\feature_cache\\simsv2_full_macbert_raw_av\\splits\\train\\ids.json": "f971fce772d47758814fdba1f3eb08598d29e50fdca6ecea8dbfa0ef28ba4e83",
+    "splits/train/text.npy": "f219d9ae36c10dbf585696b21516ed82d1b18e5318232692658553e760ce8792",
+    "splits/train/text_lengths.npy": "db7f12ef707e7bbebd1daca39091af2f297edeab16134176ecccc74970bd2c92",
+    "splits/train/audio.npy": "0b5fea655d84264cba5f906908ccb823cc9f34e019053ca8c1c25eedf5dd3205",
+    "splits/train/audio_lengths.npy": "d0375c0044f4010a9f6137a0eeb47df93ec82a0a2ae0c02b2c6e76043743ccf7",
+    "splits/train/vision.npy": "1beb4c21693778cbbfa12e55ef4e36963a246e1f5560ab73cdea5116f3e90a4c",
+    "splits/train/vision_lengths.npy": "b29b4109712a7154dcc351b3fddc7c32eab12b2ad5e75c5e8da5f26fa434212a"
+  },
+  "fold_manifest": {
+    "scope": "official TRAIN only; inner selection is not official validation",
+    "seed": 20261012,
+    "inner_fraction": 0.1,
+    "source_count": 129,
+    "folds": [
+      {
+        "fold": 0,
+        "fit_ids": {
+          "publication_omitted": true,
+          "original_count": 1641
+        },
+        "select_ids": {
+          "publication_omitted": true,
+          "original_count": 192
+        },
+        "oof_ids": {
+          "publication_omitted": true,
+          "original_count": 889
+        }
+      },
+      {
+        "fold": 1,
+        "fit_ids": {
+          "publication_omitted": true,
+          "original_count": 1589
+        },
+        "select_ids": {
+          "publication_omitted": true,
+          "original_count": 195
+        },
+        "oof_ids": {
+          "publication_omitted": true,
+          "original_count": 938
+        }
+      },
+      {
+        "fold": 2,
+        "fit_ids": {
+          "publication_omitted": true,
+          "original_count": 1676
+        },
+        "select_ids": {
+          "publication_omitted": true,
+          "original_count": 151
+        },
+        "oof_ids": {
+          "publication_omitted": true,
+          "original_count": 895
+        }
+      }
+    ]
+  },
+  "config": {
+    "dataset": "simsv2",
+    "author_csv": "data/author/simsv2/meta.csv",
+    "source_csv_sha256": "be7e482640e7ee24d2070033e1e2aef61ce183199286a8a18b0d6247556bf150",
+    "cache_dir": "data/feature_cache/simsv2_full_macbert_raw_av",
+    "run_root": "runs/native_source_robust_v1",
+    "seeds": [
+      13,
+      42,
+      2026
+    ],
+    "cases": [
+      "clip_erm",
+      "balanced_erm",
+      "dro_uniform",
+      "group_dro",
+      "domain_probe",
+      "dann"
+    ],
+    "device": "cuda",
+    "torch_threads": 4,
+    "fold_count": 3,
+    "fold_seed": 20261012,
+    "inner_fraction": 0.1,
+    "full_selection_seed": 20261013,
+    "full_selection_fraction": 0.1,
+    "expected_valid_count": 647,
+    "predict_valid": false,
+    "hidden": 256,
+    "dropout": 0.1,
+    "batch_size": 32,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "max_epochs": 80,
+    "patience": 12,
+    "gradient_norm": 1.0,
+    "scheduler_patience": 3,
+    "scheduler_factor": 0.5,
+    "dro_step_size": 0.01,
+    "dann_gradient_scale": 0.1
+  },
+  "smoke_only": false,
+  "official_VALID_used": false,
+  "test_evaluated": false,
+  "publication_redaction": {
+    "full_local_report_sha256": "eef3f5fe2e75f60097f105486280926c9af30386f475eb7b769bd5119d5cf8a9",
+    "removed_path_count": 10,
+    "removed_paths": [
+      "/ids",
+      "/fold_manifest/folds/0/fit_ids",
+      "/fold_manifest/folds/0/select_ids",
+      "/fold_manifest/folds/0/oof_ids",
+      "/fold_manifest/folds/1/fit_ids",
+      "/fold_manifest/folds/1/select_ids",
+      "/fold_manifest/folds/1/oof_ids",
+      "/fold_manifest/folds/2/fit_ids",
+      "/fold_manifest/folds/2/select_ids",
+      "/fold_manifest/folds/2/oof_ids"
+    ],
+    "remaining_removed_paths_list_truncated": false,
+    "reason": "Exclude per-sample dataset records, long raw arrays and response/download capabilities; retain aggregate research evidence."
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "results": [
+    {
+      "dataset": "mosei",
+      "cohort": "mosei_multibench_aligned50",
+      "model": "almt_masked",
+      "seed": 13,
+      "root": "runs\\native_mosei_masked_almt_v1\\smoke\\almt_masked\\seed_13",
+      "smoke_only": true,
+      "complete": false,
+      "test_evaluated": false,
+      "train_count": 32,
+      "valid_count": 32,
+      "best_epoch": 2,
+      "epochs_executed": 2,
+      "optimizer_updates": 2,
+      "loop_seconds": 0.44249449999188073,
+      "parameters": 3047937,
+      "valid_metrics": {
+        "count": 32,
+        "MAE": 0.8231769800186157,
+        "Corr": -0.17930434883309143,
+        "Mult_acc_5": 0.25,
+        "Mult_acc_7": 0.25,
+        "Has0_acc_2": 0.8125,
+        "Has0_F1_score": 0.728448275862069,
+        "nonzero_count": 22,
+        "Non0_acc_2": 0.7272727272727273,
+        "Non0_F1_score": 0.6124401913875598
+      },
+      "checkpoint_sha256": "8b4e683afc594c66f8067528e4aaf540dfa915b0b12f37200943111694c813d3",
+      "predictions_sha256": "521222420a1a320332e56867e1e4ea5393f02ce045678b2490bf5f6b8c77bd06"
+    }
+  ],
+  "suite_complete": false,
+  "smoke_only": true
+}

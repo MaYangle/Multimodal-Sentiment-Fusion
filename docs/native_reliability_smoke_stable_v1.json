@@ -1,0 +1,322 @@
+{
+  "results": [
+    {
+      "condition": "S0G0",
+      "seed": 13,
+      "smoke_only": true,
+      "complete": false,
+      "train_count": 32,
+      "valid_count": 32,
+      "best_epoch": 1,
+      "epochs_executed": 1,
+      "optimizer_updates": 1,
+      "loop_seconds": 1.4055063999985578,
+      "trainable_parameters": 496143,
+      "valid_metrics": {
+        "native": {
+          "count": 32,
+          "MAE": 0.8313450813293457,
+          "Corr": -0.07657346996955358,
+          "Mult_acc_2": 0.40625,
+          "F1_score": 0.40058324496288444,
+          "weak_count": 4,
+          "Mult_acc_2_weak": 0.25,
+          "Mult_acc_3": 0.28125,
+          "Mult_acc_5": 0.0625,
+          "R_squre": -0.06552132453089965
+        },
+        "uncertainty": {
+          "count": 32,
+          "distribution": "unbounded Student-t predictive density from NIG",
+          "density_NLL": 1.361622551750052,
+          "error_vs_variance_spearman": 0.3053519061583578,
+          "mean_predictive_variance": 0.6290235625500826,
+          "intervals": {
+            "0.5": {
+              "coverage": 0.125,
+              "mean_width": 1.0105104592536962,
+              "range_intersection_mean_width": 1.0105104592536962
+            },
+            "0.8": {
+              "coverage": 0.6875,
+              "mean_width": 1.9666876775146391,
+              "range_intersection_mean_width": 1.8717257868622563
+            },
+            "0.9": {
+              "coverage": 1.0,
+              "mean_width": 2.5798998101963817,
+              "range_intersection_mean_width": 1.997195366166194
+            },
+            "0.95": {
+              "coverage": 1.0,
+              "mean_width": 3.147662740411871,
+              "range_intersection_mean_width": 2.0
+            }
+          },
+          "selective_MAE": {
+            "0.25": {
+              "count": 8,
+              "MAE": 0.8459711358882487
+            },
+            "0.5": {
+              "count": 16,
+              "MAE": 0.7799654642585665
+            },
+            "0.75": {
+              "count": 24,
+              "MAE": 0.7777441527384023
+            },
+            "1.0": {
+              "count": 32,
+              "MAE": 0.8313450966961682
+            }
+          },
+          "density_limit": "Quantized bounded sentiment is treated as a continuous density; NLL is not class cross-entropy."
+        }
+      },
+      "test_evaluated": false,
+      "root": "runs\\native_reliability_v1_preflight\\S0G0\\smoke\\seed_13",
+      "checkpoint_sha256": "ae8ad11fe564f7a8e13ad74570c1362ad16dd9b4e1b0848fdf3ad9377f6be112",
+      "predictions_sha256": "affcc4812acdf2060792e0aacd8a1fecfacbe9b52b65f356d29e371fa7180174"
+    },
+    {
+      "condition": "S0G1",
+      "seed": 13,
+      "smoke_only": true,
+      "complete": false,
+      "train_count": 32,
+      "valid_count": 32,
+      "best_epoch": 1,
+      "epochs_executed": 1,
+      "optimizer_updates": 1,
+      "loop_seconds": 0.08394149999367073,
+      "trainable_parameters": 496143,
+      "valid_metrics": {
+        "native": {
+          "count": 32,
+          "MAE": 0.8310654163360596,
+          "Corr": -0.02082424116285231,
+          "Mult_acc_2": 0.625,
+          "F1_score": 0.6168831168831169,
+          "weak_count": 4,
+          "Mult_acc_2_weak": 0.75,
+          "Mult_acc_3": 0.28125,
+          "Mult_acc_5": 0.0625,
+          "R_squre": -0.06726979357455698
+        },
+        "uncertainty": {
+          "count": 32,
+          "distribution": "unbounded Student-t predictive density from NIG",
+          "density_NLL": 1.3639886952596267,
+          "error_vs_variance_spearman": 0.2635630498533724,
+          "mean_predictive_variance": 0.6296282560486983,
+          "intervals": {
+            "0.5": {
+              "coverage": 0.125,
+              "mean_width": 1.0110064400218706,
+              "range_intersection_mean_width": 1.0110064400218706
+            },
+            "0.8": {
+              "coverage": 0.75,
+              "mean_width": 1.967656345084534,
+              "range_intersection_mean_width": 1.8729957623531628
+            },
+            "0.9": {
+              "coverage": 0.96875,
+              "mean_width": 2.581174583633928,
+              "range_intersection_mean_width": 1.9978606718089702
+            },
+            "0.95": {
+              "coverage": 1.0,
+              "mean_width": 3.149223511774535,
+              "range_intersection_mean_width": 2.0
+            }
+          },
+          "selective_MAE": {
+            "0.25": {
+              "count": 8,
+              "MAE": 0.8572954866103828
+            },
+            "0.5": {
+              "count": 16,
+              "MAE": 0.7858092183014378
+            },
+            "0.75": {
+              "count": 24,
+              "MAE": 0.785478720596681
+            },
+            "1.0": {
+              "count": 32,
+              "MAE": 0.831065341073554
+            }
+          },
+          "density_limit": "Quantized bounded sentiment is treated as a continuous density; NLL is not class cross-entropy."
+        }
+      },
+      "test_evaluated": false,
+      "root": "runs\\native_reliability_v1_preflight\\S0G1\\smoke\\seed_13",
+      "checkpoint_sha256": "35b2ceeb97bb1a6b43f14b9dfd9a302aa94b98cee34ec58c41a9a4116ba0bf15",
+      "predictions_sha256": "cb2886f2df5bd246f642be5be97619e1204ecbe70193d9ab7fde938b7f02f091"
+    },
+    {
+      "condition": "S1G0",
+      "seed": 13,
+      "smoke_only": true,
+      "complete": false,
+      "train_count": 32,
+      "valid_count": 32,
+      "best_epoch": 1,
+      "epochs_executed": 1,
+      "optimizer_updates": 1,
+      "loop_seconds": 0.019508600002154708,
+      "trainable_parameters": 496143,
+      "valid_metrics": {
+        "native": {
+          "count": 32,
+          "MAE": 0.8317201137542725,
+          "Corr": -0.07610643902807572,
+          "Mult_acc_2": 0.40625,
+          "F1_score": 0.40058324496288444,
+          "weak_count": 4,
+          "Mult_acc_2_weak": 0.25,
+          "Mult_acc_3": 0.28125,
+          "Mult_acc_5": 0.0625,
+          "R_squre": -0.06605367214243563
+        },
+        "uncertainty": {
+          "count": 32,
+          "distribution": "unbounded Student-t predictive density from NIG",
+          "density_NLL": 1.3618035093298833,
+          "error_vs_variance_spearman": 0.3115835777126099,
+          "mean_predictive_variance": 0.6295571292520065,
+          "intervals": {
+            "0.5": {
+              "coverage": 0.125,
+              "mean_width": 1.0109335843077445,
+              "range_intersection_mean_width": 1.0109335843077445
+            },
+            "0.8": {
+              "coverage": 0.6875,
+              "mean_width": 1.9675212621621136,
+              "range_intersection_mean_width": 1.872800888543787
+            },
+            "0.9": {
+              "coverage": 1.0,
+              "mean_width": 2.5810054922192878,
+              "range_intersection_mean_width": 1.9973573834267953
+            },
+            "0.95": {
+              "coverage": 1.0,
+              "mean_width": 3.149028069355474,
+              "range_intersection_mean_width": 2.0
+            }
+          },
+          "selective_MAE": {
+            "0.25": {
+              "count": 8,
+              "MAE": 0.8468518042936921
+            },
+            "0.5": {
+              "count": 16,
+              "MAE": 0.7805815057363361
+            },
+            "0.75": {
+              "count": 24,
+              "MAE": 0.7782977314976355
+            },
+            "1.0": {
+              "count": 32,
+              "MAE": 0.8317201221361756
+            }
+          },
+          "density_limit": "Quantized bounded sentiment is treated as a continuous density; NLL is not class cross-entropy."
+        }
+      },
+      "test_evaluated": false,
+      "root": "runs\\native_reliability_v1_preflight\\S1G0\\smoke\\seed_13",
+      "checkpoint_sha256": "a2d4c26c47d9337a59c695b43f448055fd1f5312a45bc0b989f645eacf407fb6",
+      "predictions_sha256": "49ea22f51541df555128d054747086f37133093648ea7ffff77defab3c28f9d6"
+    },
+    {
+      "condition": "S1G1",
+      "seed": 13,
+      "smoke_only": true,
+      "complete": false,
+      "train_count": 32,
+      "valid_count": 32,
+      "best_epoch": 1,
+      "epochs_executed": 1,
+      "optimizer_updates": 1,
+      "loop_seconds": 0.015490800011320971,
+      "trainable_parameters": 496143,
+      "valid_metrics": {
+        "native": {
+          "count": 32,
+          "MAE": 0.8313785791397095,
+          "Corr": -0.020611194422782524,
+          "Mult_acc_2": 0.625,
+          "F1_score": 0.6168831168831169,
+          "weak_count": 4,
+          "Mult_acc_2_weak": 0.75,
+          "Mult_acc_3": 0.28125,
+          "Mult_acc_5": 0.0625,
+          "R_squre": -0.0680397601031908
+        },
+        "uncertainty": {
+          "count": 32,
+          "distribution": "unbounded Student-t predictive density from NIG",
+          "density_NLL": 1.3644477208323047,
+          "error_vs_variance_spearman": 0.2716275659824047,
+          "mean_predictive_variance": 0.6296632717464908,
+          "intervals": {
+            "0.5": {
+              "coverage": 0.125,
+              "mean_width": 1.0110423400225903,
+              "range_intersection_mean_width": 1.0110423400225903
+            },
+            "0.8": {
+              "coverage": 0.75,
+              "mean_width": 1.96772449491782,
+              "range_intersection_mean_width": 1.8734280068921545
+            },
+            "0.9": {
+              "coverage": 0.96875,
+              "mean_width": 2.5812619226566818,
+              "range_intersection_mean_width": 1.9979620001443361
+            },
+            "0.95": {
+              "coverage": 1.0,
+              "mean_width": 3.149327337129279,
+              "range_intersection_mean_width": 2.0
+            }
+          },
+          "selective_MAE": {
+            "0.25": {
+              "count": 8,
+              "MAE": 0.8580814946908504
+            },
+            "0.5": {
+              "count": 16,
+              "MAE": 0.7862161186058074
+            },
+            "0.75": {
+              "count": 24,
+              "MAE": 0.7859067864871273
+            },
+            "1.0": {
+              "count": 32,
+              "MAE": 0.8313785979116801
+            }
+          },
+          "density_limit": "Quantized bounded sentiment is treated as a continuous density; NLL is not class cross-entropy."
+        }
+      },
+      "test_evaluated": false,
+      "root": "runs\\native_reliability_v1_preflight\\S1G1\\smoke\\seed_13",
+      "checkpoint_sha256": "4db8462b6f1f3d5d4ee9778f92eb9d34192d5d8b3f41961ac7babaae5644a9cf",
+      "predictions_sha256": "0e783773bd723439865d15c9229c1aefa9fa870f350754681624d9463da3b551"
+    }
+  ],
+  "suite_complete": false,
+  "smoke_only": true
+}
