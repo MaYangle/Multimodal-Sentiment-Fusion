@@ -13,6 +13,37 @@ This is a reproducible research snapshot, not a verified novel-method release
 or a state-of-the-art claim. All displayed results are development VALID;
 the final TEST split remains independent of this model-selection study.
 
+## At a glance
+
+**What it does.** Predicts a continuous sentiment score from text, audio and
+video, on each dataset's own scale. "Native" is the whole point: nothing is
+binarised or rescaled, so CH-SIMS v2.0 is scored on `[-1, 1]` and CMU-MOSEI on
+`[-3, 3]`, each with its own split and its own metric rules. A gain that only
+appears after collapsing the target to positive/negative is not a gain here.
+
+**What is released.** An experiment harness, not a packaged model: frozen
+encoders, trainable fusion heads, matched baselines, source-isolated training,
+and an evaluation protocol strict enough to catch a false win. The candidate
+arm fails its preregistered gate, and that failure is kept together with the
+controls that produced it.
+
+**Who it is for.**
+
+- Researchers and students who need matched controls, not a single arm pitted
+  against a number copied out of a paper.
+- Anyone reproducing ALMT or BCMLF on CH-SIMS v2.0 or CMU-MOSEI.
+- Not a service. Datasets and trained checkpoints are not redistributed, so
+  there is no drop-in inference endpoint.
+
+**Stack.** Python ≥ 3.11 (3.12 is the measured runtime), PyTorch, einops,
+Hugging Face Transformers (MacBERT), WavLM, DINOv2, NumPy, `unittest`. NumPy is
+the only hard dependency; torch, the encoders and the data tooling are optional
+extras, and CI runs the suite on CPU.
+
+**Start here.** [Code-only quick start](#code-only-quick-start) runs the
+architecture on synthetic inputs with no dataset and no weights. Anything that
+needs real data is in [Reproduction](docs/REPRODUCING.md).
+
 ## Start with the architecture
 
 ```mermaid
@@ -89,14 +120,18 @@ Datasets are trained and evaluated separately. [Native metrics and split
 protocol](docs/NATIVE_EVALUATION_PROTOCOL.md), [data acquisition status](docs/AUTHOR_ACQUISITION_STATUS.md)
 and [MOSEI cohort](docs/MOSEI_MULTIBENCH_COHORT.md) document exact limitations.
 
-## Reproduce or extend
+## Repository layout
 
-- `jevaffect/`: models, native metrics, staged training, caches and inference.
-- `scripts/`: preparation, training/resume, independent audits and demos.
-- `configs/`: frozen experiment budgets and baseline configurations.
-- `tests/`: split isolation, metrics, masks, optimizer/checkpoint resume contracts.
-- `docs/`: architecture, full experiment process, closest-work reviews and failures.
-- `vendor/`: attributed baseline source with upstream licenses.
+| Path | What lives there |
+|---|---|
+| `jevaffect/` | Models, native metrics, staged training, caches and inference. |
+| `scripts/` | Data preparation, training and resume, independent audits, demos. |
+| `configs/` | Frozen experiment budgets — one file per arm and dataset. |
+| `tests/` | Split isolation, metric contracts, mask and resume behaviour. |
+| `docs/` | Architecture, evaluation protocol, experiment record, failure analyses. |
+| `vendor/` | Attributed baseline source, with upstream licenses. |
+
+## Reproduce or extend
 
 The completed gate matrix has 27 cells and took about 2.22 hours of recorded
 fit time on RTX 5070 Ti 16 GB, excluding encoder extraction/download/audits.
